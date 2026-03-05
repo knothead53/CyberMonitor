@@ -9,6 +9,9 @@ It aggregates cybersecurity signals into a SOC-style wallboard focused on:
 - infrastructure outages
 - threat signal visibility for future expansion
 
+## Preview
+![CyberMonitor dashboard preview](assets/screenshots/dashboard.png)
+
 ## What This MVP Includes
 
 - Static front end in plain HTML, CSS, and JavaScript
