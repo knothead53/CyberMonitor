@@ -1,0 +1,112 @@
+[
+  {
+    "id": "news-001",
+    "title": "Large healthcare network discloses third-party data access incident",
+    "source": "SecurityWeek",
+    "published": "2026-03-05T12:08:00Z",
+    "url": "https://www.securityweek.com",
+    "summary": "Initial investigation points to compromised contractor credentials and delayed MFA enforcement.",
+    "severity": "high"
+  },
+  {
+    "id": "news-002",
+    "title": "New phishing toolkit targets cloud admin portals",
+    "source": "BleepingComputer",
+    "published": "2026-03-05T11:16:00Z",
+    "url": "https://www.bleepingcomputer.com",
+    "summary": "Researchers observed rapid updates to bypass common reverse proxy detections.",
+    "severity": "medium"
+  },
+  {
+    "id": "news-003",
+    "title": "CERT warns of coordinated botnet expansion in APAC",
+    "source": "The Record",
+    "published": "2026-03-05T09:44:00Z",
+    "url": "https://therecord.media",
+    "summary": "Abuse of outdated IoT routers appears to fuel DDoS-for-hire infrastructure.",
+    "severity": "high"
+  },
+  {
+    "id": "news-004",
+    "title": "Cloud provider publishes hardening guide after privilege bug",
+    "source": "KrebsOnSecurity",
+    "published": "2026-03-04T21:03:00Z",
+    "url": "https://krebsonsecurity.com",
+    "summary": "Guidance recommends stricter short-lived credential policies and service-account isolation.",
+    "severity": "medium"
+  },
+  {
+    "id": "news-005",
+    "title": "Ransomware affiliate leak reveals victim targeting playbook",
+    "source": "Dark Reading",
+    "published": "2026-03-04T18:30:00Z",
+    "url": "https://www.darkreading.com",
+    "summary": "The leaked files show focus on under-monitored backup platforms and dormant service accounts.",
+    "severity": "high"
+  },
+  {
+    "id": "news-006",
+    "title": "Browser vendor patches zero-day in enterprise channel",
+    "source": "Google Security Blog",
+    "published": "2026-03-04T15:12:00Z",
+    "url": "https://security.googleblog.com",
+    "summary": "Administrators should fast-track updates where browser sandboxing is policy-disabled.",
+    "severity": "critical",
+    "vendor": "Google"
+  },
+  {
+    "id": "news-007",
+    "title": "Researchers map rise in MFA fatigue attacks",
+    "source": "Microsoft Security Blog",
+    "published": "2026-03-04T13:40:00Z",
+    "url": "https://www.microsoft.com/security/blog",
+    "summary": "Push-bombing remains effective when identity telemetry and conditional access are weak.",
+    "severity": "medium",
+    "vendor": "Microsoft"
+  },
+  {
+    "id": "news-008",
+    "title": "EU regulator proposes stricter breach reporting windows",
+    "source": "EU Cyber Brief",
+    "published": "2026-03-04T09:20:00Z",
+    "url": "https://digital-strategy.ec.europa.eu",
+    "summary": "Draft language may require near-real-time incident status updates for critical sectors.",
+    "severity": "medium"
+  },
+  {
+    "id": "news-009",
+    "title": "Malvertising campaign abuses fake security scanner ads",
+    "source": "SANS ISC",
+    "published": "2026-03-03T23:15:00Z",
+    "url": "https://isc.sans.edu",
+    "summary": "The campaign uses typo-squatted download portals to deliver credential stealers.",
+    "severity": "medium"
+  },
+  {
+    "id": "news-010",
+    "title": "Open-source maintainers discuss package signing baseline",
+    "source": "OpenSSF",
+    "published": "2026-03-03T20:55:00Z",
+    "url": "https://openssf.org",
+    "summary": "Proposed defaults emphasize provenance metadata and stronger release attestations.",
+    "severity": "low"
+  },
+  {
+    "id": "news-011",
+    "title": "Telecom incident report highlights API gateway misconfiguration",
+    "source": "CSO Online",
+    "published": "2026-03-03T18:06:00Z",
+    "url": "https://www.csoonline.com",
+    "summary": "Misrouted authentication traffic exposed session tokens during a maintenance window.",
+    "severity": "high"
+  },
+  {
+    "id": "news-012",
+    "title": "Threat group shifts to Rust-based loaders",
+    "source": "Mandiant",
+    "published": "2026-03-03T15:24:00Z",
+    "url": "https://www.mandiant.com/resources/blog",
+    "summary": "New tooling focuses on stealthy credential access and cloud persistence.",
+    "severity": "high"
+  }
+]

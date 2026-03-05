@@ -1,0 +1,122 @@
+[
+  {
+    "id": "outage-001",
+    "title": "Identity provider partial outage impacts SSO token issuance",
+    "source": "Vendor Status Page",
+    "published": "2026-03-05T12:02:00Z",
+    "url": "https://status.example.com/idp",
+    "summary": "Customers reported elevated login failures in the US-East region for 28 minutes.",
+    "severity": "high",
+    "vendor": "Okta"
+  },
+  {
+    "id": "outage-002",
+    "title": "Cloud object storage latency spike in eu-west",
+    "source": "Provider Incident Feed",
+    "published": "2026-03-05T11:32:00Z",
+    "url": "https://status.example.com/storage",
+    "summary": "Write operations were delayed due to a control plane networking issue.",
+    "severity": "medium",
+    "vendor": "AWS"
+  },
+  {
+    "id": "outage-003",
+    "title": "Managed DNS provider reports intermittent resolution failures",
+    "source": "NOC Bulletin",
+    "published": "2026-03-05T10:47:00Z",
+    "url": "https://status.example.com/dns",
+    "summary": "Engineering applied routing mitigation while investigating abusive query traffic.",
+    "severity": "high",
+    "vendor": "Cloudflare"
+  },
+  {
+    "id": "outage-004",
+    "title": "Regional packet loss detected on subsea route",
+    "source": "Backbone Health Monitor",
+    "published": "2026-03-05T09:58:00Z",
+    "url": "https://status.example.com/backbone",
+    "summary": "Traffic was rerouted to alternate peering links; residual latency remains elevated.",
+    "severity": "medium",
+    "vendor": "Lumen"
+  },
+  {
+    "id": "outage-005",
+    "title": "SIEM ingestion backlog after queue saturation",
+    "source": "Internal SOC Feed",
+    "published": "2026-03-04T22:10:00Z",
+    "url": "https://status.example.com/siem",
+    "summary": "Burst alert traffic from endpoint detections created delayed pipeline processing.",
+    "severity": "medium",
+    "vendor": "Elastic"
+  },
+  {
+    "id": "outage-006",
+    "title": "MFA push delivery delays reported by multiple tenants",
+    "source": "Vendor Status Page",
+    "published": "2026-03-04T19:43:00Z",
+    "url": "https://status.example.com/mfa",
+    "summary": "A degraded messaging service caused delayed challenge notifications in mobile apps.",
+    "severity": "high",
+    "vendor": "Duo"
+  },
+  {
+    "id": "outage-007",
+    "title": "Endpoint telemetry API returns intermittent 502 responses",
+    "source": "SOC Ops Bulletin",
+    "published": "2026-03-04T17:19:00Z",
+    "url": "https://status.example.com/edr",
+    "summary": "Ingestion retries are succeeding but near-real-time detections may be delayed.",
+    "severity": "medium",
+    "vendor": "CrowdStrike"
+  },
+  {
+    "id": "outage-008",
+    "title": "Email security gateway queue delay during signature rollout",
+    "source": "Provider Incident Feed",
+    "published": "2026-03-04T14:34:00Z",
+    "url": "https://status.example.com/mailsec",
+    "summary": "Mail flow remained active, but policy enforcement and quarantine updates lagged.",
+    "severity": "low",
+    "vendor": "Proofpoint"
+  },
+  {
+    "id": "outage-009",
+    "title": "Threat intel TAXII endpoint timeout errors",
+    "source": "Threat Feed Ops",
+    "published": "2026-03-04T11:01:00Z",
+    "url": "https://status.example.com/taxii",
+    "summary": "Partner feed synchronization temporarily stalled during backend maintenance.",
+    "severity": "medium",
+    "vendor": "Anomali"
+  },
+  {
+    "id": "outage-010",
+    "title": "Managed WAF control console unavailable in AP-South",
+    "source": "NOC Bulletin",
+    "published": "2026-03-04T08:52:00Z",
+    "url": "https://status.example.com/waf",
+    "summary": "Traffic filtering continued normally, but rule updates were delayed.",
+    "severity": "medium",
+    "vendor": "Akamai"
+  },
+  {
+    "id": "outage-011",
+    "title": "Remote access broker maintenance window overrun",
+    "source": "Provider Incident Feed",
+    "published": "2026-03-03T21:25:00Z",
+    "url": "https://status.example.com/ztna",
+    "summary": "A staged rollback restored session brokerage after change validation failed.",
+    "severity": "low",
+    "vendor": "Zscaler"
+  },
+  {
+    "id": "outage-012",
+    "title": "CDN edge cache invalidation backlog",
+    "source": "Backbone Health Monitor",
+    "published": "2026-03-03T17:58:00Z",
+    "url": "https://status.example.com/cdn",
+    "summary": "Security patch assets propagated slowly to edge locations during elevated demand.",
+    "severity": "low",
+    "vendor": "Fastly"
+  }
+]

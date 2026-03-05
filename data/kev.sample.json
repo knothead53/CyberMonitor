@@ -1,0 +1,122 @@
+[
+  {
+    "id": "kev-001",
+    "title": "CVE-2026-0412 - Edge gateway auth bypass actively exploited",
+    "source": "CISA KEV Sample",
+    "published": "2026-03-05T12:10:00Z",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "summary": "Security teams should patch internet-facing edge gateways where pre-auth bypass is observed in active campaigns.",
+    "severity": "critical",
+    "vendor": "Fortinet"
+  },
+  {
+    "id": "kev-002",
+    "title": "CVE-2025-9981 - Legacy VPN appliance command injection",
+    "source": "CISA KEV Sample",
+    "published": "2026-03-05T10:42:00Z",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "summary": "Command injection in management interface allows arbitrary command execution with system privileges.",
+    "severity": "high",
+    "vendor": "Ivanti"
+  },
+  {
+    "id": "kev-003",
+    "title": "CVE-2026-1020 - Mail gateway deserialization exploit",
+    "source": "CISA KEV Sample",
+    "published": "2026-03-05T09:20:00Z",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "summary": "Attackers are chaining authentication flaws and insecure deserialization to deploy loaders.",
+    "severity": "critical",
+    "vendor": "Zimbra"
+  },
+  {
+    "id": "kev-004",
+    "title": "CVE-2025-8840 - Exchange plugin privilege escalation",
+    "source": "CISA KEV Sample",
+    "published": "2026-03-04T20:14:00Z",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "summary": "Local privilege escalation bug appears in post-compromise activity tied to commodity ransomware crews.",
+    "severity": "high",
+    "vendor": "Microsoft"
+  },
+  {
+    "id": "kev-005",
+    "title": "CVE-2026-0304 - Public container registry token leakage",
+    "source": "CISA KEV Sample",
+    "published": "2026-03-04T18:55:00Z",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "summary": "Improper token scoping in CI integrations can expose write access to shared registries.",
+    "severity": "medium",
+    "vendor": "GitLab"
+  },
+  {
+    "id": "kev-006",
+    "title": "CVE-2025-7711 - Endpoint agent DLL sideloading",
+    "source": "CISA KEV Sample",
+    "published": "2026-03-04T14:05:00Z",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "summary": "Threat actors are abusing signed binaries to sideload malicious libraries and disable telemetry.",
+    "severity": "high",
+    "vendor": "Trend Micro"
+  },
+  {
+    "id": "kev-007",
+    "title": "CVE-2026-0115 - Hypervisor guest escape via crafted packet",
+    "source": "CISA KEV Sample",
+    "published": "2026-03-04T12:27:00Z",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "summary": "Data center operators should prioritize updates where multi-tenant virtualization is exposed.",
+    "severity": "critical",
+    "vendor": "VMware"
+  },
+  {
+    "id": "kev-008",
+    "title": "CVE-2025-6452 - NAS management API broken access control",
+    "source": "CISA KEV Sample",
+    "published": "2026-03-03T23:42:00Z",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "summary": "Unauthenticated endpoint permits remote account takeover in exposed storage systems.",
+    "severity": "high",
+    "vendor": "QNAP"
+  },
+  {
+    "id": "kev-009",
+    "title": "CVE-2025-6170 - Java framework OGNL injection",
+    "source": "CISA KEV Sample",
+    "published": "2026-03-03T21:11:00Z",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "summary": "Public exploit code enables remote execution on misconfigured application gateways.",
+    "severity": "critical",
+    "vendor": "Apache"
+  },
+  {
+    "id": "kev-010",
+    "title": "CVE-2025-5803 - OT firewall web UI path traversal",
+    "source": "CISA KEV Sample",
+    "published": "2026-03-03T17:39:00Z",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "summary": "Industrial operators are advised to isolate management interfaces and apply firmware updates.",
+    "severity": "high",
+    "vendor": "SonicWall"
+  },
+  {
+    "id": "kev-011",
+    "title": "CVE-2025-5176 - CMS plugin arbitrary file upload",
+    "source": "CISA KEV Sample",
+    "published": "2026-03-03T14:52:00Z",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "summary": "Mass scanning activity attempts web-shell upload against unpatched content management deployments.",
+    "severity": "high",
+    "vendor": "WordPress"
+  },
+  {
+    "id": "kev-012",
+    "title": "CVE-2025-4992 - Backup console insecure default credentials",
+    "source": "CISA KEV Sample",
+    "published": "2026-03-03T08:24:00Z",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "summary": "Credential stuffing and default-password abuse observed in opportunistic campaigns.",
+    "severity": "medium",
+    "vendor": "Veeam"
+  }
+]
