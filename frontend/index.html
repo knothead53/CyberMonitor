@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CyberMonitor MVP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="dashboard-shell">
+    <header class="topbar panel">
+      <div class="brand-wrap">
+        <p class="brand-kicker">OPEN SOURCE CYBER OPS</p>
+        <h1>CyberMonitor</h1>
+      </div>
+      <div class="topbar-meta">
+        <span class="env-badge">MVP</span>
+        <span id="last-updated">Last updated: waiting for feed</span>
+        <button id="refresh-btn" type="button">Refresh</button>
+      </div>
+    </header>
+
+    <aside class="left-rail panel">
+      <h2 class="panel-title">Layers</h2>
+      <p class="panel-subtitle">Toggle live intelligence streams.</p>
+      <form id="layer-form" class="layer-list">
+        <label>
+          <input type="checkbox" name="layer" value="kev" checked />
+          CISA KEV
+        </label>
+        <label>
+          <input type="checkbox" name="layer" value="news" checked />
+          Security News
+        </label>
+        <label>
+          <input type="checkbox" name="layer" value="outages" checked />
+          Infrastructure Outages
+        </label>
+      </form>
+    </aside>
+
+    <main class="center-stage">
+      <section class="map-panel panel">
+        <div class="map-panel-head">
+          <h2 class="panel-title">Global Cyber Activity Board</h2>
+          <span class="status-pill">SIMULATED SIGNALS</span>
+        </div>
+        <div class="map-surface" aria-label="Map placeholder">
+          <div class="sweep-line"></div>
+          <div class="grid-overlay"></div>
+          <div class="map-caption">Map integration planned for v1.1</div>
+        </div>
+        <div class="status-cards">
+          <article>
+            <p class="card-label">Signal Throughput</p>
+            <p class="card-value">+214/hr</p>
+          </article>
+          <article>
+            <p class="card-label">High Severity Flags</p>
+            <p class="card-value warning">07</p>
+          </article>
+          <article>
+            <p class="card-label">Known Campaigns</p>
+            <p class="card-value">11</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="right-rail">
+      <section class="panel feed-panel" data-panel="kev">
+        <div class="feed-head">
+          <h2 class="panel-title">CISA KEV (Exploited Vulns)</h2>
+          <span class="panel-count" id="kev-count">0</span>
+        </div>
+        <ul id="kev-list" class="feed-list">
+          <li class="state-item">Loading feed...</li>
+        </ul>
+      </section>
+
+      <section class="panel feed-panel" data-panel="news">
+        <div class="feed-head">
+          <h2 class="panel-title">Security News</h2>
+          <span class="panel-count" id="news-count">0</span>
+        </div>
+        <ul id="news-list" class="feed-list">
+          <li class="state-item">Loading feed...</li>
+        </ul>
+      </section>
+
+      <section class="panel feed-panel" data-panel="outages">
+        <div class="feed-head">
+          <h2 class="panel-title">Outages</h2>
+          <span class="panel-count" id="outages-count">0</span>
+        </div>
+        <ul id="outages-list" class="feed-list">
+          <li class="state-item">Loading feed...</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <script src="../data/fallback.sample.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
