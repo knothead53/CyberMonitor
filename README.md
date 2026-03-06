@@ -10,7 +10,15 @@ It aggregates cybersecurity signals into a SOC-style wallboard focused on:
 - threat signal visibility for future expansion
 
 ## Preview
-![CyberMonitor dashboard preview](assets/screenshots/dashboard.png)
+![CyberMonitor v1.1 dashboard preview](assets/screenshots/dashboard-v1.1.png)
+
+## v1.1 Highlights
+
+- Interactive Leaflet world map replacing the center placeholder board
+- Map overlay demo layers with left-rail layer toggles
+- Panel-level filtering by severity, time window, and source
+- Data-driven status widgets with lightweight sparkline trends
+- Repository polish updates (screenshot asset + docs refresh)
 
 ## What This MVP Includes
 
@@ -21,6 +29,11 @@ It aggregates cybersecurity signals into a SOC-style wallboard focused on:
 - Manual refresh control with last-updated timestamp
 - `file://` fallback mode so `frontend/index.html` still renders data when opened directly
 
+## Data Sources Disclaimer
+
+- Data in this repository is sample/demo JSON under `/data`.
+- Live production feed integrations are optional future work and are not required for v1.1.
+
 ## Run Locally
 
 1. Open this repository folder.
@@ -28,10 +41,6 @@ It aggregates cybersecurity signals into a SOC-style wallboard focused on:
 3. The dashboard loads with sample feed data.
 
 Optional: serve the repo with any static server if you want strict browser behavior that mirrors production hosting.
-
-## Screenshot Placeholder
-
-Screenshots and GIF walkthroughs will be added after visual polish and map integration in v1.1.
 
 ## Project Structure
 
@@ -45,11 +54,15 @@ CyberMonitor/
 |  |- kev.sample.json    # Sample KEV feed
 |  |- news.sample.json   # Sample security news feed
 |  |- outages.sample.json# Sample outage feed
+|  |- map.overlays.sample.json # Sample map overlays
+|  |- metrics.sample.json # Sample metrics sparkline history
 |  |- fallback.sample.js # Local file-mode fallback payload
 |- scripts/
 |  |- README.md
 |  |- refresh-sample-timestamps.js
-|- assets/               # Reserved for icons/images
+|- assets/
+|  |- screenshots/
+|     |- dashboard-v1.1.png
 |- ROADMAP.md
 |- CONTRIBUTING.md
 |- README.md

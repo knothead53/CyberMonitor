@@ -10,10 +10,18 @@
 
 ## v1.1
 
+- Status: Completed (March 2026)
 - Replace map placeholder with lightweight interactive world map layer
 - Add panel-level filtering (severity, source, time window)
 - Add richer status widgets for active campaigns and trend lines
 - Add screenshot and demo assets for repository homepage
+
+## v1.2 (Stub)
+
+- Add optional localStorage persistence for layer and filter preferences
+- Expand map overlays with timeline stepping controls
+- Introduce browser-side search across KEV/news/outage entries
+- Add optional live feed adapter scripts while keeping static-host compatibility
 
 ## v2
 
