@@ -175,49 +175,103 @@ body {
   overflow: hidden;
   border: 1px solid rgba(151, 179, 221, 0.18);
   border-radius: 12px;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(58, 213, 255, 0.16), transparent 42%),
-    radial-gradient(circle at 72% 62%, rgba(87, 255, 190, 0.15), transparent 44%),
-    linear-gradient(160deg, #071127, #0d1e38 55%, #12274a);
+  background: linear-gradient(160deg, #071127, #0d1e38 55%, #12274a);
 }
 
-.grid-overlay {
+.map-surface::after {
+  content: "";
   position: absolute;
   inset: 0;
   background-image:
     linear-gradient(rgba(144, 164, 199, 0.12) 1px, transparent 1px),
     linear-gradient(90deg, rgba(144, 164, 199, 0.12) 1px, transparent 1px);
   background-size: 42px 42px;
+  pointer-events: none;
+  z-index: 410;
 }
 
-.sweep-line {
+.map-canvas {
   position: absolute;
-  inset: -20% -40%;
-  background: linear-gradient(95deg, transparent 48%, rgba(58, 213, 255, 0.35) 50%, transparent 52%);
-  animation: sweep 5.6s linear infinite;
+  inset: 0;
+  z-index: 300;
 }
 
-@keyframes sweep {
-  from {
-    transform: translateX(-34%);
-  }
-  to {
-    transform: translateX(34%);
-  }
+.map-surface .leaflet-tile-pane {
+  filter: brightness(0.58) saturate(0.72) hue-rotate(178deg) contrast(1.02);
+}
+
+.map-surface .leaflet-control-zoom {
+  border: 1px solid rgba(151, 179, 221, 0.32);
+  box-shadow: none;
+}
+
+.map-surface .leaflet-control-zoom a {
+  background: rgba(5, 13, 28, 0.9);
+  color: var(--text-main);
+  border-bottom-color: rgba(151, 179, 221, 0.24);
+}
+
+.map-surface .leaflet-control-attribution {
+  background: rgba(7, 15, 31, 0.75);
+  color: #9db4dd;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 0.62rem;
+}
+
+.map-surface .leaflet-control-attribution a {
+  color: #9ddfff;
+}
+
+.map-overlay-marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(223, 232, 255, 0.95);
+  box-shadow: 0 0 0 4px rgba(6, 18, 38, 0.45);
+}
+
+.map-overlay-marker.severity-critical {
+  background: #ff5f5f;
+}
+
+.map-overlay-marker.severity-high {
+  background: #ff9c4f;
+}
+
+.map-overlay-marker.severity-medium {
+  background: #ffd46e;
+}
+
+.map-overlay-marker.severity-low {
+  background: #63d4ff;
+}
+
+.map-surface .leaflet-popup-content-wrapper,
+.map-surface .leaflet-popup-tip {
+  background: rgba(7, 16, 32, 0.94);
+  color: #dfe9ff;
+  border: 1px solid rgba(151, 179, 221, 0.28);
+}
+
+.map-surface .leaflet-popup-content {
+  margin: 8px 10px;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 0.72rem;
+  line-height: 1.45;
 }
 
 .map-caption {
   position: absolute;
-  bottom: 14px;
+  top: 14px;
   right: 14px;
-  z-index: 2;
+  z-index: 420;
   border: 1px solid rgba(151, 179, 221, 0.24);
   border-radius: 999px;
   padding: 4px 10px;
-  color: var(--text-muted);
+  color: var(--accent);
   font-family: "IBM Plex Mono", Consolas, monospace;
   font-size: 0.73rem;
-  background: rgba(8, 17, 33, 0.65);
+  background: rgba(8, 17, 33, 0.82);
 }
 
 .status-cards {
@@ -250,6 +304,29 @@ body {
   color: var(--warning);
 }
 
+.sparkline {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 24px;
+  margin-top: 8px;
+}
+
+.sparkline-bar {
+  flex: 1;
+  min-width: 3px;
+  border-radius: 2px 2px 0 0;
+  background: linear-gradient(180deg, rgba(58, 213, 255, 0.92), rgba(58, 213, 255, 0.24));
+}
+
+.sparkline-alert .sparkline-bar {
+  background: linear-gradient(180deg, rgba(255, 125, 95, 0.92), rgba(255, 125, 95, 0.24));
+}
+
+.sparkline-campaigns .sparkline-bar {
+  background: linear-gradient(180deg, rgba(87, 255, 190, 0.9), rgba(87, 255, 190, 0.24));
+}
+
 .right-rail {
   grid-area: right;
   display: grid;
@@ -260,7 +337,7 @@ body {
 
 .feed-panel {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto 1fr;
   min-height: 0;
   padding: 12px;
 }
@@ -274,7 +351,44 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  margin-bottom: 8px;
+}
+
+.panel-filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
   margin-bottom: 10px;
+}
+
+.filter-control {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.filter-control span {
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  color: var(--text-muted);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.filter-control select {
+  min-width: 0;
+  border: 1px solid rgba(151, 179, 221, 0.24);
+  border-radius: 8px;
+  background: rgba(7, 15, 31, 0.92);
+  color: var(--text-main);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 0.69rem;
+  padding: 5px 6px;
+}
+
+.filter-control select:focus {
+  outline: 1px solid rgba(58, 213, 255, 0.56);
+  border-color: rgba(58, 213, 255, 0.56);
 }
 
 .feed-list {
@@ -382,6 +496,10 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: 1fr;
     min-height: 460px;
+  }
+
+  .panel-filters {
+    grid-template-columns: 1fr;
   }
 }
 

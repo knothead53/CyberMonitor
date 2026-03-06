@@ -7,6 +7,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    crossorigin=""
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -48,23 +53,25 @@
           <h2 class="panel-title">Global Cyber Activity Board</h2>
           <span class="status-pill">SIMULATED SIGNALS</span>
         </div>
-        <div class="map-surface" aria-label="Map placeholder">
-          <div class="sweep-line"></div>
-          <div class="grid-overlay"></div>
-          <div class="map-caption">Map integration planned for v1.1</div>
+        <div class="map-surface" aria-label="Global cyber activity map">
+          <div id="global-map" class="map-canvas" role="application" aria-label="Interactive world map"></div>
+          <span class="map-caption">MAP (v1.1)</span>
         </div>
         <div class="status-cards">
           <article>
             <p class="card-label">Signal Throughput</p>
-            <p class="card-value">+214/hr</p>
+            <p class="card-value" id="metric-throughput-value">--</p>
+            <div class="sparkline" id="metric-throughput-sparkline" aria-label="Signal throughput trend"></div>
           </article>
           <article>
             <p class="card-label">High Severity Flags</p>
-            <p class="card-value warning">07</p>
+            <p class="card-value warning" id="metric-high-severity-value">--</p>
+            <div class="sparkline sparkline-alert" id="metric-high-severity-sparkline" aria-label="High severity trend"></div>
           </article>
           <article>
             <p class="card-label">Known Campaigns</p>
-            <p class="card-value">11</p>
+            <p class="card-value" id="metric-campaigns-value">--</p>
+            <div class="sparkline sparkline-campaigns" id="metric-campaigns-sparkline" aria-label="Campaign trend"></div>
           </article>
         </div>
       </section>
@@ -76,6 +83,34 @@
           <h2 class="panel-title">CISA KEV (Exploited Vulns)</h2>
           <span class="panel-count" id="kev-count">0</span>
         </div>
+        <div class="panel-filters" id="kev-filters">
+          <label class="filter-control" for="kev-filter-severity">
+            <span>Severity</span>
+            <select id="kev-filter-severity" data-feed="kev" data-filter="severity">
+              <option value="all">All</option>
+              <option value="critical">Critical</option>
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+          </label>
+          <label class="filter-control" for="kev-filter-time">
+            <span>Time</span>
+            <select id="kev-filter-time" data-feed="kev" data-filter="time">
+              <option value="all">All</option>
+              <option value="1h">1h</option>
+              <option value="6h">6h</option>
+              <option value="24h">24h</option>
+              <option value="7d">7d</option>
+            </select>
+          </label>
+          <label class="filter-control" for="kev-filter-source">
+            <span>Source</span>
+            <select id="kev-filter-source" data-feed="kev" data-filter="source">
+              <option value="all">All</option>
+            </select>
+          </label>
+        </div>
         <ul id="kev-list" class="feed-list">
           <li class="state-item">Loading feed...</li>
         </ul>
@@ -85,6 +120,34 @@
         <div class="feed-head">
           <h2 class="panel-title">Security News</h2>
           <span class="panel-count" id="news-count">0</span>
+        </div>
+        <div class="panel-filters" id="news-filters">
+          <label class="filter-control" for="news-filter-severity">
+            <span>Severity</span>
+            <select id="news-filter-severity" data-feed="news" data-filter="severity">
+              <option value="all">All</option>
+              <option value="critical">Critical</option>
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+          </label>
+          <label class="filter-control" for="news-filter-time">
+            <span>Time</span>
+            <select id="news-filter-time" data-feed="news" data-filter="time">
+              <option value="all">All</option>
+              <option value="1h">1h</option>
+              <option value="6h">6h</option>
+              <option value="24h">24h</option>
+              <option value="7d">7d</option>
+            </select>
+          </label>
+          <label class="filter-control" for="news-filter-source">
+            <span>Source</span>
+            <select id="news-filter-source" data-feed="news" data-filter="source">
+              <option value="all">All</option>
+            </select>
+          </label>
         </div>
         <ul id="news-list" class="feed-list">
           <li class="state-item">Loading feed...</li>
@@ -96,6 +159,34 @@
           <h2 class="panel-title">Outages</h2>
           <span class="panel-count" id="outages-count">0</span>
         </div>
+        <div class="panel-filters" id="outages-filters">
+          <label class="filter-control" for="outages-filter-severity">
+            <span>Severity</span>
+            <select id="outages-filter-severity" data-feed="outages" data-filter="severity">
+              <option value="all">All</option>
+              <option value="critical">Critical</option>
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+          </label>
+          <label class="filter-control" for="outages-filter-time">
+            <span>Time</span>
+            <select id="outages-filter-time" data-feed="outages" data-filter="time">
+              <option value="all">All</option>
+              <option value="1h">1h</option>
+              <option value="6h">6h</option>
+              <option value="24h">24h</option>
+              <option value="7d">7d</option>
+            </select>
+          </label>
+          <label class="filter-control" for="outages-filter-source">
+            <span>Source</span>
+            <select id="outages-filter-source" data-feed="outages" data-filter="source">
+              <option value="all">All</option>
+            </select>
+          </label>
+        </div>
         <ul id="outages-list" class="feed-list">
           <li class="state-item">Loading feed...</li>
         </ul>
@@ -104,6 +195,11 @@
   </div>
 
   <script src="../data/fallback.sample.js"></script>
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    crossorigin=""
+    defer
+  ></script>
   <script src="app.js" defer></script>
 </body>
 </html>
