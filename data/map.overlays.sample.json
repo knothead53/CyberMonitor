@@ -1,0 +1,128 @@
+{
+  "cloud_regions": [
+    {
+      "id": "cloud-001",
+      "name": "US-East Core Region",
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "type": "cloud_region",
+      "severity": "MED",
+      "timestamp": "2026-03-05T12:01:00Z",
+      "summary": "Elevated auth probe traffic observed against identity edge nodes."
+    },
+    {
+      "id": "cloud-002",
+      "name": "EU-West Region",
+      "lat": 53.3498,
+      "lon": -6.2603,
+      "type": "cloud_region",
+      "severity": "LOW",
+      "timestamp": "2026-03-05T11:08:00Z",
+      "summary": "Routine scanning volume remains within baseline."
+    },
+    {
+      "id": "cloud-003",
+      "name": "AP-Southeast Region",
+      "lat": 1.3521,
+      "lon": 103.8198,
+      "type": "cloud_region",
+      "severity": "HIGH",
+      "timestamp": "2026-03-05T10:49:00Z",
+      "summary": "Anomalous API token activity under investigation."
+    },
+    {
+      "id": "cloud-004",
+      "name": "South America Region",
+      "lat": -23.5505,
+      "lon": -46.6333,
+      "type": "cloud_region",
+      "severity": "MED",
+      "timestamp": "2026-03-05T09:57:00Z",
+      "summary": "Increased login retries linked to credential stuffing attempts."
+    }
+  ],
+  "major_incidents": [
+    {
+      "id": "incident-001",
+      "name": "North America Ransomware Cluster",
+      "lat": 41.8781,
+      "lon": -87.6298,
+      "type": "incident",
+      "severity": "CRITICAL",
+      "timestamp": "2026-03-05T12:07:00Z",
+      "summary": "Coordinated exploitation of edge appliance vulnerabilities in active campaigns."
+    },
+    {
+      "id": "incident-002",
+      "name": "EMEA Data Extortion Wave",
+      "lat": 50.1109,
+      "lon": 8.6821,
+      "type": "incident",
+      "severity": "HIGH",
+      "timestamp": "2026-03-05T11:35:00Z",
+      "summary": "Operators observed multi-stage intrusion with backup target selection."
+    },
+    {
+      "id": "incident-003",
+      "name": "APAC Botnet Expansion",
+      "lat": 14.5995,
+      "lon": 120.9842,
+      "type": "incident",
+      "severity": "HIGH",
+      "timestamp": "2026-03-05T09:22:00Z",
+      "summary": "Compromised IoT devices enrolled into DDoS-for-hire infrastructure."
+    },
+    {
+      "id": "incident-004",
+      "name": "Middle East Credential Replay Activity",
+      "lat": 25.2048,
+      "lon": 55.2708,
+      "type": "incident",
+      "severity": "MED",
+      "timestamp": "2026-03-05T08:41:00Z",
+      "summary": "Repeated auth replay attempts detected on federated access gateways."
+    }
+  ],
+  "internet_outages": [
+    {
+      "id": "outage-001",
+      "name": "US Identity Token Delay",
+      "lat": 39.9526,
+      "lon": -75.1652,
+      "type": "outage",
+      "severity": "HIGH",
+      "timestamp": "2026-03-05T11:59:00Z",
+      "summary": "Partial token issuance outage affecting SSO during peak business hours."
+    },
+    {
+      "id": "outage-002",
+      "name": "Europe DNS Route Instability",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "type": "outage",
+      "severity": "HIGH",
+      "timestamp": "2026-03-05T10:44:00Z",
+      "summary": "Intermittent packet loss impacting managed DNS resolution pathways."
+    },
+    {
+      "id": "outage-003",
+      "name": "Pacific Backbone Packet Loss",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "type": "outage",
+      "severity": "MED",
+      "timestamp": "2026-03-05T09:38:00Z",
+      "summary": "Subsea route congestion triggered traffic reroute and elevated latency."
+    },
+    {
+      "id": "outage-004",
+      "name": "South Asia WAF Console Delay",
+      "lat": 19.076,
+      "lon": 72.8777,
+      "type": "outage",
+      "severity": "LOW",
+      "timestamp": "2026-03-05T08:18:00Z",
+      "summary": "Control plane updates delayed while mitigation services remained active."
+    }
+  ]
+}
