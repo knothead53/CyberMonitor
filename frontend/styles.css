@@ -108,6 +108,22 @@ body {
   cursor: wait;
 }
 
+#reset-preferences-btn {
+  border: 1px solid rgba(151, 179, 221, 0.34);
+  border-radius: 999px;
+  background: rgba(7, 15, 31, 0.82);
+  color: var(--text-muted);
+  font: inherit;
+  cursor: pointer;
+  padding: 6px 14px;
+}
+
+#reset-preferences-btn:hover,
+#reset-preferences-btn:focus-visible {
+  border-color: rgba(58, 213, 255, 0.5);
+  color: var(--text-main);
+}
+
 .left-rail {
   grid-area: left;
   padding: 16px;

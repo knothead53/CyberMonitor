@@ -105,10 +105,17 @@
     time: "all",
     source: "all"
   };
+  const FILTER_OPTIONS = {
+    severity: new Set(["all", "critical", "high", "medium", "low"]),
+    time: new Set(["all", "1h", "6h", "24h", "7d"])
+  };
+  const PREFERENCES_STORAGE_KEY = "cybermonitor.preferences";
+  const DEFAULT_TIMELINE_WINDOW = "24h";
 
   const elements = {
     updated: document.getElementById("last-updated"),
     refresh: document.getElementById("refresh-btn"),
+    resetPreferences: document.getElementById("reset-preferences-btn"),
     layerInputs: Array.from(document.querySelectorAll('#layer-form input[name="layer"]')),
     map: document.getElementById("global-map"),
     metricValues: {
@@ -146,6 +153,182 @@
     acc[key] = { ...FILTER_DEFAULTS };
     return acc;
   }, {});
+  let preferenceState = {
+    searchQuery: "",
+    timelineWindow: DEFAULT_TIMELINE_WINDOW
+  };
+
+  function getDefaultPreferences() {
+    const layers = Object.keys(MAP_LAYER_BINDINGS).reduce((acc, key) => {
+      acc[key] = true;
+      return acc;
+    }, {});
+    const filters = Object.keys(FEEDS).reduce((acc, key) => {
+      acc[key] = { ...FILTER_DEFAULTS };
+      return acc;
+    }, {});
+
+    return {
+      layers,
+      panelFilters: filters,
+      searchQuery: "",
+      timelineWindow: DEFAULT_TIMELINE_WINDOW
+    };
+  }
+
+  function normalizeSelectValue(rawValue, options, fallback) {
+    if (typeof rawValue !== "string") {
+      return fallback;
+    }
+    return options.has(rawValue) ? rawValue : fallback;
+  }
+
+  function normalizeSourceValue(rawValue) {
+    if (typeof rawValue !== "string") {
+      return "all";
+    }
+
+    const trimmed = rawValue.trim();
+    return trimmed === "" ? "all" : trimmed;
+  }
+
+  function normalizePanelFilterValue(rawValue) {
+    const input = rawValue && typeof rawValue === "object" ? rawValue : {};
+    return {
+      severity: normalizeSelectValue(input.severity, FILTER_OPTIONS.severity, FILTER_DEFAULTS.severity),
+      time: normalizeSelectValue(input.time, FILTER_OPTIONS.time, FILTER_DEFAULTS.time),
+      source: normalizeSourceValue(input.source)
+    };
+  }
+
+  function normalizePreferences(rawValue) {
+    const defaults = getDefaultPreferences();
+    const payload = rawValue && typeof rawValue === "object" ? rawValue : {};
+
+    const normalized = {
+      ...defaults,
+      layers: { ...defaults.layers },
+      panelFilters: {},
+      searchQuery: typeof payload.searchQuery === "string" ? payload.searchQuery : defaults.searchQuery,
+      timelineWindow:
+        typeof payload.timelineWindow === "string" && payload.timelineWindow.trim() !== ""
+          ? payload.timelineWindow
+          : defaults.timelineWindow
+    };
+
+    Object.keys(defaults.layers).forEach((layerKey) => {
+      if (typeof payload.layers?.[layerKey] === "boolean") {
+        normalized.layers[layerKey] = payload.layers[layerKey];
+      }
+    });
+
+    Object.keys(defaults.panelFilters).forEach((feedKey) => {
+      normalized.panelFilters[feedKey] = normalizePanelFilterValue(payload.panelFilters?.[feedKey]);
+    });
+
+    return normalized;
+  }
+
+  function readStoredPreferences() {
+    try {
+      return window.localStorage.getItem(PREFERENCES_STORAGE_KEY);
+    } catch (_error) {
+      return null;
+    }
+  }
+
+  function writeStoredPreferences(value) {
+    try {
+      window.localStorage.setItem(PREFERENCES_STORAGE_KEY, value);
+    } catch (_error) {
+      // ignore writes when storage is unavailable
+    }
+  }
+
+  function clearStoredPreferences() {
+    try {
+      window.localStorage.removeItem(PREFERENCES_STORAGE_KEY);
+    } catch (_error) {
+      // ignore removes when storage is unavailable
+    }
+  }
+
+  function loadPreferences() {
+    const stored = readStoredPreferences();
+    if (!stored) {
+      return getDefaultPreferences();
+    }
+
+    try {
+      const parsed = JSON.parse(stored);
+      return normalizePreferences(parsed);
+    } catch (_error) {
+      return getDefaultPreferences();
+    }
+  }
+
+  function collectPreferences() {
+    const defaults = getDefaultPreferences();
+    const layers = { ...defaults.layers };
+    const filters = {};
+
+    elements.layerInputs.forEach((input) => {
+      if (Object.prototype.hasOwnProperty.call(layers, input.value)) {
+        layers[input.value] = Boolean(input.checked);
+      }
+    });
+
+    Object.keys(defaults.panelFilters).forEach((feedKey) => {
+      filters[feedKey] = normalizePanelFilterValue(panelFilters[feedKey]);
+    });
+
+    return normalizePreferences({
+      layers,
+      panelFilters: filters,
+      searchQuery: preferenceState.searchQuery,
+      timelineWindow: preferenceState.timelineWindow
+    });
+  }
+
+  function savePreferences() {
+    const nextPreferences = collectPreferences();
+    preferenceState = {
+      searchQuery: nextPreferences.searchQuery,
+      timelineWindow: nextPreferences.timelineWindow
+    };
+    writeStoredPreferences(JSON.stringify(nextPreferences));
+  }
+
+  function applyPreferences(preferences) {
+    const nextPreferences = normalizePreferences(preferences);
+
+    elements.layerInputs.forEach((input) => {
+      if (Object.prototype.hasOwnProperty.call(nextPreferences.layers, input.value)) {
+        input.checked = nextPreferences.layers[input.value];
+      }
+    });
+
+    Object.keys(nextPreferences.panelFilters).forEach((feedKey) => {
+      panelFilters[feedKey] = normalizePanelFilterValue(nextPreferences.panelFilters[feedKey]);
+    });
+
+    preferenceState = {
+      searchQuery: nextPreferences.searchQuery,
+      timelineWindow: nextPreferences.timelineWindow
+    };
+  }
+
+  function resetPreferences() {
+    clearStoredPreferences();
+    applyPreferences(getDefaultPreferences());
+    syncPanelFilterControls();
+    applyLayerVisibility();
+
+    Object.keys(FEEDS).forEach((feedKey) => {
+      populateSourceFilter(feedKey, feedState[feedKey]);
+      renderItems(feedKey, feedState[feedKey]);
+    });
+  }
 
   function selectFeedElements(feedKey) {
     const config = FEEDS[feedKey];
@@ -340,7 +523,7 @@
       new Set(normalizeItems(items).map((item) => getSourceLabel(item)))
     ).sort((a, b) => a.localeCompare(b));
 
-    const selected = panelFilters[feedKey].source;
+    const selected = normalizeSourceValue(panelFilters[feedKey].source);
     sourceSelect.innerHTML = "";
 
     const allOption = document.createElement("option");
@@ -362,6 +545,9 @@
 
     panelFilters[feedKey].source = "all";
     sourceSelect.value = "all";
+    if (selected !== "all") {
+      savePreferences();
+    }
   }
 
   function escapeHtml(value) {
@@ -772,14 +958,7 @@
     });
   }
 
-  function setupLayerFilters() {
-    applyLayerVisibility();
-    elements.layerInputs.forEach((input) => {
-      input.addEventListener("change", applyLayerVisibility);
-    });
-  }
-
-  function setupPanelFilters() {
+  function syncPanelFilterControls() {
     Object.keys(FEEDS).forEach((feedKey) => {
       const controls = elements.filterSelects[feedKey];
       if (!controls || !controls.severity || !controls.time || !controls.source) {
@@ -789,20 +968,48 @@
       controls.severity.value = panelFilters[feedKey].severity;
       controls.time.value = panelFilters[feedKey].time;
       controls.source.value = panelFilters[feedKey].source;
+    });
+  }
+
+  function setupLayerFilters() {
+    applyLayerVisibility();
+    elements.layerInputs.forEach((input) => {
+      input.addEventListener("change", () => {
+        applyLayerVisibility();
+        savePreferences();
+      });
+    });
+  }
+
+  function setupPanelFilters() {
+    syncPanelFilterControls();
+
+    Object.keys(FEEDS).forEach((feedKey) => {
+      const controls = elements.filterSelects[feedKey];
+      if (!controls || !controls.severity || !controls.time || !controls.source) {
+        return;
+      }
 
       controls.severity.addEventListener("change", (event) => {
-        panelFilters[feedKey].severity = event.target.value || "all";
+        panelFilters[feedKey].severity = normalizeSelectValue(
+          event.target.value,
+          FILTER_OPTIONS.severity,
+          FILTER_DEFAULTS.severity
+        );
         renderItems(feedKey, feedState[feedKey]);
+        savePreferences();
       });
 
       controls.time.addEventListener("change", (event) => {
-        panelFilters[feedKey].time = event.target.value || "all";
+        panelFilters[feedKey].time = normalizeSelectValue(event.target.value, FILTER_OPTIONS.time, FILTER_DEFAULTS.time);
         renderItems(feedKey, feedState[feedKey]);
+        savePreferences();
       });
 
       controls.source.addEventListener("change", (event) => {
-        panelFilters[feedKey].source = event.target.value || "all";
+        panelFilters[feedKey].source = normalizeSourceValue(event.target.value);
         renderItems(feedKey, feedState[feedKey]);
+        savePreferences();
       });
     });
   }
@@ -847,6 +1054,16 @@
     });
   }
 
+  function setupResetPreferencesButton() {
+    if (!elements.resetPreferences) {
+      return;
+    }
+
+    elements.resetPreferences.addEventListener("click", () => {
+      resetPreferences();
+    });
+  }
+
   function initMap() {
     if (!elements.map || mapInstance || typeof window.L === "undefined") {
       return;
@@ -881,10 +1098,12 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    applyPreferences(loadPreferences());
     initMap();
     setupLayerFilters();
     setupPanelFilters();
     setupRefreshButton();
+    setupResetPreferencesButton();
     loadAllPanels();
   });
 })();
