@@ -123,6 +123,8 @@
     updated: document.getElementById("last-updated"),
     refresh: document.getElementById("refresh-btn"),
     resetPreferences: document.getElementById("reset-preferences-btn"),
+    globalSearchInput: document.getElementById("global-search-input"),
+    globalSearchClear: document.getElementById("global-search-clear-btn"),
     timelinePrev: document.getElementById("timeline-prev-btn"),
     timelineNext: document.getElementById("timeline-next-btn"),
     timelineLabel: document.getElementById("timeline-label"),
@@ -340,6 +342,7 @@
     clearStoredPreferences();
     applyPreferences(getDefaultPreferences());
     syncPanelFilterControls();
+    syncGlobalSearchControl();
     applyLayerVisibility();
     renderMapOverlaysForCurrentTimeline(mapOverlayState);
 
@@ -422,6 +425,39 @@
     return String(item?.source || "Unknown source");
   }
 
+  function normalizeSearchTerm(value) {
+    return String(value || "").trim().toLowerCase();
+  }
+
+  function matchesSearch(item, searchTerm) {
+    if (!searchTerm) {
+      return true;
+    }
+
+    const severity = normalizeSeverity(item?.severity);
+    const searchable = [
+      item?.title,
+      item?.summary,
+      item?.source,
+      item?.vendor,
+      item?.severity,
+      severity
+    ]
+      .map((value) => String(value || "").toLowerCase())
+      .join(" ");
+
+    return searchable.includes(searchTerm);
+  }
+
+  function applyGlobalSearch(items, searchTerm) {
+    const normalizedTerm = normalizeSearchTerm(searchTerm);
+    if (!normalizedTerm) {
+      return normalizeItems(items);
+    }
+
+    return normalizeItems(items).filter((item) => matchesSearch(item, normalizedTerm));
+  }
+
   function applyFilters(items, filters) {
     const severityFilter = filters?.severity || "all";
     const sourceFilter = filters?.source || "all";
@@ -449,8 +485,7 @@
 
       return true;
     });
-
-    return sortByNewest(filtered);
+    return filtered;
   }
 
   function normalizeItems(rawValue) {
@@ -488,14 +523,24 @@
 
   function renderItems(feedKey, items) {
     const { list, count } = selectFeedElements(feedKey);
-    const filteredItems = applyFilters(items, panelFilters[feedKey]);
-    const limited = filteredItems.slice(0, FEED_LIMIT);
+    const rawItems = normalizeItems(items);
+    const panelFiltered = applyFilters(rawItems, panelFilters[feedKey]);
+    const searchFiltered = applyGlobalSearch(panelFiltered, preferenceState.searchQuery);
+    const sortedItems = sortByNewest(searchFiltered);
+    const limited = sortedItems.slice(0, FEED_LIMIT);
+    const activeSearchTerm = normalizeSearchTerm(preferenceState.searchQuery);
 
-    count.textContent = String(filteredItems.length);
+    count.textContent = String(sortedItems.length);
     list.innerHTML = "";
 
     if (limited.length === 0) {
-      const message = normalizeItems(items).length > 0 ? "No items match current filters." : "No feed items available.";
+      let message = "No feed items available.";
+      if (rawItems.length > 0) {
+        message =
+          activeSearchTerm.length > 0
+            ? "No items match current filters and search."
+            : "No items match current filters.";
+      }
       renderState(list, message);
       return;
     }
@@ -541,6 +586,12 @@
       }
 
       list.appendChild(row);
+    });
+  }
+
+  function renderAllPanels() {
+    Object.keys(FEEDS).forEach((feedKey) => {
+      renderItems(feedKey, feedState[feedKey]);
     });
   }
 
@@ -1057,6 +1108,21 @@
     });
   }
 
+  function updateGlobalSearchClearState() {
+    if (!elements.globalSearchClear) {
+      return;
+    }
+    elements.globalSearchClear.disabled = normalizeSearchTerm(preferenceState.searchQuery).length === 0;
+  }
+
+  function syncGlobalSearchControl() {
+    if (!elements.globalSearchInput) {
+      return;
+    }
+    elements.globalSearchInput.value = preferenceState.searchQuery || "";
+    updateGlobalSearchClearState();
+  }
+
   function syncPanelFilterControls() {
     Object.keys(FEEDS).forEach((feedKey) => {
       const controls = elements.filterSelects[feedKey];
@@ -1110,6 +1176,33 @@
         renderItems(feedKey, feedState[feedKey]);
         savePreferences();
       });
+    });
+  }
+
+  function setupGlobalSearch() {
+    if (!elements.globalSearchInput || !elements.globalSearchClear) {
+      return;
+    }
+
+    syncGlobalSearchControl();
+
+    elements.globalSearchInput.addEventListener("input", (event) => {
+      preferenceState.searchQuery = String(event.target.value || "");
+      updateGlobalSearchClearState();
+      renderAllPanels();
+      savePreferences();
+    });
+
+    elements.globalSearchClear.addEventListener("click", () => {
+      if (normalizeSearchTerm(preferenceState.searchQuery).length === 0) {
+        return;
+      }
+
+      preferenceState.searchQuery = "";
+      syncGlobalSearchControl();
+      renderAllPanels();
+      savePreferences();
+      elements.globalSearchInput.focus();
     });
   }
 
@@ -1226,6 +1319,7 @@
     initMap();
     setupLayerFilters();
     setupPanelFilters();
+    setupGlobalSearch();
     setupRefreshButton();
     setupTimelineControls();
     setupResetPreferencesButton();
