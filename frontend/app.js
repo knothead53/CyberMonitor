@@ -124,6 +124,7 @@
 
   const elements = {
     updated: document.getElementById("last-updated"),
+    dataModeBadge: document.getElementById("data-mode-badge"),
     refresh: document.getElementById("refresh-btn"),
     resetPreferences: document.getElementById("reset-preferences-btn"),
     globalSearchInput: document.getElementById("global-search-input"),
@@ -150,6 +151,10 @@
         source: document.getElementById(`${key}-filter-source`)
       };
       return acc;
+    }, {}),
+    feedModeBadges: Object.keys(FEEDS).reduce((acc, key) => {
+      acc[key] = document.getElementById(`${key}-feed-mode`);
+      return acc;
     }, {})
   };
 
@@ -162,6 +167,10 @@
   };
   const feedState = Object.keys(FEEDS).reduce((acc, key) => {
     acc[key] = [];
+    return acc;
+  }, {});
+  const feedLoadState = Object.keys(FEEDS).reduce((acc, key) => {
+    acc[key] = "pending";
     return acc;
   }, {});
   const panelFilters = Object.keys(FEEDS).reduce((acc, key) => {
@@ -934,24 +943,95 @@
     elements.refresh.textContent = isRefreshing ? "Refreshing..." : "Refresh";
   }
 
+  function setIndicatorMode(element, label, mode) {
+    if (!element) {
+      return;
+    }
+
+    element.textContent = label;
+    element.classList.remove("mode-live", "mode-sample", "mode-mixed", "mode-partial", "mode-pending", "mode-unavailable");
+    element.classList.add(`mode-${mode}`);
+  }
+
+  function updateFeedSourceIndicator(feedKey) {
+    const badge = elements.feedModeBadges?.[feedKey];
+    const status = feedLoadState[feedKey];
+    if (status === "live") {
+      setIndicatorMode(badge, "LIVE DATA", "live");
+      return;
+    }
+    if (status === "sample") {
+      setIndicatorMode(badge, "SAMPLE DATA", "sample");
+      return;
+    }
+    if (status === "unavailable") {
+      setIndicatorMode(badge, "NO DATA", "unavailable");
+      return;
+    }
+    setIndicatorMode(badge, "CHECKING...", "pending");
+  }
+
+  function updateGlobalDataModeIndicator() {
+    const statuses = Object.values(feedLoadState);
+    const hasLive = statuses.includes("live");
+    const hasSample = statuses.includes("sample");
+    const hasUnavailable = statuses.includes("unavailable");
+    const hasPending = statuses.includes("pending");
+
+    if (hasPending) {
+      setIndicatorMode(elements.dataModeBadge, "Data: checking...", "pending");
+      return;
+    }
+
+    if (!hasLive && !hasSample && hasUnavailable) {
+      setIndicatorMode(elements.dataModeBadge, "Data: unavailable", "partial");
+      return;
+    }
+
+    if (hasLive && !hasSample && !hasUnavailable) {
+      setIndicatorMode(elements.dataModeBadge, "Data: live feeds", "live");
+      return;
+    }
+
+    if (!hasLive && hasSample && !hasUnavailable) {
+      setIndicatorMode(elements.dataModeBadge, "Data: sample fallback", "sample");
+      return;
+    }
+
+    if ((hasLive && hasSample) || (hasUnavailable && (hasLive || hasSample))) {
+      const label = hasUnavailable ? "Data: partial feeds" : "Data: mixed live/sample";
+      const mode = hasUnavailable ? "partial" : "mixed";
+      setIndicatorMode(elements.dataModeBadge, label, mode);
+      return;
+    }
+
+    setIndicatorMode(elements.dataModeBadge, "Data: checking...", "pending");
+  }
+
   async function loadPanel(feedKey) {
     const { list, count } = selectFeedElements(feedKey);
     count.textContent = "0";
     renderState(list, "Loading feed...");
+    feedLoadState[feedKey] = "pending";
+    updateFeedSourceIndicator(feedKey);
 
     try {
       const result = await fetchFeed(feedKey);
       feedState[feedKey] = normalizeItems(result.items);
+      feedLoadState[feedKey] = result.usedFallback ? "sample" : "live";
       populateSourceFilter(feedKey, feedState[feedKey]);
       renderItems(feedKey, feedState[feedKey]);
+      updateFeedSourceIndicator(feedKey);
       return {
         success: true,
         usedFallback: result.usedFallback
       };
     } catch (_error) {
       feedState[feedKey] = [];
+      feedLoadState[feedKey] = "unavailable";
       populateSourceFilter(feedKey, []);
       renderState(list, "Error loading data. Try Refresh.");
+      updateFeedSourceIndicator(feedKey);
       return {
         success: false,
         usedFallback: false
@@ -1230,6 +1310,7 @@
 
   async function loadAllPanels() {
     setRefreshState(true);
+    updateGlobalDataModeIndicator();
 
     try {
       const [panelResults, overlayResult, metricsResult] = await Promise.all([
@@ -1239,6 +1320,7 @@
       ]);
       const successful = panelResults.filter((result) => result.success);
       renderMetricsWidgets(metricsResult.history);
+      updateGlobalDataModeIndicator();
 
       const hasMetricPayload =
         metricsResult.history.throughput_history.length > 0 ||
@@ -1254,6 +1336,7 @@
       }
     } finally {
       setRefreshState(false);
+      updateGlobalDataModeIndicator();
     }
   }
 
@@ -1302,6 +1385,13 @@
     });
   }
 
+  function initFeedSourceIndicators() {
+    Object.keys(FEEDS).forEach((feedKey) => {
+      updateFeedSourceIndicator(feedKey);
+    });
+    updateGlobalDataModeIndicator();
+  }
+
   function initMap() {
     if (!elements.map || mapInstance || typeof window.L === "undefined") {
       return;
@@ -1344,6 +1434,7 @@
     setupRefreshButton();
     setupTimelineControls();
     setupResetPreferencesButton();
+    initFeedSourceIndicators();
     loadAllPanels();
   });
 })();

@@ -2,6 +2,7 @@
 
 const fs = require("fs/promises");
 const path = require("path");
+const { getArgValue, normalizeDate, safeSummary, slugify } = require("./lib/normalize");
 
 const CISA_KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json";
 const CISA_KEV_CATALOG_URL = "https://www.cisa.gov/known-exploited-vulnerabilities-catalog";
@@ -9,38 +10,6 @@ const DEFAULT_INPUT_PATH = null;
 const DEFAULT_OUTPUT_PATH = path.resolve(process.cwd(), "data/kev.json");
 const DEFAULT_SOURCE = "CISA KEV Catalog";
 const DEFAULT_LIMIT = 0;
-
-function getArgValue(flag) {
-  const index = process.argv.indexOf(flag);
-  if (index === -1 || index === process.argv.length - 1) {
-    return null;
-  }
-  return process.argv[index + 1];
-}
-
-function normalizeDate(value, fallbackDate = new Date()) {
-  const parsed = Date.parse(String(value || "").trim());
-  if (Number.isFinite(parsed)) {
-    return new Date(parsed).toISOString();
-  }
-  return fallbackDate.toISOString();
-}
-
-function normalizeSummary(value, fallbackValue = "No summary provided.") {
-  const summary = String(value || "").trim();
-  if (summary.length > 0) {
-    return summary;
-  }
-  return fallbackValue;
-}
-
-function slugify(value) {
-  return String(value || "")
-    .trim()
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
 
 function extractNoteUrls(notesValue) {
   const text = String(notesValue || "");
@@ -177,7 +146,11 @@ function normalizeRow(row, index) {
   const vendor = normalizeVendor(row?.vendorProject);
   const severity = inferSeverity(row);
   const title = normalizeTitle(row, cveId);
-  const summary = normalizeSummary(row?.shortDescription, normalizeSummary(row?.requiredAction, title));
+  const summary = safeSummary(
+    row?.shortDescription,
+    safeSummary(row?.requiredAction, title, 450),
+    450
+  );
   const published = normalizeDate(row?.dateAdded);
 
   const normalized = {
@@ -226,11 +199,11 @@ async function loadRawInput(inputPath, sourceUrl) {
 }
 
 async function main() {
-  const inputArg = getArgValue("--input");
+  const inputArg = getArgValue(process.argv, "--input");
   const inputPath = inputArg ? path.resolve(process.cwd(), inputArg) : DEFAULT_INPUT_PATH;
-  const outputPath = path.resolve(process.cwd(), getArgValue("--output") || DEFAULT_OUTPUT_PATH);
-  const sourceUrl = getArgValue("--source-url") || CISA_KEV_URL;
-  const limitArg = getArgValue("--limit");
+  const outputPath = path.resolve(process.cwd(), getArgValue(process.argv, "--output") || DEFAULT_OUTPUT_PATH);
+  const sourceUrl = getArgValue(process.argv, "--source-url") || CISA_KEV_URL;
+  const limitArg = getArgValue(process.argv, "--limit");
   const parsedLimit = Number.parseInt(String(limitArg || DEFAULT_LIMIT), 10);
   const effectiveLimit = Number.isFinite(parsedLimit) && parsedLimit > 0 ? parsedLimit : 0;
 

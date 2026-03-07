@@ -35,6 +35,7 @@
       </div>
       <div class="topbar-meta">
         <span class="env-badge">MVP</span>
+        <span id="data-mode-badge" class="data-mode-indicator">Data: checking...</span>
         <span id="last-updated">Last updated: waiting for feed</span>
         <button id="refresh-btn" type="button">Refresh</button>
         <button id="reset-preferences-btn" type="button">Reset Preferences</button>
@@ -100,7 +101,10 @@
       <section class="panel feed-panel" data-panel="kev">
         <div class="feed-head">
           <h2 class="panel-title">CISA KEV (Exploited Vulns)</h2>
-          <span class="panel-count" id="kev-count">0</span>
+          <div class="feed-head-meta">
+            <span class="feed-source-indicator mode-pending" id="kev-feed-mode">Checking...</span>
+            <span class="panel-count" id="kev-count">0</span>
+          </div>
         </div>
         <div class="panel-filters" id="kev-filters">
           <label class="filter-control" for="kev-filter-severity">
@@ -138,7 +142,10 @@
       <section class="panel feed-panel" data-panel="news">
         <div class="feed-head">
           <h2 class="panel-title">Security News</h2>
-          <span class="panel-count" id="news-count">0</span>
+          <div class="feed-head-meta">
+            <span class="feed-source-indicator mode-pending" id="news-feed-mode">Checking...</span>
+            <span class="panel-count" id="news-count">0</span>
+          </div>
         </div>
         <div class="panel-filters" id="news-filters">
           <label class="filter-control" for="news-filter-severity">
@@ -176,7 +183,10 @@
       <section class="panel feed-panel" data-panel="outages">
         <div class="feed-head">
           <h2 class="panel-title">Outages</h2>
-          <span class="panel-count" id="outages-count">0</span>
+          <div class="feed-head-meta">
+            <span class="feed-source-indicator mode-pending" id="outages-feed-mode">Checking...</span>
+            <span class="panel-count" id="outages-count">0</span>
+          </div>
         </div>
         <div class="panel-filters" id="outages-filters">
           <label class="filter-control" for="outages-filter-severity">
