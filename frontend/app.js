@@ -84,17 +84,20 @@
 
   const FEEDS = {
     kev: {
-      path: "../data/kev.sample.json",
+      primaryPath: "../data/kev.json",
+      fallbackPath: "../data/kev.sample.json",
       listId: "kev-list",
       countId: "kev-count"
     },
     news: {
-      path: "../data/news.sample.json",
+      primaryPath: "../data/news.json",
+      fallbackPath: "../data/news.sample.json",
       listId: "news-list",
       countId: "news-count"
     },
     outages: {
-      path: "../data/outages.sample.json",
+      primaryPath: "../data/outages.json",
+      fallbackPath: "../data/outages.sample.json",
       listId: "outages-list",
       countId: "outages-count"
     }
@@ -845,33 +848,48 @@
     return normalizeMapOverlays(DEFAULT_MAP_OVERLAYS);
   }
 
-  async function fetchFeed(feedKey) {
-    const { path } = FEEDS[feedKey];
-
-    try {
-      const response = await fetch(path, { cache: "no-store" });
-      if (!response.ok) {
-        throw new Error(`Request failed (${response.status})`);
-      }
-
-      const json = await response.json();
-      return {
-        items: normalizeItems(json),
-        usedFallback: false
-      };
-    } catch (error) {
-      const isLocalFile = window.location.protocol === "file:";
-      const fallbackItems = getLocalFallback(feedKey);
-
-      if (isLocalFile && fallbackItems) {
-        return {
-          items: normalizeItems(fallbackItems),
-          usedFallback: true
-        };
-      }
-
-      throw error;
+  async function fetchJson(path) {
+    const response = await fetch(path, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Request failed (${response.status})`);
     }
+    return response.json();
+  }
+
+  async function loadFeedWithFallback(feedKey, primaryPath, fallbackPath) {
+    const attempts = [
+      { path: primaryPath, usedFallback: false },
+      { path: fallbackPath, usedFallback: true }
+    ];
+    let lastError = null;
+
+    for (const attempt of attempts) {
+      try {
+        const json = await fetchJson(attempt.path);
+        return {
+          items: normalizeItems(json),
+          usedFallback: attempt.usedFallback
+        };
+      } catch (error) {
+        lastError = error;
+      }
+    }
+
+    const isLocalFile = window.location.protocol === "file:";
+    const fallbackItems = getLocalFallback(feedKey);
+    if (isLocalFile && fallbackItems) {
+      return {
+        items: normalizeItems(fallbackItems),
+        usedFallback: true
+      };
+    }
+
+    throw lastError || new Error("Unable to load feed data.");
+  }
+
+  async function fetchFeed(feedKey) {
+    const { primaryPath, fallbackPath } = FEEDS[feedKey];
+    return loadFeedWithFallback(feedKey, primaryPath, fallbackPath);
   }
 
   async function fetchMapOverlays() {
@@ -904,7 +922,7 @@
     }
 
     const prefix = `Last updated: ${toDisplayTime(new Date().toISOString())}`;
-    elements.updated.textContent = usedFallback ? `${prefix} (local sample mode)` : prefix;
+    elements.updated.textContent = usedFallback ? `${prefix} (sample fallback mode)` : prefix;
   }
 
   function setRefreshState(isRefreshing) {
@@ -1206,13 +1224,16 @@
     });
   }
 
+  async function loadAllFeeds() {
+    return Promise.all(Object.keys(FEEDS).map((feedKey) => loadPanel(feedKey)));
+  }
+
   async function loadAllPanels() {
     setRefreshState(true);
 
     try {
-      const keys = Object.keys(FEEDS);
       const [panelResults, overlayResult, metricsResult] = await Promise.all([
-        Promise.all(keys.map((feedKey) => loadPanel(feedKey))),
+        loadAllFeeds(),
         loadMapOverlays(),
         fetchMetricsHistory()
       ]);
