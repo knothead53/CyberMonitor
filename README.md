@@ -1,56 +1,78 @@
 # CyberMonitor
 
-CyberMonitor is a free, no-login cybersecurity monitoring dashboard designed for instant loading on static hosting.
+CyberMonitor is a free, no-login cybersecurity intelligence dashboard designed for static hosting.
 
-It aggregates cybersecurity signals into a SOC-style wallboard focused on:
+It runs with plain HTML, CSS, and JavaScript and is intentionally compatible with:
 
-- exploited vulnerabilities (CISA KEV)
-- security news
-- infrastructure outages
-- map-based threat signal visibility
+- GitHub Pages
+- any static host
+- local development without a backend
 
 ## Preview
-![CyberMonitor dashboard preview](assets/screenshots/dashboard-v1.2.png)
+![CyberMonitor dashboard preview](assets/screenshots/dashboard-v1.3.png)
 
-## v1.2 Highlights
+## v1.3 Highlights
 
-- local preference persistence (`localStorage`) for layers, panel filters, global search, and timeline selection
-- reset control to clear stored preferences and restore defaults
-- map timeline stepping controls (`1h`, `6h`, `24h`, `7d`) with overlay re-rendering
-- global browser-side search across KEV/news/outages (`title`, `summary`, `source`, `vendor`, `severity`)
-- optional adapter script scaffolding for generated feeds while preserving static-host compatibility
+- real feed ingestion adapters for:
+  - CISA KEV
+  - security news RSS sources
+  - public status/outage feeds
+- shared normalization utilities for adapters (`scripts/adapters/lib`)
+- single feed generation runner (`scripts/generate-feeds.js`)
+- frontend feed-source transparency badges (`LIVE DATA`, `SAMPLE DATA`, mixed/partial states)
+- static-safe fallback remains intact (`data/*.sample.json`)
 
-## What This Dashboard Includes
+## Core Architecture
 
-- static frontend in plain HTML, CSS, and JavaScript
-- no backend server and no required API keys
-- center Leaflet world map with overlay categories and timeline filtering
-- panel-level filtering by severity, time window, and source
-- global search across all intelligence panels
-- manual refresh control and last-updated indicator
-- file-mode fallback support so `frontend/index.html` still renders when opened directly
+- `frontend/`: static UI shell and browser-side rendering
+- `data/`: generated feed outputs and sample fallback data
+- `scripts/`: optional ingestion/generation tooling (not required at runtime)
 
-## Feed Loading Model (v1.2)
+No backend server is required for the base product.
 
-For each feed panel, the frontend attempts generated feed files first, then sample files:
+## Data Flow (v1.3)
 
-- KEV: `data/kev.json` -> `data/kev.sample.json`
-- News: `data/news.json` -> `data/news.sample.json`
-- Outages: `data/outages.json` -> `data/outages.sample.json`
+1. Run `node scripts/generate-feeds.js`.
+2. Adapters fetch public feeds and normalize to a shared schema.
+3. Adapters write generated files:
+   - `data/kev.json`
+   - `data/news.json`
+   - `data/outages.json`
+4. Frontend attempts generated files first.
+5. If generated files are missing/unavailable, frontend falls back to sample files:
+   - `data/kev.sample.json`
+   - `data/news.sample.json`
+   - `data/outages.sample.json`
 
-If you never run adapters, the dashboard continues to work with sample files only.
+This keeps the dashboard usable in static and offline-first workflows.
 
-## Run Locally
+## Run The Dashboard
 
-1. Open this repository folder.
-2. Double-click `frontend/index.html`.
-3. The dashboard loads with sample feed data.
+### Option 1: quick local open (sample-first)
 
-Optional: serve the repo with any static server if you want strict browser behavior that mirrors production hosting.
+1. Open the repo.
+2. Open `frontend/index.html` directly.
 
-## Optional Adapter Scripts
+### Option 2: local static server (recommended for production-like behavior)
 
-Adapters are optional tooling and are not required at runtime.
+Serve the repo root with any static file server, then open `frontend/index.html` through HTTP.
+
+## Generate Live/Current Feeds
+
+Node.js 18+ is recommended.
+
+```bash
+node scripts/generate-feeds.js
+```
+
+Optional subset generation:
+
+```bash
+node scripts/generate-feeds.js --only kev
+node scripts/generate-feeds.js --only news,outages
+```
+
+You can also run individual adapters:
 
 ```bash
 node scripts/adapters/kev_adapter.js
@@ -58,11 +80,49 @@ node scripts/adapters/news_adapter.js
 node scripts/adapters/outages_adapter.js
 ```
 
-These generate:
+## Public Sources Used In v1.3
 
-- `data/kev.json`
-- `data/news.json`
-- `data/outages.json`
+- KEV: CISA Known Exploited Vulnerabilities feed
+- News:
+  - BleepingComputer RSS
+  - Dark Reading RSS
+  - Krebs on Security RSS
+- Outages:
+  - GitHub Status RSS
+  - OpenAI Status RSS
+  - Discord Status RSS
+  - Cloudflare Status RSS
+
+No API keys are required for the base v1.3 pipeline.
+
+## Feed Source Indicators In UI
+
+The dashboard now shows generated-vs-sample mode in two places:
+
+- global top-bar badge (live, sample fallback, mixed, partial)
+- per-panel feed badge (live, sample, unavailable)
+
+This makes it clear whether the wallboard is showing generated feeds or sample fallback data.
+
+## Normalized Feed Schema
+
+All panel feeds normalize to this shape:
+
+```json
+{
+  "id": "string",
+  "title": "string",
+  "source": "string",
+  "published": "ISO-8601 string",
+  "url": "string",
+  "summary": "string",
+  "severity": "LOW | MEDIUM | HIGH | CRITICAL",
+  "vendor": "string",
+  "tags": ["string"]
+}
+```
+
+Adapters may include extra fields when useful, while preserving frontend compatibility.
 
 ## Project Structure
 
@@ -84,39 +144,25 @@ CyberMonitor/
 |  |- outages.json        # optional generated output
 |- scripts/
 |  |- README.md
+|  |- generate-feeds.js
 |  |- refresh-sample-timestamps.js
 |  |- adapters/
 |     |- kev_adapter.js
 |     |- news_adapter.js
 |     |- outages_adapter.js
+|     |- lib/
+|        |- normalize.js
+|        |- rss.js
 |- assets/
 |  |- screenshots/
-|     |- dashboard-v1.1.png
+|     |- dashboard-v1.2.png
 |- ROADMAP.md
 |- CONTRIBUTING.md
 |- README.md
 ```
 
-## Data Contract
+## Documentation
 
-Each feed item uses:
-
-- `id`
-- `title`
-- `source`
-- `published` (ISO timestamp)
-- `url`
-- `summary`
-- optional tags like `severity` and `vendor`
-
-## Data Sources Disclaimer
-
-- Data in this repository is sample/demo JSON under `data/`.
-- Adapter scripts currently provide normalization scaffolding and local generation.
-- Live production feed integrations remain optional and are not required for v1.2.
-
-See full milestones in [ROADMAP.md](ROADMAP.md).
-
-## Contributing
-
-Contributor expectations and lightweight workflow are documented in [CONTRIBUTING.md](CONTRIBUTING.md).
+- [ROADMAP.md](ROADMAP.md)
+- [scripts/README.md](scripts/README.md)
+- [CONTRIBUTING.md](CONTRIBUTING.md)
