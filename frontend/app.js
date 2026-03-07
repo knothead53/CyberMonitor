@@ -27,7 +27,7 @@
         lon: -6.2603,
         type: "cloud_region",
         severity: "LOW",
-        timestamp: "2026-03-05T11:11:00Z",
+        timestamp: "2026-03-03T08:11:00Z",
         summary: "Normal operations with periodic scanning noise."
       }
     ],
@@ -49,7 +49,7 @@
         lon: 103.8198,
         type: "incident",
         severity: "HIGH",
-        timestamp: "2026-03-05T09:22:00Z",
+        timestamp: "2026-03-02T09:22:00Z",
         summary: "Rapid growth in compromised IoT relay infrastructure."
       }
     ],
@@ -61,7 +61,7 @@
         lon: 8.6821,
         type: "outage",
         severity: "HIGH",
-        timestamp: "2026-03-05T10:44:00Z",
+        timestamp: "2026-02-28T10:44:00Z",
         summary: "Intermittent packet loss impacting managed DNS resolution."
       },
       {
@@ -71,7 +71,7 @@
         lon: -75.1652,
         type: "outage",
         severity: "MED",
-        timestamp: "2026-03-05T11:59:00Z",
+        timestamp: "2026-03-04T22:59:00Z",
         summary: "SSO token issuance delays across identity clusters."
       }
     ]
@@ -111,11 +111,21 @@
   };
   const PREFERENCES_STORAGE_KEY = "cybermonitor.preferences";
   const DEFAULT_TIMELINE_WINDOW = "24h";
+  const TIMELINE_WINDOWS = [
+    { key: "1h", label: "Last 1h", windowMs: 60 * 60 * 1000 },
+    { key: "6h", label: "Last 6h", windowMs: 6 * 60 * 60 * 1000 },
+    { key: "24h", label: "Last 24h", windowMs: 24 * 60 * 60 * 1000 },
+    { key: "7d", label: "Last 7d", windowMs: 7 * 24 * 60 * 60 * 1000 }
+  ];
+  const TIMELINE_WINDOW_KEYS = new Set(TIMELINE_WINDOWS.map((window) => window.key));
 
   const elements = {
     updated: document.getElementById("last-updated"),
     refresh: document.getElementById("refresh-btn"),
     resetPreferences: document.getElementById("reset-preferences-btn"),
+    timelinePrev: document.getElementById("timeline-prev-btn"),
+    timelineNext: document.getElementById("timeline-next-btn"),
+    timelineLabel: document.getElementById("timeline-label"),
     layerInputs: Array.from(document.querySelectorAll('#layer-form input[name="layer"]')),
     map: document.getElementById("global-map"),
     metricValues: {
@@ -201,6 +211,17 @@
     };
   }
 
+  function getTimelineWindows() {
+    return TIMELINE_WINDOWS;
+  }
+
+  function normalizeTimelineWindow(rawValue) {
+    if (typeof rawValue !== "string") {
+      return DEFAULT_TIMELINE_WINDOW;
+    }
+    return TIMELINE_WINDOW_KEYS.has(rawValue) ? rawValue : DEFAULT_TIMELINE_WINDOW;
+  }
+
   function normalizePreferences(rawValue) {
     const defaults = getDefaultPreferences();
     const payload = rawValue && typeof rawValue === "object" ? rawValue : {};
@@ -210,10 +231,7 @@
       layers: { ...defaults.layers },
       panelFilters: {},
       searchQuery: typeof payload.searchQuery === "string" ? payload.searchQuery : defaults.searchQuery,
-      timelineWindow:
-        typeof payload.timelineWindow === "string" && payload.timelineWindow.trim() !== ""
-          ? payload.timelineWindow
-          : defaults.timelineWindow
+      timelineWindow: normalizeTimelineWindow(payload.timelineWindow)
     };
 
     Object.keys(defaults.layers).forEach((layerKey) => {
@@ -323,6 +341,7 @@
     applyPreferences(getDefaultPreferences());
     syncPanelFilterControls();
     applyLayerVisibility();
+    renderMapOverlaysForCurrentTimeline(mapOverlayState);
 
     Object.keys(FEEDS).forEach((feedKey) => {
       populateSourceFilter(feedKey, feedState[feedKey]);
@@ -385,6 +404,18 @@
       return 7 * 24 * 60 * 60 * 1000;
     }
     return null;
+  }
+
+  function getTimelineWindowIndex(windowKey) {
+    return getTimelineWindows().findIndex((window) => window.key === normalizeTimelineWindow(windowKey));
+  }
+
+  function setTimelineWindow(windowKey, shouldPersist = true) {
+    preferenceState.timelineWindow = normalizeTimelineWindow(windowKey);
+    renderMapOverlaysForCurrentTimeline();
+    if (shouldPersist) {
+      savePreferences();
+    }
   }
 
   function getSourceLabel(item) {
@@ -868,6 +899,63 @@
     });
   }
 
+  function getOverlayAnchorTime(overlays) {
+    const timestamps = MAP_OVERLAY_KEYS.flatMap((key) =>
+      normalizeItems(overlays?.[key])
+        .map((entry) => Date.parse(entry?.timestamp || ""))
+        .filter((value) => Number.isFinite(value))
+    );
+
+    return timestamps.length > 0 ? Math.max(...timestamps) : Date.now();
+  }
+
+  function filterOverlayItemsByTimeWindow(items, timelineWindowKey, anchorTime) {
+    const currentWindowKey = normalizeTimelineWindow(timelineWindowKey);
+    const windowConfig = getTimelineWindows().find((window) => window.key === currentWindowKey);
+    if (!windowConfig) {
+      return normalizeItems(items);
+    }
+
+    const cutoff = anchorTime - windowConfig.windowMs;
+    return normalizeItems(items).filter((item) => {
+      const timestamp = Date.parse(item?.timestamp || "");
+      return Number.isFinite(timestamp) && timestamp >= cutoff;
+    });
+  }
+
+  function filterMapOverlaysByTimeWindow(overlays, timelineWindowKey) {
+    const source = overlays && typeof overlays === "object" ? overlays : mapOverlayState;
+    const anchorTime = getOverlayAnchorTime(source);
+    const filteredOverlays = {};
+
+    MAP_OVERLAY_KEYS.forEach((key) => {
+      filteredOverlays[key] = filterOverlayItemsByTimeWindow(source[key], timelineWindowKey, anchorTime);
+    });
+
+    return filteredOverlays;
+  }
+
+  function getOverlayCount(overlays) {
+    return MAP_OVERLAY_KEYS.reduce((total, key) => total + normalizeItems(overlays?.[key]).length, 0);
+  }
+
+  function updateTimelineControlState(overlaysForWindow) {
+    const windows = getTimelineWindows();
+    const selectedIndex = getTimelineWindowIndex(preferenceState.timelineWindow);
+    const boundedIndex = selectedIndex >= 0 ? selectedIndex : getTimelineWindowIndex(DEFAULT_TIMELINE_WINDOW);
+    const currentWindow = windows[boundedIndex];
+
+    if (elements.timelineLabel && currentWindow) {
+      elements.timelineLabel.textContent = `${currentWindow.label} (${getOverlayCount(overlaysForWindow)})`;
+    }
+    if (elements.timelinePrev) {
+      elements.timelinePrev.disabled = boundedIndex <= 0;
+    }
+    if (elements.timelineNext) {
+      elements.timelineNext.disabled = boundedIndex >= windows.length - 1;
+    }
+  }
+
   function renderMapOverlays(overlays) {
     if (!mapOverlayGroups) {
       return;
@@ -892,6 +980,12 @@
     applyLayerVisibility();
   }
 
+  function renderMapOverlaysForCurrentTimeline(overlays = mapOverlayState) {
+    const filtered = filterMapOverlaysByTimeWindow(overlays, preferenceState.timelineWindow);
+    renderMapOverlays(filtered);
+    updateTimelineControlState(filtered);
+  }
+
   async function loadMapOverlays() {
     if (!mapOverlayGroups) {
       return {
@@ -903,7 +997,7 @@
     try {
       const result = await fetchMapOverlays();
       mapOverlayState = result.overlays;
-      renderMapOverlays(result.overlays);
+      renderMapOverlaysForCurrentTimeline(result.overlays);
       return {
         success: true,
         usedFallback: result.usedFallback
@@ -916,6 +1010,11 @@
       };
       MAP_OVERLAY_KEYS.forEach((key) => {
         mapOverlayGroups[key].clearLayers();
+      });
+      updateTimelineControlState({
+        cloud_regions: [],
+        major_incidents: [],
+        internet_outages: []
       });
       return {
         success: false,
@@ -1054,6 +1153,31 @@
     });
   }
 
+  function setupTimelineControls() {
+    if (!elements.timelinePrev || !elements.timelineNext || !elements.timelineLabel) {
+      return;
+    }
+
+    const windows = getTimelineWindows();
+    updateTimelineControlState(filterMapOverlaysByTimeWindow(mapOverlayState, preferenceState.timelineWindow));
+
+    elements.timelinePrev.addEventListener("click", () => {
+      const currentIndex = getTimelineWindowIndex(preferenceState.timelineWindow);
+      const nextIndex = Math.max(0, currentIndex - 1);
+      if (nextIndex !== currentIndex) {
+        setTimelineWindow(windows[nextIndex].key);
+      }
+    });
+
+    elements.timelineNext.addEventListener("click", () => {
+      const currentIndex = getTimelineWindowIndex(preferenceState.timelineWindow);
+      const nextIndex = Math.min(windows.length - 1, currentIndex + 1);
+      if (nextIndex !== currentIndex) {
+        setTimelineWindow(windows[nextIndex].key);
+      }
+    });
+  }
+
   function setupResetPreferencesButton() {
     if (!elements.resetPreferences) {
       return;
@@ -1103,6 +1227,7 @@
     setupLayerFilters();
     setupPanelFilters();
     setupRefreshButton();
+    setupTimelineControls();
     setupResetPreferencesButton();
     loadAllPanels();
   });
