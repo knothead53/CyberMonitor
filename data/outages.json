@@ -1,0 +1,2241 @@
+[
+  {
+    "id": "outage-db808ac0",
+    "title": "Issues with Increased Codex Usage Rate",
+    "source": "OpenAI Status",
+    "published": "2026-03-07T01:00:41.000Z",
+    "url": "https://status.openai.com//incidents/01KK26XE1W536H7DQV2EXM3GHE",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-dbb30f4c",
+    "title": "Login Issues",
+    "source": "OpenAI Status",
+    "published": "2026-03-07T00:57:23.000Z",
+    "url": "https://status.openai.com//incidents/01KK2T9TNTF5V3BSJ9T8D2S5CY",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) Login (Operational) Login (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "login"
+    ]
+  },
+  {
+    "id": "outage-7cfa6cf1",
+    "title": "Errors with Compliance API",
+    "source": "OpenAI Status",
+    "published": "2026-03-06T23:59:29.000Z",
+    "url": "https://status.openai.com//incidents/01KK2R1TEV8VBRPZA1829N6MDJ",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Compliance API (Operational)",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-49c8334d",
+    "title": "Incident with Webhooks",
+    "source": "GitHub Status",
+    "published": "2026-03-06T23:28:13.000Z",
+    "url": "https://www.githubstatus.com/incidents/tqyg889tl8qz",
+    "summary": "Mar 6 , 23:28 UTC Resolved - This incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available. Mar 6 , 23:28 UTC Update - Webhooks is operating normally. Mar 6 , 23:26 UTC Update - We have deployed a fix and are observing a full recovery. The...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "webhook"
+    ]
+  },
+  {
+    "id": "outage-fa1d0c01",
+    "title": "Access Configuration Updates Delayed",
+    "source": "Cloudflare Status",
+    "published": "2026-03-06T20:41:45.000Z",
+    "url": "https://www.cloudflarestatus.com/incidents/9sbjbzxxfpbl",
+    "summary": "Mar 6 , 20:41 UTC Resolved - This incident has been resolved. Mar 6 , 20:06 UTC Monitoring - A fix has been implemented and we are monitoring the results. Mar 6 , 19:30 UTC Investigating - Access configuration changes are experiencing delays propagating to the edge. Existing configurations and logins are not impacted.",
+    "severity": "HIGH",
+    "vendor": "Cloudflare",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "cloudflare-status",
+      "cloudflare",
+      "incident",
+      "login"
+    ]
+  },
+  {
+    "id": "outage-c6d915a2",
+    "title": "Intermittent connectivity issues in Ashburn, VA",
+    "source": "Cloudflare Status",
+    "published": "2026-03-06T17:54:28.000Z",
+    "url": "https://www.cloudflarestatus.com/incidents/gm70nzshkg5q",
+    "summary": "Mar 6 , 17:54 UTC Resolved - This incident has been resolved. Mar 6 , 16:31 UTC Monitoring - Cloudflare investigated intermittent connectivity issues in Ashburn, VA. A fix for this issue was implemented and we are currently monitoring the results. We will update the status once the issue is resolved.",
+    "severity": "HIGH",
+    "vendor": "Cloudflare",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "cloudflare-status",
+      "cloudflare",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-03b892b3",
+    "title": "Issues with 1.1.1.1 public resolver in North America",
+    "source": "Cloudflare Status",
+    "published": "2026-03-06T14:43:22.000Z",
+    "url": "https://www.cloudflarestatus.com/incidents/bjb5fx7vwxk0",
+    "summary": "Mar 6 , 14:43 UTC Resolved - This incident has been resolved. Mar 6 , 14:24 UTC Investigating - Cloudflare is aware of, and investigating, an issue which potentially impacts multiple users in North America that use 1.1.1.1 public resolver. Further detail will be provided as more information becomes available.",
+    "severity": "HIGH",
+    "vendor": "Cloudflare",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "cloudflare-status",
+      "cloudflare",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-3febe8aa",
+    "title": "Title: Cloudflare Realtime - Realtimekit",
+    "source": "Cloudflare Status",
+    "published": "2026-03-06T12:56:09.000Z",
+    "url": "https://www.cloudflarestatus.com/incidents/cs9vyjjj4trx",
+    "summary": "Mar 6 , 12:56 UTC Resolved - This incident has been resolved. Mar 6 , 12:19 UTC Identified - The issue has been identified and a fix is being implemented. Mar 6 , 10:15 UTC Investigating - Cloudflare is aware of, and investigating an issue affecting Android users using v1.6.0 and upwards. Users can downgraded to v1.5.7 in the meantime as workaround. Furth...",
+    "severity": "CRITICAL",
+    "vendor": "Cloudflare",
+    "tags": [
+      "outage",
+      "status-feed",
+      "critical",
+      "cloudflare-status",
+      "cloudflare",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-8c70f4d1",
+    "title": "UK/AU: Issues Completing Age Verification via k-ID",
+    "source": "Discord Status",
+    "published": "2026-03-06T03:49:19.000Z",
+    "url": "https://discordstatus.com/incidents/jvqsklfdcvt8",
+    "summary": "Mar 5 , 19:49 PST Resolved - k-ID age verification is operating normally again in the UK and Australia. Previously age verified users were not impacted. Mar 5 , 19:38 PST Monitoring - k-ID has deployed a fix for UK/AU age verification issues. We’re monitoring to ensure age verification is working normally. Previously age verified users should not be impac...",
+    "severity": "MEDIUM",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "discord-status",
+      "discord"
+    ]
+  },
+  {
+    "id": "outage-93fdf00a",
+    "title": "Actions is experiencing degraded availability",
+    "source": "GitHub Status",
+    "published": "2026-03-05T23:55:20.000Z",
+    "url": "https://www.githubstatus.com/incidents/g9j4tmfqdd09",
+    "summary": "Mar 5 , 23:55 UTC Resolved - This incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available. Mar 5 , 23:40 UTC Update - We are close to full recovery. Actions and dependent services should be functioning normally now. Mar 5 , 23:37 UTC Upda...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "degraded",
+      "availability"
+    ]
+  },
+  {
+    "id": "outage-2bd19a52",
+    "title": "ChatGPT Issues Sending Messages",
+    "source": "OpenAI Status",
+    "published": "2026-03-05T21:49:57.000Z",
+    "url": "https://status.openai.com//incidents/01KJZK6XF3E5M2DRNZQ1EDDMJ4",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-56e37bea",
+    "title": "Multiple services are affected, service degradation",
+    "source": "GitHub Status",
+    "published": "2026-03-05T19:30:54.000Z",
+    "url": "https://www.githubstatus.com/incidents/g5gnt5l5hf56",
+    "summary": "Mar 5 , 19:30 UTC Resolved - On Mar 5, 2026, between 16:24 UTC and 19:30 UTC, Actions was degraded. During this time, 95% of workflow runs failed to start within 5 minutes with an average delay of 30 minutes and 10% workflow runs failed with an infrastructure error. This was due to Redis infrastructure updates that were being rolled out to production to i...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "degraded"
+    ]
+  },
+  {
+    "id": "outage-89ad273a",
+    "title": "Cloudflare Radar Delays",
+    "source": "Cloudflare Status",
+    "published": "2026-03-05T12:58:43.000Z",
+    "url": "https://www.cloudflarestatus.com/incidents/kf8584t46zm8",
+    "summary": "Mar 5 , 12:58 UTC Resolved - This incident has been resolved. Mar 5 , 12:01 UTC Monitoring - Cloudflare Radar has now recovered and services are fully operational. We are continuing to monitor the fix to ensure complete resolution. Mar 5 , 11:03 UTC Investigating - Cloudflare Radar is experiencing response delays. These services are still fully operationa...",
+    "severity": "HIGH",
+    "vendor": "Cloudflare",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "cloudflare-status",
+      "cloudflare",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-2883d809",
+    "title": "High Error Rate in Realtime API (EU)",
+    "source": "OpenAI Status",
+    "published": "2026-03-05T07:19:00.000Z",
+    "url": "https://status.openai.com//incidents/01KJZG0ADWGBF4K6AJ5EDFV52T",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational) Login (Operational) Video generation (Operational) Agent (Operational) Login (Operational) Images (Operational) Fine-tuning (Operational) Video viewing (Operational) Connectors/Apps (Operational) Login (Operational) Moderations (Operational) Co...",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "api",
+      "login"
+    ]
+  },
+  {
+    "id": "outage-4b3c75e4",
+    "title": "User may experience errors in ChatGPT",
+    "source": "OpenAI Status",
+    "published": "2026-03-05T06:27:17.000Z",
+    "url": "https://status.openai.com//incidents/01KJXSQH2Y0XHSNCXM9R7T968C",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational)",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-978e126a",
+    "title": "Guild Unavailability",
+    "source": "Discord Status",
+    "published": "2026-03-05T01:58:07.000Z",
+    "url": "https://discordstatus.com/incidents/f3dxbcrcsysw",
+    "summary": "Mar 4 , 17:58 PST Resolved - This incident has been resolved. Mar 4 , 17:49 PST Identified - The issue has been identified and a fix is being implemented. Mar 4 , 17:37 PST Investigating - We&apos;re investigating an issue where some guilds are unavailable.",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident",
+      "availability"
+    ]
+  },
+  {
+    "id": "outage-247d9822",
+    "title": "Disruption with some GitHub services",
+    "source": "GitHub Status",
+    "published": "2026-03-05T01:30:37.000Z",
+    "url": "https://www.githubstatus.com/incidents/nlmpksjb2ll7",
+    "summary": "Mar 5 , 01:30 UTC Resolved - On March 5, 2026, between 12:53 UTC and 13:35 UTC, the Copilot mission control service was degraded. This resulted in empty responses returned for users&apos; agent session lists across GitHub web surfaces. Impacted users were unable to see their lists of current and previous agent sessions in GitHub web surfaces. This was cau...",
+    "severity": "MEDIUM",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "github-status",
+      "github",
+      "degraded",
+      "copilot"
+    ]
+  },
+  {
+    "id": "outage-a5af8849",
+    "title": "Elevated Durable Objects and R2 API Latency",
+    "source": "Cloudflare Status",
+    "published": "2026-03-05T01:30:33.000Z",
+    "url": "https://www.cloudflarestatus.com/incidents/58yt4r2xxw8v",
+    "summary": "Mar 5 , 01:30 UTC Resolved - This incident has been resolved. Mar 5 , 00:34 UTC Investigating - We are investigating elevated latency affecting Durable Objects and R2 API requests in Western North America region. Some requests may experience timeouts or increase response times.",
+    "severity": "HIGH",
+    "vendor": "Cloudflare",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "cloudflare-status",
+      "cloudflare",
+      "incident",
+      "latency",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-642275b8",
+    "title": "Some OpenAI models degraded in Copilot",
+    "source": "GitHub Status",
+    "published": "2026-03-05T01:13:31.000Z",
+    "url": "https://www.githubstatus.com/incidents/t2p9yhsww5lc",
+    "summary": "Mar 5 , 01:13 UTC Resolved - This incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available. Mar 5 , 01:13 UTC Update - The issues with our upstream model provider have been resolved, and gpt-5.3-codex is once again available in Copilot Cha...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "degraded",
+      "copilot"
+    ]
+  },
+  {
+    "id": "outage-9de3b25e",
+    "title": "API Error Rates",
+    "source": "OpenAI Status",
+    "published": "2026-03-05T01:12:32.000Z",
+    "url": "https://status.openai.com//incidents/01KJXQDJ6P1CG5YNXKZRY2H6RX",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Realtime (Operational) Responses (Operational) Images (Operational) Batch (Operational) Audio (Operational) Files (Operational) Embeddings (Operational) Moderations (Operational) Codex (Operational) Chat Completions (Operational) Fine-tuning (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-a5e3fdee",
+    "title": "CNI Degraded Performance",
+    "source": "Cloudflare Status",
+    "published": "2026-03-04T22:55:28.000Z",
+    "url": "https://www.cloudflarestatus.com/incidents/30nh3w30gzqm",
+    "summary": "Mar 4 , 22:55 UTC Resolved - This incident has been resolved. Mar 4 , 21:35 UTC Identified - The issue has been identified and a fix is being implemented. Mar 4 , 16:30 UTC Investigating - Cloudflare is currently investigating issues related to CNI. Impacted customers may see connectivity issues through Newark, NJ (EWR) data center. Customers using Equini...",
+    "severity": "HIGH",
+    "vendor": "Cloudflare",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "cloudflare-status",
+      "cloudflare",
+      "incident",
+      "degraded"
+    ]
+  },
+  {
+    "id": "outage-e5529bff",
+    "title": "Cloudflare Dashboard displaying incorrect API token type",
+    "source": "Cloudflare Status",
+    "published": "2026-03-04T18:45:25.000Z",
+    "url": "https://www.cloudflarestatus.com/incidents/xl7s60h7nmzg",
+    "summary": "Mar 4 , 18:45 UTC Resolved - This incident has been resolved. Mar 4 , 18:17 UTC Identified - The issue has been identified and a fix is being implemented. Mar 4 , 18:13 UTC Investigating - Cloudflare is investigating an issue with the Cloudflare Dashboard where Account API Tokens are not being displayed correctly. Customers may see User API Tokens returne...",
+    "severity": "HIGH",
+    "vendor": "Cloudflare",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "cloudflare-status",
+      "cloudflare",
+      "incident",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-ebb75cd1",
+    "title": "Domain Registration unavailable",
+    "source": "Cloudflare Status",
+    "published": "2026-03-04T12:14:14.000Z",
+    "url": "https://www.cloudflarestatus.com/incidents/b2y6gjtq6s4s",
+    "summary": "Mar 4 , 12:14 UTC Resolved - This incident has been resolved. Mar 4 , 10:56 UTC Identified - The issue has been identified and a fix is being implemented. Mar 4 , 09:38 UTC Investigating - Cloudflare is aware of, and investigating an issue which potentially impacts multiple customers for domain registrations. Further detail will be provided as more inform...",
+    "severity": "HIGH",
+    "vendor": "Cloudflare",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "cloudflare-status",
+      "cloudflare",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-a0d90b29",
+    "title": "Cloudflare GraphQL API outage for DNS metrics",
+    "source": "Cloudflare Status",
+    "published": "2026-03-04T12:00:00.000Z",
+    "url": "https://www.cloudflarestatus.com/incidents/4dxj1cn1gcjl",
+    "summary": "Mar 4 , 12:00 UTC Resolved - Cloudflare GraphQL API experienced an outage between 11:56 and 17:00 UTC affecting DNS metrics queries across all regions. This issue has been resolved.",
+    "severity": "MEDIUM",
+    "vendor": "Cloudflare",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "cloudflare-status",
+      "cloudflare",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-bed379c0",
+    "title": "Elevated errors in ChatGPT file uploads",
+    "source": "OpenAI Status",
+    "published": "2026-03-03T22:51:50.000Z",
+    "url": "https://status.openai.com//incidents/01KJT9GR84M7S3RQJDPSHEQHYE",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components File uploads (Operational)",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-92670998",
+    "title": "A/V E2EE Enforcement for Non-stage Voice Calls",
+    "source": "Discord Status",
+    "published": "2026-03-03T21:23:29.000Z",
+    "url": "https://discordstatus.com/incidents/k22tny62jcw3",
+    "summary": "Mar 2 , 12:02 PST Monitoring - Updated clients which support the DAVE (Audio & Video End-to-End Encryption) Protocol are now required to connect to non-stages voice calls across the Discord Platform. If you attempt to connect with an out of date client, the voice gateway will reject your connection with close code 4017. See https://support.discord.com/hc/...",
+    "severity": "MEDIUM",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "discord-status",
+      "discord"
+    ]
+  },
+  {
+    "id": "outage-8fa7ee94",
+    "title": "Claude Opus 4.6 Fast not appearing for some Copilot users",
+    "source": "GitHub Status",
+    "published": "2026-03-03T21:11:30.000Z",
+    "url": "https://www.githubstatus.com/incidents/nglcmhr2kfb0",
+    "summary": "Mar 3 , 21:11 UTC Resolved - On March 3, 2026, between 19:44 UTC and 21:05 UTC, some GitHub Copilot users reported that the Claude Opus 4.6 Fast model was no longer available in their IDE model selection. After investigation, we confirmed that this was caused by enterprise administrators adjusting their organization&apos;s model policies, which correctly ...",
+    "severity": "MEDIUM",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "github-status",
+      "github",
+      "copilot"
+    ]
+  },
+  {
+    "id": "outage-40402e1f",
+    "title": "Incident with all GitHub services",
+    "source": "GitHub Status",
+    "published": "2026-03-03T20:09:16.000Z",
+    "url": "https://www.githubstatus.com/incidents/n07yy1bk6kc4",
+    "summary": "Mar 3 , 20:09 UTC Resolved - On March 3, 2026, between 18:46 UTC and 20:09 UTC, GitHub experienced a period of degraded availability impacting GitHub.com, the GitHub API, GitHub Actions, Git operations, GitHub Copilot, and other dependent services. At the peak of the incident, GitHub.com request failures reached approximately 40%. During the same period, ...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "degraded",
+      "availability",
+      "api",
+      "copilot"
+    ]
+  },
+  {
+    "id": "outage-64a41698",
+    "title": "Delayed visibility of newly added issues on project boards",
+    "source": "GitHub Status",
+    "published": "2026-03-03T05:54:17.000Z",
+    "url": "https://www.githubstatus.com/incidents/0yjbtp1d2cpc",
+    "summary": "Mar 3 , 05:54 UTC Resolved - Between March 2, 21:42 UTC and March 3, 05:54 UTC project board updates, including adding new issues, PRs, and draft items to boards, were delayed from 30 minutes to over 2 hours, as a large backlog of messages accumulated in the Projects data denormalization pipeline. The incident was caused by an anomalously large event that...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-b5f4c599",
+    "title": "Users may experience elevated error rate in Codex",
+    "source": "OpenAI Status",
+    "published": "2026-03-03T01:52:29.000Z",
+    "url": "https://status.openai.com//incidents/01KJRP6KJKP51AGPA5FW8FWFFM",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-81a749e8",
+    "title": "Incident with Pull Requests /pulls",
+    "source": "GitHub Status",
+    "published": "2026-03-02T22:04:27.000Z",
+    "url": "https://www.githubstatus.com/incidents/vhpmx9vc93m0",
+    "summary": "Mar 2 , 22:04 UTC Resolved - On March 2nd, 2026, between 7:10 UTC and 22:04 UTC the pull requests service was degraded. Users navigating between tabs on the pull requests dashboard were met with 404 errors or blank pages. This was due to a configuration change deployed on February 27th at 11:03 PM UTC. We mitigated the incident by reverting the change. We...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "degraded"
+    ]
+  },
+  {
+    "id": "outage-104ae4c8",
+    "title": "File uploads and file processing failing",
+    "source": "OpenAI Status",
+    "published": "2026-03-02T17:14:48.000Z",
+    "url": "https://status.openai.com//incidents/01KJQJRF7J0CKT82SHDZ85YG4Y",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) File uploads (Operational) Voice mode (Operational) Search (Operational) Conversations (Operational) Compliance API (Operational) GPTs (Operational) Agent (Operational) Deep Research (Operationa...",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "api",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-b6e49954",
+    "title": "Errors in Sora API",
+    "source": "OpenAI Status",
+    "published": "2026-03-02T17:09:41.000Z",
+    "url": "https://status.openai.com//incidents/01KJQMDBTHS18NGB9Q5M0NH7A1",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Sora (Operational)",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-eec34997",
+    "title": "Increased Authentication Failures Affecting Some Users",
+    "source": "OpenAI Status",
+    "published": "2026-03-02T02:08:54.000Z",
+    "url": "https://status.openai.com//incidents/01KJM0AYG5PAY9EYRFH4T6JHP6",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "login"
+    ]
+  },
+  {
+    "id": "outage-86d3a442",
+    "title": "Continued issues with presence and DM delivery",
+    "source": "Discord Status",
+    "published": "2026-02-28T22:54:27.000Z",
+    "url": "https://discordstatus.com/incidents/nm7zsjzv8kd2",
+    "summary": "Feb 28 , 14:54 PST Resolved - This incident has been resolved. Feb 28 , 14:51 PST Monitoring - A fix has been implemented and we are monitoring the results. Feb 28 , 14:42 PST Update - This is actually a continuation of the incident from earlier today, which we marked \"resolved\" in error. We have now identified and are remediating the issue Feb 28 , 14:28...",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-7ef1aa23",
+    "title": "possible issues with presence and DM delivery",
+    "source": "Discord Status",
+    "published": "2026-02-28T16:37:54.000Z",
+    "url": "https://discordstatus.com/incidents/fvb0y6yp00sn",
+    "summary": "Feb 28 , 08:37 PST Resolved - This incident has been resolved. Feb 28 , 06:53 PST Monitoring - Some users were unable to start sessions, but should be able to now. Some servers were also not available Feb 28 , 06:39 PST Investigating - you may need to refresh your client to see new DM messages. We are working on identifying the extent of the issue",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-a1cb4d65",
+    "title": "presence briefly dropped, some DM messages not delivered (refresh to receive them)",
+    "source": "Discord Status",
+    "published": "2026-02-28T14:00:00.000Z",
+    "url": "https://discordstatus.com/incidents/ptxvtqh0kb24",
+    "summary": "Feb 28 , 06:00 PST Resolved - We are currently investigating this issue.",
+    "severity": "MEDIUM",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "discord-status",
+      "discord"
+    ]
+  },
+  {
+    "id": "outage-1f9ba60f",
+    "title": "Incident with Copilot agent sessions",
+    "source": "GitHub Status",
+    "published": "2026-02-27T23:49:05.000Z",
+    "url": "https://www.githubstatus.com/incidents/kw5jh58jh24k",
+    "summary": "Feb 27 , 23:49 UTC Resolved - On February 27, 2026, between 22:53 UTC and 23:46 UTC, the Copilot coding agent service experienced elevated errors and degraded functionality for agent sessions. Approximately 87% of attempts to start or interact with agent sessions encountered errors during this period. This was due to an expired authentication credential f...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "degraded",
+      "copilot"
+    ]
+  },
+  {
+    "id": "outage-d9fbb13e",
+    "title": "Unavailable Servers and Voice Calls",
+    "source": "Discord Status",
+    "published": "2026-02-27T22:26:41.000Z",
+    "url": "https://discordstatus.com/incidents/3269g35l9mls",
+    "summary": "Feb 27 , 14:26 PST Resolved - This incident has been resolved. Feb 27 , 13:52 PST Investigating - We are investigating an issue where some servers may show up as unavailable and some voice calls may not be able to start.",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-f087471a",
+    "title": "Code view fails to load when content contains some non-ASCII characters",
+    "source": "GitHub Status",
+    "published": "2026-02-27T06:04:02.000Z",
+    "url": "https://www.githubstatus.com/incidents/kv1lzpgzr9yp",
+    "summary": "Feb 27 , 06:04 UTC Resolved - Starting February 26, 2026 at 22:10 UTC through February 27, 05:50 UTC, the repository browsing UI was degraded and users were unable to load pages for files and directories with non-ASCII characters (including Japanese, Chinese, and other non-Latin scripts). On average, the error rate was 0.014% and peaked at 0.06% of reques...",
+    "severity": "MEDIUM",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "github-status",
+      "github",
+      "degraded"
+    ]
+  },
+  {
+    "id": "outage-4972ef88",
+    "title": "High latency on webhook API requests",
+    "source": "GitHub Status",
+    "published": "2026-02-27T00:04:01.000Z",
+    "url": "https://www.githubstatus.com/incidents/vd3xqfq36rgm",
+    "summary": "Feb 27 , 00:04 UTC Resolved - Between February 26, 2026 UTC and February 27, 2026 UTC, customers hitting the webhooks delivery API may have experienced higher latency or failed requests. During the impact window, 0.82% of requests took longer than 3s and 0.004% resulted in a 500 error response. Our monitors caught the impact on the individual backing data...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "latency",
+      "api",
+      "webhook"
+    ]
+  },
+  {
+    "id": "outage-53e9fe4d",
+    "title": "Issue with some ChatGPT Apps",
+    "source": "OpenAI Status",
+    "published": "2026-02-26T15:57:57.000Z",
+    "url": "https://status.openai.com//incidents/01KJD45ZHJHG8XM53V20JKKYNV",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Connectors/Apps (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-cd098021",
+    "title": "Incident with Copilot",
+    "source": "GitHub Status",
+    "published": "2026-02-26T11:06:32.000Z",
+    "url": "https://www.githubstatus.com/incidents/f6d6nm7gn304",
+    "summary": "Feb 26 , 11:06 UTC Resolved - On February 26, 2026, between 09:27 UTC and 10:36 UTC, the GitHub Copilot service was degraded and users experienced errors when using Copilot features including Copilot Chat, Copilot Coding Agent and Copilot Code Review. During this time, 5-15% of affected requests to the service returned errors. The incident was resolved by...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "degraded",
+      "copilot"
+    ]
+  },
+  {
+    "id": "outage-705d2335",
+    "title": "Artifact generation (asking the model to generate a spreadsheet or slideshow) on ChatGPT is down for all users.",
+    "source": "OpenAI Status",
+    "published": "2026-02-25T21:05:00.000Z",
+    "url": "https://status.openai.com//incidents/01KJB80QA8P62R9X3B71YAZEAK",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) File uploads (Operational) Search (Operational) Conversations (Operational) Compliance API (Operational) Image Generation (Operational) Codex (Operational) ChatGPT Atlas (Operational) Voice mode (Operational) GPTs (Operational) Agent (Operational) Deep...",
+    "severity": "CRITICAL",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "critical",
+      "openai-status",
+      "openai",
+      "api",
+      "login",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-82a5bf05",
+    "title": "Incident with Copilot Agent Sessions impacting CCA/CCR",
+    "source": "GitHub Status",
+    "published": "2026-02-25T16:44:50.000Z",
+    "url": "https://www.githubstatus.com/incidents/l1bt9psnsqpg",
+    "summary": "Feb 25 , 16:44 UTC Resolved - On February 25, 2026, between 15:05 UTC and 16:34 UTC, the Copilot coding agent service was degraded, resulting in errors for 5% of all requests and impacting users starting or interacting with agent sessions. This was due to an internal service dependency running out of allocated resources (memory and CPU). We mitigated the ...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "degraded",
+      "copilot"
+    ]
+  },
+  {
+    "id": "outage-b58ab938",
+    "title": "Code search experiencing degraded performance",
+    "source": "GitHub Status",
+    "published": "2026-02-24T00:46:29.000Z",
+    "url": "https://www.githubstatus.com/incidents/jn8kcmg5ydch",
+    "summary": "Feb 24 , 00:46 UTC Resolved - Between 2026-02-23 19:10 and 2026-02-24 00:46 UTC, all lexical code search queries in GitHub.com and the code search API were significantly slowed, and during this incident, between 5 and 10% of search queries timed out. This was caused by a single customer who had created a network of hundreds of orchestrated accounts which ...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "degraded",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-ea8ac298",
+    "title": "Incident with Issues and Pull Requests Search",
+    "source": "GitHub Status",
+    "published": "2026-02-23T21:30:42.000Z",
+    "url": "https://www.githubstatus.com/incidents/47n199g2d88x",
+    "summary": "Feb 23 , 21:30 UTC Resolved - On February 23, 2026, between 21:01 UTC and 21:30 UTC the Search service experienced degraded performance, resulting in an average of 3.5% of search requests for Issues and Pull Requests being rejected. During this period, updates to Issues and Pull Requests may not have been immediately reflected in search results. During a ...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "degraded"
+    ]
+  },
+  {
+    "id": "outage-5a46c073",
+    "title": "Incident with Actions",
+    "source": "GitHub Status",
+    "published": "2026-02-23T17:03:56.000Z",
+    "url": "https://www.githubstatus.com/incidents/59rjsk76t3rf",
+    "summary": "Feb 23 , 17:03 UTC Resolved - On February 23, 2026, between 15:00 UTC and 17:00 UTC, GitHub Actions experienced degraded performance. During the time, 1.8% of Actions workflow runs experienced delayed starts with an average delay of 15 minutes. The issue was caused by a connection rebalancing event in our internal load balancing layer, which temporarily c...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "degraded"
+    ]
+  },
+  {
+    "id": "outage-0ec98dfa",
+    "title": "Elevated Error Rate for ChatGPT Conversations for Business and Enterprise Customers",
+    "source": "OpenAI Status",
+    "published": "2026-02-23T16:09:30.000Z",
+    "url": "https://status.openai.com//incidents/01KJ5J4MPJ199K8XVX6T05X66J",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-f267c8d9",
+    "title": "Increased latency in ChatGPT for some users",
+    "source": "OpenAI Status",
+    "published": "2026-02-20T22:44:27.000Z",
+    "url": "https://status.openai.com//incidents/01KHYH2KT8VNWS146V0S09MF29",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational)",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "latency",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-2078ec4c",
+    "title": "Extended job start delays for larger hosted runners",
+    "source": "GitHub Status",
+    "published": "2026-02-20T20:41:24.000Z",
+    "url": "https://www.githubstatus.com/incidents/zhfdlzldgh51",
+    "summary": "Feb 20 , 20:41 UTC Resolved - On February 20, 2026, between 17:45 UTC and 20:41 UTC, 4.2% of workflows running on GitHub Larger Hosted Runners were delayed by an average of 18 minutes. Standard, Mac, and Self-Hosted Runners were not impacted. The delays were caused by communication failures between backend services for one deployment of larger runners. Th...",
+    "severity": "MEDIUM",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "github-status",
+      "github"
+    ]
+  },
+  {
+    "id": "outage-d64f5973",
+    "title": "Incident with Copilot GPT-5.1-Codex",
+    "source": "GitHub Status",
+    "published": "2026-02-20T11:41:39.000Z",
+    "url": "https://www.githubstatus.com/incidents/8qvx6hqk3nz0",
+    "summary": "Feb 20 , 11:41 UTC Resolved - On February 20, 2026, between 07:30 UTC and 11:21 UTC, the Copilot service experienced a degradation of the GPT 5.1 Codex model. During this time period, users encountered a 4.5% error rate when using this model. No other models were impacted. The issue was resolved by a mitigation put in place by the external model provider....",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "copilot"
+    ]
+  },
+  {
+    "id": "outage-18a9c238",
+    "title": "Issues with API Platform Audit Logs",
+    "source": "OpenAI Status",
+    "published": "2026-02-19T08:00:00.000Z",
+    "url": "https://status.openai.com//incidents/01KJXA4N2X4W8KHZFSSFH0V0Q7",
+    "summary": "Status: Resolved We have observed issues with API Platform audit logs. Affected components Login (Operational) Audio (Operational) Realtime (Operational) Login (Operational) Deep Research (Operational) Fine-tuning (Operational) Agent (Operational) Voice mode (Operational) Video viewing (Operational) Responses (Operational) Image Generation (Operational) F...",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "api",
+      "login"
+    ]
+  },
+  {
+    "id": "outage-d1e554ed",
+    "title": "Degraded performance in merge queue",
+    "source": "GitHub Status",
+    "published": "2026-02-18T19:20:16.000Z",
+    "url": "https://www.githubstatus.com/incidents/p1ymhg64hdfq",
+    "summary": "Feb 18 , 19:20 UTC Resolved - This incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available. Feb 18 , 19:18 UTC Update - We have seen significant recovery in merge queue we are continuing to monitor for any other degraded services. Feb 18 ...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "degraded"
+    ]
+  },
+  {
+    "id": "outage-098919ab",
+    "title": "Sora 2 Degraded Performance",
+    "source": "OpenAI Status",
+    "published": "2026-02-18T16:40:22.000Z",
+    "url": "https://status.openai.com//incidents/01KHRP7P1JF885BYA8SDWBDBR1",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Video generation (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "degraded"
+    ]
+  },
+  {
+    "id": "outage-cfc01fee",
+    "title": "Intermittent authentication failures on GitHub",
+    "source": "GitHub Status",
+    "published": "2026-02-17T19:06:24.000Z",
+    "url": "https://www.githubstatus.com/incidents/xs6xtcv196g7",
+    "summary": "Feb 17 , 19:06 UTC Resolved - On February 17, 2026, between 17:07 UTC and 19:06 UTC, some customers experienced intermittent authentication failures affecting GitHub Actions, parts of Git operations, and other authentication-dependent requests. On average, the Actions error rate was approximately 0.6% of affected API requests. Git operations ssh read erro...",
+    "severity": "MEDIUM",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "github-status",
+      "github",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-095cdbec",
+    "title": "Shopping Research Feature Down",
+    "source": "OpenAI Status",
+    "published": "2026-02-16T21:12:32.000Z",
+    "url": "https://status.openai.com//incidents/01KHM3D6HBAX95H7V8MXHNKDK6",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Search (Operational)",
+    "severity": "CRITICAL",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "critical",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-91dcaddf",
+    "title": "Increased error rates on Codex Cloud",
+    "source": "OpenAI Status",
+    "published": "2026-02-16T17:47:39.000Z",
+    "url": "https://status.openai.com//incidents/01KHKQWHXEF4WJY8WGX24RA07R",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-e070072e",
+    "title": "Delays in Support Email Processing",
+    "source": "OpenAI Status",
+    "published": "2026-02-14T20:44:09.000Z",
+    "url": "https://status.openai.com//incidents/01KHENBA61A9PJHE092HXW60RA",
+    "summary": "Status: Resolved All impacted services have now fully recovered.",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-02bc0d1b",
+    "title": "High errors with image generation",
+    "source": "OpenAI Status",
+    "published": "2026-02-14T04:24:08.000Z",
+    "url": "https://status.openai.com//incidents/01KHB0X2GYKJEW6WV3G1SFYPCE",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Images (Operational) Image Generation (Operational)",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-e52483c4",
+    "title": "Disruption with some GitHub services regarding file upload",
+    "source": "GitHub Status",
+    "published": "2026-02-13T22:58:42.000Z",
+    "url": "https://www.githubstatus.com/incidents/lvf95rlzkxrr",
+    "summary": "Feb 13 , 22:58 UTC Resolved - On February 13, 2026, between 21:46 UTC and 22:58 UTC (72 minutes), the GitHub file upload service was degraded and users uploading from a web browser on GitHub.com were unable to upload files to repositories, create release assets, or upload manifest files. During the incident, successful upload completions dropped by ~85% f...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "incident",
+      "degraded"
+    ]
+  },
+  {
+    "id": "outage-af8323c3",
+    "title": "ChatGPT Conversation Issues",
+    "source": "OpenAI Status",
+    "published": "2026-02-12T21:56:32.000Z",
+    "url": "https://status.openai.com//incidents/01KH9WCWZ41K9ST9FGB1V15DFC",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-1ed5138d",
+    "title": "high error rate in text-embedding-3-small",
+    "source": "OpenAI Status",
+    "published": "2026-02-12T17:52:34.000Z",
+    "url": "https://status.openai.com//incidents/01KH94NGSXNH9H4WBPXB3RFZWX",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Embeddings (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-d3cf4bc5",
+    "title": "Some users may experience issues starting conversations in ChatGPT",
+    "source": "OpenAI Status",
+    "published": "2026-02-12T16:59:17.000Z",
+    "url": "https://status.openai.com//incidents/01KH6RJWMT97BTHSBKA6M8Q0RY",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-a26081d6",
+    "title": "Intermittent disruption with Copilot completions and inline suggestions",
+    "source": "GitHub Status",
+    "published": "2026-02-12T16:50:01.000Z",
+    "url": "https://www.githubstatus.com/incidents/1x0f4x1wwqmb",
+    "summary": "Feb 12 , 16:50 UTC Resolved - Between February 11th 21:30 UTC and February 12th 15:40 UTC, users in Western Europe experienced degraded quality for all Next Edit Suggestions requests. Additionally, on February 12th, between 18:40 UTC and 20:30 UTC, users in Australia and South America experienced degraded quality and increased latency of up to 500ms for a...",
+    "severity": "HIGH",
+    "vendor": "GitHub",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "github-status",
+      "github",
+      "degraded",
+      "latency",
+      "copilot"
+    ]
+  },
+  {
+    "id": "outage-d70faf6b",
+    "title": "Increased login errors for ChatGPT",
+    "source": "OpenAI Status",
+    "published": "2026-02-11T00:41:00.000Z",
+    "url": "https://status.openai.com//incidents/01KH4VF39Y6NSS91NZYH848EA5",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational)",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "login",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-8b4f7ffb",
+    "title": "Increased error rates for ChatGPT Go",
+    "source": "OpenAI Status",
+    "published": "2026-02-10T20:57:50.000Z",
+    "url": "https://status.openai.com//incidents/01KH4JT5918MVR5R63YPB50APM",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-33a3ab0d",
+    "title": "GPT 5.2 Elevated Error Rates",
+    "source": "OpenAI Status",
+    "published": "2026-02-10T19:29:41.000Z",
+    "url": "https://status.openai.com//incidents/01KH472QRYMZASAAXB8CE74QBY",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-cd99c383",
+    "title": "Codex Cloud issues due to Github Dependencies",
+    "source": "OpenAI Status",
+    "published": "2026-02-09T20:23:04.000Z",
+    "url": "https://status.openai.com//incidents/01KH1KTV2VBD62R0MRZFJ13XNE",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-f8083724",
+    "title": "Some ChatGPT users may be experiencing issues with loading conversations",
+    "source": "OpenAI Status",
+    "published": "2026-02-07T09:11:19.000Z",
+    "url": "https://status.openai.com//incidents/01KGVN79RRX11YCQZ52C68ZT1N",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-b5f3fe0c",
+    "title": "Increased ChatGPT errors for some users",
+    "source": "OpenAI Status",
+    "published": "2026-02-05T00:48:56.000Z",
+    "url": "https://status.openai.com//incidents/01KGNJACX0T5CYY1YWS8RNW6S6",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) File uploads (Operational) Voice mode (Operational) Search (Operational) Image Generation (Operational) GPTs (Operational) Agent (Operational) Deep Research (Operational) Conversations (Operational) Compliance API (Operational) Codex (Operational) Conn...",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "api",
+      "login",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-42dacdce",
+    "title": "ChatGPT Availability Impacted",
+    "source": "OpenAI Status",
+    "published": "2026-02-04T21:04:35.000Z",
+    "url": "https://status.openai.com//incidents/01KGMVV926ZSCD1MSDBS07AWYA",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational) Login (Operational) Voice mode (Operational) Conversations (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) File uploads (Operational) Search (Operational) Compliance API (Operational) Image Generation (Operational) GPTs (Operati...",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "availability",
+      "api",
+      "login",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-47e21728",
+    "title": "Custom GPT updates are failing for users",
+    "source": "OpenAI Status",
+    "published": "2026-02-04T14:51:53.000Z",
+    "url": "https://status.openai.com//incidents/01KGMAYN6EHDVR9KB1CQJP4EGR",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components GPTs (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-213a3724",
+    "title": "Some users may experience issues loading or starting conversations",
+    "source": "OpenAI Status",
+    "published": "2026-02-04T03:46:42.000Z",
+    "url": "https://status.openai.com//incidents/01KGK3YJB8CPX0TJY924H02TZW",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-00ddbdb6",
+    "title": "Elevated error rates for finetuning jobs",
+    "source": "OpenAI Status",
+    "published": "2026-02-03T23:32:01.000Z",
+    "url": "https://status.openai.com//incidents/01KGJMMMDDYD8RYNEVFNVYG99F",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Fine-tuning (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-097441f7",
+    "title": "Elevated error rates for ChatGPT and Platform users",
+    "source": "OpenAI Status",
+    "published": "2026-02-03T22:14:03.000Z",
+    "url": "https://status.openai.com//incidents/01KGJK9Q6PDB3C3VX6MPCY6106",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Search (Operational) Compliance API (Operational) Image Generation (Operational) Deep Research (Operational) Codex (Operational) Connectors/Apps (Operational) File uploads (Operational) Conversations (Operational) GPTs (Operational) Agent (Operational) Login (Operational)...",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "api",
+      "login",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-ef6c44dd",
+    "title": "Some ChatGPT users may be experiencing issues with their subscription renewals",
+    "source": "OpenAI Status",
+    "published": "2026-01-31T23:00:45.000Z",
+    "url": "https://status.openai.com//incidents/01KG80XW6H509B6MVRE05W99SF",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "login",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-98b601b3",
+    "title": "Some Android users may be experiencing errors when signing up for ChatGPT with Google Authentication",
+    "source": "OpenAI Status",
+    "published": "2026-01-31T00:21:35.000Z",
+    "url": "https://status.openai.com//incidents/01KG8A252RVEHGC7EMP11JY9M8",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational)",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "login",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-88477d5c",
+    "title": "Brief Issue with Image Generation Results",
+    "source": "OpenAI Status",
+    "published": "2026-01-28T02:14:26.000Z",
+    "url": "https://status.openai.com//incidents/01KG13K239MSN2R3S015E2WMY1",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Image Generation (Operational) Images (Operational) Image Generation (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-f18e0e22",
+    "title": "Voice and video errors",
+    "source": "Discord Status",
+    "published": "2026-01-27T23:03:12.000Z",
+    "url": "https://discordstatus.com/incidents/vh11np1zhfbp",
+    "summary": "Jan 27 , 15:03 PST Resolved - This incident has been resolved. Jan 27 , 14:56 PST Monitoring - A fix has been implemented and we are monitoring the results. Jan 27 , 13:23 PST Investigating - We&apos;re investigating an issue that is causing errors joining voice channels or watching streams",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-65ced13d",
+    "title": "Elevated Codex Error Rate",
+    "source": "OpenAI Status",
+    "published": "2026-01-27T11:03:26.000Z",
+    "url": "https://status.openai.com//incidents/01KFZB0A5C1D3TQED136VXFT9W",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-2cc55c91",
+    "title": "ChatGPT availability degraded for free and logged out users",
+    "source": "OpenAI Status",
+    "published": "2026-01-26T17:27:46.000Z",
+    "url": "https://status.openai.com//incidents/01KFXHMCMQE0EWA7R8RM5F9YW2",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Deep Research (Operational) ChatGPT Atlas (Operational) Voice mode (Operational) Compliance API (Operational) GPTs (Operational) Codex (Operational) Connectors/Apps (Operational) Login (Operational) File uploads (Operational) Search (Operational) Conversations (Operationa...",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "degraded",
+      "availability",
+      "api",
+      "login",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-bce74f32",
+    "title": "Failing message sends on some channels",
+    "source": "Discord Status",
+    "published": "2026-01-25T06:04:31.000Z",
+    "url": "https://discordstatus.com/incidents/r7nw212j7k2m",
+    "summary": "Jan 24 , 22:04 PST Resolved - This incident has been resolved. Jan 24 , 16:35 PST Investigating - We are currently investigating this issue.",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-c3033d3b",
+    "title": "Codex Github Issues",
+    "source": "OpenAI Status",
+    "published": "2026-01-22T14:55:44.000Z",
+    "url": "https://status.openai.com//incidents/01KFK1A9AAJ246K5G966PSQQJK",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-abb5a47d",
+    "title": "Elevated error rates for ChatGPT users",
+    "source": "OpenAI Status",
+    "published": "2026-01-14T01:03:43.000Z",
+    "url": "https://status.openai.com//incidents/01KEWWZ8Y87E1WFFQQJZAM0GMK",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-172f0f63",
+    "title": "Connectors/Apps unselectable in ChatGPT Input Menu",
+    "source": "OpenAI Status",
+    "published": "2026-01-12T19:45:05.000Z",
+    "url": "https://status.openai.com//incidents/01KESV314P64MK8XSV6Q5DCDJ2",
+    "summary": "Status: Resolved Connectors/Apps are again selectable in the ChatGPT Input Menu. Affected components Connectors/Apps (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-c5894b31",
+    "title": "Increased error rate for ChatGPT and API for prompts with images",
+    "source": "OpenAI Status",
+    "published": "2026-01-08T21:12:00.000Z",
+    "url": "https://status.openai.com//incidents/01KEFMJWBHC4JBGJWMXNQTSTH6",
+    "summary": "Status: Resolved ChatGPT and API functionality should now be fully restored. Affected components Chat Completions (Operational) Responses (Operational) Conversations (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "api",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-39600b33",
+    "title": "High error rate for Dall-e",
+    "source": "OpenAI Status",
+    "published": "2026-01-08T02:45:00.000Z",
+    "url": "https://status.openai.com//incidents/01KEDRBQ2A3Y9JJ7G3F3YM4KT3",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Images (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-e1d72b30",
+    "title": "Some Codex cloud tasks are failing",
+    "source": "OpenAI Status",
+    "published": "2026-01-08T02:30:50.000Z",
+    "url": "https://status.openai.com//incidents/01KEDP2078ND35EQG75BVDZE5E",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-4f066194",
+    "title": "Elevated error rates for Responses API",
+    "source": "OpenAI Status",
+    "published": "2026-01-07T23:53:27.000Z",
+    "url": "https://status.openai.com//incidents/01KEDB9WGPMX6HK8X629AFM907",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Responses (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-a6bbe178",
+    "title": "ChatGPT issues while retrieving workspace members",
+    "source": "OpenAI Status",
+    "published": "2026-01-06T21:00:00.000Z",
+    "url": "https://status.openai.com//incidents/01KEACZ6R02744RQKCMSK1ZG54",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational) Compliance API (Operational) GPTs (Operational) Codex (Operational) Connectors/Apps (Operational) Voice mode (Operational) Search (Operational) Image Generation (Operational) Agent (Operational) Deep Research (Operational) ChatGPT Atlas (Operat...",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "api",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-46fdda96",
+    "title": "GPT-5.1 Codex Max Elevated Error Rate",
+    "source": "OpenAI Status",
+    "published": "2026-01-06T09:56:06.000Z",
+    "url": "https://status.openai.com//incidents/01KE98V1TQRRQC8T1VAHH18NDC",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Responses (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-65156564",
+    "title": "Some User May Experience Issues Loading Conversation History and Downloading Files from Custom GPTs",
+    "source": "OpenAI Status",
+    "published": "2025-12-25T09:41:27.000Z",
+    "url": "https://status.openai.com//incidents/01KD9TAC2AVM41E7FSGE3X0B9J",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational) GPTs (Operational)",
+    "severity": "CRITICAL",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "critical",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-8e35c148",
+    "title": "Some Android users are experiencing elevated errors while using ChatGPT.",
+    "source": "OpenAI Status",
+    "published": "2025-12-21T21:33:27.000Z",
+    "url": "https://status.openai.com//incidents/01KD19S888P8SGB2TFB82DWCW8",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Search (Operational) Conversations (Operational) GPTs (Operational) Deep Research (Operational) Codex (Operational) Connectors/Apps (Operational) Login (Operational) Compliance API (Operational) Image Generation (Operational) Agent (Operational) ChatGPT Atlas (Operational...",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "api",
+      "login",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-672bd4b5",
+    "title": "Investigating slow and failing requests",
+    "source": "Discord Status",
+    "published": "2025-12-19T23:23:14.000Z",
+    "url": "https://discordstatus.com/incidents/xt705bsck7sk",
+    "summary": "Dec 19 , 15:23 PST Resolved - This incident has been resolved. Dec 19 , 15:14 PST Monitoring - We&apos;ve identified the issue and implemented a fix. Latency should be going down and we should see full recovery soon. Dec 19 , 14:55 PST Investigating - We are currently investigating this issue.",
+    "severity": "CRITICAL",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "critical",
+      "discord-status",
+      "discord",
+      "incident",
+      "latency"
+    ]
+  },
+  {
+    "id": "outage-6c318fbc",
+    "title": "Increased error rates for Sora API",
+    "source": "OpenAI Status",
+    "published": "2025-12-19T06:58:21.000Z",
+    "url": "https://status.openai.com//incidents/01KCTM1YZ1AW72M9JVW48TNJES",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Sora (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-94d85a4a",
+    "title": "Degraded latency and increased error rates for Sora API",
+    "source": "OpenAI Status",
+    "published": "2025-12-19T01:25:31.000Z",
+    "url": "https://status.openai.com//incidents/01KCT3221DKSNWZ6QABP6V2ZE6",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Sora (Operational)",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "degraded",
+      "latency",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-cabcffe6",
+    "title": "ChatGPT intermittently not loading successfully after SSO authentication",
+    "source": "OpenAI Status",
+    "published": "2025-12-18T22:46:43.000Z",
+    "url": "https://status.openai.com//incidents/01KCQ4D84M0KCBPNCENAV6B8GZ",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "login",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-8749d4f9",
+    "title": "Unable to Login on Sora Web",
+    "source": "OpenAI Status",
+    "published": "2025-12-18T22:34:58.000Z",
+    "url": "https://status.openai.com//incidents/01KCSQV59E8XZETJ89JTXME2AZ",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Please try logging in again. Affected components Login (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "login"
+    ]
+  },
+  {
+    "id": "outage-96db7965",
+    "title": "Finetuning jobs are intermittently failing",
+    "source": "OpenAI Status",
+    "published": "2025-12-18T09:29:21.000Z",
+    "url": "https://status.openai.com//incidents/01KCQ5FA8SEDPNZSZEH27V2H5X",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Fine-tuning (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-c7c415ad",
+    "title": "Voice issues in some regions",
+    "source": "Discord Status",
+    "published": "2025-12-17T18:09:27.000Z",
+    "url": "https://discordstatus.com/incidents/l5vl9vchdqy5",
+    "summary": "Dec 17 , 10:09 PST Resolved - This incident has been resolved. Dec 17 , 09:56 PST Monitoring - A fix has been implemented and we are monitoring the results. Dec 17 , 09:49 PST Investigating - We are currently investigating this issue.",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-3ebb02f0",
+    "title": "Codex & Responses API Experiencing Elevated Errors",
+    "source": "OpenAI Status",
+    "published": "2025-12-17T04:12:31.000Z",
+    "url": "https://status.openai.com//incidents/01KCM7PAMQMCM8KAB6ZCWPKNK1",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Responses (Operational) Codex (Operational)",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-0ac00f03",
+    "title": "High Error Rate in Image API",
+    "source": "OpenAI Status",
+    "published": "2025-12-16T05:23:17.000Z",
+    "url": "https://status.openai.com//incidents/01KCJNVGXP42TJC4GXA17GMGXY",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Images (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-481a5b9a",
+    "title": "ChatGPT connectors have disconnected unexpectedly",
+    "source": "OpenAI Status",
+    "published": "2025-12-12T23:11:55.000Z",
+    "url": "https://status.openai.com//incidents/01KC2MV5CHD4DX8A76FT4QEZEV",
+    "summary": "Status: Resolved The issue is now resolved. For the vast majority of affected connectors have been reconnected successfully. For a small fraction of users, manually reconnecting connectors will be required. Affected components Connectors/Apps (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-7d4e0d2b",
+    "title": "Github Connector Errors for ChatGPT Web and Codex",
+    "source": "OpenAI Status",
+    "published": "2025-12-12T19:52:11.000Z",
+    "url": "https://status.openai.com//incidents/01KC6WSFM4ECT1Y5XBPF2AMXV9",
+    "summary": "Status: Resolved The affected Github connectors should now be fully restored. Users should be able to use Codex (including code reviews) and ChatGPT with the Github connector without issue. Affected components Codex (Operational) Connectors/Apps (Operational)",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-106de4ce",
+    "title": "Elevated error rate for 5.2 Auto and 5.2 Instant",
+    "source": "OpenAI Status",
+    "published": "2025-12-11T23:11:30.000Z",
+    "url": "https://status.openai.com//incidents/01KC7JXZX3G02HQVS9AHYT86J8",
+    "summary": "Status: Resolved The issue has been resolved. Affected components Conversations (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-c730fd5f",
+    "title": "Increased Errors On Android Devices",
+    "source": "OpenAI Status",
+    "published": "2025-12-10T23:27:08.000Z",
+    "url": "https://status.openai.com//incidents/01KC56SP6M152HGWAF6EAFQR2E",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Voice mode (Operational) Search (Operational) Conversations (Operational) Compliance API (Operational) Image Generation (Operational) GPTs (Operational) Agent (Operational) Deep Research (Operational) Login (Operational) File uploads (Operational) Codex (Operational) Conn...",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai",
+      "api",
+      "login"
+    ]
+  },
+  {
+    "id": "outage-1f558615",
+    "title": "Issues related to Codex Web, Code Reviews",
+    "source": "OpenAI Status",
+    "published": "2025-12-09T21:21:03.000Z",
+    "url": "https://status.openai.com//incidents/01KC2CJTQMDW8ZX3S4S4Q8PPNQ",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-343693e7",
+    "title": "ChatGPT advanced voice mode issues",
+    "source": "OpenAI Status",
+    "published": "2025-12-09T20:09:59.000Z",
+    "url": "https://status.openai.com//incidents/01KC29PD396379J8W4GRZ3F185",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Voice mode (Operational)",
+    "severity": "MEDIUM",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "openai-status",
+      "openai",
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-259cefc5",
+    "title": "Github Authentication errors with Codex Web",
+    "source": "OpenAI Status",
+    "published": "2025-12-09T05:55:32.000Z",
+    "url": "https://status.openai.com//incidents/01KBZQFTJVFKP90HA3QJ7Q3WBY",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational)",
+    "severity": "HIGH",
+    "vendor": "OpenAI",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "openai-status",
+      "openai"
+    ]
+  },
+  {
+    "id": "outage-c204b660",
+    "title": "API and Homepage Availability Issues",
+    "source": "Discord Status",
+    "published": "2025-12-05T09:22:58.000Z",
+    "url": "https://discordstatus.com/incidents/rpjs6gtf6qwy",
+    "summary": "Dec 5 , 01:22 PST Resolved - This incident has been resolved. Dec 5 , 01:19 PST Monitoring - The upstream provider has implemented a fix and are monitoring the results. Dec 5 , 01:14 PST Investigating - An upstream provider is investigating a major issue, and we are currently investigating the impact to Discord.",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident",
+      "availability",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-d79fcbb0",
+    "title": "Chat Functionality Degraded In Certain Regions",
+    "source": "Discord Status",
+    "published": "2025-12-03T18:29:26.000Z",
+    "url": "https://discordstatus.com/incidents/wwprfgd2yl2w",
+    "summary": "Dec 3 , 10:29 PST Resolved - This incident has been resolved. Dec 3 , 09:32 PST Monitoring - A fix has been implemented and we are monitoring the results. Dec 3 , 07:53 PST Identified - We have identified an issue affecting users in a specific geographical area which may cause messages and media to load and send slowly or not at all, and may impede app st...",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident",
+      "degraded"
+    ]
+  },
+  {
+    "id": "outage-60a5f800",
+    "title": "Connectivity issues",
+    "source": "Discord Status",
+    "published": "2025-11-18T19:29:55.000Z",
+    "url": "https://discordstatus.com/incidents/r7919gwty4gc",
+    "summary": "Nov 18 , 11:29 PST Resolved - The upstream provider has resolved the issue on their side, and all Discord components are operating normally. Nov 18 , 08:15 PST Monitoring - We are continuing to monitor for residual impact as upstream service is restored. Nov 18 , 05:35 PST Identified - We&apos;ve identified the expected upstream errors in our monitoring a...",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord"
+    ]
+  },
+  {
+    "id": "outage-07d24a9f",
+    "title": "API Availability Issues",
+    "source": "Discord Status",
+    "published": "2025-11-17T22:33:45.000Z",
+    "url": "https://discordstatus.com/incidents/7qg3jjsxcv7p",
+    "summary": "Nov 17 , 14:33 PST Resolved - This incident has been resolved. Nov 17 , 14:27 PST Monitoring - A fix has been implemented and we are monitoring the results. Nov 17 , 13:57 PST Update - We are continuing to investigate this issue. Nov 17 , 13:57 PST Investigating - We&apos;re actively investigating API availability issues affecting a number of operations, ...",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident",
+      "availability",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-ea2d333b",
+    "title": "Developer Docs Outage",
+    "source": "Discord Status",
+    "published": "2025-11-12T22:11:15.000Z",
+    "url": "https://discordstatus.com/incidents/by04x5gnnng3",
+    "summary": "Nov 12 , 14:11 PST Resolved - This incident has been resolved. Nov 12 , 12:55 PST Investigating - We are currently investigating this issue.",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-fc2a30f7",
+    "title": "This is a test",
+    "source": "Discord Status",
+    "published": "2025-10-23T19:51:52.000Z",
+    "url": "https://discordstatus.com/incidents/x7sztj89v9qh",
+    "summary": "Oct 23 , 12:51 PDT Resolved - test over Oct 23 , 12:51 PDT Investigating - This is a test.",
+    "severity": "MEDIUM",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "discord-status",
+      "discord"
+    ]
+  },
+  {
+    "id": "outage-3b4693ae",
+    "title": "Failed Webhook Messages with Attachments",
+    "source": "Discord Status",
+    "published": "2025-10-09T16:53:57.000Z",
+    "url": "https://discordstatus.com/incidents/wjc45hhfps84",
+    "summary": "Oct 9 , 09:53 PDT Resolved - This incident has been resolved. Oct 9 , 09:17 PDT Monitoring - A fix has been implemented and we are monitoring the results. Oct 9 , 09:05 PDT Investigating - We&apos;re investigating an issue where some webhook messages containing attachments or images are failing to send.",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident",
+      "webhook"
+    ]
+  },
+  {
+    "id": "outage-45bb7718",
+    "title": "Issues connecting to Voice",
+    "source": "Discord Status",
+    "published": "2025-10-01T18:04:49.000Z",
+    "url": "https://discordstatus.com/incidents/84nqclp3rtg5",
+    "summary": "Oct 1 , 11:04 PDT Resolved - This incident has been resolved. Oct 1 , 10:30 PDT Investigating - We are currently investigating this issue.",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-4977ac41",
+    "title": "Leave Server Issues",
+    "source": "Discord Status",
+    "published": "2025-09-27T22:42:05.000Z",
+    "url": "https://discordstatus.com/incidents/8txdt4wws1cl",
+    "summary": "Sep 27 , 15:42 PDT Resolved - This incident has been resolved. Sep 27 , 15:13 PDT Monitoring - A fix has been implemented and we are monitoring the results. Sep 27 , 15:09 PDT Investigating - We are investigating an issue that is preventing users from leaving servers.",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-9d63945b",
+    "title": "Guilds Unavailability",
+    "source": "Discord Status",
+    "published": "2025-09-08T23:56:08.000Z",
+    "url": "https://discordstatus.com/incidents/9bm86bnmfhfr",
+    "summary": "Sep 8 , 16:56 PDT Resolved - Voice calls have fully recovered. Sep 8 , 16:44 PDT Monitoring - We are starting to see recovery with voice calls. Sep 8 , 15:40 PDT Update - Clients are able to connect again and send/receive messages. We&apos;re still seeing degradation with voice. Sep 8 , 15:28 PDT Update - This issue has worsened and is causing widespread ...",
+    "severity": "CRITICAL",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "critical",
+      "discord-status",
+      "discord",
+      "availability"
+    ]
+  },
+  {
+    "id": "outage-cb3f86a3",
+    "title": "API availability issue",
+    "source": "Discord Status",
+    "published": "2025-08-30T13:32:22.000Z",
+    "url": "https://discordstatus.com/incidents/kj58wct508y0",
+    "summary": "Aug 30 , 06:32 PDT Resolved - This incident has been resolved. Aug 30 , 06:24 PDT Monitoring - A fix has been implemented and we are monitoring the results. Aug 30 , 05:31 PDT Identified - The issue has been identified and a fix is being implemented. Aug 30 , 05:13 PDT Investigating - We are currently investigating an issue affecting Discord API availabil...",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident",
+      "availability",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-16fdb576",
+    "title": "Server Unavailability",
+    "source": "Discord Status",
+    "published": "2025-08-27T21:39:01.000Z",
+    "url": "https://discordstatus.com/incidents/8jvrf6155dpc",
+    "summary": "Aug 27 , 14:39 PDT Resolved - This incident has been resolved. Aug 27 , 14:24 PDT Identified - The issue has been identified and a fix is being implemented. Aug 27 , 14:17 PDT Investigating - We are investigating a small amount of servers reporting outages.",
+    "severity": "HIGH",
+    "vendor": "Discord",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "discord-status",
+      "discord",
+      "incident",
+      "availability"
+    ]
+  }
+]

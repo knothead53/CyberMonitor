@@ -1,0 +1,1264 @@
+[
+  {
+    "id": "news-8e945346",
+    "title": "Termite ransomware breaches linked to ClickFix CastleRAT attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-07T16:14:32.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/termite-ransomware-breaches-linked-to-clickfix-castlerat-attacks/",
+    "summary": "Ransomware threat actors tracked as Velvet Tempest are using the ClickFix technique and legitimate Windows utilities to deploy the DonutLoader malware and the CastleRAT backdoor. [...]",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "ransomware",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-46ca3663",
+    "title": "Microsoft: Hackers abusing AI at every stage of cyberattacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-07T15:15:25.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/microsoft-hackers-abusing-ai-at-every-stage-of-cyberattacks/",
+    "summary": "Microsoft says threat actors are increasingly using artificial intelligence in their operations to accelerate attacks, scale malicious activity, and lower technical barriers across all aspects of a cyberattack. [...]",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-aa3bf96f",
+    "title": "Cognizant TriZetto breach exposes health data of 3.4 million patients",
+    "source": "BleepingComputer",
+    "published": "2026-03-06T19:50:21.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/cognizant-trizetto-breach-exposes-health-data-of-34-million-patients/",
+    "summary": "TriZetto Provider Solutions, a healthcare IT company that develops software and services used by health insurers and healthcare providers, has suffered a data breach that exposed the sensitive information of over 3.4 million people. [...]",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "data-breach"
+    ]
+  },
+  {
+    "id": "news-77913b77",
+    "title": "North Korean APTs Use AI to Enhance IT Worker Scams",
+    "source": "Dark Reading",
+    "published": "2026-03-06T17:49:02.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/north-korean-apts-ai-it-worker-scams",
+    "summary": "DPRK worker scams are old hat, but they're still working, thanks to AI tools that help with everything from face swapping to daily emails.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-d17df1fb",
+    "title": "CISA warns feds to patch iOS flaws exploited in crypto-theft attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-06T15:57:16.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-apple-flaws-exploited-in-spyware-crypto-theft-attacks/",
+    "summary": "CISA ordered U.S. federal agencies to patch three iOS security flaws targeted in cyberespionage and crypto-theft attacks using the Coruna exploit kit. [...]",
+    "severity": "HIGH",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "patch",
+      "aws"
+    ]
+  },
+  {
+    "id": "news-6375ed8c",
+    "title": "EU Auto Rules Shift Gears on Cybersecurity Standards",
+    "source": "Dark Reading",
+    "published": "2026-03-06T15:05:55.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/eu-auto-rules-shift-gears-on-cybersecurity-standards",
+    "summary": "The European Union is taking new precautions as climate change and cybersecurity threats rise across the automotive industry.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-4a398082",
+    "title": "EC-Council Expands AI Certification Portfolio to Strengthen U.S. AI Workforce Readiness and Security",
+    "source": "BleepingComputer",
+    "published": "2026-03-06T15:00:10.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/ec-council-expands-ai-certification-portfolio-to-strengthen-us-ai-workforce-readiness-and-security/",
+    "summary": "EC-Council, creator of the world-renowned Certified Ethical Hacker (CEH) credential and a global leader in applied cybersecurity education, today launched its Enterprise AI Credential Suite, with four new role-based AI certifications debuting alongside Certified CISO v4, an overhauled executive cyber leadership prog...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-b94e9b86",
+    "title": "Fake Claude Code install guides push infostealers in InstallFix attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-06T15:00:00.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/fake-claude-code-install-guides-push-infostealers-in-installfix-attacks/",
+    "summary": "Threat actors are employing a new variation of the ClickFix social engineering technique called InstallFix to convince users into running malicious commands under the pretext of installing legitimate command line interface (CLI) tools. [...]",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-a32c3402",
+    "title": "Microsoft 365 Backup to add file-level restore for faster recovery",
+    "source": "BleepingComputer",
+    "published": "2026-03-06T14:21:09.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-backup-to-add-file-level-restore-for-faster-recovery/",
+    "summary": "Microsoft will soon begin rolling out a significant upgrade to Microsoft 365 Backup to speed up recovery by allowing administrators to restore individual files and folders. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-b6605af7",
+    "title": "Iran's Cyber-Kinetic War Doctrine Takes Shape",
+    "source": "Dark Reading",
+    "published": "2026-03-06T14:01:11.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/iran-cyber-kinetic-war-doctrine",
+    "summary": "Iran has been hacking IP cameras to plan missile strikes against its enemies, and mounting other attacks on physical assets, showing how cyber and kinetic warfare are fast becoming one in the same.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-83a49b85",
+    "title": "Cyberattack on Mexico's Gov't Agencies Highlight AI Threat",
+    "source": "Dark Reading",
+    "published": "2026-03-06T13:37:31.000Z",
+    "url": "https://www.darkreading.com/application-security/cyberattack-mexico-government-ai-threat",
+    "summary": "Using Anthropic's Claude, OpenAI's ChatGPT, and a detailed playbook prompt, a handful of cyberattackers reportedly gained access to government agencies and its citizens' data.",
+    "severity": "HIGH",
+    "vendor": "Openai",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "openai"
+    ]
+  },
+  {
+    "id": "news-116b7ad3",
+    "title": "Ghanain man pleads guilty to role in $100 million fraud ring",
+    "source": "BleepingComputer",
+    "published": "2026-03-06T10:08:00.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/ghanain-man-pleads-guilty-to-role-in-100-million-fraud-ring/",
+    "summary": "A Ghanaian national pleaded guilty to his role in a massive fraud ring that stole over $100 million from victims across the United States through business email compromise attacks and romance scams. [...]",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-69c1e478",
+    "title": "FBI investigates breach of surveillance and wiretap systems",
+    "source": "BleepingComputer",
+    "published": "2026-03-06T08:44:53.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-investigates-breach-of-surveillance-and-wiretap-systems/",
+    "summary": "The U.S. Federal Bureau of Investigation (FBI) confirmed on Thursday that it's investigating a breach that affected systems used to manage surveillance and wiretap warrants. [...]",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-43831e20",
+    "title": "Chinese state hackers target telcos with new malware toolkit",
+    "source": "BleepingComputer",
+    "published": "2026-03-05T23:19:49.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/chinese-state-hackers-target-telcos-with-new-malware-toolkit/",
+    "summary": "A China-linked advanced persistent threat actor tracked as UAT-9244 has been targeting telecommunication service providers in South America since 2024, compromising Windows, Linux, and network-edge devices. [...]",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-81ec414f",
+    "title": "Bing AI promoted fake OpenClaw GitHub repo pushing info-stealing malware",
+    "source": "BleepingComputer",
+    "published": "2026-03-05T22:37:34.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/bing-ai-promoted-fake-openclaw-github-repo-pushing-info-stealing-malware/",
+    "summary": "Fake OpenClaw installers hosted in GitHub repositories and promoted by Microsoft Bing's AI-enhanced search feature instructed users to run commands that deployed information stealers and proxy malware. [...]",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "malware",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-2143ecee",
+    "title": "Nation-State Actor Embraces AI Malware Assembly Line",
+    "source": "Dark Reading",
+    "published": "2026-03-05T21:56:07.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/nation-state-actor-ai-malware-assembly-line",
+    "summary": "Pakistan's APT36 threat group has begun using vibe-coding to churn out mediocre malware, but at a scale that could overwhelm defenses.",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-2aa639eb",
+    "title": "Tycoon 2FA Goes Boom as Europol, Vendors Bust Phishing Platform",
+    "source": "Dark Reading",
+    "published": "2026-03-05T21:23:26.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/tycoon-2fa-europol-vendors-bust-phishing-platform",
+    "summary": "The phishing-as-a-service platform was popular among cyber threat actors because of its ability to bypass multifactor authentication defenses.",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "phishing"
+    ]
+  },
+  {
+    "id": "news-9c2ceac3",
+    "title": "Wikipedia hit by self-propagating JavaScript worm that vandalized pages",
+    "source": "BleepingComputer",
+    "published": "2026-03-05T20:42:25.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/wikipedia-hit-by-self-propagating-javascript-worm-that-vandalized-pages/",
+    "summary": "The Wikimedia Foundation suffered a security incident today after a self-propagating JavaScript worm began vandalizing pages and modifying user scripts across multiple wikis. [...]",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-d1f999f7",
+    "title": "Cisco Drops 48 New Firewall Vulnerabilities, 2 Critical",
+    "source": "Dark Reading",
+    "published": "2026-03-05T20:11:15.000Z",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/cisco-48-firewall-vulnerabilities-2-critical",
+    "summary": "Edge bugs are so fetch, and Cisco just patched 50 new ones, including some heavy hitters with 10 out of 10 scores on the CVSS scale.",
+    "severity": "HIGH",
+    "vendor": "Cisco",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "patch",
+      "cisco"
+    ]
+  },
+  {
+    "id": "news-9fe1f3bd",
+    "title": "WordPress membership plugin bug exploited to create admin accounts",
+    "source": "BleepingComputer",
+    "published": "2026-03-05T18:44:58.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/wordpress-membership-plugin-bug-exploited-to-create-admin-accounts/",
+    "summary": "Hackers are exploiting a critical vulnerability in the User Registration & Membership plugin, which is installed on more than 60,000 WordPress sites. [...]",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "news-cb929f52",
+    "title": "FBI arrests suspect linked to $46M crypto theft from US Marshals",
+    "source": "BleepingComputer",
+    "published": "2026-03-05T18:36:18.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-arrests-suspect-linked-to-46m-crypto-theft-from-us-marshals/",
+    "summary": "​A U.S. government contractor's son, accused of stealing more than $46 million in cryptocurrency from the U.S. Marshals Service, was arrested Wednesday on the island of Saint Martin. [...]",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-58f13999",
+    "title": "Software Development Practices Help Enterprises Tackle Real-Life Risks",
+    "source": "Dark Reading",
+    "published": "2026-03-05T16:34:20.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/software-development-practices-help-enterprises-tackle-real-life-risks",
+    "summary": "Organizations can borrow secure-by-design processes to manage non-technical challenges like governance or the inevitable human error.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-6dad8770",
+    "title": "Google says 90 zero-days were exploited in attacks last year",
+    "source": "BleepingComputer",
+    "published": "2026-03-05T15:03:43.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/google-says-90-zero-days-were-exploited-in-attacks-last-year/",
+    "summary": "Google Threat Intelligence Group (GTIG) tracked 90 zero-day vulnerabilities actively exploited throughout 2025, almost half of them in enterprise software and appliances. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "zero-day",
+      "google"
+    ]
+  },
+  {
+    "id": "news-63bc32c9",
+    "title": "LatAm Now Faces 2x More Cyberattacks Than US",
+    "source": "Dark Reading",
+    "published": "2026-03-05T14:00:00.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/latam-2x-more-cyberattacks-us",
+    "summary": "Much of Central and South America struggles with cybersecurity maturity, and hackers are taking advantage.",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-ba14d2ca",
+    "title": "VMware Aria Operations Bug Exploited, Cloud Resources at Risk",
+    "source": "Dark Reading",
+    "published": "2026-03-04T21:04:56.000Z",
+    "url": "https://www.darkreading.com/cloud-security/vmware-aria-operations-bug-exploited-cloud-risk",
+    "summary": "Exploitation of the command injection flaw in VMware Aria Operations could grant an attacker broad acess to victims' cloud environments.",
+    "severity": "HIGH",
+    "vendor": "Vmware",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "cloud",
+      "vmware"
+    ]
+  },
+  {
+    "id": "news-260a50da",
+    "title": "Stranger Things Meets Cybersecurity: Lessons from the Hive Mind",
+    "source": "Dark Reading",
+    "published": "2026-03-04T17:09:27.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/stranger-things-meets-cybersecurity-lessons-hive-mind",
+    "summary": "Events and concepts from the Stranger Things television series illustrate how enterprises can defend their networks and stay \"right side up.\"",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-1087df20",
+    "title": "Dark Reading Confidential: This Threat Hunter Helped Cops Bust Up An African Cybercrime Syndicate",
+    "source": "Dark Reading",
+    "published": "2026-03-04T15:00:00.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/threat-hunter-helped-cops-crack-african-cybercrime-syndicate",
+    "summary": "Dark Reading Confidential Episode 15: Interpol relied on Will Thomas and team to help break up a sprawling cybercrime ring, leading to the arrest of 574 suspects, the recovery of more than $3 million, and the decryption of six malware variants. Here's his story.",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-a3b06cc0",
+    "title": "China's Silver Dragon Razes Governments in EU, SE Asia",
+    "source": "Dark Reading",
+    "published": "2026-03-04T11:26:55.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/china-silver-dragon-governments-eu-se-asia",
+    "summary": "The emerging actor, part of the APT41 nexus, gains initial access via phishing, and uses legitimate network services to obscure cyber espionage activities.",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "phishing"
+    ]
+  },
+  {
+    "id": "news-45f4c22c",
+    "title": "Indian APT 'Sloppy Lemming' Targets Defense, Critical Infrastructure",
+    "source": "Dark Reading",
+    "published": "2026-03-03T22:24:22.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/india-apt-sloppy-lemming-defense-critical-infrastructure",
+    "summary": "India-nexus cyber threat actors are growing more active and sophisticated, using custom tools coded in Rust and cloud-based command and control.",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "cloud"
+    ]
+  },
+  {
+    "id": "news-252e18c2",
+    "title": "Vehicle Tire Pressure Sensors Enable Silent Tracking",
+    "source": "Dark Reading",
+    "published": "2026-03-03T20:53:39.000Z",
+    "url": "https://www.darkreading.com/ics-ot-security/tire-pressure-sensors-silent-tracking",
+    "summary": "Like many other features and systems in modern cars, tire pressure sensors leak sensitive data that can be abused by threat actors.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-96d08c26",
+    "title": "Qualcomm Zero-Day Exploited in Targeted Android Attacks",
+    "source": "Dark Reading",
+    "published": "2026-03-03T20:28:05.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/qualcomm-zero-day-exploited-targeted-android-attacks",
+    "summary": "The exploitation activity against CVE-2026-21385, a high-severity memory corruption flaw, could be tied to commercial spyware or nation-state threat groups.",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "dark-reading",
+      "zero-day"
+    ]
+  },
+  {
+    "id": "news-f3844488",
+    "title": "Speakeasies to Shadow AI: Banning AI Browsers Will Fail",
+    "source": "Dark Reading",
+    "published": "2026-03-03T17:40:21.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/speakeasies-shadow-ai-banning-ai-browsers-fail",
+    "summary": "Lessons from history highlight why AI-enabled browsers require controlled enablement.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-59125c86",
+    "title": "AI Agent Overload: How to Solve the Workload Identity Crisis",
+    "source": "Dark Reading",
+    "published": "2026-03-03T12:57:19.000Z",
+    "url": "https://www.darkreading.com/cloud-security/ai-agent-workload-identity-crisis",
+    "summary": "Workloads keep getting more complicated and organizations are struggling to keep up. So what's the play?",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "identity"
+    ]
+  },
+  {
+    "id": "news-71d8e684",
+    "title": "As War Continues, Pro-Iranian Actors Launch Barrage of Cyberattacks",
+    "source": "Dark Reading",
+    "published": "2026-03-03T11:30:31.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/war-pro-iranian-actors-cyberattacks",
+    "summary": "Iran and its supporters have taken to cyberspace to retaliate for US-Israeli military action, with an aim to cause economic and physical disruption.",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-567621e8",
+    "title": "Critical OpenClaw Vulnerability Exposes AI Agent Risks",
+    "source": "Dark Reading",
+    "published": "2026-03-02T22:34:36.000Z",
+    "url": "https://www.darkreading.com/application-security/critical-openclaw-vulnerability-ai-agent-risks",
+    "summary": "The now-patched flaw is the latest in a growing string of security issues associated with the viral AI tool, which has seen rapid adoption among developers.",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "vulnerability",
+      "patch",
+      "api"
+    ]
+  },
+  {
+    "id": "news-52147434",
+    "title": "The Tug-of-War Over Firewall Backlogs in the AI-Driven Development Era",
+    "source": "Dark Reading",
+    "published": "2026-03-02T21:32:04.000Z",
+    "url": "https://www.darkreading.com/cloud-security/tug-of-war-firewall-backlogs-ai-driven-development",
+    "summary": "Speed and security are historically clashing priorities, but with AI and automation, it's increasingly important that application developers and security teams get on the same page.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-49fbe189",
+    "title": "30 Alleged Members of 'The Com' Arrested in Project Compass",
+    "source": "Dark Reading",
+    "published": "2026-03-02T20:32:09.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/30-alleged-members-the-com-arrested-project-compass",
+    "summary": "The global law enforcement crackdown, which began in January 2025, also identified nearly 180 members of the notorious cybercriminal collective.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-2b00c3e3",
+    "title": "Quantum-Resistant Data Diode Secures Sensitive Data on Edge Devices, Critical Systems",
+    "source": "Dark Reading",
+    "published": "2026-03-02T12:55:27.000Z",
+    "url": "https://www.darkreading.com/ics-ot-security/quantum-resistant-data-diode-secures-sensitive-data-on-edge-devices-critical-systems",
+    "summary": "Forward Edge-AI's new Isidore Quantum is a compact, low-power hardware device designed to defend sensitive operational technology endpoints against future quantum attacks.",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-53005ee4",
+    "title": "Bug in Google's Gemini AI Panel Opens Door to Hijacking",
+    "source": "Dark Reading",
+    "published": "2026-03-02T10:27:15.000Z",
+    "url": "https://www.darkreading.com/endpoint-security/bug-google-gemini-ai-panel-hijacking",
+    "summary": "Attackers could have exploited the vulnerability to escalate privileges, violate user privacy while browsing, and access sensitive resources.",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "vulnerability",
+      "google"
+    ]
+  },
+  {
+    "id": "news-e9bebcea",
+    "title": "Who is the Kimwolf Botmaster “Dort”?",
+    "source": "Krebs on Security",
+    "published": "2026-02-28T12:01:57.000Z",
+    "url": "https://krebsonsecurity.com/2026/02/who-is-the-kimwolf-botmaster-dort/",
+    "summary": "In early January 2026, KrebsOnSecurity revealed how a security researcher disclosed a vulnerability that was used to assemble Kimwolf, the world's largest and most disruptive botnet. Since then, the person in control of Kimwolf -- who goes by the handle \"Dort\" -- has coordinated a barrage of distributed denial-of-se...",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "krebs-on-security",
+      "botnet",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "news-35b1d247",
+    "title": "Life Mirrors Art: Ransomware Hits Hospitals on TV & IRL",
+    "source": "Dark Reading",
+    "published": "2026-02-27T20:48:05.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-hospitals-tv-irl",
+    "summary": "HBO's \"The Pitt\" is showing audiences what a real Mississippi healthcare system is going through this week, thanks to a ransomware attack.",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "dark-reading",
+      "ransomware"
+    ]
+  },
+  {
+    "id": "news-f6a8e5f7",
+    "title": "Cities Hosting Major Events Need More Focus on Wireless, Drone Defense",
+    "source": "Dark Reading",
+    "published": "2026-02-27T20:23:17.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/cities-major-events-wireless-drone-defense",
+    "summary": "Major events like the FIFA World Cup need to look beyond traditional physical and cyber security to active and passive wireless threats, say experts.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-53a9cb40",
+    "title": "Flaw-Finding AI Assistants Face Criticism for Speed, Accuracy",
+    "source": "Dark Reading",
+    "published": "2026-02-27T20:16:24.000Z",
+    "url": "https://www.darkreading.com/application-security/flaw-finding-ai-assistants-face-criticism-speed-accuracy",
+    "summary": "Using AI to find security vulnerabilities holds significant promise, but the initial products fall short of the needs of enterprises and software developers, say experts.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-b0675511",
+    "title": "The Case for Why Better Breach Transparency Matters",
+    "source": "Dark Reading",
+    "published": "2026-02-27T16:18:19.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/why-better-breach-transparency-matters",
+    "summary": "It's become a standard practice for organizations to disclose the bare minimum about a data breach, or worse — not disclose the incident at all.",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "dark-reading",
+      "data-breach"
+    ]
+  },
+  {
+    "id": "news-a9b98497",
+    "title": "Claude Code Security Shows Promise, Not Perfection",
+    "source": "Dark Reading",
+    "published": "2026-02-27T14:00:00.000Z",
+    "url": "https://www.darkreading.com/application-security/claude-code-security-shows-promise-not-perfection",
+    "summary": "Claude Code's introduction rippled across the stock market, but researchers and analysts say its impact was overstated, as they peel back the layers.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-4c0ac42b",
+    "title": "Marquis v. SonicWall Lawsuit Ups the Breach Blame Game",
+    "source": "Dark Reading",
+    "published": "2026-02-26T22:02:41.000Z",
+    "url": "https://www.darkreading.com/cloud-security/marquis-sonicwall-lawsuit-breach-blame-game",
+    "summary": "When a company gets breached through a third-party security vendor, who should bear responsibility? For one FinTech company, the answer is the firewall provider.",
+    "severity": "MEDIUM",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "aws"
+    ]
+  },
+  {
+    "id": "news-7b2ffd69",
+    "title": "Cisco SD-WAN Zero-Day Under Exploitation for 3 Years",
+    "source": "Dark Reading",
+    "published": "2026-02-26T21:45:56.000Z",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/cisco-sd-wan-zero-day-exploitation-3-years",
+    "summary": "The maximum-severity vulnerability CVE-2026-20127 was exploited by an unknown but sophisticated threat actor who left very little evidence behind.",
+    "severity": "CRITICAL",
+    "vendor": "Cisco",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "dark-reading",
+      "zero-day",
+      "vulnerability",
+      "cisco"
+    ]
+  },
+  {
+    "id": "news-6576e714",
+    "title": "Chinese Police Use ChatGPT to Smear Japan PM Takaichi",
+    "source": "Dark Reading",
+    "published": "2026-02-26T00:00:00.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-police-chatgpt-smear-japan-pm-takaichi",
+    "summary": "A Chinese keyboard warrior inadvertently leaked information about politically motivated influence operations through a ChatGPT account.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-30fbc985",
+    "title": "Flaws in Claude Code Put Developers' Machines at Risk",
+    "source": "Dark Reading",
+    "published": "2026-02-25T22:02:32.000Z",
+    "url": "https://www.darkreading.com/application-security/flaws-claude-code-developer-machines-risk",
+    "summary": "The vulnerabilities highlight a big drawback to integrating AI into software development workflows and the potential impact on supply chains.",
+    "severity": "MEDIUM",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "supply-chain",
+      "aws"
+    ]
+  },
+  {
+    "id": "news-80f8daa7",
+    "title": "RAMP Forum Seizure Fractures Ransomware Ecosystem",
+    "source": "Dark Reading",
+    "published": "2026-02-25T21:14:21.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/ramp-forum-seizure-fractures-ransomware-ecosystem",
+    "summary": "Researchers suggest defenders monitor how these malicious groups re-form and leverage the useful threat intel to guide their next moves.",
+    "severity": "CRITICAL",
+    "vendor": "Intel",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "dark-reading",
+      "ransomware",
+      "intel"
+    ]
+  },
+  {
+    "id": "news-f4fa40c7",
+    "title": "PCI Council Says Threats to Payments Systems Are Speeding Up",
+    "source": "Dark Reading",
+    "published": "2026-02-25T19:15:33.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/pci-council-threats-payments-systems-speeding-up",
+    "summary": "The PCI Security Standards Council experienced a record year in many regards, but its first annual report shows it needs to work even faster to stay ahead of attackers.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-1d471863",
+    "title": "Malicious Next.js Repos Target Developers Via Fake Job Interviews",
+    "source": "Dark Reading",
+    "published": "2026-02-25T16:42:00.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/malicious-nextjs-repos-developers-fake-job-interviews",
+    "summary": "Linked to North Korean fake job-recruitment campaigns, the poisoned repositories are aimed at establishing persistent access to infected machines.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-688898e6",
+    "title": "Why 'Call This Number' TOAD Emails Beat Gateways",
+    "source": "Dark Reading",
+    "published": "2026-02-25T14:00:00.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/why-call-this-number-toad-emails-beat-gateways",
+    "summary": "Attackers are bypassing email gateways through telephone-oriented attack delivery (TOAD), in which the only email payload is a phone number.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-c0084b2e",
+    "title": "'Richter Scale' Model Measures Magnitude of OT Cyber Incidents",
+    "source": "Dark Reading",
+    "published": "2026-02-25T12:00:00.000Z",
+    "url": "https://www.darkreading.com/ics-ot-security/richter-scale-model-measures-cyber-incidents",
+    "summary": "ICS/OT experts have devised a scoring system for rating the severity and effects of cybersecurity events in operational technology environments.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-8140efe4",
+    "title": "Operation Red Card 2.0 Leads to 651 Arrests in Africa",
+    "source": "Dark Reading",
+    "published": "2026-02-25T08:00:00.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/operation-red-card-2-0-leads-to-651-arrests-in-africa",
+    "summary": "In the latest operation targeting cybercrime groups, African law enforcement agencies cooperated with Interpol and cybersecurity firms to recover more than $4.3 million.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-812f49fc",
+    "title": "Attackers Now Need Just 29 Minutes to Own a Network",
+    "source": "Dark Reading",
+    "published": "2026-02-24T21:38:15.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/attackers-now-need-just-29-minutes-to-own-a-network",
+    "summary": "Credential misuse, AI tools, and security blind spots help attackers move through breached networks faster than ever, CrowdStrike finds.",
+    "severity": "HIGH",
+    "vendor": "Crowdstrike",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "crowdstrike"
+    ]
+  },
+  {
+    "id": "news-306ac940",
+    "title": "Lazarus Group Picks a New Poison: Medusa Ransomware",
+    "source": "Dark Reading",
+    "published": "2026-02-24T21:18:04.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/lazarus-group-new-position-medusa-ransomware",
+    "summary": "The North Korean threat group also leveraged Comebacker backdoor, Blindingcan RAT, and info stealer Infohook in its recent attacks.",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "dark-reading",
+      "ransomware"
+    ]
+  },
+  {
+    "id": "news-5b0055f9",
+    "title": "As Cybersecurity Firms Chase AI, VC Market Skyrockets",
+    "source": "Dark Reading",
+    "published": "2026-02-24T13:04:04.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-analytics/cybersecurity-firms-chase-ai-vc-market-skyrockets",
+    "summary": "Investments in cybersecurity startups took off in 2025 as venture capital firms focused not just on AI-native tech but on talent as well.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "api"
+    ]
+  },
+  {
+    "id": "news-6fda8e14",
+    "title": "Spitting Cash: ATM Jackpotting Attacks Surged in 2025",
+    "source": "Dark Reading",
+    "published": "2026-02-23T22:20:08.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/atm-jackpotting-attacks-surged-2025",
+    "summary": "The attacks cost banks more than $20 million in losses last year, as criminals used many of the same tools and tactics they have wielded for more than a decade.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-602fef6e",
+    "title": "More Than Dashboards: AI Decisions Must Be Provable",
+    "source": "Dark Reading",
+    "published": "2026-02-23T22:18:18.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/more-dashboards-ai-decisions-provable",
+    "summary": "AI systems have to be able to show a record of what happened and how.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-e2570e1c",
+    "title": "Iran's MuddyWater Targets Orgs With Fresh Malware as Tensions Mount",
+    "source": "Dark Reading",
+    "published": "2026-02-23T20:35:12.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/iran-muddywater-new-malware-tensions-mount",
+    "summary": "The long-active Iranian threat group debuted various attack strains and payloads in attacks against organizations in the Middle East and Africa.",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-0833183b",
+    "title": "Enigma Cipher Device Still Holds Secrets for Cyber Pros",
+    "source": "Dark Reading",
+    "published": "2026-02-23T20:11:27.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/enigma-cipher-device-secrets-cyber-pros",
+    "summary": "The Nazi relic's history is riddled with resilience errors, and those lessons still apply to defending against modern cyber threats.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-1f05e863",
+    "title": "600+ FortiGate Devices Hacked by AI-Armed Amateur",
+    "source": "Dark Reading",
+    "published": "2026-02-23T19:37:59.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/600-fortigate-devices-hacked-ai-amateur",
+    "summary": "A Russian-speaking hacker used generative AI to compromise the FortiGate firewalls, targeting credentials and backups for possible follow-on ransomware attacks.",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "dark-reading",
+      "ransomware"
+    ]
+  },
+  {
+    "id": "news-974e3732",
+    "title": "Attackers Use New Tool to Scan for React2Shell Exposure",
+    "source": "Dark Reading",
+    "published": "2026-02-20T21:07:07.000Z",
+    "url": "https://www.darkreading.com/application-security/attackers-new-tool-scan-react2shell-exposure",
+    "summary": "Researchers say threat actors wielded the sophisticated — and unfortunately named — toolkit to target high-value networks for React2Shell exploitation.",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-6e7e3d0a",
+    "title": "‘Starkiller’ Phishing Service Proxies Real Login Pages, MFA",
+    "source": "Krebs on Security",
+    "published": "2026-02-20T20:00:30.000Z",
+    "url": "https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/",
+    "summary": "Most phishing websites are little more than static copies of login pages for popular online destinations, and they are often quickly taken down by anti-abuse activists and security firms. But a stealthy new phishing-as-a-service offering lets customers sidestep both of these pitfalls: It uses cleverly disguised link...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "krebs-on-security",
+      "phishing"
+    ]
+  },
+  {
+    "id": "news-f9857839",
+    "title": "'God-Like' Attack Machines: AI Agents Ignore Security Policies",
+    "source": "Dark Reading",
+    "published": "2026-02-20T18:31:58.000Z",
+    "url": "https://www.darkreading.com/application-security/ai-agents-ignore-security-policies",
+    "summary": "Microsoft Copilot recently summarized and leaked user emails; but any AI agent will go above and beyond to complete assigned tasks, even breaking through their carefully designed guardrails.",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-b148f305",
+    "title": "Lessons From AI Hacking: Every Model, Every Layer Is Risky",
+    "source": "Dark Reading",
+    "published": "2026-02-20T18:02:02.000Z",
+    "url": "https://www.darkreading.com/application-security/lessons-ai-hacking-model-every-layer-risky",
+    "summary": "After two years of finding flaws in AI infrastructure, two Wiz researchers advise security pros to worry less about prompt injection and more about vulnerabilities.",
+    "severity": "MEDIUM",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "aws"
+    ]
+  },
+  {
+    "id": "news-51aa6332",
+    "title": "Kimwolf Botnet Swamps Anonymity Network I2P",
+    "source": "Krebs on Security",
+    "published": "2026-02-11T16:08:11.000Z",
+    "url": "https://krebsonsecurity.com/2026/02/kimwolf-botnet-swamps-anonymity-network-i2p/",
+    "summary": "For the past week, the massive \"Internet of Things\" (IoT) botnet known as Kimwolf has been disrupting the The Invisible Internet Project (I2P), a decentralized, encrypted communications network designed to anonymize and secure online communications. I2P users started reporting disruptions in the network around the s...",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "krebs-on-security",
+      "botnet"
+    ]
+  },
+  {
+    "id": "news-1c99aed9",
+    "title": "Patch Tuesday, February 2026 Edition",
+    "source": "Krebs on Security",
+    "published": "2026-02-10T21:49:53.000Z",
+    "url": "https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition/",
+    "summary": "Microsoft today released updates to fix more than 50 security holes in its Windows operating systems and other software, including patches for a whopping six \"zero-day\" vulnerabilities that attackers are already exploiting in the wild.",
+    "severity": "CRITICAL",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "krebs-on-security",
+      "zero-day",
+      "patch",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-eec00ead",
+    "title": "Please Don’t Feed the Scattered Lapsus ShinyHunters",
+    "source": "Krebs on Security",
+    "published": "2026-02-02T16:15:16.000Z",
+    "url": "https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/",
+    "summary": "A prolific data ransom gang that calls itself Scattered Lapsus ShinyHunters (SLSH) has a distinctive playbook when it seeks to extort payment from victim firms: Harassing, threatening and even swatting executives and their families, all while notifying journalists and regulators… Read More »",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "krebs-on-security"
+    ]
+  },
+  {
+    "id": "news-5299ccf7",
+    "title": "Who Operates the Badbox 2.0 Botnet?",
+    "source": "Krebs on Security",
+    "published": "2026-01-26T16:11:38.000Z",
+    "url": "https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/",
+    "summary": "The cybercriminals in control of Kimwolf -- a disruptive botnet that has infected more than 2 million devices -- recently shared a screenshot indicating they'd compromised the control panel for Badbox 2.0, a vast China-based botnet powered by malicious software that comes pre-installed on many Android TV streaming b...",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "krebs-on-security",
+      "botnet"
+    ]
+  },
+  {
+    "id": "news-01c14f32",
+    "title": "Kimwolf Botnet Lurking in Corporate, Govt. Networks",
+    "source": "Krebs on Security",
+    "published": "2026-01-20T18:19:13.000Z",
+    "url": "https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/",
+    "summary": "A new Internet-of-Things botnet called Kimwolf has spread to more than 2 million devices, forcing infected systems to participate in massive distributed denial-of-service (DDoS) attacks and to relay other malicious and abusive Internet traffic. Kimwolf's ability to scan the local networks of compromised systems for ...",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "krebs-on-security",
+      "botnet"
+    ]
+  },
+  {
+    "id": "news-4a20f1eb",
+    "title": "Patch Tuesday, January 2026 Edition",
+    "source": "Krebs on Security",
+    "published": "2026-01-14T00:47:38.000Z",
+    "url": "https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/",
+    "summary": "Microsoft today issued patches to plug at least 113 security holes in its various Windows operating systems and supported software. Eight of the vulnerabilities earned Microsoft's most-dire \"critical\" rating, and the company warns that attackers are already exploiting one of the bugs fixed today.",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "krebs-on-security",
+      "patch",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-99e7c68a",
+    "title": "Who Benefited from the Aisuru and Kimwolf Botnets?",
+    "source": "Krebs on Security",
+    "published": "2026-01-08T23:23:43.000Z",
+    "url": "https://krebsonsecurity.com/2026/01/who-benefited-from-the-aisuru-and-kimwolf-botnets/",
+    "summary": "Our first story of 2026 revealed how a destructive new botnet called Kimwolf rapidly grew to infect more than two million devices by mass-compromising a vast number of unofficial Android TV streaming boxes. Today, we'll dig through digital clues left behind by the hackers, network operators, and cybercrime services ...",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "krebs-on-security",
+      "botnet",
+      "api"
+    ]
+  },
+  {
+    "id": "news-064e7579",
+    "title": "The Kimwolf Botnet is Stalking Your Local Network",
+    "source": "Krebs on Security",
+    "published": "2026-01-02T14:20:10.000Z",
+    "url": "https://krebsonsecurity.com/2026/01/the-kimwolf-botnet-is-stalking-your-local-network/",
+    "summary": "The story you are reading is a series of scoops nestled inside a far more urgent Internet-wide security advisory. The vulnerability at issue has been exploited for months already, and it's time for a broader awareness of the threat. The short version is that everything you thought you knew about the security of the ...",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "krebs-on-security",
+      "botnet",
+      "vulnerability"
+    ]
+  }
+]
