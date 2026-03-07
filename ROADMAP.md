@@ -1,6 +1,6 @@
 # CyberMonitor Roadmap
 
-## v1 (Current MVP)
+## v1 (Initial MVP)
 
 - Static SOC-style dashboard shell in `frontend/`
 - Sample feeds in `data/` for KEV, news, and outages
@@ -11,30 +11,40 @@
 ## v1.1
 
 - Status: Completed (March 2026)
-- Replace map placeholder with lightweight interactive world map layer
-- Add panel-level filtering (severity, source, time window)
-- Add richer status widgets for active campaigns and trend lines
-- Add screenshot and demo assets for repository homepage
+- Leaflet world map integration in center wallboard module
+- Panel-level filtering (severity, source, time window)
+- Metrics widgets with sparkline trends
+- Improved screenshots and repository polish
 
 ## v1.2
 
 - Status: Completed (March 2026)
+- Local preference persistence for layer/filter/search/timeline controls
+- Timeline stepping controls for map overlay windows (`1h`, `6h`, `24h`, `7d`)
+- Browser-side global search across KEV/news/outage panels
+- Optional adapter scaffolding plus generated-feed fallback loading
 
-- Add optional localStorage persistence for layer and filter preferences
-- Expand map overlays with timeline stepping controls
-- Introduce browser-side search across KEV/news/outage entries
-- Add optional live feed adapter scripts while keeping static-host compatibility
+## v1.3
 
-## v2
+- Status: Completed (March 2026)
+- Real CISA KEV ingestion and normalization to `data/kev.json`
+- Real security news ingestion from public RSS sources to `data/news.json`
+- Real outage/status ingestion from public status RSS sources to `data/outages.json`
+- Shared adapter normalization utilities in `scripts/adapters/lib/`
+- Unified generation runner in `scripts/generate-feeds.js`
+- Frontend feed-source indicators for live/sample/mixed visibility
+- Continued static-host compatibility with sample fallback behavior
 
-- Build real KEV ingestion script in `scripts/`
-- Add security news normalization pipeline with source tagging
-- Add ransomware/threat intel feed schemas and sample generators
-- Automate JSON refresh with GitHub Actions on a schedule
-- Publish to GitHub Pages with action-based deployment checks
+## v1.4 (Next)
 
-## Stretch Goals
+- Add scheduled feed generation pipeline (GitHub Actions cron)
+- Publish generated feed freshness metadata in the UI
+- Expand source coverage with additional public intel/status feeds
+- Add basic feed health reporting for failed adapters
+- Improve map overlays with data-backed feed correlations (after ingestion automation hardens)
 
-- Add optional timeline playback mode
-- Add compact map legend for overlay categories and counts
-- Add panel pinning and custom panel order persistence
+## Longer-Term Direction
+
+- Automatic public data refresh cadence for GitHub Pages deployments
+- Optional desktop packaging once data pipeline and refresh loop are stable
+- More advanced threat clustering and regional intelligence overlays
