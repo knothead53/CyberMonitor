@@ -1,4 +1,4 @@
-﻿# CyberMonitor
+# CyberMonitor
 
 CyberMonitor is a free, no-login cybersecurity monitoring dashboard designed for instant loading on static hosting.
 
@@ -7,32 +7,38 @@ It aggregates cybersecurity signals into a SOC-style wallboard focused on:
 - exploited vulnerabilities (CISA KEV)
 - security news
 - infrastructure outages
-- threat signal visibility for future expansion
+- map-based threat signal visibility
 
 ## Preview
-![CyberMonitor v1.1 dashboard preview](assets/screenshots/dashboard-v1.1.png)
+![CyberMonitor dashboard preview](assets/screenshots/dashboard-v1.2.png)
 
-## v1.1 Highlights
+## v1.2 Highlights
 
-- Interactive Leaflet world map replacing the center placeholder board
-- Map overlay demo layers with left-rail layer toggles
-- Panel-level filtering by severity, time window, and source
-- Data-driven status widgets with lightweight sparkline trends
-- Repository polish updates (screenshot asset + docs refresh)
+- local preference persistence (`localStorage`) for layers, panel filters, global search, and timeline selection
+- reset control to clear stored preferences and restore defaults
+- map timeline stepping controls (`1h`, `6h`, `24h`, `7d`) with overlay re-rendering
+- global browser-side search across KEV/news/outages (`title`, `summary`, `source`, `vendor`, `severity`)
+- optional adapter script scaffolding for generated feeds while preserving static-host compatibility
 
-## What This MVP Includes
+## What This Dashboard Includes
 
-- Static front end in plain HTML, CSS, and JavaScript
-- No backend server and no API keys
-- Feed rendering from local JSON files in `/data`
-- Layer toggles to hide or show panel streams
-- Manual refresh control with last-updated timestamp
-- `file://` fallback mode so `frontend/index.html` still renders data when opened directly
+- static frontend in plain HTML, CSS, and JavaScript
+- no backend server and no required API keys
+- center Leaflet world map with overlay categories and timeline filtering
+- panel-level filtering by severity, time window, and source
+- global search across all intelligence panels
+- manual refresh control and last-updated indicator
+- file-mode fallback support so `frontend/index.html` still renders when opened directly
 
-## Data Sources Disclaimer
+## Feed Loading Model (v1.2)
 
-- Data in this repository is sample/demo JSON under `/data`.
-- Live production feed integrations are optional future work and are not required for v1.1.
+For each feed panel, the frontend attempts generated feed files first, then sample files:
+
+- KEV: `data/kev.json` -> `data/kev.sample.json`
+- News: `data/news.json` -> `data/news.sample.json`
+- Outages: `data/outages.json` -> `data/outages.sample.json`
+
+If you never run adapters, the dashboard continues to work with sample files only.
 
 ## Run Locally
 
@@ -42,24 +48,47 @@ It aggregates cybersecurity signals into a SOC-style wallboard focused on:
 
 Optional: serve the repo with any static server if you want strict browser behavior that mirrors production hosting.
 
+## Optional Adapter Scripts
+
+Adapters are optional tooling and are not required at runtime.
+
+```bash
+node scripts/adapters/kev_adapter.js
+node scripts/adapters/news_adapter.js
+node scripts/adapters/outages_adapter.js
+```
+
+These generate:
+
+- `data/kev.json`
+- `data/news.json`
+- `data/outages.json`
+
 ## Project Structure
 
 ```text
 CyberMonitor/
 |- frontend/
-|  |- index.html         # Dashboard layout
-|  |- styles.css         # Command-center visual style and responsive layout
-|  |- app.js             # Feed fetching, rendering, refresh, and layer toggles
+|  |- index.html
+|  |- styles.css
+|  |- app.js
 |- data/
-|  |- kev.sample.json    # Sample KEV feed
-|  |- news.sample.json   # Sample security news feed
-|  |- outages.sample.json# Sample outage feed
-|  |- map.overlays.sample.json # Sample map overlays
-|  |- metrics.sample.json # Sample metrics sparkline history
-|  |- fallback.sample.js # Local file-mode fallback payload
+|  |- kev.sample.json
+|  |- news.sample.json
+|  |- outages.sample.json
+|  |- map.overlays.sample.json
+|  |- metrics.sample.json
+|  |- fallback.sample.js
+|  |- kev.json            # optional generated output
+|  |- news.json           # optional generated output
+|  |- outages.json        # optional generated output
 |- scripts/
 |  |- README.md
 |  |- refresh-sample-timestamps.js
+|  |- adapters/
+|     |- kev_adapter.js
+|     |- news_adapter.js
+|     |- outages_adapter.js
 |- assets/
 |  |- screenshots/
 |     |- dashboard-v1.1.png
@@ -68,7 +97,7 @@ CyberMonitor/
 |- README.md
 ```
 
-## Data Contract (MVP)
+## Data Contract
 
 Each feed item uses:
 
@@ -80,11 +109,11 @@ Each feed item uses:
 - `summary`
 - optional tags like `severity` and `vendor`
 
-## Roadmap Preview (v2 Focus)
+## Data Sources Disclaimer
 
-- Real CISA KEV ingestion script
-- Scheduled feed refresh with GitHub Actions
-- Expanded feeds for ransomware and threat intelligence
+- Data in this repository is sample/demo JSON under `data/`.
+- Adapter scripts currently provide normalization scaffolding and local generation.
+- Live production feed integrations remain optional and are not required for v1.2.
 
 See full milestones in [ROADMAP.md](ROADMAP.md).
 

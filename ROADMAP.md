@@ -1,4 +1,4 @@
-﻿# CyberMonitor Roadmap
+# CyberMonitor Roadmap
 
 ## v1 (Current MVP)
 
@@ -16,7 +16,9 @@
 - Add richer status widgets for active campaigns and trend lines
 - Add screenshot and demo assets for repository homepage
 
-## v1.2 (Stub)
+## v1.2
+
+- Status: Completed (March 2026)
 
 - Add optional localStorage persistence for layer and filter preferences
 - Expand map overlays with timeline stepping controls
@@ -34,5 +36,5 @@
 ## Stretch Goals
 
 - Add optional timeline playback mode
-- Add browser-side search across all panel feeds
-- Add lightweight settings persistence in localStorage
+- Add compact map legend for overlay categories and counts
+- Add panel pinning and custom panel order persistence
