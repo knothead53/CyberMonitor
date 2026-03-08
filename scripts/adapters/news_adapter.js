@@ -3,6 +3,7 @@
 const fs = require("fs/promises");
 const path = require("path");
 const { parseRssItems, stripHtml } = require("./lib/rss");
+const { NEWS_FEEDS } = require("./sources");
 const {
   buildStableId,
   dedupeBy,
@@ -18,25 +19,7 @@ const {
 
 const DEFAULT_OUTPUT_PATH = path.resolve(process.cwd(), "data/news.json");
 const DEFAULT_LIMIT = 180;
-const USER_AGENT = "CyberMonitor-News-Adapter/1.3";
-
-const NEWS_FEEDS = [
-  {
-    source: "BleepingComputer",
-    url: "https://www.bleepingcomputer.com/feed/",
-    vendor: ""
-  },
-  {
-    source: "Dark Reading",
-    url: "https://www.darkreading.com/rss.xml",
-    vendor: ""
-  },
-  {
-    source: "Krebs on Security",
-    url: "https://krebsonsecurity.com/feed/",
-    vendor: ""
-  }
-];
+const USER_AGENT = "CyberMonitor-News-Adapter/1.4";
 
 const NEWS_SEVERITY_RULES = {
   critical: [

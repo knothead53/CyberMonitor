@@ -1,6 +1,7 @@
 (() => {
   const FEED_LIMIT = 10;
-  const MAP_OVERLAY_PATH = "../data/map.overlays.sample.json";
+  const MAP_OVERLAY_PRIMARY_PATH = "../data/map.correlated.json";
+  const MAP_OVERLAY_FALLBACK_PATH = "../data/map.overlays.sample.json";
   const METRICS_PATH = "../data/metrics.sample.json";
   const MAP_OVERLAY_KEYS = ["cloud_regions", "major_incidents", "internet_outages"];
   const MAP_LAYER_BINDINGS = {
@@ -902,27 +903,27 @@
   }
 
   async function fetchMapOverlays() {
-    try {
-      const response = await fetch(MAP_OVERLAY_PATH, { cache: "no-store" });
-      if (!response.ok) {
-        throw new Error(`Request failed (${response.status})`);
-      }
+    const attempts = [
+      { path: MAP_OVERLAY_PRIMARY_PATH, usedFallback: false },
+      { path: MAP_OVERLAY_FALLBACK_PATH, usedFallback: true }
+    ];
 
-      const json = await response.json();
-      return {
-        overlays: normalizeMapOverlays(json),
-        usedFallback: false
-      };
-    } catch (error) {
-      if (window.location.protocol === "file:") {
+    for (const attempt of attempts) {
+      try {
+        const json = await fetchJson(attempt.path);
         return {
-          overlays: getLocalOverlayFallback(),
-          usedFallback: true
+          overlays: normalizeMapOverlays(json),
+          usedFallback: attempt.usedFallback
         };
+      } catch (_error) {
+        // continue to next attempt
       }
-
-      throw error;
     }
+
+    return {
+      overlays: getLocalOverlayFallback(),
+      usedFallback: true
+    };
   }
 
   function updateLastUpdated(usedFallback) {

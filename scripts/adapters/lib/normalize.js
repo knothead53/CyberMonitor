@@ -22,7 +22,8 @@ const DEFAULT_VENDOR_KEYWORDS = [
   "amd",
   "dell",
   "discord",
-  "slack"
+  "slack",
+  "heroku"
 ];
 
 const SEVERITY_VALUES = new Set(["LOW", "MEDIUM", "HIGH", "CRITICAL"]);

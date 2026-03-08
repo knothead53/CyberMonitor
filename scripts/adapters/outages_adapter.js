@@ -3,6 +3,7 @@
 const fs = require("fs/promises");
 const path = require("path");
 const { parseRssItems, stripHtml } = require("./lib/rss");
+const { OUTAGE_FEEDS } = require("./sources");
 const {
   buildStableId,
   dedupeBy,
@@ -17,30 +18,7 @@ const {
 
 const DEFAULT_OUTPUT_PATH = path.resolve(process.cwd(), "data/outages.json");
 const DEFAULT_LIMIT = 160;
-const USER_AGENT = "CyberMonitor-Outages-Adapter/1.3";
-
-const OUTAGE_FEEDS = [
-  {
-    source: "GitHub Status",
-    vendor: "GitHub",
-    url: "https://www.githubstatus.com/history.rss"
-  },
-  {
-    source: "OpenAI Status",
-    vendor: "OpenAI",
-    url: "https://status.openai.com/history.rss"
-  },
-  {
-    source: "Discord Status",
-    vendor: "Discord",
-    url: "https://status.discord.com/history.rss"
-  },
-  {
-    source: "Cloudflare Status",
-    vendor: "Cloudflare",
-    url: "https://www.cloudflarestatus.com/history.rss"
-  }
-];
+const USER_AGENT = "CyberMonitor-Outages-Adapter/1.4";
 
 const OUTAGE_SEVERITY_RULES = {
   critical: ["major outage", "global outage", "service unavailable", "down", "widespread"],
