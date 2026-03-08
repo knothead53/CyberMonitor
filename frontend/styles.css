@@ -155,35 +155,60 @@ body {
   background: rgba(7, 15, 31, 0.65);
 }
 
+.health-mode-indicator {
+  border: 1px solid rgba(151, 179, 221, 0.35);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  color: #b7c9ea;
+  background: rgba(7, 15, 31, 0.65);
+}
+
+.feed-refresh-summary {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+}
+
 .data-mode-indicator.mode-live,
-.feed-source-indicator.mode-live {
+.health-mode-indicator.mode-live,
+.feed-source-indicator.mode-live,
+.panel-health-indicator.mode-live {
   border-color: rgba(87, 255, 190, 0.45);
   color: #9df4cf;
   background: rgba(87, 255, 190, 0.14);
 }
 
 .data-mode-indicator.mode-sample,
-.feed-source-indicator.mode-sample {
+.health-mode-indicator.mode-sample,
+.feed-source-indicator.mode-sample,
+.panel-health-indicator.mode-sample {
   border-color: rgba(151, 179, 221, 0.36);
   color: #b9c9e7;
   background: rgba(90, 113, 153, 0.2);
 }
 
-.data-mode-indicator.mode-mixed {
+.data-mode-indicator.mode-mixed,
+.health-mode-indicator.mode-mixed,
+.panel-health-indicator.mode-mixed {
   border-color: rgba(255, 212, 110, 0.44);
   color: #ffe49d;
   background: rgba(130, 104, 33, 0.22);
 }
 
 .data-mode-indicator.mode-partial,
-.feed-source-indicator.mode-unavailable {
+.health-mode-indicator.mode-partial,
+.feed-source-indicator.mode-unavailable,
+.panel-health-indicator.mode-unavailable {
   border-color: rgba(255, 125, 95, 0.5);
   color: #ffb39f;
   background: rgba(120, 44, 31, 0.22);
 }
 
 .data-mode-indicator.mode-pending,
-.feed-source-indicator.mode-pending {
+.health-mode-indicator.mode-pending,
+.feed-source-indicator.mode-pending,
+.panel-health-indicator.mode-pending {
   border-color: rgba(151, 179, 221, 0.35);
   color: #aec2e6;
   background: rgba(7, 15, 31, 0.65);
@@ -545,6 +570,28 @@ body {
   font-family: "IBM Plex Mono", Consolas, monospace;
   background: rgba(7, 15, 31, 0.7);
   white-space: nowrap;
+}
+
+.panel-health-indicator {
+  border: 1px solid rgba(151, 179, 221, 0.34);
+  border-radius: 999px;
+  padding: 2px 8px;
+  color: #afc2e6;
+  font-size: 0.62rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  background: rgba(7, 15, 31, 0.7);
+  white-space: nowrap;
+}
+
+.feed-freshness-meta {
+  margin: 0 0 8px;
+  color: var(--text-muted);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .panel-filters {

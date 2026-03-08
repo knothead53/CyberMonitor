@@ -36,6 +36,8 @@
       <div class="topbar-meta">
         <span class="env-badge">MVP</span>
         <span id="data-mode-badge" class="data-mode-indicator">Data: checking...</span>
+        <span id="feed-health-badge" class="health-mode-indicator mode-pending">Health: checking...</span>
+        <span id="feed-refresh-summary" class="feed-refresh-summary">Feeds refreshed: checking...</span>
         <span id="last-updated">Last updated: waiting for feed</span>
         <button id="refresh-btn" type="button">Refresh</button>
         <button id="reset-preferences-btn" type="button">Reset Preferences</button>
@@ -103,9 +105,11 @@
           <h2 class="panel-title">CISA KEV (Exploited Vulns)</h2>
           <div class="feed-head-meta">
             <span class="feed-source-indicator mode-pending" id="kev-feed-mode">Checking...</span>
+            <span class="panel-health-indicator mode-pending" id="kev-health-mode">HEALTH</span>
             <span class="panel-count" id="kev-count">0</span>
           </div>
         </div>
+        <p class="feed-freshness-meta" id="kev-freshness-meta">Updated: checking...</p>
         <div class="panel-filters" id="kev-filters">
           <label class="filter-control" for="kev-filter-severity">
             <span>Severity</span>
@@ -144,9 +148,11 @@
           <h2 class="panel-title">Security News</h2>
           <div class="feed-head-meta">
             <span class="feed-source-indicator mode-pending" id="news-feed-mode">Checking...</span>
+            <span class="panel-health-indicator mode-pending" id="news-health-mode">HEALTH</span>
             <span class="panel-count" id="news-count">0</span>
           </div>
         </div>
+        <p class="feed-freshness-meta" id="news-freshness-meta">Updated: checking...</p>
         <div class="panel-filters" id="news-filters">
           <label class="filter-control" for="news-filter-severity">
             <span>Severity</span>
@@ -185,9 +191,11 @@
           <h2 class="panel-title">Outages</h2>
           <div class="feed-head-meta">
             <span class="feed-source-indicator mode-pending" id="outages-feed-mode">Checking...</span>
+            <span class="panel-health-indicator mode-pending" id="outages-health-mode">HEALTH</span>
             <span class="panel-count" id="outages-count">0</span>
           </div>
         </div>
+        <p class="feed-freshness-meta" id="outages-freshness-meta">Updated: checking...</p>
         <div class="panel-filters" id="outages-filters">
           <label class="filter-control" for="outages-filter-severity">
             <span>Severity</span>

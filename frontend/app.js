@@ -3,6 +3,8 @@
   const MAP_OVERLAY_PRIMARY_PATH = "../data/map.correlated.json";
   const MAP_OVERLAY_FALLBACK_PATH = "../data/map.overlays.sample.json";
   const METRICS_PATH = "../data/metrics.sample.json";
+  const FEED_METADATA_PATH = "../data/feed-metadata.json";
+  const FEED_HEALTH_PATH = "../data/feed-health.json";
   const MAP_OVERLAY_KEYS = ["cloud_regions", "major_incidents", "internet_outages"];
   const MAP_LAYER_BINDINGS = {
     news: "cloud_regions",
@@ -126,6 +128,8 @@
   const elements = {
     updated: document.getElementById("last-updated"),
     dataModeBadge: document.getElementById("data-mode-badge"),
+    feedHealthBadge: document.getElementById("feed-health-badge"),
+    feedRefreshSummary: document.getElementById("feed-refresh-summary"),
     refresh: document.getElementById("refresh-btn"),
     resetPreferences: document.getElementById("reset-preferences-btn"),
     globalSearchInput: document.getElementById("global-search-input"),
@@ -156,6 +160,14 @@
     feedModeBadges: Object.keys(FEEDS).reduce((acc, key) => {
       acc[key] = document.getElementById(`${key}-feed-mode`);
       return acc;
+    }, {}),
+    feedHealthBadges: Object.keys(FEEDS).reduce((acc, key) => {
+      acc[key] = document.getElementById(`${key}-health-mode`);
+      return acc;
+    }, {}),
+    feedFreshnessMeta: Object.keys(FEEDS).reduce((acc, key) => {
+      acc[key] = document.getElementById(`${key}-freshness-meta`);
+      return acc;
     }, {})
   };
 
@@ -178,6 +190,8 @@
     acc[key] = { ...FILTER_DEFAULTS };
     return acc;
   }, {});
+  let feedMetadataState = null;
+  let feedHealthState = null;
   let preferenceState = {
     searchQuery: "",
     timelineWindow: DEFAULT_TIMELINE_WINDOW
@@ -363,6 +377,7 @@
       populateSourceFilter(feedKey, feedState[feedKey]);
       renderItems(feedKey, feedState[feedKey]);
     });
+    updateAllFeedObservability();
   }
 
   function selectFeedElements(feedKey) {
@@ -387,6 +402,112 @@
       hour: "2-digit",
       minute: "2-digit"
     });
+  }
+
+  function toIsoOrNull(value) {
+    const parsed = Date.parse(String(value || ""));
+    if (Number.isFinite(parsed)) {
+      return new Date(parsed).toISOString();
+    }
+    return null;
+  }
+
+  function formatRelativeTime(value) {
+    const timestamp = Date.parse(String(value || ""));
+    if (!Number.isFinite(timestamp)) {
+      return "unknown";
+    }
+
+    const diffMs = Math.max(Date.now() - timestamp, 0);
+    const minuteMs = 60 * 1000;
+    const hourMs = 60 * minuteMs;
+    const dayMs = 24 * hourMs;
+
+    if (diffMs < minuteMs) {
+      return "just now";
+    }
+    if (diffMs < hourMs) {
+      return `${Math.max(1, Math.floor(diffMs / minuteMs))}m ago`;
+    }
+    if (diffMs < dayMs) {
+      return `${Math.max(1, Math.floor(diffMs / hourMs))}h ago`;
+    }
+
+    return `${Math.max(1, Math.floor(diffMs / dayMs))}d ago`;
+  }
+
+  function normalizeHealthStatus(value, fallback = "pending") {
+    const normalized = String(value || "").trim().toLowerCase();
+    if (normalized === "ok") {
+      return "ok";
+    }
+    if (normalized === "warning") {
+      return "warning";
+    }
+    if (normalized === "error") {
+      return "error";
+    }
+    return fallback;
+  }
+
+  function getFeedItemsNewestTimestamp(feedKey) {
+    const timestamps = normalizeItems(feedState[feedKey])
+      .map((item) => toIsoOrNull(item?.published))
+      .filter(Boolean)
+      .sort((a, b) => Date.parse(b) - Date.parse(a));
+
+    return timestamps.length > 0 ? timestamps[0] : null;
+  }
+
+  function normalizeFeedMetadata(rawValue) {
+    if (!rawValue || typeof rawValue !== "object") {
+      return null;
+    }
+
+    const feeds = {};
+    Object.keys(FEEDS).forEach((feedKey) => {
+      const source = rawValue?.feeds?.[feedKey] && typeof rawValue.feeds[feedKey] === "object"
+        ? rawValue.feeds[feedKey]
+        : {};
+
+      const count = Number(source.itemCount);
+      feeds[feedKey] = {
+        updatedAt: toIsoOrNull(source.updatedAt),
+        itemCount: Number.isFinite(count) && count >= 0 ? count : null,
+        mode: String(source.mode || "").trim().toLowerCase(),
+        status: normalizeHealthStatus(source.status, "pending")
+      };
+    });
+
+    return {
+      generatedAt: toIsoOrNull(rawValue.generatedAt),
+      feeds
+    };
+  }
+
+  function normalizeFeedHealth(rawValue) {
+    if (!rawValue || typeof rawValue !== "object") {
+      return null;
+    }
+
+    const feeds = {};
+    Object.keys(FEEDS).forEach((feedKey) => {
+      const source = rawValue?.feeds?.[feedKey] && typeof rawValue.feeds[feedKey] === "object"
+        ? rawValue.feeds[feedKey]
+        : {};
+
+      feeds[feedKey] = {
+        status: normalizeHealthStatus(source.status, "pending"),
+        message: String(source.message || "").trim(),
+        lastSuccessAt: toIsoOrNull(source.lastSuccessAt)
+      };
+    });
+
+    return {
+      generatedAt: toIsoOrNull(rawValue.generatedAt),
+      overallStatus: normalizeHealthStatus(rawValue.overallStatus, "pending"),
+      feeds
+    };
   }
 
   function normalizeSeverity(value) {
@@ -926,13 +1047,43 @@
     };
   }
 
+  async function fetchFeedMetadata() {
+    try {
+      const payload = await fetchJson(FEED_METADATA_PATH);
+      return normalizeFeedMetadata(payload);
+    } catch (_error) {
+      return null;
+    }
+  }
+
+  async function fetchFeedHealth() {
+    try {
+      const payload = await fetchJson(FEED_HEALTH_PATH);
+      return normalizeFeedHealth(payload);
+    } catch (_error) {
+      return null;
+    }
+  }
+
+  async function loadFeedObservability() {
+    const [metadata, health] = await Promise.all([fetchFeedMetadata(), fetchFeedHealth()]);
+    return { metadata, health };
+  }
+
   function updateLastUpdated(usedFallback) {
     if (!elements.updated) {
       return;
     }
 
-    const prefix = `Last updated: ${toDisplayTime(new Date().toISOString())}`;
-    elements.updated.textContent = usedFallback ? `${prefix} (sample fallback mode)` : prefix;
+    const generatedAt = feedMetadataState?.generatedAt || feedHealthState?.generatedAt;
+    if (generatedAt) {
+      const prefix = `Last updated: ${toDisplayTime(generatedAt)}`;
+      elements.updated.textContent = usedFallback ? `${prefix} (includes fallback data)` : prefix;
+      return;
+    }
+
+    const fallbackPrefix = `Last updated: ${toDisplayTime(new Date().toISOString())}`;
+    elements.updated.textContent = usedFallback ? `${fallbackPrefix} (sample fallback mode)` : fallbackPrefix;
   }
 
   function setRefreshState(isRefreshing) {
@@ -954,6 +1105,52 @@
     element.classList.add(`mode-${mode}`);
   }
 
+  function getFeedHealthStatus(feedKey) {
+    const metadataStatus = normalizeHealthStatus(feedMetadataState?.feeds?.[feedKey]?.status, "pending");
+    if (metadataStatus !== "pending") {
+      return metadataStatus;
+    }
+
+    const explicitHealth = normalizeHealthStatus(feedHealthState?.feeds?.[feedKey]?.status, "pending");
+    if (explicitHealth !== "pending") {
+      return explicitHealth;
+    }
+
+    if (feedLoadState[feedKey] === "unavailable") {
+      return "error";
+    }
+    if (feedLoadState[feedKey] === "pending") {
+      return "pending";
+    }
+    return "ok";
+  }
+
+  function toHealthIndicatorMode(healthStatus) {
+    if (healthStatus === "ok") {
+      return "live";
+    }
+    if (healthStatus === "warning") {
+      return "mixed";
+    }
+    if (healthStatus === "error") {
+      return "unavailable";
+    }
+    return "pending";
+  }
+
+  function getFeedModeLabel(feedKey) {
+    if (feedLoadState[feedKey] === "live") {
+      return "LIVE";
+    }
+    if (feedLoadState[feedKey] === "sample") {
+      return "SAMPLE";
+    }
+    if (feedLoadState[feedKey] === "unavailable") {
+      return "NO DATA";
+    }
+    return "CHECKING";
+  }
+
   function updateFeedSourceIndicator(feedKey) {
     const badge = elements.feedModeBadges?.[feedKey];
     const status = feedLoadState[feedKey];
@@ -970,6 +1167,130 @@
       return;
     }
     setIndicatorMode(badge, "CHECKING...", "pending");
+  }
+
+  function updateFeedHealthIndicator(feedKey) {
+    const badge = elements.feedHealthBadges?.[feedKey];
+    const status = getFeedHealthStatus(feedKey);
+    const mode = toHealthIndicatorMode(status);
+
+    if (status === "ok") {
+      setIndicatorMode(badge, "OK", mode);
+      return;
+    }
+    if (status === "warning") {
+      setIndicatorMode(badge, "WARN", mode);
+      return;
+    }
+    if (status === "error") {
+      setIndicatorMode(badge, "ERROR", mode);
+      return;
+    }
+    setIndicatorMode(badge, "...", mode);
+  }
+
+  function updateFeedFreshnessMeta(feedKey) {
+    const metaElement = elements.feedFreshnessMeta?.[feedKey];
+    if (!metaElement) {
+      return;
+    }
+
+    const metadataEntry = feedMetadataState?.feeds?.[feedKey];
+    const healthEntry = feedHealthState?.feeds?.[feedKey];
+    const shouldUseGeneratedMetadata = feedLoadState[feedKey] === "live";
+    const updatedAt = shouldUseGeneratedMetadata
+      ? metadataEntry?.updatedAt || healthEntry?.lastSuccessAt || getFeedItemsNewestTimestamp(feedKey)
+      : getFeedItemsNewestTimestamp(feedKey);
+    const count = shouldUseGeneratedMetadata && Number.isFinite(Number(metadataEntry?.itemCount))
+      ? Number(metadataEntry?.itemCount)
+      : normalizeItems(feedState[feedKey]).length;
+
+    if (feedLoadState[feedKey] === "unavailable") {
+      metaElement.textContent = "NO DATA • update unavailable";
+      metaElement.title = healthEntry?.message || "No feed data available.";
+      return;
+    }
+
+    const modeLabel = getFeedModeLabel(feedKey);
+    const relative = updatedAt ? formatRelativeTime(updatedAt) : "unknown";
+    metaElement.textContent = `${modeLabel} • updated ${relative} • ${count} items`;
+
+    const detailParts = [];
+    if (updatedAt) {
+      detailParts.push(`Updated ${toDisplayTime(updatedAt)}`);
+    }
+    if (healthEntry?.message) {
+      detailParts.push(healthEntry.message);
+    }
+    metaElement.title = detailParts.join(" | ");
+  }
+
+  function updateFeedRefreshSummary() {
+    if (!elements.feedRefreshSummary) {
+      return;
+    }
+
+    const generatedAt = feedMetadataState?.generatedAt || feedHealthState?.generatedAt;
+    if (!generatedAt) {
+      elements.feedRefreshSummary.textContent = "Feeds refreshed: runtime only";
+      elements.feedRefreshSummary.title = "feed-metadata.json/feed-health.json not available";
+      return;
+    }
+
+    elements.feedRefreshSummary.textContent = `Feeds refreshed: ${formatRelativeTime(generatedAt)}`;
+    elements.feedRefreshSummary.title = `Generated at ${toDisplayTime(generatedAt)}`;
+  }
+
+  function updateGlobalHealthIndicator() {
+    const statuses = Object.keys(FEEDS).map((feedKey) => getFeedHealthStatus(feedKey));
+    const explicitOverall = normalizeHealthStatus(feedHealthState?.overallStatus, "pending");
+    const derivedOverall = statuses.includes("error")
+      ? "error"
+      : statuses.includes("warning")
+        ? "warning"
+        : statuses.includes("pending")
+          ? "pending"
+          : "ok";
+    const overall = explicitOverall === "pending" ? derivedOverall : explicitOverall;
+
+    if (overall === "ok") {
+      setIndicatorMode(elements.feedHealthBadge, "Health: ok", "live");
+    } else if (overall === "warning") {
+      setIndicatorMode(elements.feedHealthBadge, "Health: degraded", "mixed");
+    } else if (overall === "error") {
+      setIndicatorMode(elements.feedHealthBadge, "Health: errors", "partial");
+    } else {
+      setIndicatorMode(elements.feedHealthBadge, "Health: checking...", "pending");
+    }
+
+    if (elements.feedHealthBadge) {
+      const warnings = Object.keys(FEEDS)
+        .filter((feedKey) => {
+          const status = getFeedHealthStatus(feedKey);
+          return status === "warning" || status === "error";
+        })
+        .join(", ");
+      const generatedAt = feedHealthState?.generatedAt;
+      elements.feedHealthBadge.title = warnings
+        ? `Attention feeds: ${warnings}`
+        : generatedAt
+          ? `Health report generated at ${toDisplayTime(generatedAt)}`
+          : "No health report available.";
+    }
+  }
+
+  function updateFeedObservability(feedKey) {
+    updateFeedSourceIndicator(feedKey);
+    updateFeedHealthIndicator(feedKey);
+    updateFeedFreshnessMeta(feedKey);
+  }
+
+  function updateAllFeedObservability() {
+    Object.keys(FEEDS).forEach((feedKey) => {
+      updateFeedObservability(feedKey);
+    });
+    updateFeedRefreshSummary();
+    updateGlobalHealthIndicator();
   }
 
   function updateGlobalDataModeIndicator() {
@@ -1014,7 +1335,7 @@
     count.textContent = "0";
     renderState(list, "Loading feed...");
     feedLoadState[feedKey] = "pending";
-    updateFeedSourceIndicator(feedKey);
+    updateFeedObservability(feedKey);
 
     try {
       const result = await fetchFeed(feedKey);
@@ -1022,7 +1343,7 @@
       feedLoadState[feedKey] = result.usedFallback ? "sample" : "live";
       populateSourceFilter(feedKey, feedState[feedKey]);
       renderItems(feedKey, feedState[feedKey]);
-      updateFeedSourceIndicator(feedKey);
+      updateFeedObservability(feedKey);
       return {
         success: true,
         usedFallback: result.usedFallback
@@ -1032,7 +1353,7 @@
       feedLoadState[feedKey] = "unavailable";
       populateSourceFilter(feedKey, []);
       renderState(list, "Error loading data. Try Refresh.");
-      updateFeedSourceIndicator(feedKey);
+      updateFeedObservability(feedKey);
       return {
         success: false,
         usedFallback: false
@@ -1312,16 +1633,21 @@
   async function loadAllPanels() {
     setRefreshState(true);
     updateGlobalDataModeIndicator();
+    updateAllFeedObservability();
 
     try {
-      const [panelResults, overlayResult, metricsResult] = await Promise.all([
+      const [panelResults, overlayResult, metricsResult, observability] = await Promise.all([
         loadAllFeeds(),
         loadMapOverlays(),
-        fetchMetricsHistory()
+        fetchMetricsHistory(),
+        loadFeedObservability()
       ]);
+      feedMetadataState = observability.metadata;
+      feedHealthState = observability.health;
       const successful = panelResults.filter((result) => result.success);
       renderMetricsWidgets(metricsResult.history);
       updateGlobalDataModeIndicator();
+      updateAllFeedObservability();
 
       const hasMetricPayload =
         metricsResult.history.throughput_history.length > 0 ||
@@ -1338,6 +1664,7 @@
     } finally {
       setRefreshState(false);
       updateGlobalDataModeIndicator();
+      updateAllFeedObservability();
     }
   }
 
@@ -1387,9 +1714,7 @@
   }
 
   function initFeedSourceIndicators() {
-    Object.keys(FEEDS).forEach((feedKey) => {
-      updateFeedSourceIndicator(feedKey);
-    });
+    updateAllFeedObservability();
     updateGlobalDataModeIndicator();
   }
 
