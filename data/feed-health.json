@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-03-08T09:43:11.385Z",
+  "generatedAt": "2026-03-08T13:09:51.549Z",
   "overallStatus": "ok",
   "feeds": {
     "kev": {
       "status": "ok",
-      "message": "Loaded 1536 entries in 402ms",
-      "lastSuccessAt": "2026-03-08T09:43:11.385Z"
+      "message": "Loaded 1536 entries in 395ms",
+      "lastSuccessAt": "2026-03-08T13:09:51.549Z"
     },
     "news": {
       "status": "ok",
-      "message": "Loaded 135 entries in 506ms",
-      "lastSuccessAt": "2026-03-08T09:43:11.385Z"
+      "message": "Loaded 135 entries in 639ms",
+      "lastSuccessAt": "2026-03-08T13:09:51.549Z"
     },
     "outages": {
       "status": "ok",
-      "message": "Loaded 160 entries in 642ms",
-      "lastSuccessAt": "2026-03-08T09:43:11.385Z"
+      "message": "Loaded 160 entries in 505ms",
+      "lastSuccessAt": "2026-03-08T13:09:51.549Z"
     }
   }
 }
