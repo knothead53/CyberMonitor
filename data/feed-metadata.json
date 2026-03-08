@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T06:59:15.922Z",
+  "generatedAt": "2026-03-08T09:43:11.385Z",
   "feeds": {
     "kev": {
       "updatedAt": "2026-03-05T00:00:00.000Z",
@@ -11,8 +11,8 @@
       "status": "ok"
     },
     "news": {
-      "updatedAt": "2026-03-07T16:14:32.000Z",
-      "itemCount": 85,
+      "updatedAt": "2026-03-07T16:28:00.000Z",
+      "itemCount": 135,
       "mode": "generated",
       "sources": [
         "BleepingComputer",

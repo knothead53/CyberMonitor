@@ -1,5 +1,22 @@
 [
   {
+    "id": "news-40513631",
+    "title": "OpenAI Codex Security Scanned 1.2 Million Commits and Found 10,561 High-Severity Issues",
+    "source": "The Hacker News",
+    "published": "2026-03-07T16:28:00.000Z",
+    "url": "https://thehackernews.com/2026/03/openai-codex-security-scanned-12.html",
+    "summary": "OpenAI on Friday began rolling out Codex Security, an artificial intelligence (AI)-powered security agent that's designed to find, validate, and propose fixes for vulnerabilities. The feature is available in a research preview to ChatGPT Pro, Enterprise, Business, and Edu customers via the Codex web with free usage ...",
+    "severity": "MEDIUM",
+    "vendor": "Openai",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "openai"
+    ]
+  },
+  {
     "id": "news-8e945346",
     "title": "Termite ransomware breaches linked to ClickFix CastleRAT attacks",
     "source": "BleepingComputer",
@@ -32,6 +49,22 @@
       "high",
       "bleepingcomputer",
       "microsoft"
+    ]
+  },
+  {
+    "id": "news-f9652db5",
+    "title": "Anthropic Finds 22 Firefox Vulnerabilities Using Claude Opus 4.6 AI Model",
+    "source": "The Hacker News",
+    "published": "2026-03-07T11:21:00.000Z",
+    "url": "https://thehackernews.com/2026/03/anthropic-finds-22-firefox.html",
+    "summary": "Anthropic on Friday said it discovered 22 new security vulnerabilities in the Firefox web browser as part of a security partnership with Mozilla. Of these, 14 have been classified as high, seven have been classified as moderate, and one has been rated low in severity. The issues were addressed in Firefox 148, releas...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
     ]
   },
   {
@@ -119,6 +152,24 @@
     ]
   },
   {
+    "id": "news-ddf023d9",
+    "title": "Transparent Tribe Uses AI to Mass-Produce Malware Implants in Campaign Targeting India",
+    "source": "The Hacker News",
+    "published": "2026-03-06T15:11:00.000Z",
+    "url": "https://thehackernews.com/2026/03/transparent-tribe-uses-ai-to-mass.html",
+    "summary": "The Pakistan-aligned threat actor known as Transparent Tribe has become the latest hacking group to embrace artificial intelligence (AI)-powered coding tools to strike targets with various implants. The activity is designed to produce a \"high-volume, mediocre mass of implants\" that are developed using lesser-known p...",
+    "severity": "HIGH",
+    "vendor": "Intel",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware",
+      "intel"
+    ]
+  },
+  {
     "id": "news-6375ed8c",
     "title": "EU Auto Rules Shift Gears on Cybersecurity Standards",
     "source": "Dark Reading",
@@ -164,6 +215,23 @@
       "intel-feed",
       "medium",
       "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-362a458d",
+    "title": "Multi-Stage VOID#GEIST Malware Delivering XWorm, AsyncRAT, and Xeno RAT",
+    "source": "The Hacker News",
+    "published": "2026-03-06T14:33:00.000Z",
+    "url": "https://thehackernews.com/2026/03/multi-stage-voidgeist-malware.html",
+    "summary": "Cybersecurity researchers have disclosed details of a multi-stage malware campaign that uses batch scripts as a pathway to deliver various encrypted remote access trojan (RATs) payloads that correspond to XWorm, AsyncRAT, and Xeno RAT. The stealthy attack chain has been codenamed VOID#GEIST by Securonix Threat Resea...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware"
     ]
   },
   {
@@ -217,6 +285,38 @@
     ]
   },
   {
+    "id": "news-f1f979bb",
+    "title": "The MSP Guide to Using AI-Powered Risk Management to Scale Cybersecurity",
+    "source": "The Hacker News",
+    "published": "2026-03-06T10:30:00.000Z",
+    "url": "https://thehackernews.com/2026/03/the-msp-guide-to-using-ai-powered-risk.html",
+    "summary": "Scaling cybersecurity services as an MSP or MSSP requires technical expertise and a business model that delivers measurable value at scale. Risk-based cybersecurity is the foundation of that model. When done right, it builds client trust, increases upsell opportunities, and drives recurring revenue. But to deliver t...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-c915f064",
+    "title": "Iran-Linked MuddyWater Hackers Target U.S. Networks With New Dindoor Backdoor",
+    "source": "The Hacker News",
+    "published": "2026-03-06T10:23:00.000Z",
+    "url": "https://thehackernews.com/2026/03/iran-linked-muddywater-hackers-target.html",
+    "summary": "New research from Broadcom's Symantec and Carbon Black Threat Hunter Team has discovered evidence of an Iranian hacking group embedding itself in several U.S. companies' networks, including banks, airports, non-profit, and the Israeli arm of a software company. The activity has been attributed to a state-sponsored h...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news"
+    ]
+  },
+  {
     "id": "news-116b7ad3",
     "title": "Ghanain man pleads guilty to role in $100 million fraud ring",
     "source": "BleepingComputer",
@@ -246,6 +346,58 @@
       "intel-feed",
       "medium",
       "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-3a2b7cc8",
+    "title": "China-Linked Hackers Use TernDoor, PeerTime, BruteEntry in South American Telecom Attacks",
+    "source": "The Hacker News",
+    "published": "2026-03-06T08:22:00.000Z",
+    "url": "https://thehackernews.com/2026/03/china-linked-hackers-use-terndoor.html",
+    "summary": "A China-linked advanced persistent threat (APT) actor has been targeting critical telecommunications infrastructure in South America since 2024, targeting Windows and Linux systems and edge devices with three different implants. The activity is being tracked by Cisco Talos under the moniker UAT-9244, describing it a...",
+    "severity": "HIGH",
+    "vendor": "Cisco",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "cisco"
+    ]
+  },
+  {
+    "id": "news-f6560b13",
+    "title": "Microsoft Reveals ClickFix Campaign Using Windows Terminal to Deploy Lumma Stealer",
+    "source": "The Hacker News",
+    "published": "2026-03-06T06:44:00.000Z",
+    "url": "https://thehackernews.com/2026/03/microsoft-reveals-clickfix-campaign.html",
+    "summary": "Microsoft on Thursday disclosed details of a new widespread ClickFix social engineering campaign that has leveraged the Windows Terminal app as a way to activate a sophisticated attack chain and deploy the Lumma Stealer malware. The activity, observed in February 2026, makes use of the terminal emulator program inst...",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-51afb3bc",
+    "title": "Hikvision and Rockwell Automation CVSS 9.8 Flaws Added to CISA KEV Catalog",
+    "source": "The Hacker News",
+    "published": "2026-03-06T06:30:00.000Z",
+    "url": "https://thehackernews.com/2026/03/hikvision-and-rockwell-automation-cvss.html",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Hikvision and Rockwell Automation products to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical-severity vulnerabilities are listed below - CVE-2017-79...",
+    "severity": "HIGH",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "aws"
     ]
   },
   {
@@ -401,6 +553,22 @@
     ]
   },
   {
+    "id": "news-f4049ce3",
+    "title": "Fig Security Emerges From Stealth to Fix Broken Security Operations",
+    "source": "Dark Reading",
+    "published": "2026-03-05T16:55:05.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/fig-security-stealth-fix-broken-security-operations",
+    "summary": "Fig Security's platform traces security data flows end-to-end across SIEMs, pipelines, and response systems to alert teams before infrastructure changes break critical defenses.",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
+    ]
+  },
+  {
     "id": "news-58f13999",
     "title": "Software Development Practices Help Enterprises Tackle Real-Life Risks",
     "source": "Dark Reading",
@@ -414,6 +582,40 @@
       "intel-feed",
       "medium",
       "dark-reading"
+    ]
+  },
+  {
+    "id": "news-01184369",
+    "title": "Cisco Confirms Active Exploitation of Two Catalyst SD-WAN Manager Vulnerabilities",
+    "source": "The Hacker News",
+    "published": "2026-03-05T15:22:00.000Z",
+    "url": "https://thehackernews.com/2026/03/cisco-confirms-active-exploitation-of.html",
+    "summary": "Cisco has disclosed that two more vulnerabilities affecting Catalyst SD-WAN Manager (formerly SD-WAN vManage) have come under active exploitation in the wild. The vulnerabilities in question are listed below - CVE-2026-20122 (CVSS score: 7.1) - An arbitrary file overwrite vulnerability that could allow an authentica...",
+    "severity": "HIGH",
+    "vendor": "Cisco",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "vulnerability",
+      "cisco"
+    ]
+  },
+  {
+    "id": "news-48dbe26a",
+    "title": "Preparing for the Quantum Era: Post-Quantum Cryptography Webinar for Security Leaders",
+    "source": "The Hacker News",
+    "published": "2026-03-05T15:22:00.000Z",
+    "url": "https://thehackernews.com/2026/03/preparing-for-quantum-era-post-quantum.html",
+    "summary": "Most organizations assume encrypted data is safe. But many attackers are already preparing for a future where today’s encryption can be broken. Instead of trying to decrypt information now, they are collecting encrypted data and storing it so it can be decrypted later using quantum computers. This tactic—known as “h...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
     ]
   },
   {
@@ -451,6 +653,39 @@
     ]
   },
   {
+    "id": "news-57d51cee",
+    "title": "ThreatsDay Bulletin: DDR5 Bot Scalping, Samsung TV Tracking, Reddit Privacy Fine & More",
+    "source": "The Hacker News",
+    "published": "2026-03-05T13:44:00.000Z",
+    "url": "https://thehackernews.com/2026/03/threatsday-bulletin-redis-rce-ddr5-bot.html",
+    "summary": "Some weeks in cybersecurity feel routine. This one doesn&rsquo;t. Several new developments surfaced over the past few days, showing how quickly the threat landscape keeps shifting. Researchers uncovered fresh activity, security teams shared new findings, and a few unexpected moves from major tech companies also drew...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-05c4def2",
+    "title": "Dust Specter Targets Iraqi Officials with New SPLITDROP and GHOSTFORM Malware",
+    "source": "The Hacker News",
+    "published": "2026-03-05T12:01:00.000Z",
+    "url": "https://thehackernews.com/2026/03/dust-specter-targets-iraqi-officials.html",
+    "summary": "A suspected Iran-nexus threat actor has been attributed to a campaign targeting government officials in Iraq by impersonating the country's Ministry of Foreign Affairs to deliver a set of never-before-seen malware. Zscaler ThreatLabz, which observed the activity in January 2026, is tracking the cluster under the nam...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware"
+    ]
+  },
+  {
     "id": "news-d9ce9dbe",
     "title": "ISC Stormcast For Thursday, March 5th, 2026 https://isc.sans.edu/podcastdetail/9836, (Thu, Mar 5th)",
     "source": "SANS ISC",
@@ -464,6 +699,73 @@
       "intel-feed",
       "medium",
       "sans-isc"
+    ]
+  },
+  {
+    "id": "news-724121f0",
+    "title": "Where Multi-Factor Authentication Stops and Credential Abuse Starts",
+    "source": "The Hacker News",
+    "published": "2026-03-05T11:00:00.000Z",
+    "url": "https://thehackernews.com/2026/03/where-multi-factor-authentication-stops.html",
+    "summary": "Organizations typically roll out multi-factor authentication (MFA) and assume stolen passwords are no longer enough to access systems. In Windows environments, that assumption is often wrong. Attackers still compromise networks every day using valid credentials. The issue is not MFA itself, but coverage. Enforced th...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-ff6560db",
+    "title": "APT28-Linked Campaign Deploys BadPaw Loader and MeowMeow Backdoor in Ukraine",
+    "source": "The Hacker News",
+    "published": "2026-03-05T10:10:00.000Z",
+    "url": "https://thehackernews.com/2026/03/apt28-linked-campaign-deploys-badpaw.html",
+    "summary": "Cybersecurity researchers have disclosed details of a new Russian cyber campaign that has targeted Ukrainian entities with two previously undocumented malware families named BadPaw and MeowMeow. \"The attack chain initiates with a phishing email containing a link to a ZIP archive. Once extracted, an initial HTA file ...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "phishing",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-83a23b01",
+    "title": "Europol-Led Operation Takes Down Tycoon 2FA Phishing-as-a-Service Linked to 64,000 Attacks",
+    "source": "The Hacker News",
+    "published": "2026-03-05T06:51:00.000Z",
+    "url": "https://thehackernews.com/2026/03/europol-led-operation-takes-down-tycoon.html",
+    "summary": "Tycoon 2FA, one of the prominent phishing-as-a-service (PhaaS) toolkits that allowed cybercriminals to stage adversary-in-the-middle (AitM) credential harvesting attacks at scale, was dismantled by a coalition of law enforcement agencies and security companies. The subscription-based phishing kit, which first emerge...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "phishing"
+    ]
+  },
+  {
+    "id": "news-ff261e33",
+    "title": "FBI and Europol Seize LeakBase Forum Used to Trade Stolen Credentials",
+    "source": "The Hacker News",
+    "published": "2026-03-05T06:34:00.000Z",
+    "url": "https://thehackernews.com/2026/03/fbi-and-europol-seize-leakbase-forum.html",
+    "summary": "A joint law enforcement operation has dismantled LeakBase, one of the world's largest online forums for cybercriminals to buy and sell stolen data and cybercrime tools. The LeakBase forum, per the U.S. Department of Justice (DoJ), had over 142,000 members and more than 215,000 messages between members as of December...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news"
     ]
   },
   {
@@ -501,6 +803,22 @@
     ]
   },
   {
+    "id": "news-9dcce561",
+    "title": "149 Hacktivist DDoS Attacks Hit 110 Organizations in 16 Countries After Middle East Conflict",
+    "source": "The Hacker News",
+    "published": "2026-03-04T17:21:00.000Z",
+    "url": "https://thehackernews.com/2026/03/149-hacktivist-ddos-attacks-hit-110.html",
+    "summary": "Cybersecurity researchers have warned of a surge in retaliatory hacktivist activity following the U.S.-Israel coordinated military campaign against Iran, codenamed Epic Fury and Roaring Lion. \"The hacktivist threat in the Middle East is highly lopsided, with two groups, Keymous+ and DieNet, driving nearly 70% of all...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
+    ]
+  },
+  {
     "id": "news-260a50da",
     "title": "Stranger Things Meets Cybersecurity: Lessons from the Hive Mind",
     "source": "Dark Reading",
@@ -531,6 +849,39 @@
       "high",
       "dark-reading",
       "malware"
+    ]
+  },
+  {
+    "id": "news-f8325f1e",
+    "title": "Coruna iOS Exploit Kit Uses 23 Exploits Across Five Chains Targeting iOS 13–17.2.1",
+    "source": "The Hacker News",
+    "published": "2026-03-04T13:28:00.000Z",
+    "url": "https://thehackernews.com/2026/03/coruna-ios-exploit-kit-uses-23-exploits.html",
+    "summary": "Google said it identified a \"new and powerful\" exploit kit dubbed Coruna (aka CryptoWaters) targeting Apple iPhone models running iOS versions between 13.0 and 17.2.1. The exploit kit featured five full iOS exploit chains and a total of 23 exploits, Google Threat Intelligence Group (GTIG) said. It's not effective ag...",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "google"
+    ]
+  },
+  {
+    "id": "news-9a9a3e89",
+    "title": "New RFP Template for AI Usage Control and AI Governance",
+    "source": "The Hacker News",
+    "published": "2026-03-04T11:30:00.000Z",
+    "url": "https://thehackernews.com/2026/03/new-rfp-template-for-ai-usage-control.html",
+    "summary": "As AI becomes the central engine for enterprise productivity, security leaders are finally getting the green light — and the budget — to secure it. But there’s a quiet crisis unfolding in the boardroom: many organizations know they need \"AI Governance,\" but they have no idea what they are actually looking for. The C...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
     ]
   },
   {
@@ -565,6 +916,57 @@
       "high",
       "sans-isc",
       "malware"
+    ]
+  },
+  {
+    "id": "news-2a65d52f",
+    "title": "Fake Laravel Packages on Packagist Deploy RAT on Windows, macOS, and Linux",
+    "source": "The Hacker News",
+    "published": "2026-03-04T09:37:00.000Z",
+    "url": "https://thehackernews.com/2026/03/fake-laravel-packages-on-packagist.html",
+    "summary": "Cybersecurity researchers have flagged malicious Packagist PHP packages masquerading as Laravel utilities that act as a conduit for a cross-platform remote access trojan (RAT) that's functional on Windows, macOS, and Linux systems. The names of the packages are listed below - nhattuanbl/lara-helper (37 Downloads) nh...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-d103aa5b",
+    "title": "APT41-Linked Silver Dragon Targets Governments Using Cobalt Strike and Google Drive C2",
+    "source": "The Hacker News",
+    "published": "2026-03-04T08:14:00.000Z",
+    "url": "https://thehackernews.com/2026/03/apt41-linked-silver-dragon-targets.html",
+    "summary": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) group dubbed Silver Dragon that has been linked to cyber attacks targeting entities in Europe and Southeast Asia since at least mid-2024. \"Silver Dragon gains its initial access by exploiting public-facing internet servers and by...",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "google"
+    ]
+  },
+  {
+    "id": "news-a16702aa",
+    "title": "CISA Adds Actively Exploited VMware Aria Operations Flaw CVE-2026-22719 to KEV Catalog",
+    "source": "The Hacker News",
+    "published": "2026-03-04T04:35:00.000Z",
+    "url": "https://thehackernews.com/2026/03/cisa-adds-actively-exploited-vmware.html",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a recently disclosed security flaw impacting Broadcom VMware Aria Operations to its Known Exploited Vulnerabilities (KEV) catalog, citing active exploitation in the wild. The high-severity vulnerability, CVE-2026-22719 (CVSS score: 8.1...",
+    "severity": "CRITICAL",
+    "vendor": "Vmware",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "vulnerability",
+      "vmware"
     ]
   },
   {
@@ -650,6 +1052,23 @@
     ]
   },
   {
+    "id": "news-b232a13d",
+    "title": "Fake Tech Support Spam Deploys Customized Havoc C2 Across Organizations",
+    "source": "The Hacker News",
+    "published": "2026-03-03T17:15:00.000Z",
+    "url": "https://thehackernews.com/2026/03/fake-tech-support-spam-deploys.html",
+    "summary": "Threat hunters have called attention to a new campaign as part of which bad actors masqueraded as fake IT support to deliver the Havoc command-and-control (C2) framework as a precursor to data exfiltration or ransomware attack. The intrusions, identified by Huntress last month across five partner organizations, invo...",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "ransomware"
+    ]
+  },
+  {
     "id": "news-e2b3351d",
     "title": "Bruteforce Scans for CrushFTP , (Tue, Mar 3rd)",
     "source": "SANS ISC",
@@ -663,6 +1082,39 @@
       "intel-feed",
       "medium",
       "sans-isc"
+    ]
+  },
+  {
+    "id": "news-f9b10061",
+    "title": "Building a High-Impact Tier 1: The 3 Steps CISOs Must Follow",
+    "source": "The Hacker News",
+    "published": "2026-03-03T14:30:00.000Z",
+    "url": "https://thehackernews.com/2026/03/building-high-impact-tier-1-3-steps.html",
+    "summary": "Every CISO knows the uncomfortable truth about their Security Operations Center: the people most responsible for catching threats in real time are the people with the least experience. Tier 1 analysts sit at the front line of detection, and yet they are also the most vulnerable to the cognitive and organizational pr...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-16f2354b",
+    "title": "Open-Source CyberStrikeAI Deployed in AI-Driven FortiGate Attacks Across 55 Countries",
+    "source": "The Hacker News",
+    "published": "2026-03-03T14:29:00.000Z",
+    "url": "https://thehackernews.com/2026/03/open-source-cyberstrikeai-deployed-in.html",
+    "summary": "The threat actor behind the recently disclosed artificial intelligence (AI)-assisted campaign targeting Fortinet FortiGate appliances leveraged an open-source, AI-native security testing platform called CyberStrikeAI to execute the attacks. The new findings come from Team Cymru, which detected its use following an a...",
+    "severity": "MEDIUM",
+    "vendor": "Fortinet",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "fortinet"
     ]
   },
   {
@@ -696,6 +1148,95 @@
       "intel-feed",
       "high",
       "dark-reading"
+    ]
+  },
+  {
+    "id": "news-ccb39350",
+    "title": "AI Agents: The Next Wave Identity Dark Matter - Powerful, Invisible, and Unmanaged",
+    "source": "The Hacker News",
+    "published": "2026-03-03T11:30:00.000Z",
+    "url": "https://thehackernews.com/2026/03/ai-agents-next-wave-identity-dark.html",
+    "summary": "The Rise of MCPs in the Enterprise The Model Context Protocol (MCP) is quickly becoming a practical way to push LLMs from “chat” into real work. By providing structured access to applications, APIs, and data, MCP enables prompt-driven AI agents that can retrieve information, take action, and automate end-to-end busi...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "identity",
+      "api"
+    ]
+  },
+  {
+    "id": "news-4b8c2e61",
+    "title": "Starkiller Phishing Suite Uses AitM Reverse Proxy to Bypass Multi-Factor Authentication",
+    "source": "The Hacker News",
+    "published": "2026-03-03T11:10:00.000Z",
+    "url": "https://thehackernews.com/2026/03/starkiller-phishing-suite-uses-aitm.html",
+    "summary": "Cybersecurity researchers have disclosed details of a new phishing suite called Starkiller that proxies legitimate login pages to bypass multi-factor authentication (MFA) protections. It's advertised as a cybercrime platform by a threat group calling itself Jinkusu, granting customers access to a dashboard that lets...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "phishing"
+    ]
+  },
+  {
+    "id": "news-11df1c6f",
+    "title": "Microsoft Warns OAuth Redirect Abuse Delivers Malware to Government Targets",
+    "source": "The Hacker News",
+    "published": "2026-03-03T09:20:00.000Z",
+    "url": "https://thehackernews.com/2026/03/microsoft-warns-oauth-redirect-abuse.html",
+    "summary": "Microsoft on Monday warned of phishing campaigns that employ phishing emails and OAuth URL redirection mechanisms to bypass conventional phishing defenses implemented in email and browsers. The activity, the company said, targets government and public-sector organizations with the end goal of redirecting victims to ...",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "phishing",
+      "malware",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-129f31f2",
+    "title": "Google Confirms CVE-2026-21385 in Qualcomm Android Component Exploited",
+    "source": "The Hacker News",
+    "published": "2026-03-03T07:08:00.000Z",
+    "url": "https://thehackernews.com/2026/03/google-confirms-cve-2026-21385-in.html",
+    "summary": "Google on Monday disclosed that a high-severity security flaw impacting an open-source Qualcomm component used in Android devices has been exploited in the wild. The vulnerability in question is CVE-2026-21385 (CVSS score: 7.8), a buffer over-read in the Graphics component. \"Memory corruption when adding user-suppli...",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "vulnerability",
+      "google"
+    ]
+  },
+  {
+    "id": "news-b044066b",
+    "title": "SloppyLemming Targets Pakistan and Bangladesh Governments Using Dual Malware Chains",
+    "source": "The Hacker News",
+    "published": "2026-03-03T06:53:00.000Z",
+    "url": "https://thehackernews.com/2026/03/sloppylemming-targets-pakistan-and.html",
+    "summary": "The threat activity cluster known as SloppyLemming has been attributed to a fresh set of attacks targeting government entities and critical infrastructure operators in Pakistan and Bangladesh. The activity, per Arctic Wolf, took place between January 2025 and January 2026. It involves the use of two distinct attack ...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware"
     ]
   },
   {
@@ -766,6 +1307,59 @@
     ]
   },
   {
+    "id": "news-81fd4b5a",
+    "title": "New Chrome Vulnerability Let Malicious Extensions Escalate Privileges via Gemini Panel",
+    "source": "The Hacker News",
+    "published": "2026-03-02T17:08:00.000Z",
+    "url": "https://thehackernews.com/2026/03/new-chrome-vulnerability-let-malicious.html",
+    "summary": "Cybersecurity researchers have disclosed details of a now-patched security flaw in Google Chrome that could have permitted attackers to escalate privileges and gain access to local files on the system. The vulnerability, tracked as CVE-2026-0628 (CVSS score: 8.8), has been described as a case of insufficient policy ...",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "vulnerability",
+      "patch",
+      "google"
+    ]
+  },
+  {
+    "id": "news-9bf8921d",
+    "title": "Google Develops Merkle Tree Certificates to Enable Quantum-Resistant HTTPS in Chrome",
+    "source": "The Hacker News",
+    "published": "2026-03-02T16:52:00.000Z",
+    "url": "https://thehackernews.com/2026/03/google-develops-merkle-tree.html",
+    "summary": "Google has announced a new program in its Chrome browser to ensure that HTTPS certificates are secure against the future risk posed by quantum computers. \"To ensure the scalability and efficiency of the ecosystem, Chrome has no immediate plan to add traditional X.509 certificates containing post-quantum cryptography...",
+    "severity": "MEDIUM",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "google"
+    ]
+  },
+  {
+    "id": "news-a6d4a399",
+    "title": "⚡ Weekly Recap: SD-WAN 0-Day, Critical CVEs, Telegram Probe, Smart TV Proxy SDK and More",
+    "source": "The Hacker News",
+    "published": "2026-03-02T13:26:00.000Z",
+    "url": "https://thehackernews.com/2026/03/weekly-recap-sd-wan-0-day-critical-cves.html",
+    "summary": "This week is not about one big event. It shows where things are moving. Network systems, cloud setups, AI tools, and common apps are all being pushed in different ways. Small gaps in access control, exposed keys, and normal features are being used as entry points. The pattern becomes clear only when you see everythi...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "cloud"
+    ]
+  },
+  {
     "id": "news-2b00c3e3",
     "title": "Quantum-Resistant Data Diode Secures Sensitive Data on Edge Devices, Critical Systems",
     "source": "Dark Reading",
@@ -779,6 +1373,23 @@
       "intel-feed",
       "high",
       "dark-reading"
+    ]
+  },
+  {
+    "id": "news-a3419bcb",
+    "title": "How to Protect Your SaaS from Bot Attacks with SafeLine WAF",
+    "source": "The Hacker News",
+    "published": "2026-03-02T11:55:00.000Z",
+    "url": "https://thehackernews.com/2026/03/how-to-protect-your-saas-from-bot.html",
+    "summary": "Most SaaS teams remember the day their user traffic started growing fast. Few notice the day bots started targeting them. On paper, everything looks great: more sign-ups, more sessions, more API calls. But in reality, something feels off: Sign-ups increase, but users aren’t activating. Server costs rise faster than ...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "api"
     ]
   },
   {
@@ -814,6 +1425,25 @@
     ]
   },
   {
+    "id": "news-43879ee5",
+    "title": "APT28 Tied to CVE-2026-21513 MSHTML 0-Day Exploited Before Feb 2026 Patch Tuesday",
+    "source": "The Hacker News",
+    "published": "2026-03-02T10:36:00.000Z",
+    "url": "https://thehackernews.com/2026/03/apt28-tied-to-cve-2026-21513-mshtml-0.html",
+    "summary": "A recently disclosed security flaw patched by Microsoft may have been exploited by the Russia-linked state-sponsored threat actor known as APT28, according to new findings from Akamai. The vulnerability in question is CVE-2026-21513 (CVSS score: 8.8), a high-severity security feature bypass affecting the MSHTML Fram...",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "vulnerability",
+      "patch",
+      "microsoft"
+    ]
+  },
+  {
     "id": "news-53005ee4",
     "title": "Bug in Google's Gemini AI Panel Opens Door to Hijacking",
     "source": "Dark Reading",
@@ -832,6 +1462,40 @@
     ]
   },
   {
+    "id": "news-d5792d08",
+    "title": "North Korean Hackers Publish 26 npm Packages Hiding Pastebin C2 for Cross-Platform RAT",
+    "source": "The Hacker News",
+    "published": "2026-03-02T08:44:00.000Z",
+    "url": "https://thehackernews.com/2026/03/north-korean-hackers-publish-26-npm.html",
+    "summary": "Cybersecurity researchers have disclosed a new iteration of the ongoing Contagious Interview campaign, where the North Korean threat actors have published a set of 26 malicious packages to the npm registry. The packages masquerade as developer tools, but contain functionality to extract the actual command-and-contro...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-dc81bd03",
+    "title": "ClawJacked Flaw Lets Malicious Sites Hijack Local OpenClaw AI Agents via WebSocket",
+    "source": "The Hacker News",
+    "published": "2026-02-28T17:21:00.000Z",
+    "url": "https://thehackernews.com/2026/02/clawjacked-flaw-lets-malicious-sites.html",
+    "summary": "OpenClaw has fixed a high-severity security issue that, if successfully exploited, could have allowed a malicious website to connect to a locally running artificial intelligence (AI) agent and take over control. \"Our vulnerability lives in the core system itself – no plugins, no marketplace, no user-installed extens...",
+    "severity": "HIGH",
+    "vendor": "Intel",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "vulnerability",
+      "intel"
+    ]
+  },
+  {
     "id": "news-e9bebcea",
     "title": "Who is the Kimwolf Botmaster “Dort”?",
     "source": "Krebs on Security",
@@ -847,6 +1511,43 @@
       "krebs-on-security",
       "botnet",
       "vulnerability"
+    ]
+  },
+  {
+    "id": "news-de7f9cff",
+    "title": "Thousands of Public Google Cloud API Keys Exposed with Gemini Access After API Enablement",
+    "source": "The Hacker News",
+    "published": "2026-02-28T09:56:00.000Z",
+    "url": "https://thehackernews.com/2026/02/thousands-of-public-google-cloud-api.html",
+    "summary": "New research has found that Google Cloud API keys, typically designated as project identifiers for billing purposes, could be abused to authenticate to sensitive Gemini endpoints and access private data. The findings come from Truffle Security, which discovered nearly 3,000 Google API keys (identified by the prefix ...",
+    "severity": "MEDIUM",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "cloud",
+      "api",
+      "google"
+    ]
+  },
+  {
+    "id": "news-bf804f68",
+    "title": "Pentagon Designates Anthropic Supply Chain Risk Over AI Military Dispute",
+    "source": "The Hacker News",
+    "published": "2026-02-28T04:57:00.000Z",
+    "url": "https://thehackernews.com/2026/02/pentagon-designates-anthropic-supply.html",
+    "summary": "Anthropic on Friday hit back after U.S. Secretary of Defense Pete Hegseth directed the Pentagon to designate the artificial intelligence (AI) upstart as a \"supply chain risk.\" \"This action follows months of negotiations that reached an impasse over two exceptions we requested to the lawful use of our AI model, Claud...",
+    "severity": "MEDIUM",
+    "vendor": "Intel",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "supply-chain",
+      "intel"
     ]
   },
   {
@@ -899,6 +1600,39 @@
     ]
   },
   {
+    "id": "news-4ce02a3e",
+    "title": "DoJ Seizes $61 Million in Tether Linked to Pig Butchering Crypto Scams",
+    "source": "The Hacker News",
+    "published": "2026-02-27T18:11:00.000Z",
+    "url": "https://thehackernews.com/2026/02/doj-seizes-61-million-in-tether-linked.html",
+    "summary": "The U.S. Department of Justice (DoJ) this week announced the seizure of $61 million worth of Tether that were allegedly associated with bogus cryptocurrency schemes known as pig butchering. The confiscated funds were traced to cryptocurrency addresses used for the laundering of criminally derived proceeds stolen fro...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-0b4e3150",
+    "title": "900+ Sangoma FreePBX Instances Compromised in Ongoing Web Shell Attacks",
+    "source": "The Hacker News",
+    "published": "2026-02-27T17:59:00.000Z",
+    "url": "https://thehackernews.com/2026/02/900-sangoma-freepbx-instances.html",
+    "summary": "The Shadowserver Foundation has revealed that over 900 Sangoma FreePBX instances still remain infected with web shells as part of attacks that exploited a command injection vulnerability starting in December 2025. Of these, 401 instances are located in the U.S., followed by 51 in Brazil, 43 in Canada, 40 in Germany,...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "vulnerability"
+    ]
+  },
+  {
     "id": "news-b0675511",
     "title": "The Case for Why Better Breach Transparency Matters",
     "source": "Dark Reading",
@@ -916,6 +1650,23 @@
     ]
   },
   {
+    "id": "news-237d1c11",
+    "title": "Malicious Go Crypto Module Steals Passwords, Deploys Rekoobe Backdoor",
+    "source": "The Hacker News",
+    "published": "2026-02-27T15:33:00.000Z",
+    "url": "https://thehackernews.com/2026/02/malicious-go-crypto-module-steals.html",
+    "summary": "Cybersecurity researchers have disclosed details of a malicious Go module that's designed to harvest passwords, create persistent access via SSH, and deliver a Linux backdoor named Rekoobe. The Go module, github[.]com/xinfeisoft/crypto, impersonates the legitimate \"golang.org/x/crypto\" codebase, but injects maliciou...",
+    "severity": "HIGH",
+    "vendor": "Github",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "github"
+    ]
+  },
+  {
     "id": "news-a9b98497",
     "title": "Claude Code Security Shows Promise, Not Perfection",
     "source": "Dark Reading",
@@ -929,6 +1680,56 @@
       "intel-feed",
       "medium",
       "dark-reading"
+    ]
+  },
+  {
+    "id": "news-cbea824e",
+    "title": "ScarCruft Uses Zoho WorkDrive and USB Malware to Breach Air-Gapped Networks",
+    "source": "The Hacker News",
+    "published": "2026-02-27T12:43:00.000Z",
+    "url": "https://thehackernews.com/2026/02/scarcruft-uses-zoho-workdrive-and-usb.html",
+    "summary": "The North Korean threat actor known as ScarCruft has been attributed to a fresh set of tools, including a backdoor that uses Zoho WorkDrive for command-and-control (C2) communications to fetch more payloads and an implant that uses removable media to relay commands and breach air-gapped networks. The campaign, coden...",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-fb2d2fc6",
+    "title": "Trojanized Gaming Tools Spread Java-Based RAT via Browser and Chat Platforms",
+    "source": "The Hacker News",
+    "published": "2026-02-27T10:06:00.000Z",
+    "url": "https://thehackernews.com/2026/02/trojanized-gaming-tools-spread-java.html",
+    "summary": "Threat actors are luring unsuspecting users into running trojanized gaming utilities that are distributed via browsers and chat platforms to distribute a remote access trojan (RAT). \"A malicious downloader staged a portable Java runtime and executed a malicious Java archive (JAR) file named jd-gui.jar,\" the Microsof...",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-73411d05",
+    "title": "Meta Files Lawsuits Against Brazil, China, Vietnam Advertisers Over Celeb-Bait Scams",
+    "source": "The Hacker News",
+    "published": "2026-02-27T07:56:00.000Z",
+    "url": "https://thehackernews.com/2026/02/meta-files-lawsuits-against-brazil.html",
+    "summary": "Meta on Thursday said it's taking legal action to tackle scams on its platforms by filing lawsuits against what it calls deceptive advertisers based in Brazil, China, and Vietnam. As part of the effort, the advertisers' methods of payment have been suspended, related accounts have been disabled, and the website doma...",
+    "severity": "MEDIUM",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "aws"
     ]
   },
   {
@@ -965,6 +1766,74 @@
       "zero-day",
       "vulnerability",
       "cisco"
+    ]
+  },
+  {
+    "id": "news-19d3ea36",
+    "title": "Aeternum C2 Botnet Stores Encrypted Commands on Polygon Blockchain to Evade Takedown",
+    "source": "The Hacker News",
+    "published": "2026-02-26T18:00:00.000Z",
+    "url": "https://thehackernews.com/2026/02/aeternum-c2-botnet-stores-encrypted.html",
+    "summary": "Cybersecurity researchers have disclosed details of a new botnet loader called Aeternum C2 that uses a blockchain-based command-and-control (C2) infrastructure to make it resilient to takedown efforts. \"Instead of relying on traditional servers or domains for command-and-control, Aeternum stores its instructions on ...",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "botnet"
+    ]
+  },
+  {
+    "id": "news-9c9e9bed",
+    "title": "UAT-10027 Targets U.S. Education and Healthcare with Dohdoor Backdoor",
+    "source": "The Hacker News",
+    "published": "2026-02-26T15:17:00.000Z",
+    "url": "https://thehackernews.com/2026/02/uat-10027-targets-us-education-and.html",
+    "summary": "A previously undocumented threat activity cluster has been attributed to an ongoing malicious campaign targeting education and healthcare sectors in the U.S. since at least December 2025. The campaign is being tracked by Cisco Talos under the moniker UAT-10027. The end goal of the attacks is to deliver a never-befor...",
+    "severity": "HIGH",
+    "vendor": "Cisco",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "cisco"
+    ]
+  },
+  {
+    "id": "news-c90dc23f",
+    "title": "ThreatsDay Bulletin: Kali Linux + Claude, Chrome Crash Traps, WinRAR Flaws, LockBit & 15+ Stories",
+    "source": "The Hacker News",
+    "published": "2026-02-26T14:28:00.000Z",
+    "url": "https://thehackernews.com/2026/02/threatsday-bulletin-kali-linux-claude.html",
+    "summary": "Nothing here looks dramatic at first glance. That’s the point. Many of this week’s threats begin with something ordinary, like an ad, a meeting invite, or a software update. Behind the scenes, the tactics are sharper. Access happens faster. Control is established sooner. Cleanup becomes harder. Here is a quick look ...",
+    "severity": "MEDIUM",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "aws"
+    ]
+  },
+  {
+    "id": "news-106f882a",
+    "title": "Expert Recommends: Prepare for PQC Right Now",
+    "source": "The Hacker News",
+    "published": "2026-02-26T12:06:00.000Z",
+    "url": "https://thehackernews.com/2026/02/expert-recommends-prepare-for-pqc-right.html",
+    "summary": "Introduction: Steal It Today, Break It in a Decade Digital evolution is unstoppable, and though the pace may vary, things tend to fall into place sooner rather than later. That, of course, applies to adversaries as well. The rise of ransomware and cyber extortion generated funding for a complex and highly profession...",
+    "severity": "CRITICAL",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "ransomware"
     ]
   },
   {
@@ -1263,23 +2132,6 @@
       "high",
       "krebs-on-security",
       "phishing"
-    ]
-  },
-  {
-    "id": "news-f9857839",
-    "title": "'God-Like' Attack Machines: AI Agents Ignore Security Policies",
-    "source": "Dark Reading",
-    "published": "2026-02-20T18:31:58.000Z",
-    "url": "https://www.darkreading.com/application-security/ai-agents-ignore-security-policies",
-    "summary": "Microsoft Copilot recently summarized and leaked user emails; but any AI agent will go above and beyond to complete assigned tasks, even breaking through their carefully designed guardrails.",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading",
-      "microsoft"
     ]
   },
   {
