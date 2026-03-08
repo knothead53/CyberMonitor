@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T13:09:51.549Z",
+  "generatedAt": "2026-03-08T15:36:22.278Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,7 +9,7 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-07T16:28:00.000Z",
+      "timestamp": "2026-03-08T15:25:37.000Z",
       "summary": "99 correlated news signals from 5 sources; vendors: Openai, Microsoft."
     },
     {
@@ -81,8 +81,8 @@
       "lon": -98.5795,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-05T15:03:43.000Z",
-      "summary": "67 KEV and 6 high-severity news signals across 4 sources."
+      "timestamp": "2026-03-04T13:28:00.000Z",
+      "summary": "67 KEV and 5 high-severity news signals across 3 sources."
     },
     {
       "id": "corr-incident-adobe",

@@ -1,5 +1,39 @@
 [
   {
+    "id": "news-7016f3c5",
+    "title": "EU court adviser says banks must immediately refund phishing victims",
+    "source": "BleepingComputer",
+    "published": "2026-03-08T15:25:37.000Z",
+    "url": "https://www.bleepingcomputer.com/news/legal/eu-court-adviser-says-banks-must-immediately-refund-phishing-victims/",
+    "summary": "Athanasios Rantos, the Advocate General of the Court of Justice of the EU (CJEU), has issued a formal opinion suggesting that banks must immediately refund account holders affected by unauthorized transactions, even when it's their fault. [...]",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "phishing"
+    ]
+  },
+  {
+    "id": "news-af0d6a6a",
+    "title": "Hackers abuse .arpa DNS and ipv6 to evade phishing defenses",
+    "source": "BleepingComputer",
+    "published": "2026-03-08T14:12:22.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-arpa-dns-and-ipv6-to-evade-phishing-defenses/",
+    "summary": "Threat actors are abusing the special-use \".arpa\" domain and IPv6 reverse DNS in phishing campaigns that more easily evade domain reputation checks and email security gateways. [...]",
+    "severity": "HIGH",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "phishing"
+    ]
+  },
+  {
     "id": "news-40513631",
     "title": "OpenAI Codex Security Scanned 1.2 Million Commits and Found 10,561 High-Severity Issues",
     "source": "The Hacker News",
@@ -537,22 +571,6 @@
     ]
   },
   {
-    "id": "news-cb929f52",
-    "title": "FBI arrests suspect linked to $46M crypto theft from US Marshals",
-    "source": "BleepingComputer",
-    "published": "2026-03-05T18:36:18.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fbi-arrests-suspect-linked-to-46m-crypto-theft-from-us-marshals/",
-    "summary": "​A U.S. government contractor's son, accused of stealing more than $46 million in cryptocurrency from the U.S. Marshals Service, was arrested Wednesday on the island of Saint Martin. [...]",
-    "severity": "MEDIUM",
-    "vendor": "",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer"
-    ]
-  },
-  {
     "id": "news-f4049ce3",
     "title": "Fig Security Emerges From Stealth to Fix Broken Security Operations",
     "source": "Dark Reading",
@@ -616,24 +634,6 @@
       "intel-feed",
       "medium",
       "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-6dad8770",
-    "title": "Google says 90 zero-days were exploited in attacks last year",
-    "source": "BleepingComputer",
-    "published": "2026-03-05T15:03:43.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/google-says-90-zero-days-were-exploited-in-attacks-last-year/",
-    "summary": "Google Threat Intelligence Group (GTIG) tracked 90 zero-day vulnerabilities actively exploited throughout 2025, almost half of them in enterprise software and appliances. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "zero-day",
-      "google"
     ]
   },
   {

@@ -259,7 +259,7 @@
     "source": "OpenAI Status",
     "published": "2026-03-05T07:19:00.000Z",
     "url": "https://status.openai.com//incidents/01KJZG0ADWGBF4K6AJ5EDFV52T",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Compliance API (Operational) Image Generation (Operational) ChatGPT Atlas (Operational) Login (Operational) File uploads (Operational) Conversations (Operational) Chat Completions (Operational) Realtime (Operational) Files (Operational) Images (Operational) Fine-tuning (O...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Video generation (Operational) Codex (Operational) Images (Operational) Compliance API (Operational) Sora (Operational) Realtime (Operational) Moderations (Operational) Login (Operational) Conversations (Operational) Audio (Operational) Image Generation (Operational) Agen...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -269,8 +269,7 @@
       "openai-status",
       "openai",
       "api",
-      "login",
-      "chatgpt"
+      "login"
     ]
   },
   {
@@ -375,7 +374,7 @@
     "source": "OpenAI Status",
     "published": "2026-03-05T01:12:32.000Z",
     "url": "https://status.openai.com//incidents/01KJXQDJ6P1CG5YNXKZRY2H6RX",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Realtime (Operational) Moderations (Operational) Responses (Operational) Batch (Operational) Fine-tuning (Operational) Files (Operational) Embeddings (Operational) Codex (Operational) Images (Operational) Chat Completions (Operational) Audio (Operational)",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Audio (Operational) Realtime (Operational) Files (Operational) Embeddings (Operational) Moderations (Operational) Responses (Operational) Chat Completions (Operational) Fine-tuning (Operational) Codex (Operational) Images (Operational) Batch (Operational)",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -615,7 +614,7 @@
     "source": "OpenAI Status",
     "published": "2026-03-02T17:14:48.000Z",
     "url": "https://status.openai.com//incidents/01KJQJRF7J0CKT82SHDZ85YG4Y",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Deep Research (Operational) Connectors/Apps (Operational) Login (Operational) File uploads (Operational) Conversations (Operational) Image Generation (Operational) GPTs (Operational) Agent (Operational) Codex (Operational) ChatGPT Atlas (Operational) Voice mode (Operation...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Search (Operational) Conversations (Operational) Image Generation (Operational) GPTs (Operational) Agent (Operational) Deep Research (Operational) Login (Operational) File uploads (Operational) Compliance API (Operational) Codex (Operational) Connectors/Apps (Operational)...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -624,8 +623,8 @@
       "medium",
       "openai-status",
       "openai",
-      "login",
-      "chatgpt"
+      "api",
+      "login"
     ]
   },
   {
@@ -855,7 +854,7 @@
     "source": "OpenAI Status",
     "published": "2026-02-25T21:05:00.000Z",
     "url": "https://status.openai.com//incidents/01KJB80QA8P62R9X3B71YAZEAK",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) File uploads (Operational) Voice mode (Operational) Search (Operational) Compliance API (Operational) Image Generation (Operational) Agent (Operational) Codex (Operational) Conversations (Operational) GPTs (Operational) Deep Research (Operational) Conn...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) Voice mode (Operational) Search (Operational) Conversations (Operational) GPTs (Operational) Agent (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) File uploads (Operational) Compliance API (Operational) Image Generation (Operati...",
     "severity": "CRITICAL",
     "vendor": "OpenAI",
     "tags": [
@@ -1080,7 +1079,7 @@
     "source": "OpenAI Status",
     "published": "2026-02-19T08:00:00.000Z",
     "url": "https://status.openai.com//incidents/01KJXA4N2X4W8KHZFSSFH0V0Q7",
-    "summary": "Status: Resolved We have observed issues with API Platform audit logs. Affected components Deep Research (Operational) Login (Operational) File uploads (Operational) Fine-tuning (Operational) Moderations (Operational) Login (Operational) Login (Operational) Video generation (Operational) Compliance API (Operational) ChatGPT Atlas (Operational) Chat Comple...",
+    "summary": "Status: Resolved We have observed issues with API Platform audit logs. Affected components GPTs (Operational) Agent (Operational) Realtime (Operational) Video generation (Operational) Responses (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) Sora (Operational) Batch (Operational) Login (Operational) Codex (Operational) File uploads...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -1225,7 +1224,7 @@
     "source": "OpenAI Status",
     "published": "2026-02-14T04:24:08.000Z",
     "url": "https://status.openai.com//incidents/01KHB0X2GYKJEW6WV3G1SFYPCE",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Images (Operational) Image Generation (Operational)",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Image Generation (Operational) Images (Operational)",
     "severity": "HIGH",
     "vendor": "OpenAI",
     "tags": [
@@ -1495,7 +1494,7 @@
     "source": "OpenAI Status",
     "published": "2026-02-05T00:48:56.000Z",
     "url": "https://status.openai.com//incidents/01KGNJACX0T5CYY1YWS8RNW6S6",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Connectors/Apps (Operational) ChatGPT Atlas (Operational) Login (Operational) File uploads (Operational) Search (Operational) Conversations (Operational) Image Generation (Operational) Agent (Operational) Deep Research (Operational) Codex (Operational) Voice mode (Operati...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Search (Operational) Conversations (Operational) Compliance API (Operational) Image Generation (Operational) GPTs (Operational) Agent (Operational) Deep Research (Operational) Codex (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) Login (Operational...",
     "severity": "HIGH",
     "vendor": "OpenAI",
     "tags": [
@@ -1504,6 +1503,7 @@
       "high",
       "openai-status",
       "openai",
+      "api",
       "login",
       "chatgpt"
     ]
@@ -1514,7 +1514,7 @@
     "source": "OpenAI Status",
     "published": "2026-02-04T21:04:35.000Z",
     "url": "https://status.openai.com//incidents/01KGMVV926ZSCD1MSDBS07AWYA",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) File uploads (Operational) Search (Operational) Conversations (Operational) Image Generation (Operational) GPTs (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) Voice mode (Operational) Compliance API (Operational) Agent (Operati...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Connectors/Apps (Operational) ChatGPT Atlas (Operational) Login (Operational) File uploads (Operational) Voice mode (Operational) Search (Operational) Conversations (Operational) Image Generation (Operational) GPTs (Operational) Agent (Operational) Compliance API (Operati...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -1586,7 +1586,7 @@
     "source": "OpenAI Status",
     "published": "2026-02-03T22:14:03.000Z",
     "url": "https://status.openai.com//incidents/01KGJK9Q6PDB3C3VX6MPCY6106",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) File uploads (Operational) Voice mode (Operational) Conversations (Operational) GPTs (Operational) Login (Operational) Deep Research (Operational) Connectors/Apps (Operational) Search (Operational) Compliance API (Operational) Image Generation (Operati...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components GPTs (Operational) Agent (Operational) Deep Research (Operational) ChatGPT Atlas (Operational) Login (Operational) File uploads (Operational) Image Generation (Operational) Login (Operational) Codex (Operational) Connectors/Apps (Operational) Voice mode (Operational) Sear...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -1595,7 +1595,6 @@
       "medium",
       "openai-status",
       "openai",
-      "api",
       "login",
       "chatgpt"
     ]
@@ -1839,7 +1838,7 @@
     "source": "OpenAI Status",
     "published": "2026-01-26T17:27:46.000Z",
     "url": "https://status.openai.com//incidents/01KFXHMCMQE0EWA7R8RM5F9YW2",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components ChatGPT Atlas (Operational) Voice mode (Operational) Search (Operational) Agent (Operational) Codex (Operational) Connectors/Apps (Operational) Login (Operational) File uploads (Operational) Conversations (Operational) Compliance API (Operational) Image Generation (Operat...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) File uploads (Operational) Compliance API (Operational) GPTs (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) Voice mode (Operational) Search (Operational) Conversations (Operational) Image Generation (Operational) Agent (Operati...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -1986,7 +1985,7 @@
     "source": "OpenAI Status",
     "published": "2026-01-08T21:12:00.000Z",
     "url": "https://status.openai.com//incidents/01KEFMJWBHC4JBGJWMXNQTSTH6",
-    "summary": "Status: Resolved ChatGPT and API functionality should now be fully restored. Affected components Conversations (Operational) Chat Completions (Operational) Responses (Operational)",
+    "summary": "Status: Resolved ChatGPT and API functionality should now be fully restored. Affected components Responses (Operational) Conversations (Operational) Chat Completions (Operational)",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -2057,7 +2056,7 @@
     "source": "OpenAI Status",
     "published": "2026-01-06T21:00:00.000Z",
     "url": "https://status.openai.com//incidents/01KEACZ6R02744RQKCMSK1ZG54",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational) Compliance API (Operational) Agent (Operational) Codex (Operational) ChatGPT Atlas (Operational) File uploads (Operational) Image Generation (Operational) GPTs (Operational) Deep Research (Operational) Connectors/Apps (Operational) Login (Opera...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational) Connectors/Apps (Operational) Login (Operational) File uploads (Operational) Search (Operational) Image Generation (Operational) Agent (Operational) Deep Research (Operational) ChatGPT Atlas (Operational) Voice mode (Operational) Conversations (Operati...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -2066,7 +2065,6 @@
       "medium",
       "openai-status",
       "openai",
-      "api",
       "login",
       "chatgpt"
     ]
@@ -2129,7 +2127,7 @@
     "source": "OpenAI Status",
     "published": "2025-12-21T21:33:27.000Z",
     "url": "https://status.openai.com//incidents/01KD19S888P8SGB2TFB82DWCW8",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Voice mode (Operational) Search (Operational) Image Generation (Operational) Agent (Operational) Deep Research (Operational) Codex (Operational) Connectors/Apps (Operational) Login (Operational) File uploads (Operational) Conversations (Operational) Compliance API (Operat...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Agent (Operational) Connectors/Apps (Operational) File uploads (Operational) Voice mode (Operational) Search (Operational) Image Generation (Operational) Deep Research (Operational) Codex (Operational) ChatGPT Atlas (Operational) Login (Operational) Conversations (Operati...",
     "severity": "HIGH",
     "vendor": "OpenAI",
     "tags": [
@@ -2138,7 +2136,6 @@
       "high",
       "openai-status",
       "openai",
-      "api",
       "login",
       "chatgpt"
     ]
@@ -2314,7 +2311,7 @@
     "source": "OpenAI Status",
     "published": "2025-12-17T04:12:31.000Z",
     "url": "https://status.openai.com//incidents/01KCM7PAMQMCM8KAB6ZCWPKNK1",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Responses (Operational) Codex (Operational)",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational) Responses (Operational)",
     "severity": "HIGH",
     "vendor": "OpenAI",
     "tags": [
@@ -2403,7 +2400,7 @@
     "source": "OpenAI Status",
     "published": "2025-12-10T23:27:08.000Z",
     "url": "https://status.openai.com//incidents/01KC56SP6M152HGWAF6EAFQR2E",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) Voice mode (Operational) Search (Operational) Conversations (Operational) Compliance API (Operational) GPTs (Operational) Agent (Operational) Deep Research (Operational) File uploads (Operational) Image Generation (Operational) Codex (Operational) Conn...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) File uploads (Operational) Voice mode (Operational) Search (Operational) Conversations (Operational) GPTs (Operational) Agent (Operational) Compliance API (Operational) Image Generation (Operational) Deep Research (Operational) Codex (Operational) Conn...",
     "severity": "HIGH",
     "vendor": "OpenAI",
     "tags": [
