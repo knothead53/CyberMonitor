@@ -9,42 +9,60 @@ It runs with plain HTML, CSS, and JavaScript and is intentionally compatible wit
 - local development without a backend
 
 ## Preview
-![CyberMonitor dashboard preview](assets/screenshots/dashboard-v1.3.png)
+![CyberMonitor dashboard preview](assets/screenshots/dashboard-v1.4.png)
 
-## v1.3 Highlights
+## v1.4 Highlights
 
-- real feed ingestion adapters for:
-  - CISA KEV
-  - security news RSS sources
-  - public status/outage feeds
-- shared normalization utilities for adapters (`scripts/adapters/lib`)
-- single feed generation runner (`scripts/generate-feeds.js`)
-- frontend feed-source transparency badges (`LIVE DATA`, `SAMPLE DATA`, mixed/partial states)
-- static-safe fallback remains intact (`data/*.sample.json`)
+- scheduled feed generation with GitHub Actions cron + manual dispatch
+- generated feed metadata and health reporting (`feed-metadata.json`, `feed-health.json`)
+- expanded public source coverage for news and outage/status feeds
+- generated map-correlation overlays (`map.correlated.json`) derived from ingested feeds
+- frontend freshness and health indicators in the top bar and panel headers
+- sample-data fallback remains intact for static compatibility
 
 ## Core Architecture
 
-- `frontend/`: static UI shell and browser-side rendering
-- `data/`: generated feed outputs and sample fallback data
-- `scripts/`: optional ingestion/generation tooling (not required at runtime)
+CyberMonitor now operates in four layers:
+
+- UI layer: `frontend/` static dashboard shell and browser rendering
+- normalized data layer: `data/` generated feed artifacts + sample fallbacks
+- generation layer: `scripts/` adapters and unified generator
+- automation/observability layer: `.github/workflows/` scheduled generation + metadata/health outputs
 
 No backend server is required for the base product.
 
-## Data Flow (v1.3)
+## Data Flow (v1.4)
 
-1. Run `node scripts/generate-feeds.js`.
-2. Adapters fetch public feeds and normalize to a shared schema.
-3. Adapters write generated files:
+1. Generate feeds manually (`node scripts/generate-feeds.js`) or via scheduled workflow.
+2. Adapters ingest public sources and normalize records to CyberMonitor schema.
+3. Generator writes feed files:
    - `data/kev.json`
    - `data/news.json`
    - `data/outages.json`
-4. Frontend attempts generated files first.
-5. If generated files are missing/unavailable, frontend falls back to sample files:
-   - `data/kev.sample.json`
-   - `data/news.sample.json`
-   - `data/outages.sample.json`
+4. Generator writes observability files:
+   - `data/feed-metadata.json`
+   - `data/feed-health.json`
+5. Generator writes derived map overlays:
+   - `data/map.correlated.json`
+6. Frontend attempts generated files first, then falls back to sample data where applicable.
 
-This keeps the dashboard usable in static and offline-first workflows.
+## Scheduled Feed Automation
+
+Workflow: `.github/workflows/generate-feeds.yml`
+
+- triggers:
+  - manual: `workflow_dispatch`
+  - scheduled: `15 */3 * * *` (every 3 hours)
+- runtime:
+  - Node 20 setup
+  - optional npm dependency install when `package.json` exists
+  - `node scripts/generate-feeds.js`
+- commit behavior:
+  - stages generated artifacts when present
+  - commits only when changes are detected
+  - bot commit message: `chore: refresh generated intelligence feeds`
+
+Baseline v1.4 automation does not require custom secrets.
 
 ## Run The Dashboard
 
@@ -53,11 +71,11 @@ This keeps the dashboard usable in static and offline-first workflows.
 1. Open the repo.
 2. Open `frontend/index.html` directly.
 
-### Option 2: local static server (recommended for production-like behavior)
+### Option 2: local static server (recommended)
 
 Serve the repo root with any static file server, then open `frontend/index.html` through HTTP.
 
-## Generate Live/Current Feeds
+## Generate Feeds Manually
 
 Node.js 18+ is recommended.
 
@@ -72,37 +90,63 @@ node scripts/generate-feeds.js --only kev
 node scripts/generate-feeds.js --only news,outages
 ```
 
-You can also run individual adapters:
+## Frontend Fallback Behavior
 
-```bash
-node scripts/adapters/kev_adapter.js
-node scripts/adapters/news_adapter.js
-node scripts/adapters/outages_adapter.js
-```
+Panel feed load order:
 
-## Public Sources Used In v1.3
+- KEV: `data/kev.json` -> `data/kev.sample.json`
+- News: `data/news.json` -> `data/news.sample.json`
+- Outages: `data/outages.json` -> `data/outages.sample.json`
 
-- KEV: CISA Known Exploited Vulnerabilities feed
-- News:
-  - BleepingComputer RSS
-  - Dark Reading RSS
-  - Krebs on Security RSS
-- Outages:
-  - GitHub Status RSS
-  - OpenAI Status RSS
-  - Discord Status RSS
-  - Cloudflare Status RSS
+Map overlay load order:
 
-No API keys are required for the base v1.3 pipeline.
+- `data/map.correlated.json` -> `data/map.overlays.sample.json`
 
-## Feed Source Indicators In UI
+If generated files are unavailable, the dashboard remains usable with sample data.
 
-The dashboard now shows generated-vs-sample mode in two places:
+## UI Observability Signals
 
-- global top-bar badge (live, sample fallback, mixed, partial)
-- per-panel feed badge (live, sample, unavailable)
+Top bar now includes:
 
-This makes it clear whether the wallboard is showing generated feeds or sample fallback data.
+- data mode indicator (live/sample/mixed/partial)
+- feed health indicator
+- feed refresh recency summary
+
+Each panel includes:
+
+- source mode badge (`LIVE DATA`, `SAMPLE DATA`, `NO DATA`)
+- health chip (`OK`, `WARN`, `ERROR`)
+- freshness/meta line (`updated ...`, item count)
+
+## Public Sources Used In v1.4
+
+KEV source:
+
+- CISA Known Exploited Vulnerabilities feed
+
+News sources:
+
+- BleepingComputer RSS
+- Dark Reading RSS
+- Krebs on Security RSS
+- The Hacker News RSS
+- SANS ISC RSS
+
+Outage/status sources:
+
+- GitHub Status RSS
+- OpenAI Status RSS
+- Discord Status RSS
+- Cloudflare Status RSS
+- Slack Status RSS
+- Atlassian Status RSS
+- Heroku Status RSS
+
+No API keys are required for base v1.4 ingestion.
+
+## Map Correlation Note
+
+`data/map.correlated.json` is a derived visualization layer built from feed signals using deterministic approximation logic. It is not authoritative geolocation intelligence.
 
 ## Normalized Feed Schema
 
@@ -122,12 +166,16 @@ All panel feeds normalize to this shape:
 }
 ```
 
-Adapters may include extra fields when useful, while preserving frontend compatibility.
+Adapters may include extra fields when useful while preserving frontend compatibility.
 
 ## Project Structure
 
 ```text
 CyberMonitor/
+|- .github/
+|  |- workflows/
+|     |- deploy-pages.yml
+|     |- generate-feeds.yml
 |- frontend/
 |  |- index.html
 |  |- styles.css
@@ -139,9 +187,12 @@ CyberMonitor/
 |  |- map.overlays.sample.json
 |  |- metrics.sample.json
 |  |- fallback.sample.js
-|  |- kev.json            # optional generated output
-|  |- news.json           # optional generated output
-|  |- outages.json        # optional generated output
+|  |- kev.json              # optional generated output
+|  |- news.json             # optional generated output
+|  |- outages.json          # optional generated output
+|  |- feed-metadata.json    # generated metadata
+|  |- feed-health.json      # generated health report
+|  |- map.correlated.json   # generated map correlation overlay
 |- scripts/
 |  |- README.md
 |  |- generate-feeds.js
@@ -150,12 +201,15 @@ CyberMonitor/
 |     |- kev_adapter.js
 |     |- news_adapter.js
 |     |- outages_adapter.js
+|     |- sources.js
 |     |- lib/
 |        |- normalize.js
 |        |- rss.js
 |- assets/
 |  |- screenshots/
+|     |- dashboard-v1.1.png
 |     |- dashboard-v1.2.png
+|     |- dashboard-v1.3.png
 |- ROADMAP.md
 |- CONTRIBUTING.md
 |- README.md

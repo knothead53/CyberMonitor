@@ -35,16 +35,28 @@
 - Frontend feed-source indicators for live/sample/mixed visibility
 - Continued static-host compatibility with sample fallback behavior
 
-## v1.4 (Next)
+## v1.4
 
-- Add scheduled feed generation pipeline (GitHub Actions cron)
-- Publish generated feed freshness metadata in the UI
-- Expand source coverage with additional public intel/status feeds
-- Add basic feed health reporting for failed adapters
-- Improve map overlays with data-backed feed correlations (after ingestion automation hardens)
+- Status: Completed (March 2026)
+- Scheduled feed generation workflow in GitHub Actions (`generate-feeds.yml`)
+- Automated generated-artifact commits when data changes are detected
+- Feed metadata output (`data/feed-metadata.json`) with per-feed freshness details
+- Feed health output (`data/feed-health.json`) with per-feed status reporting
+- Expanded public source coverage for news and outage/status ingestion
+- Derived map-correlation output (`data/map.correlated.json`) from generated feeds
+- Dashboard freshness and health indicators in top bar and panel headers
+- Maintained static fallback compatibility for generated/sampled operation modes
+
+## v1.5 (Next)
+
+- Add stale-feed thresholds and explicit staleness badges in UI
+- Persist last-success snapshots per feed for safer degraded-mode generation
+- Add structured generator logs/artifact summary for troubleshooting workflow runs
+- Expand public source diversity with category-level weighting/dedup tuning
+- Tighten Pages deployment coupling so feed refresh and publish cadence stay aligned
 
 ## Longer-Term Direction
 
-- Automatic public data refresh cadence for GitHub Pages deployments
-- Optional desktop packaging once data pipeline and refresh loop are stable
-- More advanced threat clustering and regional intelligence overlays
+- Public-facing intelligence wallboard with predictable refresh cadence
+- Optional desktop packaging after pipeline reliability hardens
+- Stronger regional clustering and map analytics grounded in real feed signals

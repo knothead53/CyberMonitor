@@ -2,18 +2,19 @@
 
 All scripts in this folder are optional developer tooling.
 
-The frontend stays static and can run without executing any script. If no generated
-feeds are present, the UI falls back to `data/*.sample.json`.
+The frontend remains static and can run without executing scripts. When generated files
+are missing, the UI falls back to `data/*.sample.json` (and sample map overlays).
 
-## v1.3 Script Layout
+## v1.4 Script Layout
 
-- `generate-feeds.js`: runs all adapters in one command
+- `generate-feeds.js`: unified runner for adapters + metadata/health/correlation outputs
+- `refresh-sample-timestamps.js`: refreshes sample timestamps for demos
 - `adapters/kev_adapter.js`: CISA KEV ingestion + normalization
 - `adapters/news_adapter.js`: security news RSS ingestion + normalization
-- `adapters/outages_adapter.js`: status/outage RSS ingestion + normalization
-- `adapters/lib/normalize.js`: shared normalization helpers
+- `adapters/outages_adapter.js`: outage/status RSS ingestion + normalization
+- `adapters/sources.js`: centralized public source configuration
+- `adapters/lib/normalize.js`: shared normalization, tagging, dedupe helpers
 - `adapters/lib/rss.js`: shared RSS/XML parsing helpers
-- `refresh-sample-timestamps.js`: refreshes sample timestamps for demos
 
 ## Quick Start
 
@@ -30,71 +31,101 @@ node scripts/generate-feeds.js --only kev
 node scripts/generate-feeds.js --only news,outages
 ```
 
-Generated outputs:
+## Generator Flow (v1.4)
+
+`generate-feeds.js` runs a deterministic pipeline:
+
+1. Runs each adapter independently (`kev`, `news`, `outages`).
+2. Continues processing even if one adapter errors.
+3. Reads resulting feed outputs and writes metadata report.
+4. Writes health report with per-feed status and overall status.
+5. Builds map-correlation overlays from generated feed signals.
+
+This supports partial success instead of all-or-nothing generation.
+
+## Generated Output Files
+
+Primary feed artifacts:
 
 - `data/kev.json`
 - `data/news.json`
 - `data/outages.json`
 
-## Adapter Normalization Flow
+Observability artifacts:
 
-Each adapter follows the same pattern:
+- `data/feed-metadata.json`
+- `data/feed-health.json`
 
-1. Fetch feed data from one or more public sources.
-2. Parse raw content (JSON or RSS/XML).
-3. Normalize records into CyberMonitor schema.
-4. Deduplicate and sort newest-first.
-5. Write output JSON under `data/`.
+Derived map artifact:
 
-Shared helpers are used for:
+- `data/map.correlated.json`
 
-- stable ID generation
-- date normalization
-- severity normalization/inference
-- vendor and keyword tag inference
-- summary fallback/truncation
-- deduplication
+## Health Status Semantics
 
-## Required Feed Schema
+Per-feed health values in `feed-health.json`:
 
-Adapters are expected to emit items that include at least:
+- `ok`: adapter completed and output loaded successfully
+- `warning`: adapter error occurred but existing output remained usable
+- `error`: adapter failed and no generated output was available
 
-- `id`
-- `title`
-- `source`
-- `published` (ISO-8601)
-- `url`
-- `summary`
-- `severity` (`LOW`, `MEDIUM`, `HIGH`, `CRITICAL`)
-- `vendor`
-- `tags` (array of strings)
+`overallStatus` escalates to the highest severity observed across feeds.
 
 ## Current Public Sources
 
-- KEV: CISA Known Exploited Vulnerabilities catalog feed
-- News:
-  - BleepingComputer RSS
-  - Dark Reading RSS
-  - Krebs on Security RSS
-- Outages:
-  - GitHub Status RSS
-  - OpenAI Status RSS
-  - Discord Status RSS
-  - Cloudflare Status RSS
+KEV:
+
+- CISA Known Exploited Vulnerabilities feed
+
+News:
+
+- BleepingComputer RSS
+- Dark Reading RSS
+- Krebs on Security RSS
+- The Hacker News RSS
+- SANS ISC RSS
+
+Outage/status:
+
+- GitHub Status RSS
+- OpenAI Status RSS
+- Discord Status RSS
+- Cloudflare Status RSS
+- Slack Status RSS
+- Atlassian Status RSS
+- Heroku Status RSS
+
+Source lists are configured in `scripts/adapters/sources.js`.
+
+## GitHub Automation
+
+Workflow: `.github/workflows/generate-feeds.yml`
+
+- triggers on schedule (every 3 hours) and manual dispatch
+- runs `node scripts/generate-feeds.js`
+- stages generated artifacts when present
+- commits only when outputs changed
+- commit message: `chore: refresh generated intelligence feeds`
+
+Baseline workflow usage does not require custom secrets.
 
 ## Frontend Fallback Contract
 
-Frontend load order for each intelligence panel:
+Feed panels load in this order:
 
-1. Attempt generated file (`data/*.json`)
-2. If unavailable, use sample fallback (`data/*.sample.json`)
+1. `data/*.json` (generated)
+2. `data/*.sample.json` (fallback)
 
-This behavior is required to preserve static-host compatibility.
+Map overlays load in this order:
+
+1. `data/map.correlated.json` (generated)
+2. `data/map.overlays.sample.json` (fallback)
+
+If metadata/health files are unavailable, UI observability labels degrade gracefully.
 
 ## Adding A New Source
 
-1. Extend the adapter source list in the relevant adapter.
-2. Reuse helpers from `adapters/lib/normalize.js` and `adapters/lib/rss.js`.
-3. Keep output schema stable with existing panel rendering.
+1. Add source entries to `scripts/adapters/sources.js`.
+2. Update adapter normalization logic only if schema mapping needs new handling.
+3. Reuse shared helpers from `adapters/lib/normalize.js` and `adapters/lib/rss.js`.
 4. Regenerate outputs with `node scripts/generate-feeds.js`.
-5. Validate frontend rendering and fallback behavior.
+5. Verify feed render, map correlation output, and fallback behavior in browser.
