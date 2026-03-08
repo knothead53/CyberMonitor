@@ -109,6 +109,24 @@
     ]
   },
   {
+    "id": "outage-3657df53",
+    "title": "Incident: Issues with App Mentions, Grid Migrations, and Notifications",
+    "source": "Slack Status",
+    "published": "2026-03-06T16:44:54.000Z",
+    "url": "https://slack-status.com/2026-03/e63ca9cc0d76539c",
+    "summary": "This issue is now resolved for all users.Current status and recent actions taken: The issue is now resolved, and users should no longer be experiencing any trouble with when using app mentions, migrations, and push notifications. Enterprise Migrations should also be completing as expected.Scope: This issue wasn&apos;t affecting any specific region, but a ...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
     "id": "outage-03b892b3",
     "title": "Issues with 1.1.1.1 public resolver in North America",
     "source": "Cloudflare Status",
@@ -241,7 +259,7 @@
     "source": "OpenAI Status",
     "published": "2026-03-05T07:19:00.000Z",
     "url": "https://status.openai.com//incidents/01KJZG0ADWGBF4K6AJ5EDFV52T",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational) Login (Operational) Video generation (Operational) Agent (Operational) Login (Operational) Images (Operational) Fine-tuning (Operational) Video viewing (Operational) Connectors/Apps (Operational) Login (Operational) Moderations (Operational) Co...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Audio (Operational) Image Generation (Operational) Agent (Operational) Login (Operational) Codex (Operational) Sora (Operational) Login (Operational) Voice mode (Operational) Chat Completions (Operational) Deep Research (Operational) File uploads (Operational) Images (Ope...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -356,7 +374,7 @@
     "source": "OpenAI Status",
     "published": "2026-03-05T01:12:32.000Z",
     "url": "https://status.openai.com//incidents/01KJXQDJ6P1CG5YNXKZRY2H6RX",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Realtime (Operational) Responses (Operational) Images (Operational) Batch (Operational) Audio (Operational) Files (Operational) Embeddings (Operational) Moderations (Operational) Codex (Operational) Chat Completions (Operational) Fine-tuning (Operational)",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational) Batch (Operational) Chat Completions (Operational) Fine-tuning (Operational) Realtime (Operational) Embeddings (Operational) Images (Operational) Audio (Operational) Files (Operational) Moderations (Operational) Responses (Operational)",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -404,6 +422,25 @@
       "cloudflare",
       "incident",
       "api"
+    ]
+  },
+  {
+    "id": "outage-8d06fdf1",
+    "title": "Incident: Degraded Search Performance for Dubai IDR Users – Middle East (Dubai) Region",
+    "source": "Slack Status",
+    "published": "2026-03-04T18:41:51.000Z",
+    "url": "https://slack-status.com/2026-03/5d92c691d977da03",
+    "summary": "This issue with a third party vendor impacts only a subset of IDR customers.Current status and recent actions taken: We are staying engaged with our International Data Residency (IDR) customers on a path to recovery. Scope: Isolated to a subset of IDR customers.Previous impact to end users: Severe degradation to services only impacting IDR customers.Requi...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident",
+      "degraded"
     ]
   },
   {
@@ -577,7 +614,7 @@
     "source": "OpenAI Status",
     "published": "2026-03-02T17:14:48.000Z",
     "url": "https://status.openai.com//incidents/01KJQJRF7J0CKT82SHDZ85YG4Y",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) File uploads (Operational) Voice mode (Operational) Search (Operational) Conversations (Operational) Compliance API (Operational) GPTs (Operational) Agent (Operational) Deep Research (Operationa...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components ChatGPT Atlas (Operational) File uploads (Operational) Conversations (Operational) Compliance API (Operational) Agent (Operational) Deep Research (Operational) Connectors/Apps (Operational) Login (Operational) Voice mode (Operational) Search (Operational) Image Generation...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -587,6 +624,7 @@
       "openai-status",
       "openai",
       "api",
+      "login",
       "chatgpt"
     ]
   },
@@ -624,6 +662,24 @@
       "openai-status",
       "openai",
       "login"
+    ]
+  },
+  {
+    "id": "outage-2fe65bd4",
+    "title": "Incident: Issue with Slack Search feature",
+    "source": "Slack Status",
+    "published": "2026-03-01T20:49:25.000Z",
+    "url": "https://slack-status.com/2026-03/a498942c1b812963",
+    "summary": "The issue with slow or incomplete search results in Slack is now resolved for all users as of 19:53 UTC on March 1, 2026.We apologize for any disruptions to your day.",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
     ]
   },
   {
@@ -799,7 +855,7 @@
     "source": "OpenAI Status",
     "published": "2026-02-25T21:05:00.000Z",
     "url": "https://status.openai.com//incidents/01KJB80QA8P62R9X3B71YAZEAK",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) File uploads (Operational) Search (Operational) Conversations (Operational) Compliance API (Operational) Image Generation (Operational) Codex (Operational) ChatGPT Atlas (Operational) Voice mode (Operational) GPTs (Operational) Agent (Operational) Deep...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) Search (Operational) Compliance API (Operational) Image Generation (Operational) GPTs (Operational) Codex (Operational) Connectors/Apps (Operational) File uploads (Operational) Voice mode (Operational) Conversations (Operational) Agent (Operational) De...",
     "severity": "CRITICAL",
     "vendor": "OpenAI",
     "tags": [
@@ -831,6 +887,42 @@
       "incident",
       "degraded",
       "copilot"
+    ]
+  },
+  {
+    "id": "outage-4b688364",
+    "title": "Incident: Slack Email Delivery Feature Degradation",
+    "source": "Slack Status",
+    "published": "2026-02-25T04:52:24.000Z",
+    "url": "https://slack-status.com/2026-02/fb905e8a457042ba",
+    "summary": "Our work on this issue has concluded.We’ve tested and validated the fix deployment, and can see previously impacted accounts now receiving emails, as intended.The incident has been resolved as of 04:40 UTC, February 25This is the final update for this incident. We apologize for any inconvenience to our users for this issue.",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-ecad3a7b",
+    "title": "Incident: Issue with Slack Direct Messaging",
+    "source": "Slack Status",
+    "published": "2026-02-24T19:19:19.000Z",
+    "url": "https://slack-status.com/2026-02/0736abde1ec2eea0",
+    "summary": "This issue is now resolved.Current status and recent actions taken: Further investigation of this issue has determined that Slack systems and services are operating within specifications and remain stable. Scope: Some users may have experienced issues accessing Direct Messages or Multi-person Direct Messages.Required resolution steps: No additional steps ...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
     ]
   },
   {
@@ -965,12 +1057,30 @@
     ]
   },
   {
+    "id": "outage-29cbd379",
+    "title": "Incident: Users unable to access Slack using various browsers",
+    "source": "Slack Status",
+    "published": "2026-02-20T00:24:56.000Z",
+    "url": "https://slack-status.com/2026-02/5fd12c7c0229f7fb",
+    "summary": "Current status and recent actions taken: Further investigation of this issue has determined that Slack systems and services are operating within specifications and that the issue is due to a conflict with some antivirus applications.Scope: Some users may have experienced issues accessing Slack services via their web browser due a conflict with their antiv...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
     "id": "outage-18a9c238",
     "title": "Issues with API Platform Audit Logs",
     "source": "OpenAI Status",
     "published": "2026-02-19T08:00:00.000Z",
     "url": "https://status.openai.com//incidents/01KJXA4N2X4W8KHZFSSFH0V0Q7",
-    "summary": "Status: Resolved We have observed issues with API Platform audit logs. Affected components Login (Operational) Audio (Operational) Realtime (Operational) Login (Operational) Deep Research (Operational) Fine-tuning (Operational) Agent (Operational) Voice mode (Operational) Video viewing (Operational) Responses (Operational) Image Generation (Operational) F...",
+    "summary": "Status: Resolved We have observed issues with API Platform audit logs. Affected components Feed (Operational) Video generation (Operational) Agent (Operational) Voice mode (Operational) Chat Completions (Operational) Audio (Operational) Embeddings (Operational) Conversations (Operational) Fine-tuning (Operational) GPTs (Operational) Login (Operational) Co...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -1000,6 +1110,25 @@
       "github",
       "incident",
       "degraded"
+    ]
+  },
+  {
+    "id": "outage-c535c7cd",
+    "title": "Incident: Issues generating Incoming Webhooks",
+    "source": "Slack Status",
+    "published": "2026-02-18T18:32:00.000Z",
+    "url": "https://slack-status.com/2026-02/1e508dc831fd934e",
+    "summary": "This issue is now resolved for all users.Current status and recent actions taken: We reverted the change that triggered the issue. Scope: This issue impacted users from all regions, impacting both new installations and reinstalls of apps, affecting developers who reinstall apps to generate new webhooks.Previous impact to end users: Incoming Webhooks may h...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident",
+      "webhook"
     ]
   },
   {
@@ -1126,6 +1255,24 @@
     ]
   },
   {
+    "id": "outage-80537d49",
+    "title": "Incident: Trouble Accessing Slack",
+    "source": "Slack Status",
+    "published": "2026-02-12T23:46:07.000Z",
+    "url": "https://slack-status.com/2026-02/3eb09dfaf67113fc",
+    "summary": "This issue is now resolved for all users.Current status and recent actions taken: We have deployed a fix, which has successfully resolved the issue.Scope: This affected a portion of GovSlack users.Previous impact to end users: Users may have encountered “500“ errors when attempting to access their workspaces.Required resolution steps: No steps required.We...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
     "id": "outage-af8323c3",
     "title": "ChatGPT Conversation Issues",
     "source": "OpenAI Status",
@@ -1196,6 +1343,24 @@
       "degraded",
       "latency",
       "copilot"
+    ]
+  },
+  {
+    "id": "outage-789a3427",
+    "title": "Incident: Unable to Install Apps to Workspaces",
+    "source": "Slack Status",
+    "published": "2026-02-11T03:22:09.000Z",
+    "url": "https://slack-status.com/2026-02/0cb7519d121f7be7",
+    "summary": "This incident is declared resolved. Users can now install and authorize third-party apps to their Slack workspaces.We apologize for any inconvenience this may have caused.",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
     ]
   },
   {
@@ -1288,12 +1453,48 @@
     ]
   },
   {
+    "id": "outage-886cbed8",
+    "title": "Incident: Issue with scheduled workflows",
+    "source": "Slack Status",
+    "published": "2026-02-06T20:10:01.000Z",
+    "url": "https://slack-status.com/2026-02/7bb73bc44ec676f8",
+    "summary": "We&apos;ve validated that the fix was successful, and the authentication errors users were experiencing with scheduled workflows are now resolved. We apologize for any disruptions to your day and appreciate your patience as we sorted this out.",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-9ab27f3e",
+    "title": "Incident: App History and Chat Tab Not Loading",
+    "source": "Slack Status",
+    "published": "2026-02-05T16:59:54.000Z",
+    "url": "https://slack-status.com/2026-02/247421fca4040db4",
+    "summary": "We&apos;ve deployed a fix, which has successfully fixed the issue, and the incident is now resolved. If users are experiencing any trouble, they may consider hard-refreshing their app via Cmd/Ctrl + Shift + R. We apologize for any inconvenience caused and thank you for your patience.",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
     "id": "outage-b5f3fe0c",
     "title": "Increased ChatGPT errors for some users",
     "source": "OpenAI Status",
     "published": "2026-02-05T00:48:56.000Z",
     "url": "https://status.openai.com//incidents/01KGNJACX0T5CYY1YWS8RNW6S6",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) File uploads (Operational) Voice mode (Operational) Search (Operational) Image Generation (Operational) GPTs (Operational) Agent (Operational) Deep Research (Operational) Conversations (Operational) Compliance API (Operational) Codex (Operational) Conn...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Deep Research (Operational) Codex (Operational) Search (Operational) Image Generation (Operational) Agent (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) Login (Operational) File uploads (Operational) Voice mode (Operational) Conversations (Operati...",
     "severity": "HIGH",
     "vendor": "OpenAI",
     "tags": [
@@ -1302,7 +1503,6 @@
       "high",
       "openai-status",
       "openai",
-      "api",
       "login",
       "chatgpt"
     ]
@@ -1313,7 +1513,7 @@
     "source": "OpenAI Status",
     "published": "2026-02-04T21:04:35.000Z",
     "url": "https://status.openai.com//incidents/01KGMVV926ZSCD1MSDBS07AWYA",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Codex (Operational) Login (Operational) Voice mode (Operational) Conversations (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) File uploads (Operational) Search (Operational) Compliance API (Operational) Image Generation (Operational) GPTs (Operati...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Image Generation (Operational) GPTs (Operational) Agent (Operational) Deep Research (Operational) Codex (Operational) File uploads (Operational) Search (Operational) Conversations (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) Login (Operational) ...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -1323,7 +1523,6 @@
       "openai-status",
       "openai",
       "availability",
-      "api",
       "login",
       "chatgpt"
     ]
@@ -1385,7 +1584,7 @@
     "source": "OpenAI Status",
     "published": "2026-02-03T22:14:03.000Z",
     "url": "https://status.openai.com//incidents/01KGJK9Q6PDB3C3VX6MPCY6106",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Search (Operational) Compliance API (Operational) Image Generation (Operational) Deep Research (Operational) Codex (Operational) Connectors/Apps (Operational) File uploads (Operational) Conversations (Operational) GPTs (Operational) Agent (Operational) Login (Operational)...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) Voice mode (Operational) Search (Operational) Conversations (Operational) Image Generation (Operational) GPTs (Operational) ChatGPT Atlas (Operational) File uploads (Operational) Compliance API (Operational) Agent (Operational) Login (Operational) Deep...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -1397,6 +1596,78 @@
       "api",
       "login",
       "chatgpt"
+    ]
+  },
+  {
+    "id": "outage-1489f0a9",
+    "title": "Incident: Windows desktop notification issues",
+    "source": "Slack Status",
+    "published": "2026-02-03T17:34:34.000Z",
+    "url": "https://slack-status.com/2026-02/52faec0e7f2084ed",
+    "summary": "We have rolled back the release and this has resolved the notification issue Windows users were experiencing. We apologize for the inconvenience and appreciate your patience as we sorted this out.",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-4c7b4238",
+    "title": "Incident: Users unable to create or edit workflows",
+    "source": "Slack Status",
+    "published": "2026-02-02T18:23:20.000Z",
+    "url": "https://slack-status.com/2026-02/2816c820f3322a13",
+    "summary": "This issue is now resolved for all users.Current status and recent actions taken: We have rolled out a fix and the workflow executions are successful and new workflow setup works.Scope: This issue affected the desktop version where edits made to workflows (steps and triggers) could not be saved.Required resolution steps: No required steps, if users are ex...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-9e4bac3a",
+    "title": "Incident: Trouble connecting to Salesforce Channels",
+    "source": "Slack Status",
+    "published": "2026-02-02T17:53:54.000Z",
+    "url": "https://slack-status.com/2026-01/6f029c99f2b77bcd",
+    "summary": "This issue is now resolved. Current status and recent actions taken: The change has been rolled back and most channels are restored.Scope: A small number of users may have noticed Salesforce channels renamed with a \"ZC:\" or alternative prefix and could not see channel discussions.Required resolution steps: No additional steps are necessary.We apologize fo...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-f4e3fec5",
+    "title": "Incident: Users on Free, Trial, or Pro plans may see the workspaces appearing blurred out",
+    "source": "Slack Status",
+    "published": "2026-02-01T02:18:46.000Z",
+    "url": "https://slack-status.com/2026-01/827314caf3d6ec25",
+    "summary": "This issue is now resolved for all users.Current status and recent actions taken: The issue affecting the workspaces appearing blurred out has been resolved. We’ve taken steps to prevent this from happening again, and all systems are now operating normally.Previous impact to end users: Some users on Free, Trial, or Pro plans might have seen the workspaces...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
     ]
   },
   {
@@ -1419,6 +1690,24 @@
     ]
   },
   {
+    "id": "outage-53cb3190",
+    "title": "Incident: Events errors related to Salesforce Automation application",
+    "source": "Slack Status",
+    "published": "2026-01-31T00:58:52.000Z",
+    "url": "https://slack-status.com/2026-01/0977b367773e201e",
+    "summary": "This issue is now resolved for all users.Current status and recent actions taken: We have successfully reverted a TLS certificate that caused authentication failures and re-enabled events for affected legacy Salesforce apps to restore full functionality.Previous impact to end users: Users may have experienced mTLS errors.Required resolution steps: No step...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
     "id": "outage-98b601b3",
     "title": "Some Android users may be experiencing errors when signing up for ChatGPT with Google Authentication",
     "source": "OpenAI Status",
@@ -1438,12 +1727,65 @@
     ]
   },
   {
+    "id": "outage-38e1129c",
+    "title": "Incident: Issue loading activity feed in Slack",
+    "source": "Slack Status",
+    "published": "2026-01-29T17:16:29.000Z",
+    "url": "https://slack-status.com/2026-01/549b252c892d0766",
+    "summary": "Starting 8:27 PM PST until 10:01 PM PST on January 22, 2026, some users experienced issues loading activity feed in Slack.We traced this to a backend resource that unexpectedly hit capacity limits. This resulted in activity feed processes no longer serving traffic. We promptly adjusted the configuration and increased capacity limits for the backend resour...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-8373c4a5",
+    "title": "Incident: Trouble with adding payment methods",
+    "source": "Slack Status",
+    "published": "2026-01-29T16:55:15.000Z",
+    "url": "https://slack-status.com/2026-01/81190c41019f3f5e",
+    "summary": "From 12:07 PM PST until 1:30 PM PST on January 14, 2026, some users were unable to add payment methods to their Slack billing pages.A recent backend change to our payment processing configuration unexpectedly added a new required field, causing errors when attempting to add the methods. We reversed the field requirement, resolving the issue for all users.",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-35e1152a",
+    "title": "Notice: Upstream provider issue causing email delivery delays",
+    "source": "Slack Status",
+    "published": "2026-01-28T18:30:17.000Z",
+    "url": "https://slack-status.com/2026-01/6ca50d8bbf466222",
+    "summary": "Email delivery has returned to normal and all services are operating as expected. Thank you for your patience while we worked through this issue. We apologize for how this issue may have affected you and your business.",
+    "severity": "MEDIUM",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "slack-status",
+      "slack"
+    ]
+  },
+  {
     "id": "outage-88477d5c",
     "title": "Brief Issue with Image Generation Results",
     "source": "OpenAI Status",
     "published": "2026-01-28T02:14:26.000Z",
     "url": "https://status.openai.com//incidents/01KG13K239MSN2R3S015E2WMY1",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Image Generation (Operational) Images (Operational) Image Generation (Operational)",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Images (Operational) Image Generation (Operational) Image Generation (Operational)",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -1495,7 +1837,7 @@
     "source": "OpenAI Status",
     "published": "2026-01-26T17:27:46.000Z",
     "url": "https://status.openai.com//incidents/01KFXHMCMQE0EWA7R8RM5F9YW2",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Deep Research (Operational) ChatGPT Atlas (Operational) Voice mode (Operational) Compliance API (Operational) GPTs (Operational) Codex (Operational) Connectors/Apps (Operational) Login (Operational) File uploads (Operational) Search (Operational) Conversations (Operationa...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Search (Operational) Conversations (Operational) Compliance API (Operational) Agent (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) Login (Operational) File uploads (Operational) Image Generation (Operational) GPTs (Operational) Deep Research (Oper...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -1530,6 +1872,24 @@
     ]
   },
   {
+    "id": "outage-13527756",
+    "title": "Incident: Trouble loading Slack and performing actions",
+    "source": "Slack Status",
+    "published": "2026-01-23T00:13:14.000Z",
+    "url": "https://slack-status.com/2026-01/a7a00fec0a3c7e0e",
+    "summary": "This issue is now resolved for all users.Current status and recent actions taken: We have completed deployment of a fix for this issue.Previous impact to end users: Some users were having trouble performing certain actions related to App ManagementRequired resolution steps: No additional steps are required from users.We apologize for any disruptions to yo...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
     "id": "outage-c3033d3b",
     "title": "Codex Github Issues",
     "source": "OpenAI Status",
@@ -1544,6 +1904,42 @@
       "medium",
       "openai-status",
       "openai"
+    ]
+  },
+  {
+    "id": "outage-78cdcda0",
+    "title": "Incident: Trouble loading Slack, messages, or canvas",
+    "source": "Slack Status",
+    "published": "2026-01-15T19:58:27.000Z",
+    "url": "https://slack-status.com/2026-01/ab0deb4e533e3abd",
+    "summary": "This issue is now resolved.Current status and recent actions taken: Affected users may have experienced performance issues in Slack.Scope: This issue did not affect any specific region, but a small percentage of users may have been impacted globally.Previous impact to end users: The majority of errors were retired successfully, but small number of users m...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-f118c543",
+    "title": "Incident: Trouble with Slack - General Slack functionality issues",
+    "source": "Slack Status",
+    "published": "2026-01-14T16:10:31.000Z",
+    "url": "https://slack-status.com/2026-01/674d66b41c37f510",
+    "summary": "Starting around 11:50 AM PST until around 3:15 PM PST on January 8, 2026, some users experienced a variety of performance issues in Slack, such as significant delays or a total inability to send and receive messages, load channels, or view threads.We traced this to a routine backend configuration job which unexpectedly caused some services to reload or be...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
     ]
   },
   {
@@ -1588,7 +1984,7 @@
     "source": "OpenAI Status",
     "published": "2026-01-08T21:12:00.000Z",
     "url": "https://status.openai.com//incidents/01KEFMJWBHC4JBGJWMXNQTSTH6",
-    "summary": "Status: Resolved ChatGPT and API functionality should now be fully restored. Affected components Chat Completions (Operational) Responses (Operational) Conversations (Operational)",
+    "summary": "Status: Resolved ChatGPT and API functionality should now be fully restored. Affected components Conversations (Operational) Chat Completions (Operational) Responses (Operational)",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -1659,7 +2055,7 @@
     "source": "OpenAI Status",
     "published": "2026-01-06T21:00:00.000Z",
     "url": "https://status.openai.com//incidents/01KEACZ6R02744RQKCMSK1ZG54",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Conversations (Operational) Compliance API (Operational) GPTs (Operational) Codex (Operational) Connectors/Apps (Operational) Voice mode (Operational) Search (Operational) Image Generation (Operational) Agent (Operational) Deep Research (Operational) ChatGPT Atlas (Operat...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Deep Research (Operational) Codex (Operational) Connectors/Apps (Operational) File uploads (Operational) Voice mode (Operational) Compliance API (Operational) Image Generation (Operational) GPTs (Operational) Agent (Operational) ChatGPT Atlas (Operational) Login (Operatio...",
     "severity": "MEDIUM",
     "vendor": "OpenAI",
     "tags": [
@@ -1669,6 +2065,7 @@
       "openai-status",
       "openai",
       "api",
+      "login",
       "chatgpt"
     ]
   },
@@ -1687,6 +2084,24 @@
       "medium",
       "openai-status",
       "openai"
+    ]
+  },
+  {
+    "id": "outage-39ae81ef",
+    "title": "Incident: Issue loading threads in Slack",
+    "source": "Slack Status",
+    "published": "2025-12-29T17:49:52.000Z",
+    "url": "https://slack-status.com/2025-12/5d80d3ab17dbca35",
+    "summary": "Between 1:05 PM and 5:26 PM PST on December 23, 2025, some users may have encountered a \"Something&apos;s fishy!\" error when attempting to load message threads.We traced this to a backend job that consumed an excessive amount of system resources, leading to a portion of a database becoming unresponsive. To mitigate, we optimized the resource allocation fo...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
     ]
   },
   {
@@ -1712,7 +2127,7 @@
     "source": "OpenAI Status",
     "published": "2025-12-21T21:33:27.000Z",
     "url": "https://status.openai.com//incidents/01KD19S888P8SGB2TFB82DWCW8",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Search (Operational) Conversations (Operational) GPTs (Operational) Deep Research (Operational) Codex (Operational) Connectors/Apps (Operational) Login (Operational) Compliance API (Operational) Image Generation (Operational) Agent (Operational) ChatGPT Atlas (Operational...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components GPTs (Operational) Agent (Operational) Deep Research (Operational) ChatGPT Atlas (Operational) Login (Operational) File uploads (Operational) Compliance API (Operational) Codex (Operational) Connectors/Apps (Operational) Voice mode (Operational) Search (Operational) Conve...",
     "severity": "HIGH",
     "vendor": "OpenAI",
     "tags": [
@@ -1818,6 +2233,42 @@
       "openai-status",
       "openai",
       "login"
+    ]
+  },
+  {
+    "id": "outage-97de45af",
+    "title": "Incident: Trouble running workflows",
+    "source": "Slack Status",
+    "published": "2025-12-18T16:57:07.000Z",
+    "url": "https://slack-status.com/2025-12/a11b08a468a46d3a",
+    "summary": "Starting at around 7:00 AM until 12:10 PM PST on December 15, 2025, some users may have experienced issues triggering or using workflows containing the Jira connector or the Jira Cloud app in Slack.An upstream provider encountered an issue that resulted in trouble using the Jira connector. Once the upstream provider resolved the issue, the app returned to...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-21f4626c",
+    "title": "Incident: Issues loading or viewing threads",
+    "source": "Slack Status",
+    "published": "2025-12-18T16:44:51.000Z",
+    "url": "https://slack-status.com/2025-12/a8c230d2dfa1ac93",
+    "summary": "From 7:12 AM to 4:50 PM PST on December 8, 2025, some users encountered a \"Something&apos;s fishy!\" error when loading threads or experienced delays or a blank screen when loading specific channels in Slack.We identified the cause as a recent configuration change that triggered unexpected rate limiting on backend components responsible for fetching messag...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
     ]
   },
   {
@@ -1950,7 +2401,7 @@
     "source": "OpenAI Status",
     "published": "2025-12-10T23:27:08.000Z",
     "url": "https://status.openai.com//incidents/01KC56SP6M152HGWAF6EAFQR2E",
-    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Voice mode (Operational) Search (Operational) Conversations (Operational) Compliance API (Operational) Image Generation (Operational) GPTs (Operational) Agent (Operational) Deep Research (Operational) Login (Operational) File uploads (Operational) Codex (Operational) Conn...",
+    "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Login (Operational) File uploads (Operational) Compliance API (Operational) Image Generation (Operational) GPTs (Operational) Agent (Operational) Deep Research (Operational) Connectors/Apps (Operational) Voice mode (Operational) Search (Operational) Conversations (Operati...",
     "severity": "HIGH",
     "vendor": "OpenAI",
     "tags": [
@@ -1999,6 +2450,24 @@
     ]
   },
   {
+    "id": "outage-c1b17323",
+    "title": "Incident: Slow or incomplete Slack searches",
+    "source": "Slack Status",
+    "published": "2025-12-09T17:59:01.000Z",
+    "url": "https://slack-status.com/2025-12/8bf9e5de10a5d33e",
+    "summary": "Beginning around 7:45 PM PST until around 8:11 PM PST on December 4, 2025, some users experienced slow or incomplete searches in Slack.A backend configuration change caused an unexpected spike in queries to a search-related database service. We reversed the backend configuration, which resolved the impact to the search feature. While we managed any tempor...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
     "id": "outage-259cefc5",
     "title": "Github Authentication errors with Codex Web",
     "source": "OpenAI Status",
@@ -2036,6 +2505,24 @@
     ]
   },
   {
+    "id": "outage-05e2a8b0",
+    "title": "Incident: Slack Canvas Outage",
+    "source": "Slack Status",
+    "published": "2025-12-05T00:02:04.000Z",
+    "url": "https://slack-status.com/2025-12/440eee6e7d7eaa7b",
+    "summary": "Between 2:08 PM PST and 2:34 PM PST on December 4, 2025, some users may have experienced 500 errors when trying to open a Canvas. Current status and recent actions taken: We have resolved the issue by reverting a web cache configuration setting that was causing the disruption. Users should no longer be experiencing trouble connecting to or loading Canvase...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
     "id": "outage-d79fcbb0",
     "title": "Chat Functionality Degraded In Certain Regions",
     "source": "Discord Status",
@@ -2052,6 +2539,76 @@
       "discord",
       "incident",
       "degraded"
+    ]
+  },
+  {
+    "id": "outage-70d6ed55",
+    "title": "Incident: Slack login, workspaces loading failures, and general Slack functionality issues",
+    "source": "Slack Status",
+    "published": "2025-12-01T17:19:37.000Z",
+    "url": "https://slack-status.com/2025-11/a1461b28cd54a022",
+    "summary": "Starting around 1:45 AM PST until 4:30 AM PST on November 28, 2025, some users encountered connectivity issues, including difficulty accessing and loading their workspaces and receiving \"Server error\" messages.We traced this issue to a backend database service reaching unexpected capacity limits, which led to a spike in error rates and request timeouts. W...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident",
+      "login"
+    ]
+  },
+  {
+    "id": "outage-cb9443ff",
+    "title": "Outage: Slack Connectivity issue",
+    "source": "Slack Status",
+    "published": "2025-11-19T15:43:58.000Z",
+    "url": "https://slack-status.com/2025-11/d1dd150bcd58a808",
+    "summary": "Between 4:52 PM PST and 7:12 PM PST on November 5, 2025, some users experienced issues with several Slack features, including client loading.We traced this back to an unexpected traffic spike that temporarily overloaded several core Slack services. We implemented mitigation measures to re-stabilize the impacted databases, and full connectivity was restore...",
+    "severity": "MEDIUM",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "slack-status",
+      "slack"
+    ]
+  },
+  {
+    "id": "outage-5ab4aafc",
+    "title": "Outage: Trouble connecting to or loading Slack",
+    "source": "Slack Status",
+    "published": "2025-11-19T15:43:38.000Z",
+    "url": "https://slack-status.com/2025-11/66f5fbbfdb8d6f73",
+    "summary": "Between 4:32 PM PST and 6:24 PM PST on November 6, 2025, some users experienced a variety of issues with Slack services, including loading their application, using huddles, performing searches, and various general connectivity problems.The issue stemmed from a high demand on backend resources, originating from an unexpected spike in traffic to Slack servi...",
+    "severity": "MEDIUM",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "slack-status",
+      "slack"
+    ]
+  },
+  {
+    "id": "outage-48b103d6",
+    "title": "Outage: Trouble loading Slack, using canvas, huddles, and other features.",
+    "source": "Slack Status",
+    "published": "2025-11-19T15:40:16.000Z",
+    "url": "https://slack-status.com/2025-10/51d84290cf5c8e22",
+    "summary": "Starting around 12:13 PM PDT on October 19, 2025, and lasting until around 3:51 PM PDT on October 20, 2025, a significant number of users may have experienced trouble with various features in Slack. This included difficulty loading or editing canvases, starting or ending huddles, connecting to or loading the client, sending messages, loading channels and ...",
+    "severity": "MEDIUM",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "medium",
+      "slack-status",
+      "slack"
     ]
   },
   {
@@ -2092,6 +2649,25 @@
     ]
   },
   {
+    "id": "outage-ca2087fb",
+    "title": "Incident: Slowness in AI Search Answers and AI Explain",
+    "source": "Slack Status",
+    "published": "2025-11-17T18:57:01.000Z",
+    "url": "https://slack-status.com/2025-11/ff446cdfe6fde894",
+    "summary": "Between 1:00 AM and 8:00 AM PST on November 12, 2025, some users experienced delays when attempting to use AI features, including message summaries and search.An upstream provider experienced latency with their services, resulting in backend errors for some Slack AI functions. To mitigate the issue, we temporarily routed traffic to a separate version. Aft...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident",
+      "latency"
+    ]
+  },
+  {
     "id": "outage-ea2d333b",
     "title": "Developer Docs Outage",
     "source": "Discord Status",
@@ -2110,6 +2686,115 @@
     ]
   },
   {
+    "id": "outage-3fdb024f",
+    "title": "Incident: Some users unable to sign in",
+    "source": "Slack Status",
+    "published": "2025-11-10T23:05:37.000Z",
+    "url": "https://slack-status.com/2025-11/08571a258bf8774b",
+    "summary": "Beginning around 11:00 AM PST and lasting until 2:24 PM PST on November 8, 2025, some enterprise users experienced a blank page when attempting to sign into Slack. Non-enterprise users would have successfully been able to sign into Slack.We traced this issue to a configuration error tied to the workspace directory page (the page users are typically direct...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-2bb6efa3",
+    "title": "Incident: Issue with Files endpoint, SlackAI, Search, Messaging, and SlackConnect functionality",
+    "source": "Slack Status",
+    "published": "2025-11-07T18:12:40.000Z",
+    "url": "https://slack-status.com/2025-11/f473e109f89d88ab",
+    "summary": "Between 1:00 AM PDT and 2:36 AM PDT on November 1, 2025, some users experienced trouble uploading files, using Slack AI, performing searches, using Slack Connect, or sending and receiving messages.We traced this back to an unexpected spike in error rates for a backend database responsible for handling several Slack functions. This spike was caused by time...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-44f98e7d",
+    "title": "Incident: File upload errors",
+    "source": "Slack Status",
+    "published": "2025-11-07T17:13:26.000Z",
+    "url": "https://slack-status.com/2025-11/d447af6bb8944796",
+    "summary": "Between 1:00 AM PDT and 2:45 AM PDT on November 1, 2025, some users were unable to upload files or create/use canvases in Slack, often resulting in an error.We traced this back to an unexpected spike in error rates for the files.upload API endpoint, caused by database timeouts stemming from an ongoing backend job.We temporarily paused the job to reduce tr...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident",
+      "api"
+    ]
+  },
+  {
+    "id": "outage-06aae8a4",
+    "title": "Incident: Workflow Builder Data Sources",
+    "source": "Slack Status",
+    "published": "2025-11-07T17:01:33.000Z",
+    "url": "https://slack-status.com/2025-11/f27026c1c262acc4",
+    "summary": "From around 3:15 AM PST to 5:13 AM PST on November 5, 2025, some users were unable to use data fields from newly added Salesforce sources in workflows.We traced this to a backend logic error that was attempting to fetch data using too many parameters. We adjusted the logic to use the correct parameters, which resolved the issue for all users.",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-a9ca707f",
+    "title": "Incident: Trouble with search",
+    "source": "Slack Status",
+    "published": "2025-11-01T00:16:05.000Z",
+    "url": "https://slack-status.com/2025-10/a0393e05c080e8c1",
+    "summary": "Between approximately 10:00 AM and 4:52 PM PDT on October 29, 2025, some users experienced issues with Slack search. When users tried to search items, the results would not load.We traced the problem back to our search servers, which were hit with a sudden, unexpected surge in memory usage. This increase in usage overloaded the core service responsible fo...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-8a2ed4ce",
+    "title": "Incident: Trouble with huddles",
+    "source": "Slack Status",
+    "published": "2025-10-23T22:25:15.000Z",
+    "url": "https://slack-status.com/2025-10/2377b835cefc31d5",
+    "summary": "Our mitigation efforts have resolved the majority of stuck huddles. Newly started huddles are working as expected, and we are continuing to clean up the small number of remaining huddles that might be in a stuck state.The issue is resolved. If you are still encountering stuck huddles, please write to feedback@slack.com. We apologize for any inconvenience.",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
     "id": "outage-fc2a30f7",
     "title": "This is a test",
     "source": "Discord Status",
@@ -2124,6 +2809,60 @@
       "medium",
       "discord-status",
       "discord"
+    ]
+  },
+  {
+    "id": "outage-d1e225ff",
+    "title": "Incident: Intermittent trouble with file previews and sending messages for EKM users",
+    "source": "Slack Status",
+    "published": "2025-10-23T16:29:20.000Z",
+    "url": "https://slack-status.com/2025-10/5284833cf8e69243",
+    "summary": "From 6:00 AM PDT to 9:18 AM PDT on October 22, 2025, some Slack workspaces with EKM (Enterprise Key Management) enabled may have experienced issues with sending messages, uploading files, using Slack Connect, querying search, Slack AI, and using workflows.We traced this back to an unexpected spike in traffic to our backend service responsible for EKM proc...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-23f5c434",
+    "title": "Incident: Potential Errors Loading Messages/Threads",
+    "source": "Slack Status",
+    "published": "2025-10-19T22:06:23.000Z",
+    "url": "https://slack-status.com/2025-10/85ebfbc618801e1e",
+    "summary": "Between approximately 9:30 AM and 10:14 AM PDT on October 15, 2025, some users experienced slowness or errors when loading messages and threads in Slack.The issue was caused by an unexpected spike in traffic on a specific database, triggered by an ongoing backend job. We We implemented measures to process any related backlog and immediately paused the pro...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
+    ]
+  },
+  {
+    "id": "outage-6100f9d3",
+    "title": "Incident: Search Failures",
+    "source": "Slack Status",
+    "published": "2025-10-19T21:58:14.000Z",
+    "url": "https://slack-status.com/2025-10/6a8833fd34080380",
+    "summary": "Starting around 8:30 AM PDT until around 9:18 AM PDT on October 15, 2025, some users may have experienced issues querying searches in Slack. Searching for messages, files, people, channels, and internal or external users were returning unexpected errors or failing. Some admin dashboards that relied on search functionality may have also experienced issues ...",
+    "severity": "HIGH",
+    "vendor": "Slack",
+    "tags": [
+      "outage",
+      "status-feed",
+      "high",
+      "slack-status",
+      "slack",
+      "incident"
     ]
   },
   {
@@ -2164,78 +2903,22 @@
     ]
   },
   {
-    "id": "outage-4977ac41",
-    "title": "Leave Server Issues",
-    "source": "Discord Status",
-    "published": "2025-09-27T22:42:05.000Z",
-    "url": "https://discordstatus.com/incidents/8txdt4wws1cl",
-    "summary": "Sep 27 , 15:42 PDT Resolved - This incident has been resolved. Sep 27 , 15:13 PDT Monitoring - A fix has been implemented and we are monitoring the results. Sep 27 , 15:09 PDT Investigating - We are investigating an issue that is preventing users from leaving servers.",
+    "id": "outage-d8c3a81b",
+    "title": "Incident: Trouble with custom apps",
+    "source": "Slack Status",
+    "published": "2025-09-29T16:19:59.000Z",
+    "url": "https://slack-status.com/2025-09/72234a1367ba2463",
+    "summary": "Starting around 2:00 PM PDT until around 5:15 PM PDT on September 26, 2025, some users experienced issues with custom internal-built integrations in Slack. Affected apps would return a \"rate_limited\" error for conversation related APIs such as \"conversations.replies\" or \"conversations.history\".We traced this back to a recent change related to AI-search cu...",
     "severity": "HIGH",
-    "vendor": "Discord",
+    "vendor": "Slack",
     "tags": [
       "outage",
       "status-feed",
       "high",
-      "discord-status",
-      "discord",
-      "incident"
-    ]
-  },
-  {
-    "id": "outage-9d63945b",
-    "title": "Guilds Unavailability",
-    "source": "Discord Status",
-    "published": "2025-09-08T23:56:08.000Z",
-    "url": "https://discordstatus.com/incidents/9bm86bnmfhfr",
-    "summary": "Sep 8 , 16:56 PDT Resolved - Voice calls have fully recovered. Sep 8 , 16:44 PDT Monitoring - We are starting to see recovery with voice calls. Sep 8 , 15:40 PDT Update - Clients are able to connect again and send/receive messages. We&apos;re still seeing degradation with voice. Sep 8 , 15:28 PDT Update - This issue has worsened and is causing widespread ...",
-    "severity": "CRITICAL",
-    "vendor": "Discord",
-    "tags": [
-      "outage",
-      "status-feed",
-      "critical",
-      "discord-status",
-      "discord",
-      "availability"
-    ]
-  },
-  {
-    "id": "outage-cb3f86a3",
-    "title": "API availability issue",
-    "source": "Discord Status",
-    "published": "2025-08-30T13:32:22.000Z",
-    "url": "https://discordstatus.com/incidents/kj58wct508y0",
-    "summary": "Aug 30 , 06:32 PDT Resolved - This incident has been resolved. Aug 30 , 06:24 PDT Monitoring - A fix has been implemented and we are monitoring the results. Aug 30 , 05:31 PDT Identified - The issue has been identified and a fix is being implemented. Aug 30 , 05:13 PDT Investigating - We are currently investigating an issue affecting Discord API availabil...",
-    "severity": "HIGH",
-    "vendor": "Discord",
-    "tags": [
-      "outage",
-      "status-feed",
-      "high",
-      "discord-status",
-      "discord",
+      "slack-status",
+      "slack",
       "incident",
-      "availability",
       "api"
-    ]
-  },
-  {
-    "id": "outage-16fdb576",
-    "title": "Server Unavailability",
-    "source": "Discord Status",
-    "published": "2025-08-27T21:39:01.000Z",
-    "url": "https://discordstatus.com/incidents/8jvrf6155dpc",
-    "summary": "Aug 27 , 14:39 PDT Resolved - This incident has been resolved. Aug 27 , 14:24 PDT Identified - The issue has been identified and a fix is being implemented. Aug 27 , 14:17 PDT Investigating - We are investigating a small amount of servers reporting outages.",
-    "severity": "HIGH",
-    "vendor": "Discord",
-    "tags": [
-      "outage",
-      "status-feed",
-      "high",
-      "discord-status",
-      "discord",
-      "incident",
-      "availability"
     ]
   }
 ]

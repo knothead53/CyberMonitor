@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T02:46:51.556Z",
+  "generatedAt": "2026-03-08T04:52:19.750Z",
   "feeds": {
     "kev": {
       "updatedAt": "2026-03-05T00:00:00.000Z",
@@ -12,24 +12,29 @@
     },
     "news": {
       "updatedAt": "2026-03-07T16:14:32.000Z",
-      "itemCount": 75,
+      "itemCount": 85,
       "mode": "generated",
       "sources": [
         "BleepingComputer",
         "Dark Reading",
-        "Krebs on Security"
+        "Krebs on Security",
+        "The Hacker News",
+        "SANS ISC"
       ],
       "status": "ok"
     },
     "outages": {
       "updatedAt": "2026-03-07T01:00:41.000Z",
-      "itemCount": 122,
+      "itemCount": 160,
       "mode": "generated",
       "sources": [
         "GitHub Status",
         "OpenAI Status",
         "Discord Status",
-        "Cloudflare Status"
+        "Cloudflare Status",
+        "Slack Status",
+        "Atlassian Status",
+        "Heroku Status"
       ],
       "status": "ok"
     }
