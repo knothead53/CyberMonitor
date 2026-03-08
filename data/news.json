@@ -68,6 +68,23 @@
     ]
   },
   {
+    "id": "news-596511b0",
+    "title": "Cylake Offers AI-Native Security Without Relying on Cloud Services",
+    "source": "Dark Reading",
+    "published": "2026-03-06T19:04:36.000Z",
+    "url": "https://www.darkreading.com/endpoint-security/cylake-offers-ai-native-security-without-relying-on-cloud-services",
+    "summary": "Cylake's platform will analyze security data locally and identify potential attacks for organizations concerned about data sovereignty.",
+    "severity": "MEDIUM",
+    "vendor": "",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "cloud"
+    ]
+  },
+  {
     "id": "news-77913b77",
     "title": "North Korean APTs Use AI to Enhance IT Worker Scams",
     "source": "Dark Reading",
@@ -1263,23 +1280,6 @@
       "medium",
       "dark-reading",
       "microsoft"
-    ]
-  },
-  {
-    "id": "news-b148f305",
-    "title": "Lessons From AI Hacking: Every Model, Every Layer Is Risky",
-    "source": "Dark Reading",
-    "published": "2026-02-20T18:02:02.000Z",
-    "url": "https://www.darkreading.com/application-security/lessons-ai-hacking-model-every-layer-risky",
-    "summary": "After two years of finding flaws in AI infrastructure, two Wiz researchers advise security pros to worry less about prompt injection and more about vulnerabilities.",
-    "severity": "MEDIUM",
-    "vendor": "Aws",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading",
-      "aws"
     ]
   },
   {

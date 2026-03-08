@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T04:52:19.750Z",
+  "generatedAt": "2026-03-08T06:59:15.922Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -10,7 +10,7 @@
       "type": "cloud_region",
       "severity": "CRITICAL",
       "timestamp": "2026-03-07T16:14:32.000Z",
-      "summary": "56 correlated news signals from 4 sources; vendors: Microsoft, Aws."
+      "summary": "55 correlated news signals from 4 sources; vendors: Microsoft, Aws."
     },
     {
       "id": "corr-cloud-global",
@@ -20,7 +20,7 @@
       "type": "cloud_region",
       "severity": "CRITICAL",
       "timestamp": "2026-03-07T09:56:54.000Z",
-      "summary": "26 correlated news signals from 4 sources; vendors: Vmware."
+      "summary": "27 correlated news signals from 4 sources; vendors: Vmware."
     },
     {
       "id": "corr-cloud-middle-east-africa",
