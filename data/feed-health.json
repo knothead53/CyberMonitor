@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-03-08T02:46:51.556Z",
+  "overallStatus": "ok",
+  "feeds": {
+    "kev": {
+      "status": "ok",
+      "message": "Loaded 1536 entries in 472ms",
+      "lastSuccessAt": "2026-03-08T02:46:51.556Z"
+    },
+    "news": {
+      "status": "ok",
+      "message": "Loaded 75 entries in 549ms",
+      "lastSuccessAt": "2026-03-08T02:46:51.556Z"
+    },
+    "outages": {
+      "status": "ok",
+      "message": "Loaded 122 entries in 584ms",
+      "lastSuccessAt": "2026-03-08T02:46:51.556Z"
+    }
+  }
+}
