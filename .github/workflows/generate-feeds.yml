@@ -9,12 +9,16 @@ permissions:
   contents: write
 
 concurrency:
-  group: generate-feeds
+  group: generate-feeds-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        shell: bash
 
     steps:
       - name: Checkout repository
@@ -40,9 +44,11 @@ jobs:
       - name: Generate feeds
         run: node scripts/generate-feeds.js
 
-      - name: Detect generated data changes
+      - name: Detect generated artifact changes
         id: changes
         run: |
+          set -euo pipefail
+
           GENERATED_FILES=(
             "data/kev.json"
             "data/news.json"
@@ -52,24 +58,66 @@ jobs:
             "data/map.correlated.json"
           )
 
-          for file in "${GENERATED_FILES[@]}"; do
-            if [ -f "$file" ]; then
-              git add "$file"
-            fi
-          done
+          git add -A "${GENERATED_FILES[@]}"
 
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "changed_files=0" >> "$GITHUB_OUTPUT"
+            echo "changed_list=(none)" >> "$GITHUB_OUTPUT"
             echo "No generated data changes detected."
           else
+            changed_files="$(git diff --cached --name-only | wc -l | tr -d ' ')"
+            changed_list="$(git diff --cached --name-status)"
             echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "changed_files=$changed_files" >> "$GITHUB_OUTPUT"
+            {
+              echo "changed_list<<EOF"
+              echo "$changed_list"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
             echo "Generated data changes detected."
+            echo "$changed_list"
           fi
 
+      - name: Skip commit when no generated changes
+        if: steps.changes.outputs.changed != 'true'
+        run: echo "Skipping commit/push because no generated artifact changes were detected."
+
       - name: Commit and push refreshed feeds
+        id: publish
         if: steps.changes.outputs.changed == 'true'
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: refresh generated intelligence feeds"
-          git push
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+          echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Write workflow summary
+        if: always()
+        env:
+          CHANGED: ${{ steps.changes.outputs.changed }}
+          CHANGED_FILES: ${{ steps.changes.outputs.changed_files }}
+          CHANGED_LIST: ${{ steps.changes.outputs.changed_list }}
+          PUBLISHED_SHA: ${{ steps.publish.outputs.commit_sha }}
+        run: |
+          {
+            echo "## Feed generation result"
+            echo ""
+            echo "- Trigger: \`${{ github.event_name }}\`"
+            echo "- Ref: \`${{ github.ref_name }}\`"
+            echo "- Changes detected: \`${CHANGED:-false}\`"
+            echo "- Changed artifact count: \`${CHANGED_FILES:-0}\`"
+
+            if [ "${CHANGED:-false}" = "true" ]; then
+              echo "- Published commit: \`${PUBLISHED_SHA:-not-pushed}\`"
+              echo ""
+              echo "### Changed artifacts"
+              echo '```text'
+              echo "${CHANGED_LIST:-none}"
+              echo '```'
+            else
+              echo "- Generated artifacts were already up to date."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
