@@ -170,6 +170,14 @@ body {
   letter-spacing: 0.02em;
 }
 
+.feed-refresh-summary.is-stale {
+  color: #ffe49d;
+}
+
+.feed-refresh-summary.is-critical {
+  color: #ffb39f;
+}
+
 .data-mode-indicator.mode-live,
 .health-mode-indicator.mode-live,
 .feed-source-indicator.mode-live,
@@ -594,6 +602,19 @@ body {
   text-transform: uppercase;
 }
 
+.feed-freshness-meta.freshness-stale {
+  color: #ffe49d;
+}
+
+.feed-freshness-meta.freshness-critical,
+.feed-freshness-meta.freshness-unavailable {
+  color: #ffb39f;
+}
+
+.feed-freshness-meta.freshness-sample {
+  color: #b9c9e7;
+}
+
 .panel-filters {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -666,6 +687,12 @@ body {
 
 .feed-link:hover {
   color: var(--accent);
+}
+
+.feed-link-disabled,
+.feed-link-disabled:hover {
+  color: #afc2e6;
+  cursor: default;
 }
 
 .item-meta {

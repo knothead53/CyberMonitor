@@ -123,6 +123,8 @@
     { key: "24h", label: "Last 24h", windowMs: 24 * 60 * 60 * 1000 },
     { key: "7d", label: "Last 7d", windowMs: 7 * 24 * 60 * 60 * 1000 }
   ];
+  const FEED_STALE_WARNING_MS = 6 * 60 * 60 * 1000;
+  const FEED_STALE_CRITICAL_MS = 24 * 60 * 60 * 1000;
   const TIMELINE_WINDOW_KEYS = new Set(TIMELINE_WINDOWS.map((window) => window.key));
 
   const elements = {
@@ -182,6 +184,10 @@
     acc[key] = [];
     return acc;
   }, {});
+  const feedValidationState = Object.keys(FEEDS).reduce((acc, key) => {
+    acc[key] = { rawCount: 0, validCount: 0, invalidCount: 0 };
+    return acc;
+  }, {});
   const feedLoadState = Object.keys(FEEDS).reduce((acc, key) => {
     acc[key] = "pending";
     return acc;
@@ -192,6 +198,7 @@
   }, {});
   let feedMetadataState = null;
   let feedHealthState = null;
+  let lastCheckedAt = null;
   let preferenceState = {
     searchQuery: "",
     timelineWindow: DEFAULT_TIMELINE_WINDOW
@@ -436,6 +443,27 @@
     return `${Math.max(1, Math.floor(diffMs / dayMs))}d ago`;
   }
 
+  function getAgeMs(value) {
+    const timestamp = Date.parse(String(value || ""));
+    if (!Number.isFinite(timestamp)) {
+      return null;
+    }
+    return Math.max(Date.now() - timestamp, 0);
+  }
+
+  function classifyFreshnessAge(ageMs) {
+    if (ageMs === null) {
+      return "unknown";
+    }
+    if (ageMs >= FEED_STALE_CRITICAL_MS) {
+      return "critical";
+    }
+    if (ageMs >= FEED_STALE_WARNING_MS) {
+      return "stale";
+    }
+    return "fresh";
+  }
+
   function normalizeHealthStatus(value, fallback = "pending") {
     const normalized = String(value || "").trim().toLowerCase();
     if (normalized === "ok") {
@@ -527,6 +555,101 @@
     return "medium";
   }
 
+  function normalizeText(value, fallback = "") {
+    const normalized = String(value || "").replace(/\s+/g, " ").trim();
+    return normalized || fallback;
+  }
+
+  function normalizeItemUrl(value) {
+    const url = normalizeText(value);
+    if (!url) {
+      return "";
+    }
+    if (url.startsWith("/") || url.startsWith("./") || url.startsWith("../")) {
+      return url;
+    }
+
+    try {
+      const parsed = new URL(url, window.location.href);
+      if (parsed.protocol === "http:" || parsed.protocol === "https:") {
+        return parsed.href;
+      }
+    } catch (_error) {
+      return "";
+    }
+    return "";
+  }
+
+  function extractRawFeedItems(rawValue) {
+    if (Array.isArray(rawValue)) {
+      return rawValue;
+    }
+    if (rawValue && typeof rawValue === "object" && Array.isArray(rawValue.items)) {
+      return rawValue.items;
+    }
+    return null;
+  }
+
+  function normalizeFeedItem(item, feedKey, index) {
+    if (!item || typeof item !== "object") {
+      return null;
+    }
+
+    const title = normalizeText(item.title);
+    const summary = normalizeText(item.summary);
+    const url = normalizeItemUrl(item.url);
+
+    if (!title && !summary && !url) {
+      return null;
+    }
+
+    return {
+      id: normalizeText(item.id, `${feedKey}-${index}`),
+      title: title || summary || "Untitled event",
+      source: normalizeText(item.source, "Unknown source"),
+      published: toIsoOrNull(item.published || item.timestamp) || "",
+      url,
+      summary: summary || "No summary provided.",
+      severity: normalizeSeverity(item.severity),
+      vendor: normalizeText(item.vendor),
+      tags: Array.isArray(item.tags)
+        ? item.tags.map((tag) => normalizeText(tag)).filter(Boolean)
+        : []
+    };
+  }
+
+  function normalizeFeedPayload(rawValue, feedKey) {
+    const rawItems = extractRawFeedItems(rawValue);
+    if (!rawItems) {
+      return {
+        items: [],
+        rawCount: 0,
+        validCount: 0,
+        invalidCount: 0,
+        malformed: true
+      };
+    }
+
+    const items = [];
+    let invalidCount = 0;
+    rawItems.forEach((item, index) => {
+      const normalized = normalizeFeedItem(item, feedKey, index);
+      if (normalized) {
+        items.push(normalized);
+      } else {
+        invalidCount += 1;
+      }
+    });
+
+    return {
+      items,
+      rawCount: rawItems.length,
+      validCount: items.length,
+      invalidCount,
+      malformed: false
+    };
+  }
+
   function parseTimeWindow(value) {
     if (value === "1h") {
       return 60 * 60 * 1000;
@@ -556,7 +679,7 @@
   }
 
   function getSourceLabel(item) {
-    return String(item?.source || "Unknown source");
+    return normalizeText(item?.source, "Unknown source");
   }
 
   function normalizeSearchTerm(value) {
@@ -634,8 +757,10 @@
 
   function sortByNewest(items, dateField = "published") {
     return [...items].sort((a, b) => {
-      const aTime = Date.parse(a[dateField] || "");
-      const bTime = Date.parse(b[dateField] || "");
+      const aTimeRaw = Date.parse(String(a?.[dateField] || a?.timestamp || ""));
+      const bTimeRaw = Date.parse(String(b?.[dateField] || b?.timestamp || ""));
+      const aTime = Number.isFinite(aTimeRaw) ? aTimeRaw : 0;
+      const bTime = Number.isFinite(bTimeRaw) ? bTimeRaw : 0;
       return bTime - aTime;
     });
   }
@@ -658,6 +783,7 @@
   function renderItems(feedKey, items) {
     const { list, count } = selectFeedElements(feedKey);
     const rawItems = normalizeItems(items);
+    const validation = feedValidationState[feedKey] || { rawCount: rawItems.length, invalidCount: 0 };
     const panelFiltered = applyFilters(rawItems, panelFilters[feedKey]);
     const searchFiltered = applyGlobalSearch(panelFiltered, preferenceState.searchQuery);
     const sortedItems = sortByNewest(searchFiltered);
@@ -669,11 +795,19 @@
 
     if (limited.length === 0) {
       let message = "No feed items available.";
-      if (rawItems.length > 0) {
+      if (rawItems.length === 0 && validation.invalidCount > 0) {
+        message = "No usable feed entries available.";
+      } else if (rawItems.length > 0) {
         message =
           activeSearchTerm.length > 0
             ? "No items match current filters and search."
             : "No items match current filters.";
+      } else if (feedLoadState[feedKey] === "sample") {
+        message = "No sample feed entries available.";
+      } else if (feedLoadState[feedKey] === "live") {
+        message = "No live feed entries available.";
+      } else if (feedLoadState[feedKey] === "unavailable") {
+        message = "No feed data available.";
       }
       renderState(list, message);
       return;
@@ -683,11 +817,17 @@
       const row = document.createElement("li");
       row.className = "feed-item";
 
-      const link = document.createElement("a");
-      link.className = "feed-link";
-      link.href = entry.url || "#";
-      link.target = "_blank";
-      link.rel = "noreferrer noopener";
+      let link = null;
+      if (entry.url) {
+        link = document.createElement("a");
+        link.className = "feed-link";
+        link.href = entry.url;
+        link.target = "_blank";
+        link.rel = "noreferrer noopener";
+      } else {
+        link = document.createElement("span");
+        link.className = "feed-link feed-link-disabled";
+      }
       link.textContent = entry.title || "Untitled event";
 
       const meta = document.createElement("p");
@@ -997,9 +1137,20 @@
     for (const attempt of attempts) {
       try {
         const json = await fetchJson(attempt.path);
+        const normalized = normalizeFeedPayload(json, feedKey);
+        const unusablePayload = normalized.rawCount > 0 && normalized.validCount === 0;
+        if (normalized.malformed || unusablePayload) {
+          throw new Error(`Malformed feed payload: ${attempt.path}`);
+        }
+
         return {
-          items: normalizeItems(json),
-          usedFallback: attempt.usedFallback
+          items: normalized.items,
+          usedFallback: attempt.usedFallback,
+          validation: {
+            rawCount: normalized.rawCount,
+            validCount: normalized.validCount,
+            invalidCount: normalized.invalidCount
+          }
         };
       } catch (error) {
         lastError = error;
@@ -1009,9 +1160,15 @@
     const isLocalFile = window.location.protocol === "file:";
     const fallbackItems = getLocalFallback(feedKey);
     if (isLocalFile && fallbackItems) {
+      const normalized = normalizeFeedPayload(fallbackItems, feedKey);
       return {
-        items: normalizeItems(fallbackItems),
-        usedFallback: true
+        items: normalized.items,
+        usedFallback: true,
+        validation: {
+          rawCount: normalized.rawCount,
+          validCount: normalized.validCount,
+          invalidCount: normalized.invalidCount
+        }
       };
     }
 
@@ -1070,20 +1227,63 @@
     return { metadata, health };
   }
 
+  function getFeedUpdatedAt(feedKey) {
+    const metadataEntry = feedMetadataState?.feeds?.[feedKey];
+    const healthEntry = feedHealthState?.feeds?.[feedKey];
+    const newestItemTs = getFeedItemsNewestTimestamp(feedKey);
+    const generatedAt = feedMetadataState?.generatedAt || feedHealthState?.generatedAt;
+    if (feedLoadState[feedKey] === "live") {
+      // Prefer generator success timestamps over item publication time.
+      return healthEntry?.lastSuccessAt || generatedAt || metadataEntry?.updatedAt || newestItemTs;
+    }
+    return newestItemTs || metadataEntry?.updatedAt || healthEntry?.lastSuccessAt;
+  }
+
+  function getFeedFreshnessState(feedKey) {
+    const updatedAt = getFeedUpdatedAt(feedKey);
+    if (feedLoadState[feedKey] !== "live") {
+      return {
+        updatedAt,
+        relative: updatedAt ? formatRelativeTime(updatedAt) : "unknown",
+        freshness: "n/a"
+      };
+    }
+
+    const ageMs = getAgeMs(updatedAt);
+    return {
+      updatedAt,
+      relative: updatedAt ? formatRelativeTime(updatedAt) : "unknown",
+      freshness: classifyFreshnessAge(ageMs)
+    };
+  }
+
+  function getNewestFeedItemState(feedKey) {
+    const newestItemAt = getFeedItemsNewestTimestamp(feedKey);
+    return {
+      updatedAt: newestItemAt,
+      relative: newestItemAt ? formatRelativeTime(newestItemAt) : "unknown"
+    };
+  }
+
   function updateLastUpdated(usedFallback) {
     if (!elements.updated) {
       return;
     }
 
+    const checkedAt = toIsoOrNull(lastCheckedAt) || new Date().toISOString();
+    const checkedLabel = `checked ${toDisplayTime(checkedAt)}`;
     const generatedAt = feedMetadataState?.generatedAt || feedHealthState?.generatedAt;
     if (generatedAt) {
-      const prefix = `Last updated: ${toDisplayTime(generatedAt)}`;
-      elements.updated.textContent = usedFallback ? `${prefix} (includes fallback data)` : prefix;
+      const generatedLabel = `Last updated: ${toDisplayTime(generatedAt)}`;
+      const fallbackSuffix = usedFallback ? " (includes fallback data)" : "";
+      elements.updated.textContent = `${generatedLabel} | ${checkedLabel}${fallbackSuffix}`;
       return;
     }
 
-    const fallbackPrefix = `Last updated: ${toDisplayTime(new Date().toISOString())}`;
-    elements.updated.textContent = usedFallback ? `${fallbackPrefix} (sample fallback mode)` : fallbackPrefix;
+    const fallbackPrefix = `Last updated: runtime only`;
+    elements.updated.textContent = usedFallback
+      ? `${fallbackPrefix} | ${checkedLabel} (sample fallback mode)`
+      : `${fallbackPrefix} | ${checkedLabel}`;
   }
 
   function setRefreshState(isRefreshing) {
@@ -1122,6 +1322,12 @@
     if (feedLoadState[feedKey] === "pending") {
       return "pending";
     }
+
+    const freshness = getFeedFreshnessState(feedKey).freshness;
+    if (freshness === "stale" || freshness === "critical") {
+      return "warning";
+    }
+
     return "ok";
   }
 
@@ -1154,7 +1360,16 @@
   function updateFeedSourceIndicator(feedKey) {
     const badge = elements.feedModeBadges?.[feedKey];
     const status = feedLoadState[feedKey];
+    const freshness = getFeedFreshnessState(feedKey).freshness;
     if (status === "live") {
+      if (freshness === "critical") {
+        setIndicatorMode(badge, "STALE DATA", "partial");
+        return;
+      }
+      if (freshness === "stale") {
+        setIndicatorMode(badge, "LIVE STALE", "mixed");
+        return;
+      }
       setIndicatorMode(badge, "LIVE DATA", "live");
       return;
     }
@@ -1197,27 +1412,67 @@
 
     const metadataEntry = feedMetadataState?.feeds?.[feedKey];
     const healthEntry = feedHealthState?.feeds?.[feedKey];
+    const freshnessState = getFeedFreshnessState(feedKey);
+    const newestItemState = getNewestFeedItemState(feedKey);
+    const updatedAt = freshnessState.updatedAt;
     const shouldUseGeneratedMetadata = feedLoadState[feedKey] === "live";
-    const updatedAt = shouldUseGeneratedMetadata
-      ? metadataEntry?.updatedAt || healthEntry?.lastSuccessAt || getFeedItemsNewestTimestamp(feedKey)
-      : getFeedItemsNewestTimestamp(feedKey);
     const count = shouldUseGeneratedMetadata && Number.isFinite(Number(metadataEntry?.itemCount))
       ? Number(metadataEntry?.itemCount)
       : normalizeItems(feedState[feedKey]).length;
+    const validation = feedValidationState[feedKey] || { invalidCount: 0 };
+
+    metaElement.classList.remove(
+      "freshness-live",
+      "freshness-stale",
+      "freshness-critical",
+      "freshness-sample",
+      "freshness-unavailable",
+      "freshness-pending"
+    );
 
     if (feedLoadState[feedKey] === "unavailable") {
       metaElement.textContent = "NO DATA • update unavailable";
       metaElement.title = healthEntry?.message || "No feed data available.";
+      metaElement.classList.add("freshness-unavailable");
       return;
     }
 
-    const modeLabel = getFeedModeLabel(feedKey);
-    const relative = updatedAt ? formatRelativeTime(updatedAt) : "unknown";
-    metaElement.textContent = `${modeLabel} • updated ${relative} • ${count} items`;
+    const relative = freshnessState.relative;
+    const newestRelative = newestItemState.relative;
+    let modeLabel = getFeedModeLabel(feedKey);
+    let freshnessClass = "freshness-pending";
+    if (feedLoadState[feedKey] === "live") {
+      if (freshnessState.freshness === "critical") {
+        modeLabel = "STALE";
+        freshnessClass = "freshness-critical";
+      } else if (freshnessState.freshness === "stale") {
+        modeLabel = "STALE";
+        freshnessClass = "freshness-stale";
+      } else {
+        modeLabel = "LIVE";
+        freshnessClass = "freshness-live";
+      }
+    } else if (feedLoadState[feedKey] === "sample") {
+      modeLabel = "SAMPLE";
+      freshnessClass = "freshness-sample";
+    }
+
+    metaElement.classList.add(freshnessClass);
+    if (feedLoadState[feedKey] === "live") {
+      metaElement.textContent = `${modeLabel} • checked ${relative} • newest ${newestRelative} • ${count} items`;
+    } else {
+      metaElement.textContent = `${modeLabel} • newest ${newestRelative} • ${count} items`;
+    }
 
     const detailParts = [];
     if (updatedAt) {
-      detailParts.push(`Updated ${toDisplayTime(updatedAt)}`);
+      detailParts.push(`Checked ${toDisplayTime(updatedAt)}`);
+    }
+    if (newestItemState.updatedAt) {
+      detailParts.push(`Newest item ${toDisplayTime(newestItemState.updatedAt)}`);
+    }
+    if (validation.invalidCount > 0) {
+      detailParts.push(`${validation.invalidCount} malformed entries skipped`);
     }
     if (healthEntry?.message) {
       detailParts.push(healthEntry.message);
@@ -1231,13 +1486,24 @@
     }
 
     const generatedAt = feedMetadataState?.generatedAt || feedHealthState?.generatedAt;
+    elements.feedRefreshSummary.classList.remove("is-stale", "is-critical");
     if (!generatedAt) {
       elements.feedRefreshSummary.textContent = "Feeds refreshed: runtime only";
       elements.feedRefreshSummary.title = "feed-metadata.json/feed-health.json not available";
       return;
     }
 
-    elements.feedRefreshSummary.textContent = `Feeds refreshed: ${formatRelativeTime(generatedAt)}`;
+    const relative = formatRelativeTime(generatedAt);
+    const freshness = classifyFreshnessAge(getAgeMs(generatedAt));
+    if (freshness === "critical") {
+      elements.feedRefreshSummary.classList.add("is-critical");
+      elements.feedRefreshSummary.textContent = `Feeds refreshed: ${relative} (stale)`;
+    } else if (freshness === "stale") {
+      elements.feedRefreshSummary.classList.add("is-stale");
+      elements.feedRefreshSummary.textContent = `Feeds refreshed: ${relative} (stale)`;
+    } else {
+      elements.feedRefreshSummary.textContent = `Feeds refreshed: ${relative}`;
+    }
     elements.feedRefreshSummary.title = `Generated at ${toDisplayTime(generatedAt)}`;
   }
 
@@ -1295,6 +1561,13 @@
 
   function updateGlobalDataModeIndicator() {
     const statuses = Object.values(feedLoadState);
+    const staleLiveFeeds = Object.keys(FEEDS).filter((feedKey) => {
+      if (feedLoadState[feedKey] !== "live") {
+        return false;
+      }
+      const freshness = getFeedFreshnessState(feedKey).freshness;
+      return freshness === "stale" || freshness === "critical";
+    });
     const hasLive = statuses.includes("live");
     const hasSample = statuses.includes("sample");
     const hasUnavailable = statuses.includes("unavailable");
@@ -1310,8 +1583,13 @@
       return;
     }
 
-    if (hasLive && !hasSample && !hasUnavailable) {
+    if (hasLive && !hasSample && !hasUnavailable && staleLiveFeeds.length === 0) {
       setIndicatorMode(elements.dataModeBadge, "Data: live feeds", "live");
+      return;
+    }
+
+    if (hasLive && !hasSample && !hasUnavailable && staleLiveFeeds.length > 0) {
+      setIndicatorMode(elements.dataModeBadge, "Data: live feeds (stale)", "mixed");
       return;
     }
 
@@ -1321,7 +1599,14 @@
     }
 
     if ((hasLive && hasSample) || (hasUnavailable && (hasLive || hasSample))) {
-      const label = hasUnavailable ? "Data: partial feeds" : "Data: mixed live/sample";
+      const hasStaleLiveFeeds = staleLiveFeeds.length > 0;
+      const label = hasUnavailable
+        ? hasStaleLiveFeeds
+          ? "Data: partial feeds (stale)"
+          : "Data: partial feeds"
+        : hasStaleLiveFeeds
+          ? "Data: mixed live/sample (stale)"
+          : "Data: mixed live/sample";
       const mode = hasUnavailable ? "partial" : "mixed";
       setIndicatorMode(elements.dataModeBadge, label, mode);
       return;
@@ -1340,6 +1625,11 @@
     try {
       const result = await fetchFeed(feedKey);
       feedState[feedKey] = normalizeItems(result.items);
+      feedValidationState[feedKey] = result.validation || {
+        rawCount: feedState[feedKey].length,
+        validCount: feedState[feedKey].length,
+        invalidCount: 0
+      };
       feedLoadState[feedKey] = result.usedFallback ? "sample" : "live";
       populateSourceFilter(feedKey, feedState[feedKey]);
       renderItems(feedKey, feedState[feedKey]);
@@ -1350,6 +1640,11 @@
       };
     } catch (_error) {
       feedState[feedKey] = [];
+      feedValidationState[feedKey] = {
+        rawCount: 0,
+        validCount: 0,
+        invalidCount: 0
+      };
       feedLoadState[feedKey] = "unavailable";
       populateSourceFilter(feedKey, []);
       renderState(list, "Error loading data. Try Refresh.");
@@ -1631,6 +1926,7 @@
   }
 
   async function loadAllPanels() {
+    lastCheckedAt = new Date().toISOString();
     setRefreshState(true);
     updateGlobalDataModeIndicator();
     updateAllFeedObservability();
