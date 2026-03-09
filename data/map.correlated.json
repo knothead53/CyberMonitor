@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T21:35:50.540Z",
+  "generatedAt": "2026-03-09T03:14:07.762Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-08T15:25:37.000Z",
-      "summary": "99 correlated news signals from 5 sources; vendors: Openai, Microsoft."
+      "timestamp": "2026-03-08T23:35:42.000Z",
+      "summary": "100 correlated news signals from 5 sources; vendors: Unknown, Openai."
     },
     {
       "id": "corr-cloud-global",
@@ -19,8 +19,8 @@
       "lon": 0,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-07T09:56:54.000Z",
-      "summary": "32 correlated news signals from 5 sources; vendors: Vmware."
+      "timestamp": "2026-03-09T02:00:02.000Z",
+      "summary": "31 correlated news signals from 5 sources; vendors: Unknown, Vmware."
     },
     {
       "id": "corr-cloud-middle-east-africa",
@@ -30,7 +30,7 @@
       "type": "cloud_region",
       "severity": "MEDIUM",
       "timestamp": "2026-02-25T12:00:00.000Z",
-      "summary": "2 correlated news signals from 1 sources."
+      "summary": "2 correlated news signals from 1 sources; vendors: Unknown."
     },
     {
       "id": "corr-cloud-latam",
@@ -40,7 +40,7 @@
       "type": "cloud_region",
       "severity": "HIGH",
       "timestamp": "2026-03-05T23:19:49.000Z",
-      "summary": "1 correlated news signals from 1 sources."
+      "summary": "1 correlated news signals from 1 sources; vendors: Unknown."
     },
     {
       "id": "corr-cloud-europe",
@@ -50,7 +50,7 @@
       "type": "cloud_region",
       "severity": "HIGH",
       "timestamp": "2026-03-05T06:51:00.000Z",
-      "summary": "1 correlated news signals from 1 sources."
+      "summary": "1 correlated news signals from 1 sources; vendors: Unknown."
     }
   ],
   "major_incidents": [
@@ -105,6 +105,16 @@
       "summary": "65 KEV and 0 high-severity news signals across 1 sources."
     },
     {
+      "id": "corr-incident-unknown",
+      "name": "Unknown Correlated Incident Activity",
+      "lat": 20,
+      "lon": 0,
+      "type": "incident",
+      "severity": "CRITICAL",
+      "timestamp": "2026-03-08T15:25:37.000Z",
+      "summary": "0 KEV and 46 high-severity news signals across 5 sources."
+    },
+    {
       "id": "corr-incident-oracle",
       "name": "Oracle Correlated Incident Activity",
       "lat": 39.8283,
@@ -137,22 +147,12 @@
     {
       "id": "corr-incident-vmware",
       "name": "VMware Correlated Incident Activity",
-      "lat": 39.8283,
-      "lon": -98.5795,
-      "type": "incident",
-      "severity": "CRITICAL",
-      "timestamp": "2026-03-04T21:04:56.000Z",
-      "summary": "23 KEV and 2 high-severity news signals across 3 sources."
-    },
-    {
-      "id": "corr-incident-fortinet",
-      "name": "Fortinet Correlated Incident Activity",
       "lat": 20,
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-01-27T00:00:00.000Z",
-      "summary": "24 KEV and 0 high-severity news signals across 1 sources."
+      "timestamp": "2026-03-04T21:04:56.000Z",
+      "summary": "23 KEV and 2 high-severity news signals across 3 sources."
     }
   ],
   "internet_outages": [
@@ -173,8 +173,8 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "HIGH",
-      "timestamp": "2026-03-06T16:44:54.000Z",
-      "summary": "42 correlated outage events from 1 status feeds."
+      "timestamp": "2026-03-09T03:06:55.000Z",
+      "summary": "43 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-github",
@@ -183,7 +183,7 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "HIGH",
-      "timestamp": "2026-03-06T23:28:13.000Z",
+      "timestamp": "2026-03-09T03:04:16.000Z",
       "summary": "23 correlated outage events from 1 status feeds."
     },
     {
@@ -204,7 +204,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-06T20:41:45.000Z",
-      "summary": "10 correlated outage events from 1 status feeds."
+      "summary": "9 correlated outage events from 1 status feeds."
     }
   ]
 }

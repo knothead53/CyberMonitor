@@ -1,5 +1,37 @@
 [
   {
+    "id": "news-6103ca91",
+    "title": "ISC Stormcast For Monday, March 9th, 2026 https://isc.sans.edu/podcastdetail/9840, (Mon, Mar 9th)",
+    "source": "SANS ISC",
+    "published": "2026-03-09T02:00:02.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32776",
+    "summary": "No summary provided.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-77614f93",
+    "title": "How AI Assistants are Moving the Security Goalposts",
+    "source": "Krebs on Security",
+    "published": "2026-03-08T23:35:42.000Z",
+    "url": "https://krebsonsecurity.com/2026/03/how-ai-assistants-are-moving-the-security-goalposts/",
+    "summary": "AI-based assistants or \"agents\" -- autonomous programs that have access to the user's computer, files, online services and can automate virtually any task -- are growing in popularity with developers and IT workers. But as so many eyebrow-raising headlines over the past few weeks have shown, these powerful and asser...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "krebs-on-security"
+    ]
+  },
+  {
     "id": "news-7016f3c5",
     "title": "EU court adviser says banks must immediately refund phishing victims",
     "source": "BleepingComputer",
@@ -7,7 +39,7 @@
     "url": "https://www.bleepingcomputer.com/news/legal/eu-court-adviser-says-banks-must-immediately-refund-phishing-victims/",
     "summary": "Athanasios Rantos, the Advocate General of the Court of Justice of the EU (CJEU), has issued a formal opinion suggesting that banks must immediately refund account holders affected by unauthorized transactions, even when it's their fault. [...]",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -24,7 +56,7 @@
     "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-arpa-dns-and-ipv6-to-evade-phishing-defenses/",
     "summary": "Threat actors are abusing the special-use \".arpa\" domain and IPv6 reverse DNS in phishing campaigns that more easily evade domain reputation checks and email security gateways. [...]",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -58,7 +90,7 @@
     "url": "https://www.bleepingcomputer.com/news/security/termite-ransomware-breaches-linked-to-clickfix-castlerat-attacks/",
     "summary": "Ransomware threat actors tracked as Velvet Tempest are using the ClickFix technique and legitimate Windows utilities to deploy the DonutLoader malware and the CastleRAT backdoor. [...]",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -93,7 +125,7 @@
     "url": "https://thehackernews.com/2026/03/anthropic-finds-22-firefox.html",
     "summary": "Anthropic on Friday said it discovered 22 new security vulnerabilities in the Firefox web browser as part of a security partnership with Mozilla. Of these, 14 have been classified as high, seven have been classified as moderate, and one has been rated low in severity. The issues were addressed in Firefox 148, releas...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -109,7 +141,7 @@
     "url": "https://isc.sans.edu/diary/rss/32774",
     "summary": "YARA-X&#x26;#39;s 1.14.0 release brings 4 improvements and 2 bugfixes.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -125,7 +157,7 @@
     "url": "https://www.bleepingcomputer.com/news/security/cognizant-trizetto-breach-exposes-health-data-of-34-million-patients/",
     "summary": "TriZetto Provider Solutions, a healthcare IT company that develops software and services used by health insurers and healthcare providers, has suffered a data breach that exposed the sensitive information of over 3.4 million people. [...]",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -142,7 +174,7 @@
     "url": "https://www.darkreading.com/endpoint-security/cylake-offers-ai-native-security-without-relying-on-cloud-services",
     "summary": "Cylake's platform will analyze security data locally and identify potential attacks for organizations concerned about data sovereignty.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -159,7 +191,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/north-korean-apts-ai-it-worker-scams",
     "summary": "DPRK worker scams are old hat, but they're still working, thanks to AI tools that help with everything from face swapping to daily emails.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -211,7 +243,7 @@
     "url": "https://www.darkreading.com/cyber-risk/eu-auto-rules-shift-gears-on-cybersecurity-standards",
     "summary": "The European Union is taking new precautions as climate change and cybersecurity threats rise across the automotive industry.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -227,7 +259,7 @@
     "url": "https://www.bleepingcomputer.com/news/security/ec-council-expands-ai-certification-portfolio-to-strengthen-us-ai-workforce-readiness-and-security/",
     "summary": "EC-Council, creator of the world-renowned Certified Ethical Hacker (CEH) credential and a global leader in applied cybersecurity education, today launched its Enterprise AI Credential Suite, with four new role-based AI certifications debuting alongside Certified CISO v4, an overhauled executive cyber leadership prog...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -243,7 +275,7 @@
     "url": "https://www.bleepingcomputer.com/news/security/fake-claude-code-install-guides-push-infostealers-in-installfix-attacks/",
     "summary": "Threat actors are employing a new variation of the ClickFix social engineering technique called InstallFix to convince users into running malicious commands under the pretext of installing legitimate command line interface (CLI) tools. [...]",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -259,7 +291,7 @@
     "url": "https://thehackernews.com/2026/03/multi-stage-voidgeist-malware.html",
     "summary": "Cybersecurity researchers have disclosed details of a multi-stage malware campaign that uses batch scripts as a pathway to deliver various encrypted remote access trojan (RATs) payloads that correspond to XWorm, AsyncRAT, and Xeno RAT. The stealthy attack chain has been codenamed VOID#GEIST by Securonix Threat Resea...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -293,7 +325,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/iran-cyber-kinetic-war-doctrine",
     "summary": "Iran has been hacking IP cameras to plan missile strikes against its enemies, and mounting other attacks on physical assets, showing how cyber and kinetic warfare are fast becoming one in the same.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -326,7 +358,7 @@
     "url": "https://thehackernews.com/2026/03/the-msp-guide-to-using-ai-powered-risk.html",
     "summary": "Scaling cybersecurity services as an MSP or MSSP requires technical expertise and a business model that delivers measurable value at scale. Risk-based cybersecurity is the foundation of that model. When done right, it builds client trust, increases upsell opportunities, and drives recurring revenue. But to deliver t...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -342,7 +374,7 @@
     "url": "https://thehackernews.com/2026/03/iran-linked-muddywater-hackers-target.html",
     "summary": "New research from Broadcom's Symantec and Carbon Black Threat Hunter Team has discovered evidence of an Iranian hacking group embedding itself in several U.S. companies' networks, including banks, airports, non-profit, and the Israeli arm of a software company. The activity has been attributed to a state-sponsored h...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -358,7 +390,7 @@
     "url": "https://www.bleepingcomputer.com/news/security/ghanain-man-pleads-guilty-to-role-in-100-million-fraud-ring/",
     "summary": "A Ghanaian national pleaded guilty to his role in a massive fraud ring that stole over $100 million from victims across the United States through business email compromise attacks and romance scams. [...]",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -374,7 +406,7 @@
     "url": "https://www.bleepingcomputer.com/news/security/fbi-investigates-breach-of-surveillance-and-wiretap-systems/",
     "summary": "The U.S. Federal Bureau of Investigation (FBI) confirmed on Thursday that it's investigating a breach that affected systems used to manage surveillance and wiretap warrants. [...]",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -442,7 +474,7 @@
     "url": "https://isc.sans.edu/diary/rss/32772",
     "summary": "No summary provided.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -458,7 +490,7 @@
     "url": "https://www.bleepingcomputer.com/news/security/chinese-state-hackers-target-telcos-with-new-malware-toolkit/",
     "summary": "A China-linked advanced persistent threat actor tracked as UAT-9244 has been targeting telecommunication service providers in South America since 2024, compromising Windows, Linux, and network-edge devices. [...]",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -493,7 +525,7 @@
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/nation-state-actor-ai-malware-assembly-line",
     "summary": "Pakistan's APT36 threat group has begun using vibe-coding to churn out mediocre malware, but at a scale that could overwhelm defenses.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -510,7 +542,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/tycoon-2fa-europol-vendors-bust-phishing-platform",
     "summary": "The phishing-as-a-service platform was popular among cyber threat actors because of its ability to bypass multifactor authentication defenses.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -527,7 +559,7 @@
     "url": "https://www.bleepingcomputer.com/news/security/wikipedia-hit-by-self-propagating-javascript-worm-that-vandalized-pages/",
     "summary": "The Wikimedia Foundation suffered a security incident today after a self-propagating JavaScript worm began vandalizing pages and modifying user scripts across multiple wikis. [...]",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -561,7 +593,7 @@
     "url": "https://www.bleepingcomputer.com/news/security/wordpress-membership-plugin-bug-exploited-to-create-admin-accounts/",
     "summary": "Hackers are exploiting a critical vulnerability in the User Registration & Membership plugin, which is installed on more than 60,000 WordPress sites. [...]",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -578,7 +610,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/fig-security-stealth-fix-broken-security-operations",
     "summary": "Fig Security's platform traces security data flows end-to-end across SIEMs, pipelines, and response systems to alert teams before infrastructure changes break critical defenses.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -594,7 +626,7 @@
     "url": "https://www.darkreading.com/cybersecurity-operations/software-development-practices-help-enterprises-tackle-real-life-risks",
     "summary": "Organizations can borrow secure-by-design processes to manage non-technical challenges like governance or the inevitable human error.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -628,7 +660,7 @@
     "url": "https://thehackernews.com/2026/03/preparing-for-quantum-era-post-quantum.html",
     "summary": "Most organizations assume encrypted data is safe. But many attackers are already preparing for a future where today’s encryption can be broken. Instead of trying to decrypt information now, they are collecting encrypted data and storing it so it can be decrypted later using quantum computers. This tactic—known as “h...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -644,7 +676,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/latam-2x-more-cyberattacks-us",
     "summary": "Much of Central and South America struggles with cybersecurity maturity, and hackers are taking advantage.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -660,7 +692,7 @@
     "url": "https://thehackernews.com/2026/03/threatsday-bulletin-redis-rce-ddr5-bot.html",
     "summary": "Some weeks in cybersecurity feel routine. This one doesn&rsquo;t. Several new developments surfaced over the past few days, showing how quickly the threat landscape keeps shifting. Researchers uncovered fresh activity, security teams shared new findings, and a few unexpected moves from major tech companies also drew...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -676,7 +708,7 @@
     "url": "https://thehackernews.com/2026/03/dust-specter-targets-iraqi-officials.html",
     "summary": "A suspected Iran-nexus threat actor has been attributed to a campaign targeting government officials in Iraq by impersonating the country's Ministry of Foreign Affairs to deliver a set of never-before-seen malware. Zscaler ThreatLabz, which observed the activity in January 2026, is tracking the cluster under the nam...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -693,7 +725,7 @@
     "url": "https://isc.sans.edu/diary/rss/32770",
     "summary": "No summary provided.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -709,7 +741,7 @@
     "url": "https://thehackernews.com/2026/03/where-multi-factor-authentication-stops.html",
     "summary": "Organizations typically roll out multi-factor authentication (MFA) and assume stolen passwords are no longer enough to access systems. In Windows environments, that assumption is often wrong. Attackers still compromise networks every day using valid credentials. The issue is not MFA itself, but coverage. Enforced th...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -725,7 +757,7 @@
     "url": "https://thehackernews.com/2026/03/apt28-linked-campaign-deploys-badpaw.html",
     "summary": "Cybersecurity researchers have disclosed details of a new Russian cyber campaign that has targeted Ukrainian entities with two previously undocumented malware families named BadPaw and MeowMeow. \"The attack chain initiates with a phishing email containing a link to a ZIP archive. Once extracted, an initial HTA file ...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -743,7 +775,7 @@
     "url": "https://thehackernews.com/2026/03/europol-led-operation-takes-down-tycoon.html",
     "summary": "Tycoon 2FA, one of the prominent phishing-as-a-service (PhaaS) toolkits that allowed cybercriminals to stage adversary-in-the-middle (AitM) credential harvesting attacks at scale, was dismantled by a coalition of law enforcement agencies and security companies. The subscription-based phishing kit, which first emerge...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -760,7 +792,7 @@
     "url": "https://thehackernews.com/2026/03/fbi-and-europol-seize-leakbase-forum.html",
     "summary": "A joint law enforcement operation has dismantled LeakBase, one of the world's largest online forums for cybercriminals to buy and sell stolen data and cybercrime tools. The LeakBase forum, per the U.S. Department of Justice (DoJ), had over 142,000 members and more than 215,000 messages between members as of December...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -776,7 +808,7 @@
     "url": "https://isc.sans.edu/diary/rss/32768",
     "summary": "[This is a Guest Diary by Joseph Gruen, an ISC intern as part of the SANS.edu BACS program]",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -810,7 +842,7 @@
     "url": "https://thehackernews.com/2026/03/149-hacktivist-ddos-attacks-hit-110.html",
     "summary": "Cybersecurity researchers have warned of a surge in retaliatory hacktivist activity following the U.S.-Israel coordinated military campaign against Iran, codenamed Epic Fury and Roaring Lion. \"The hacktivist threat in the Middle East is highly lopsided, with two groups, Keymous+ and DieNet, driving nearly 70% of all...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -826,7 +858,7 @@
     "url": "https://www.darkreading.com/cybersecurity-operations/stranger-things-meets-cybersecurity-lessons-hive-mind",
     "summary": "Events and concepts from the Stranger Things television series illustrate how enterprises can defend their networks and stay \"right side up.\"",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -842,7 +874,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/threat-hunter-helped-cops-crack-african-cybercrime-syndicate",
     "summary": "Dark Reading Confidential Episode 15: Interpol relied on Will Thomas and team to help break up a sprawling cybercrime ring, leading to the arrest of 574 suspects, the recovery of more than $3 million, and the decryption of six malware variants. Here's his story.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -876,7 +908,7 @@
     "url": "https://thehackernews.com/2026/03/new-rfp-template-for-ai-usage-control.html",
     "summary": "As AI becomes the central engine for enterprise productivity, security leaders are finally getting the green light — and the budget — to secure it. But there’s a quiet crisis unfolding in the boardroom: many organizations know they need \"AI Governance,\" but they have no idea what they are actually looking for. The C...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -892,7 +924,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/china-silver-dragon-governments-eu-se-asia",
     "summary": "The emerging actor, part of the APT41 nexus, gains initial access via phishing, and uses legitimate network services to obscure cyber espionage activities.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -909,7 +941,7 @@
     "url": "https://isc.sans.edu/diary/rss/32766",
     "summary": "And another XWorm[1] wave in the wild! This malware family is not new and heavily spread but delivery techniques always evolve and deserve to be described to show you how threat actors can be imaginative! This time, we are facing another piece of multi-technology malware.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -926,7 +958,7 @@
     "url": "https://thehackernews.com/2026/03/fake-laravel-packages-on-packagist.html",
     "summary": "Cybersecurity researchers have flagged malicious Packagist PHP packages masquerading as Laravel utilities that act as a conduit for a cross-platform remote access trojan (RAT) that's functional on Windows, macOS, and Linux systems. The names of the packages are listed below - nhattuanbl/lara-helper (37 Downloads) nh...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -977,7 +1009,7 @@
     "url": "https://isc.sans.edu/diary/rss/32764",
     "summary": "No summary provided.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -993,7 +1025,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/india-apt-sloppy-lemming-defense-critical-infrastructure",
     "summary": "India-nexus cyber threat actors are growing more active and sophisticated, using custom tools coded in Rust and cloud-based command and control.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1010,7 +1042,7 @@
     "url": "https://www.darkreading.com/ics-ot-security/tire-pressure-sensors-silent-tracking",
     "summary": "Like many other features and systems in modern cars, tire pressure sensors leak sensitive data that can be abused by threat actors.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1026,7 +1058,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/qualcomm-zero-day-exploited-targeted-android-attacks",
     "summary": "The exploitation activity against CVE-2026-21385, a high-severity memory corruption flaw, could be tied to commercial spyware or nation-state threat groups.",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1043,7 +1075,7 @@
     "url": "https://www.darkreading.com/cyber-risk/speakeasies-shadow-ai-banning-ai-browsers-fail",
     "summary": "Lessons from history highlight why AI-enabled browsers require controlled enablement.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1059,7 +1091,7 @@
     "url": "https://thehackernews.com/2026/03/fake-tech-support-spam-deploys.html",
     "summary": "Threat hunters have called attention to a new campaign as part of which bad actors masqueraded as fake IT support to deliver the Havoc command-and-control (C2) framework as a precursor to data exfiltration or ransomware attack. The intrusions, identified by Huntress last month across five partner organizations, invo...",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1076,7 +1108,7 @@
     "url": "https://isc.sans.edu/diary/rss/32762",
     "summary": "CrushFTP is a Java-based open source file transfer system. It is offered for multiple operating systems. If you run a CrushFTP instance, you may remember that the software has had some serious vulnerabilities: CVE-2024-4040 (the template-injection flaw that let unauthenticated attackers escape the VFS sandbox and ac...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1092,7 +1124,7 @@
     "url": "https://thehackernews.com/2026/03/building-high-impact-tier-1-3-steps.html",
     "summary": "Every CISO knows the uncomfortable truth about their Security Operations Center: the people most responsible for catching threats in real time are the people with the least experience. Tier 1 analysts sit at the front line of detection, and yet they are also the most vulnerable to the cognitive and organizational pr...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1125,7 +1157,7 @@
     "url": "https://www.darkreading.com/cloud-security/ai-agent-workload-identity-crisis",
     "summary": "Workloads keep getting more complicated and organizations are struggling to keep up. So what's the play?",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1142,7 +1174,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/war-pro-iranian-actors-cyberattacks",
     "summary": "Iran and its supporters have taken to cyberspace to retaliate for US-Israeli military action, with an aim to cause economic and physical disruption.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1158,7 +1190,7 @@
     "url": "https://thehackernews.com/2026/03/ai-agents-next-wave-identity-dark.html",
     "summary": "The Rise of MCPs in the Enterprise The Model Context Protocol (MCP) is quickly becoming a practical way to push LLMs from “chat” into real work. By providing structured access to applications, APIs, and data, MCP enables prompt-driven AI agents that can retrieve information, take action, and automate end-to-end busi...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1176,7 +1208,7 @@
     "url": "https://thehackernews.com/2026/03/starkiller-phishing-suite-uses-aitm.html",
     "summary": "Cybersecurity researchers have disclosed details of a new phishing suite called Starkiller that proxies legitimate login pages to bypass multi-factor authentication (MFA) protections. It's advertised as a cybercrime platform by a threat group calling itself Jinkusu, granting customers access to a dashboard that lets...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1230,7 +1262,7 @@
     "url": "https://thehackernews.com/2026/03/sloppylemming-targets-pakistan-and.html",
     "summary": "The threat activity cluster known as SloppyLemming has been attributed to a fresh set of attacks targeting government entities and critical infrastructure operators in Pakistan and Bangladesh. The activity, per Arctic Wolf, took place between January 2025 and January 2026. It involves the use of two distinct attack ...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1247,7 +1279,7 @@
     "url": "https://isc.sans.edu/diary/rss/32760",
     "summary": "No summary provided.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1263,7 +1295,7 @@
     "url": "https://www.darkreading.com/application-security/critical-openclaw-vulnerability-ai-agent-risks",
     "summary": "The now-patched flaw is the latest in a growing string of security issues associated with the viral AI tool, which has seen rapid adoption among developers.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1282,7 +1314,7 @@
     "url": "https://www.darkreading.com/cloud-security/tug-of-war-firewall-backlogs-ai-driven-development",
     "summary": "Speed and security are historically clashing priorities, but with AI and automation, it's increasingly important that application developers and security teams get on the same page.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1298,7 +1330,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/30-alleged-members-the-com-arrested-project-compass",
     "summary": "The global law enforcement crackdown, which began in January 2025, also identified nearly 180 members of the notorious cybercriminal collective.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1350,7 +1382,7 @@
     "url": "https://thehackernews.com/2026/03/weekly-recap-sd-wan-0-day-critical-cves.html",
     "summary": "This week is not about one big event. It shows where things are moving. Network systems, cloud setups, AI tools, and common apps are all being pushed in different ways. Small gaps in access control, exposed keys, and normal features are being used as entry points. The pattern becomes clear only when you see everythi...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1367,7 +1399,7 @@
     "url": "https://www.darkreading.com/ics-ot-security/quantum-resistant-data-diode-secures-sensitive-data-on-edge-devices-critical-systems",
     "summary": "Forward Edge-AI's new Isidore Quantum is a compact, low-power hardware device designed to defend sensitive operational technology endpoints against future quantum attacks.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1383,7 +1415,7 @@
     "url": "https://thehackernews.com/2026/03/how-to-protect-your-saas-from-bot.html",
     "summary": "Most SaaS teams remember the day their user traffic started growing fast. Few notice the day bots started targeting them. On paper, everything looks great: more sign-ups, more sessions, more API calls. But in reality, something feels off: Sign-ups increase, but users aren’t activating. Server costs rise faster than ...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1400,23 +1432,7 @@
     "url": "https://isc.sans.edu/diary/rss/32696",
     "summary": "In diary entry \"Quick Howto: Extract URLs from RTF files\" I mentioned ZIP files.",
     "severity": "MEDIUM",
-    "vendor": "",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
-    ]
-  },
-  {
-    "id": "news-5231a137",
-    "title": "Wireshark 4.6.4 Released, (Mon, Mar 2nd)",
-    "source": "SANS ISC",
-    "published": "2026-03-02T11:11:45.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32758",
-    "summary": "Wireshark release 4.6.4 fixes 3 vulnerabilities and 15 bugs.",
-    "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1469,7 +1485,7 @@
     "url": "https://thehackernews.com/2026/03/north-korean-hackers-publish-26-npm.html",
     "summary": "Cybersecurity researchers have disclosed a new iteration of the ongoing Contagious Interview campaign, where the North Korean threat actors have published a set of 26 malicious packages to the npm registry. The packages masquerade as developer tools, but contain functionality to extract the actual command-and-contro...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1503,7 +1519,7 @@
     "url": "https://krebsonsecurity.com/2026/02/who-is-the-kimwolf-botmaster-dort/",
     "summary": "In early January 2026, KrebsOnSecurity revealed how a security researcher disclosed a vulnerability that was used to assemble Kimwolf, the world's largest and most disruptive botnet. Since then, the person in control of Kimwolf -- who goes by the handle \"Dort\" -- has coordinated a barrage of distributed denial-of-se...",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1558,7 +1574,7 @@
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-hospitals-tv-irl",
     "summary": "HBO's \"The Pitt\" is showing audiences what a real Mississippi healthcare system is going through this week, thanks to a ransomware attack.",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1575,7 +1591,7 @@
     "url": "https://www.darkreading.com/cyber-risk/cities-major-events-wireless-drone-defense",
     "summary": "Major events like the FIFA World Cup need to look beyond traditional physical and cyber security to active and passive wireless threats, say experts.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1591,7 +1607,7 @@
     "url": "https://www.darkreading.com/application-security/flaw-finding-ai-assistants-face-criticism-speed-accuracy",
     "summary": "Using AI to find security vulnerabilities holds significant promise, but the initial products fall short of the needs of enterprises and software developers, say experts.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1607,7 +1623,7 @@
     "url": "https://thehackernews.com/2026/02/doj-seizes-61-million-in-tether-linked.html",
     "summary": "The U.S. Department of Justice (DoJ) this week announced the seizure of $61 million worth of Tether that were allegedly associated with bogus cryptocurrency schemes known as pig butchering. The confiscated funds were traced to cryptocurrency addresses used for the laundering of criminally derived proceeds stolen fro...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1623,7 +1639,7 @@
     "url": "https://thehackernews.com/2026/02/900-sangoma-freepbx-instances.html",
     "summary": "The Shadowserver Foundation has revealed that over 900 Sangoma FreePBX instances still remain infected with web shells as part of attacks that exploited a command injection vulnerability starting in December 2025. Of these, 401 instances are located in the U.S., followed by 51 in Brazil, 43 in Canada, 40 in Germany,...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1640,7 +1656,7 @@
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/why-better-breach-transparency-matters",
     "summary": "It's become a standard practice for organizations to disclose the bare minimum about a data breach, or worse — not disclose the incident at all.",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1674,7 +1690,7 @@
     "url": "https://www.darkreading.com/application-security/claude-code-security-shows-promise-not-perfection",
     "summary": "Claude Code's introduction rippled across the stock market, but researchers and analysts say its impact was overstated, as they peel back the layers.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1690,7 +1706,7 @@
     "url": "https://thehackernews.com/2026/02/scarcruft-uses-zoho-workdrive-and-usb.html",
     "summary": "The North Korean threat actor known as ScarCruft has been attributed to a fresh set of tools, including a backdoor that uses Zoho WorkDrive for command-and-control (C2) communications to fetch more payloads and an implant that uses removable media to relay commands and breach air-gapped networks. The campaign, coden...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1707,7 +1723,7 @@
     "url": "https://thehackernews.com/2026/02/trojanized-gaming-tools-spread-java.html",
     "summary": "Threat actors are luring unsuspecting users into running trojanized gaming utilities that are distributed via browsers and chat platforms to distribute a remote access trojan (RAT). \"A malicious downloader staged a portable Java runtime and executed a malicious Java archive (JAR) file named jd-gui.jar,\" the Microsof...",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1776,7 +1792,7 @@
     "url": "https://thehackernews.com/2026/02/aeternum-c2-botnet-stores-encrypted.html",
     "summary": "Cybersecurity researchers have disclosed details of a new botnet loader called Aeternum C2 that uses a blockchain-based command-and-control (C2) infrastructure to make it resilient to takedown efforts. \"Instead of relying on traditional servers or domains for command-and-control, Aeternum stores its instructions on ...",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1827,7 +1843,7 @@
     "url": "https://thehackernews.com/2026/02/expert-recommends-prepare-for-pqc-right.html",
     "summary": "Introduction: Steal It Today, Break It in a Decade Digital evolution is unstoppable, and though the pace may vary, things tend to fall into place sooner rather than later. That, of course, applies to adversaries as well. The rise of ransomware and cyber extortion generated funding for a complex and highly profession...",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1844,7 +1860,7 @@
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-police-chatgpt-smear-japan-pm-takaichi",
     "summary": "A Chinese keyboard warrior inadvertently leaked information about politically motivated influence operations through a ChatGPT account.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1896,7 +1912,7 @@
     "url": "https://www.darkreading.com/cyber-risk/pci-council-threats-payments-systems-speeding-up",
     "summary": "The PCI Security Standards Council experienced a record year in many regards, but its first annual report shows it needs to work even faster to stay ahead of attackers.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1912,7 +1928,7 @@
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/malicious-nextjs-repos-developers-fake-job-interviews",
     "summary": "Linked to North Korean fake job-recruitment campaigns, the poisoned repositories are aimed at establishing persistent access to infected machines.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1928,7 +1944,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/why-call-this-number-toad-emails-beat-gateways",
     "summary": "Attackers are bypassing email gateways through telephone-oriented attack delivery (TOAD), in which the only email payload is a phone number.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1944,7 +1960,7 @@
     "url": "https://www.darkreading.com/ics-ot-security/richter-scale-model-measures-cyber-incidents",
     "summary": "ICS/OT experts have devised a scoring system for rating the severity and effects of cybersecurity events in operational technology environments.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1960,7 +1976,7 @@
     "url": "https://www.darkreading.com/cybersecurity-operations/operation-red-card-2-0-leads-to-651-arrests-in-africa",
     "summary": "In the latest operation targeting cybercrime groups, African law enforcement agencies cooperated with Interpol and cybersecurity firms to recover more than $4.3 million.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -1993,7 +2009,7 @@
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/lazarus-group-new-position-medusa-ransomware",
     "summary": "The North Korean threat group also leveraged Comebacker backdoor, Blindingcan RAT, and info stealer Infohook in its recent attacks.",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2010,7 +2026,7 @@
     "url": "https://www.darkreading.com/cybersecurity-analytics/cybersecurity-firms-chase-ai-vc-market-skyrockets",
     "summary": "Investments in cybersecurity startups took off in 2025 as venture capital firms focused not just on AI-native tech but on talent as well.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2027,7 +2043,7 @@
     "url": "https://www.darkreading.com/cyber-risk/atm-jackpotting-attacks-surged-2025",
     "summary": "The attacks cost banks more than $20 million in losses last year, as criminals used many of the same tools and tactics they have wielded for more than a decade.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2043,7 +2059,7 @@
     "url": "https://www.darkreading.com/cyber-risk/more-dashboards-ai-decisions-provable",
     "summary": "AI systems have to be able to show a record of what happened and how.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2059,7 +2075,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/iran-muddywater-new-malware-tensions-mount",
     "summary": "The long-active Iranian threat group debuted various attack strains and payloads in attacks against organizations in the Middle East and Africa.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2076,7 +2092,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/enigma-cipher-device-secrets-cyber-pros",
     "summary": "The Nazi relic's history is riddled with resilience errors, and those lessons still apply to defending against modern cyber threats.",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2092,7 +2108,7 @@
     "url": "https://www.darkreading.com/threat-intelligence/600-fortigate-devices-hacked-ai-amateur",
     "summary": "A Russian-speaking hacker used generative AI to compromise the FortiGate firewalls, targeting credentials and backups for possible follow-on ransomware attacks.",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2109,7 +2125,7 @@
     "url": "https://www.darkreading.com/application-security/attackers-new-tool-scan-react2shell-exposure",
     "summary": "Researchers say threat actors wielded the sophisticated — and unfortunately named — toolkit to target high-value networks for React2Shell exploitation.",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2125,7 +2141,7 @@
     "url": "https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/",
     "summary": "Most phishing websites are little more than static copies of login pages for popular online destinations, and they are often quickly taken down by anti-abuse activists and security firms. But a stealthy new phishing-as-a-service offering lets customers sidestep both of these pitfalls: It uses cleverly disguised link...",
     "severity": "HIGH",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2142,7 +2158,7 @@
     "url": "https://krebsonsecurity.com/2026/02/kimwolf-botnet-swamps-anonymity-network-i2p/",
     "summary": "For the past week, the massive \"Internet of Things\" (IoT) botnet known as Kimwolf has been disrupting the The Invisible Internet Project (I2P), a decentralized, encrypted communications network designed to anonymize and secure online communications. I2P users started reporting disruptions in the network around the s...",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2178,7 +2194,7 @@
     "url": "https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/",
     "summary": "A prolific data ransom gang that calls itself Scattered Lapsus ShinyHunters (SLSH) has a distinctive playbook when it seeks to extort payment from victim firms: Harassing, threatening and even swatting executives and their families, all while notifying journalists and regulators… Read More »",
     "severity": "MEDIUM",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2194,7 +2210,7 @@
     "url": "https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/",
     "summary": "The cybercriminals in control of Kimwolf -- a disruptive botnet that has infected more than 2 million devices -- recently shared a screenshot indicating they'd compromised the control panel for Badbox 2.0, a vast China-based botnet powered by malicious software that comes pre-installed on many Android TV streaming b...",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2211,7 +2227,7 @@
     "url": "https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/",
     "summary": "A new Internet-of-Things botnet called Kimwolf has spread to more than 2 million devices, forcing infected systems to participate in massive distributed denial-of-service (DDoS) attacks and to relay other malicious and abusive Internet traffic. Kimwolf's ability to scan the local networks of compromised systems for ...",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2246,7 +2262,7 @@
     "url": "https://krebsonsecurity.com/2026/01/who-benefited-from-the-aisuru-and-kimwolf-botnets/",
     "summary": "Our first story of 2026 revealed how a destructive new botnet called Kimwolf rapidly grew to infect more than two million devices by mass-compromising a vast number of unofficial Android TV streaming boxes. Today, we'll dig through digital clues left behind by the hackers, network operators, and cybercrime services ...",
     "severity": "CRITICAL",
-    "vendor": "",
+    "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
@@ -2254,24 +2270,6 @@
       "krebs-on-security",
       "botnet",
       "api"
-    ]
-  },
-  {
-    "id": "news-064e7579",
-    "title": "The Kimwolf Botnet is Stalking Your Local Network",
-    "source": "Krebs on Security",
-    "published": "2026-01-02T14:20:10.000Z",
-    "url": "https://krebsonsecurity.com/2026/01/the-kimwolf-botnet-is-stalking-your-local-network/",
-    "summary": "The story you are reading is a series of scoops nestled inside a far more urgent Internet-wide security advisory. The vulnerability at issue has been exploited for months already, and it's time for a broader awareness of the threat. The short version is that everything you thought you knew about the security of the ...",
-    "severity": "CRITICAL",
-    "vendor": "",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "krebs-on-security",
-      "botnet",
-      "vulnerability"
     ]
   }
 ]
