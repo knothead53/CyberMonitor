@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-09T03:14:07.762Z",
+  "generatedAt": "2026-03-09T05:03:05.952Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -173,8 +173,8 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "HIGH",
-      "timestamp": "2026-03-09T03:06:55.000Z",
-      "summary": "43 correlated outage events from 1 status feeds."
+      "timestamp": "2026-03-09T04:29:59.000Z",
+      "summary": "44 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-github",
@@ -183,7 +183,7 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "HIGH",
-      "timestamp": "2026-03-09T03:04:16.000Z",
+      "timestamp": "2026-03-09T03:51:42.000Z",
       "summary": "23 correlated outage events from 1 status feeds."
     },
     {
@@ -194,7 +194,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-06T03:49:19.000Z",
-      "summary": "19 correlated outage events from 1 status feeds."
+      "summary": "20 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-cloudflare",
@@ -204,7 +204,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-06T20:41:45.000Z",
-      "summary": "9 correlated outage events from 1 status feeds."
+      "summary": "7 correlated outage events from 1 status feeds."
     }
   ]
 }
