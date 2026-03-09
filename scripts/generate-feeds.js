@@ -4,7 +4,13 @@ const path = require("path");
 const fs = require("fs/promises");
 const { spawn } = require("child_process");
 const { NEWS_FEEDS, OUTAGE_FEEDS } = require("./adapters/sources");
-const { slugify } = require("./adapters/lib/normalize");
+const {
+  buildStableId,
+  normalizeSeverity,
+  normalizeUrl,
+  safeSummary,
+  slugify
+} = require("./adapters/lib/normalize");
 
 const ADAPTER_STEPS = [
   {
@@ -114,6 +120,7 @@ const DEFAULT_REGION_PROFILE = {
   lat: 20,
   lon: 0
 };
+const VALIDATION_WARNING_RATIO = 0.25;
 
 function getArgValue(flag) {
   const index = process.argv.indexOf(flag);
@@ -200,33 +207,289 @@ function compareGroupsByCountAndTime(left, right) {
   return Date.parse(right.latest || "") - Date.parse(left.latest || "");
 }
 
-async function readFeedSnapshot(step, fallbackTimestamp) {
+function isObjectRecord(value) {
+  return Boolean(value) && typeof value === "object" && !Array.isArray(value);
+}
+
+function sortByNewest(items, dateField = "published") {
+  return [...items].sort((left, right) => {
+    const leftTime = Date.parse(left?.[dateField] || "");
+    const rightTime = Date.parse(right?.[dateField] || "");
+    return rightTime - leftTime;
+  });
+}
+
+async function readFeedOutput(step) {
   try {
     const raw = await fs.readFile(step.outputPath, "utf8");
     const parsed = JSON.parse(raw);
-    const items = Array.isArray(parsed) ? parsed : [];
-    const publishedDates = items
-      .map((item) => toIsoOrNull(item?.published))
-      .filter(Boolean);
-
-    const updatedAt = publishedDates.length > 0
-      ? publishedDates.reduce((latest, current) => (
-          Date.parse(current) > Date.parse(latest) ? current : latest
-        ))
-      : fallbackTimestamp;
+    if (!Array.isArray(parsed)) {
+      return {
+        exists: true,
+        isValidJson: true,
+        isValidArray: false,
+        items: [],
+        error: "Generated output is not an array."
+      };
+    }
 
     return {
       exists: true,
-      itemCount: items.length,
-      updatedAt
+      isValidJson: true,
+      isValidArray: true,
+      items: parsed,
+      error: null
     };
-  } catch (_error) {
+  } catch (error) {
+    if (error && error.code === "ENOENT") {
+      return {
+        exists: false,
+        isValidJson: false,
+        isValidArray: false,
+        items: [],
+        error: "Generated output not found."
+      };
+    }
+
+    return {
+      exists: true,
+      isValidJson: false,
+      isValidArray: false,
+      items: [],
+      error: error instanceof Error ? error.message : "Unable to read generated output."
+    };
+  }
+}
+
+function dedupeItems(items) {
+  const seenById = new Set();
+  const seenByUrl = new Set();
+  const seenByFallback = new Set();
+  const unique = [];
+  let dedupedCount = 0;
+
+  items.forEach((item) => {
+    const idKey = String(item?.id || "").trim().toLowerCase();
+    const urlKey = String(item?.url || "").trim().toLowerCase();
+    const titleKey = String(item?.title || "").trim().toLowerCase();
+    const sourceKey = String(item?.source || "").trim().toLowerCase();
+    const publishedKey = String(item?.published || "").trim().toLowerCase();
+    const fallbackKey = titleKey ? `${titleKey}|${sourceKey}|${publishedKey}` : "";
+
+    let duplicate = false;
+    if (idKey) {
+      duplicate = seenById.has(idKey);
+    } else if (urlKey) {
+      duplicate = seenByUrl.has(urlKey);
+    } else if (fallbackKey) {
+      duplicate = seenByFallback.has(fallbackKey);
+    }
+
+    if (duplicate) {
+      dedupedCount += 1;
+      return;
+    }
+
+    if (idKey) {
+      seenById.add(idKey);
+    } else if (urlKey) {
+      seenByUrl.add(urlKey);
+    } else if (fallbackKey) {
+      seenByFallback.add(fallbackKey);
+    }
+    unique.push(item);
+  });
+
+  return {
+    items: unique,
+    dedupedCount
+  };
+}
+
+function normalizeTagList(value, fallbackTags = []) {
+  const tags = new Set();
+
+  if (Array.isArray(value)) {
+    value.forEach((tag) => {
+      const normalized = slugify(String(tag || "").trim());
+      if (normalized) {
+        tags.add(normalized);
+      }
+    });
+  } else if (typeof value === "string") {
+    value.split(",").forEach((tag) => {
+      const normalized = slugify(String(tag || "").trim());
+      if (normalized) {
+        tags.add(normalized);
+      }
+    });
+  }
+
+  fallbackTags.forEach((tag) => {
+    const normalized = slugify(String(tag || "").trim());
+    if (normalized) {
+      tags.add(normalized);
+    }
+  });
+
+  return Array.from(tags);
+}
+
+function validateNormalizedItem(rawItem, step, index, runTimestamp) {
+  const warnings = [];
+  const errors = [];
+
+  if (!isObjectRecord(rawItem)) {
+    return {
+      valid: false,
+      repaired: false,
+      item: null,
+      warnings,
+      errors: ["Item is not an object record."]
+    };
+  }
+
+  const source = String(rawItem.source || step.sources[0] || step.label || "").trim();
+  if (!source) {
+    errors.push("Missing source.");
+  }
+
+  let title = String(rawItem.title || "").trim();
+  if (!title) {
+    title = "Untitled event";
+    warnings.push("Missing title; applied fallback title.");
+  }
+
+  const publishedRaw = rawItem.published || rawItem.timestamp || "";
+  const published = toIsoOrNull(publishedRaw) || runTimestamp;
+  if (!toIsoOrNull(publishedRaw)) {
+    warnings.push("Invalid published timestamp; used generation timestamp.");
+  }
+
+  let url = normalizeUrl(rawItem.url || rawItem.link || "", "");
+  if (!url) {
+    url = "https://example.com";
+    warnings.push("Missing/invalid URL; used placeholder URL.");
+  }
+
+  const rawSummary = rawItem.summary || rawItem.description || "";
+  const summary = safeSummary(rawSummary, "No summary provided.", step.key === "outages" ? 360 : 320);
+  if (!String(rawSummary || "").trim()) {
+    warnings.push("Missing summary; used default summary.");
+  }
+
+  const severity = normalizeSeverity(rawItem.severity || rawItem.level || rawItem.priority, "MEDIUM");
+  const vendor = String(rawItem.vendor || "").trim() || "Unknown";
+  if (!String(rawItem.vendor || "").trim()) {
+    warnings.push("Missing vendor; set to Unknown.");
+  }
+
+  let id = String(rawItem.id || "").trim();
+  if (!id) {
+    id = buildStableId(step.key, [source, url, title, published, index]);
+    warnings.push("Missing id; generated stable id.");
+  }
+
+  const tags = normalizeTagList(rawItem.tags, [step.key, severity.toLowerCase(), slugify(source)]);
+  if (tags.length === 0) {
+    warnings.push("No tags detected; tag fallback applied.");
+  }
+
+  if (title === "Untitled event" && summary === "No summary provided.") {
+    errors.push("Item lacks usable title and summary content.");
+  }
+
+  const normalizedItem = {
+    id,
+    title,
+    source,
+    published,
+    url,
+    summary,
+    severity,
+    vendor,
+    tags
+  };
+
+  return {
+    valid: errors.length === 0,
+    repaired: warnings.length > 0,
+    item: normalizedItem,
+    warnings,
+    errors
+  };
+}
+
+function filterInvalidItems(rawItems, step, runTimestamp) {
+  const rows = Array.isArray(rawItems) ? rawItems : [];
+  const accepted = [];
+  const issues = [];
+  let invalidCount = 0;
+  let repairedCount = 0;
+
+  rows.forEach((rawItem, index) => {
+    const result = validateNormalizedItem(rawItem, step, index, runTimestamp);
+    if (!result.valid || !result.item) {
+      invalidCount += 1;
+      issues.push(`item #${index + 1}: ${result.errors.join(" ")}`);
+      return;
+    }
+
+    if (result.repaired) {
+      repairedCount += 1;
+      issues.push(`item #${index + 1}: ${result.warnings.join(" ")}`);
+    }
+
+    accepted.push(result.item);
+  });
+
+  const deduped = dedupeItems(accepted);
+  const sorted = sortByNewest(deduped.items, "published");
+
+  return {
+    items: sorted,
+    totalRead: rows.length,
+    validCount: sorted.length,
+    invalidCount,
+    repairedCount,
+    dedupedCount: deduped.dedupedCount,
+    issueCount: issues.length,
+    sampleIssues: issues.slice(0, 5)
+  };
+}
+
+function shouldEscalateValidation(report) {
+  if (!report || report.totalRead === 0) {
+    return false;
+  }
+  return (report.invalidCount / report.totalRead) >= VALIDATION_WARNING_RATIO;
+}
+
+async function readFeedSnapshot(step, fallbackTimestamp) {
+  const output = await readFeedOutput(step);
+  if (!output.exists || !output.isValidJson || !output.isValidArray) {
     return {
       exists: false,
       itemCount: 0,
       updatedAt: fallbackTimestamp
     };
   }
+
+  const publishedDates = output.items
+    .map((item) => toIsoOrNull(item?.published))
+    .filter(Boolean);
+
+  const updatedAt = publishedDates.length > 0
+    ? publishedDates.reduce((latest, current) => (
+        Date.parse(current) > Date.parse(latest) ? current : latest
+      ))
+    : fallbackTimestamp;
+
+  return {
+    exists: true,
+    itemCount: output.items.length,
+    updatedAt
+  };
 }
 
 function determineOverallHealth(feedStatuses) {
@@ -250,50 +513,178 @@ function buildMetadataFeedEntry(step, snapshot, runTimestamp, healthStatus) {
   };
 }
 
-function buildHealthFeedEntry(status, message, lastSuccessAt) {
+function buildHealthFeedEntry(status, message, lastSuccessAt, validation) {
   return {
     status,
     message,
-    lastSuccessAt: lastSuccessAt || null
+    lastSuccessAt: lastSuccessAt || null,
+    validation: validation || null
   };
 }
 
-async function runFeedSafely(step, runTimestamp) {
+async function safeRunAdapter(step, runTimestamp) {
   const startTime = Date.now();
+  const previousOutput = await readFeedOutput(step);
+  let adapterError = null;
+
   try {
     await runNodeScript(step.scriptPath);
-    const snapshot = await readFeedSnapshot(step, runTimestamp);
-    const durationMs = Date.now() - startTime;
-    const message = `Loaded ${snapshot.itemCount} entries in ${durationMs}ms`;
-    return {
-      feedKey: step.key,
-      snapshot,
-      metadata: buildMetadataFeedEntry(step, snapshot, runTimestamp, "ok"),
-      health: buildHealthFeedEntry("ok", message, runTimestamp)
-    };
   } catch (error) {
-    const snapshot = await readFeedSnapshot(step, runTimestamp);
-    const durationMs = Date.now() - startTime;
-    const errorMessage = error instanceof Error ? error.message : String(error);
+    adapterError = error;
+  }
 
-    if (snapshot.exists) {
-      const message = `Adapter error after ${durationMs}ms; using existing output (${snapshot.itemCount} entries): ${errorMessage}`;
-      return {
-        feedKey: step.key,
-        snapshot,
-        metadata: buildMetadataFeedEntry(step, snapshot, runTimestamp, "warning"),
-        health: buildHealthFeedEntry("warning", message, snapshot.updatedAt)
-      };
+  const adapterOutput = await readFeedOutput(step);
+  let selectedItems = [];
+  let selectedFromPrevious = false;
+  const notes = [];
+  const adapterErrorMessage = adapterError instanceof Error ? adapterError.message : String(adapterError || "");
+
+  if (!adapterError && adapterOutput.exists && adapterOutput.isValidJson && adapterOutput.isValidArray) {
+    selectedItems = adapterOutput.items;
+  } else if (previousOutput.exists && previousOutput.isValidJson && previousOutput.isValidArray) {
+    selectedItems = previousOutput.items;
+    selectedFromPrevious = true;
+    if (adapterErrorMessage) {
+      notes.push(`adapter error: ${adapterErrorMessage}`);
+    } else if (!adapterOutput.isValidJson || !adapterOutput.isValidArray) {
+      notes.push(`adapter wrote invalid output: ${adapterOutput.error}`);
     }
+  } else {
+    if (adapterErrorMessage) {
+      notes.push(`adapter error: ${adapterErrorMessage}`);
+    }
+    if (adapterOutput.exists && (!adapterOutput.isValidJson || !adapterOutput.isValidArray)) {
+      notes.push(`invalid output: ${adapterOutput.error}`);
+    }
+  }
 
-    const message = `Adapter error after ${durationMs}ms and no generated output is available: ${errorMessage}`;
+  let validationReport = filterInvalidItems(selectedItems, step, runTimestamp);
+  if (validationReport.validCount === 0 && validationReport.totalRead > 0 && previousOutput.isValidArray && previousOutput.items.length > 0 && !selectedFromPrevious) {
+    const previousValidation = filterInvalidItems(previousOutput.items, step, runTimestamp);
+    if (previousValidation.validCount > 0) {
+      validationReport = previousValidation;
+      selectedFromPrevious = true;
+      notes.push(`adapter output failed validation; restored previous validated output (${previousValidation.validCount} items).`);
+    }
+  }
+
+  if (validationReport.sampleIssues.length > 0) {
+    console.warn(`[${step.key}] Validation notices: ${validationReport.sampleIssues.join(" | ")}`);
+  }
+
+  let wroteOutput = false;
+  let removedOutput = false;
+  if (validationReport.items.length > 0) {
+    await writeJsonFile(step.outputPath, validationReport.items);
+    wroteOutput = true;
+  } else if (!selectedFromPrevious && adapterOutput.exists && (!adapterOutput.isValidJson || !adapterOutput.isValidArray)) {
+    await removeFileIfExists(step.outputPath);
+    removedOutput = true;
+    notes.push("removed malformed generated output to avoid persisting corrupt artifacts.");
+  } else if (validationReport.totalRead > 0) {
+    await removeFileIfExists(step.outputPath);
+    removedOutput = true;
+    notes.push("removed unusable generated output to preserve sample fallback behavior.");
+  }
+
+  const snapshot = await readFeedSnapshot(step, runTimestamp);
+  const durationMs = Date.now() - startTime;
+  const hasGeneratedOutput = snapshot.exists;
+  const warningFromValidation = shouldEscalateValidation(validationReport);
+
+  const validationSummary = {
+    totalRead: validationReport.totalRead,
+    validCount: validationReport.validCount,
+    invalidCount: validationReport.invalidCount,
+    repairedCount: validationReport.repairedCount,
+    dedupedCount: validationReport.dedupedCount,
+    issueCount: validationReport.issueCount
+  };
+
+  if (adapterError && !hasGeneratedOutput) {
+    const message = `Adapter failed after ${durationMs}ms and no usable output was available. ${notes.join(" ")}`.trim();
     return {
       feedKey: step.key,
       snapshot,
       metadata: buildMetadataFeedEntry(step, snapshot, runTimestamp, "error"),
-      health: buildHealthFeedEntry("error", message, null)
+      health: buildHealthFeedEntry("error", message, null, validationSummary),
+      generation: {
+        durationMs,
+        wroteOutput,
+        removedOutput,
+        usedPreviousOutput: selectedFromPrevious,
+        adapterFailed: true,
+        validation: validationSummary
+      }
     };
   }
+
+  if (adapterError || selectedFromPrevious || warningFromValidation) {
+    const message = [
+      `Completed with warnings in ${durationMs}ms.`,
+      `Accepted ${validationReport.validCount}/${validationReport.totalRead} items.`,
+      notes.join(" ")
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    return {
+      feedKey: step.key,
+      snapshot,
+      metadata: buildMetadataFeedEntry(step, snapshot, runTimestamp, "warning"),
+      health: buildHealthFeedEntry("warning", message, snapshot.updatedAt || runTimestamp, validationSummary),
+      generation: {
+        durationMs,
+        wroteOutput,
+        removedOutput,
+        usedPreviousOutput: selectedFromPrevious,
+        adapterFailed: Boolean(adapterError),
+        validation: validationSummary
+      }
+    };
+  }
+
+  const message = `Loaded ${snapshot.itemCount} entries in ${durationMs}ms.`;
+  return {
+    feedKey: step.key,
+    snapshot,
+    metadata: buildMetadataFeedEntry(step, snapshot, runTimestamp, "ok"),
+    health: buildHealthFeedEntry("ok", message, snapshot.updatedAt || runTimestamp, validationSummary),
+    generation: {
+      durationMs,
+      wroteOutput,
+      removedOutput,
+      usedPreviousOutput: false,
+      adapterFailed: false,
+      validation: validationSummary
+    }
+  };
+}
+
+function buildGenerationSummary(results) {
+  const summary = {
+    totalFeeds: results.length,
+    ok: 0,
+    warning: 0,
+    error: 0
+  };
+
+  results.forEach((result) => {
+    const status = result?.health?.status;
+    if (status === "ok") {
+      summary.ok += 1;
+      return;
+    }
+    if (status === "warning") {
+      summary.warning += 1;
+      return;
+    }
+    if (status === "error") {
+      summary.error += 1;
+    }
+  });
+
+  return summary;
 }
 
 async function writeJsonFile(outputPath, payload) {
@@ -301,23 +692,30 @@ async function writeJsonFile(outputPath, payload) {
   await fs.writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
 }
 
+async function removeFileIfExists(outputPath) {
+  try {
+    await fs.rm(outputPath, { force: true });
+  } catch (_error) {
+    // non-fatal cleanup
+  }
+}
+
 function getStep(feedKey) {
   return ADAPTER_STEPS.find((step) => step.key === feedKey) || null;
 }
 
-async function readFeedItems(feedKey) {
+async function readFeedItems(feedKey, runTimestamp) {
   const step = getStep(feedKey);
   if (!step) {
     return [];
   }
 
-  try {
-    const raw = await fs.readFile(step.outputPath, "utf8");
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch (_error) {
+  const output = await readFeedOutput(step);
+  if (!output.exists || !output.isValidJson || !output.isValidArray) {
     return [];
   }
+
+  return filterInvalidItems(output.items, step, runTimestamp || new Date().toISOString()).items;
 }
 
 function buildCloudRegionOverlays(newsItems, runTimestamp) {
@@ -500,9 +898,9 @@ function buildOutageOverlays(outageItems, runTimestamp) {
 
 async function buildCorrelatedMapPayload(runTimestamp) {
   const [kevItems, newsItems, outageItems] = await Promise.all([
-    readFeedItems("kev"),
-    readFeedItems("news"),
-    readFeedItems("outages")
+    readFeedItems("kev", runTimestamp),
+    readFeedItems("news", runTimestamp),
+    readFeedItems("outages", runTimestamp)
   ]);
 
   return {
@@ -532,9 +930,12 @@ async function main() {
 
   for (const step of selectedSteps) {
     console.log(`\n[${step.key}] Running ${step.label}...`);
-    const result = await runFeedSafely(step, runTimestamp);
+    const result = await safeRunAdapter(step, runTimestamp);
     results.push(result);
     console.log(`[${step.key}] ${result.health.status.toUpperCase()}: ${result.health.message}`);
+    console.log(
+      `[${step.key}] Validation: ${result.generation.validation.validCount} valid, ${result.generation.validation.invalidCount} invalid, ${result.generation.validation.dedupedCount} deduped`
+    );
     console.log(`[${step.key}] Completed ${step.label}.`);
   }
 
@@ -566,6 +967,11 @@ async function main() {
   await writeJsonFile(METADATA_OUTPUT_PATH, metadataPayload);
   await writeJsonFile(HEALTH_OUTPUT_PATH, healthPayload);
   await writeJsonFile(MAP_CORRELATED_OUTPUT_PATH, correlatedMapPayload);
+
+  const generationSummary = buildGenerationSummary(results);
+  console.log(
+    `Generation summary: ${generationSummary.totalFeeds} feeds (${generationSummary.ok} ok, ${generationSummary.warning} warning, ${generationSummary.error} error)`
+  );
 
   console.log(`Wrote feed metadata to ${METADATA_OUTPUT_PATH}`);
   console.log(`Wrote feed health report to ${HEALTH_OUTPUT_PATH}`);
