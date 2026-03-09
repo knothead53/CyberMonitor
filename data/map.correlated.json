@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-09T10:05:07.867Z",
+  "generatedAt": "2026-03-09T13:38:52.105Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-09T07:21:00.000Z",
-      "summary": "101 correlated news signals from 5 sources; vendors: Unknown, Openai."
+      "timestamp": "2026-03-09T11:45:00.000Z",
+      "summary": "101 correlated news signals from 5 sources; vendors: Unknown, Google."
     },
     {
       "id": "corr-cloud-global",
@@ -72,7 +72,7 @@
       "type": "incident",
       "severity": "CRITICAL",
       "timestamp": "2026-03-06T08:22:00.000Z",
-      "summary": "70 KEV and 5 high-severity news signals across 3 sources."
+      "summary": "70 KEV and 4 high-severity news signals across 3 sources."
     },
     {
       "id": "corr-incident-google",
@@ -81,8 +81,8 @@
       "lon": -98.5795,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-04T13:28:00.000Z",
-      "summary": "67 KEV and 5 high-severity news signals across 3 sources."
+      "timestamp": "2026-03-09T10:28:00.000Z",
+      "summary": "67 KEV and 6 high-severity news signals across 3 sources."
     },
     {
       "id": "corr-incident-adobe",
@@ -174,7 +174,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-09T07:21:09.000Z",
-      "summary": "45 correlated outage events from 1 status feeds."
+      "summary": "46 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-github",
@@ -204,7 +204,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-06T20:41:45.000Z",
-      "summary": "6 correlated outage events from 1 status feeds."
+      "summary": "5 correlated outage events from 1 status feeds."
     }
   ]
 }

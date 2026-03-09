@@ -1,5 +1,40 @@
 [
   {
+    "id": "news-b0421e86",
+    "title": "Can the Security Platform Finally Deliver for the Mid-Market?",
+    "source": "The Hacker News",
+    "published": "2026-03-09T11:45:00.000Z",
+    "url": "https://thehackernews.com/2026/03/can-security-platform-finally-deliver.html",
+    "summary": "Mid-market organizations are constantly striving to achieve security levels on a par with their enterprise peers. With heightened awareness of supply chain attacks, your customers and business partners are defining the security level you must meet. What if you could be the enabler for your organization to remain com...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "supply-chain"
+    ]
+  },
+  {
+    "id": "news-f0bd5392",
+    "title": "Chrome Extension Turns Malicious After Ownership Transfer, Enabling Code Injection and Data Theft",
+    "source": "The Hacker News",
+    "published": "2026-03-09T10:28:00.000Z",
+    "url": "https://thehackernews.com/2026/03/chrome-extension-turns-malicious-after.html",
+    "summary": "Two Google Chrome extensions have turned malicious after what appears to be a case of ownership transfer, offering attackers a way to push malware to downstream customers, inject arbitrary code, and harvest sensitive data. The extensions in question, both originally associated with a developer named \"akshayanuonline...",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware",
+      "google"
+    ]
+  },
+  {
     "id": "news-586aec4a",
     "title": "Web Server Exploits and Mimikatz Used in Attacks Targeting Asian Critical Infrastructure",
     "source": "The Hacker News",
@@ -339,7 +374,7 @@
     "source": "Dark Reading",
     "published": "2026-03-06T14:01:11.000Z",
     "url": "https://www.darkreading.com/threat-intelligence/iran-cyber-kinetic-war-doctrine",
-    "summary": "Iran has been hacking IP cameras to plan missile strikes against its enemies, and mounting other attacks on physical assets, showing how cyber and kinetic warfare are fast becoming one in the same.",
+    "summary": "Iran has been hacking IP cameras to plan missile strikes against its enemies, and mounting other attacks on physical assets, showing how cyber and kinetic warfare are fast becoming one and the same.",
     "severity": "MEDIUM",
     "vendor": "Unknown",
     "tags": [
@@ -1815,40 +1850,6 @@
       "critical",
       "the-hacker-news",
       "botnet"
-    ]
-  },
-  {
-    "id": "news-9c9e9bed",
-    "title": "UAT-10027 Targets U.S. Education and Healthcare with Dohdoor Backdoor",
-    "source": "The Hacker News",
-    "published": "2026-02-26T15:17:00.000Z",
-    "url": "https://thehackernews.com/2026/02/uat-10027-targets-us-education-and.html",
-    "summary": "A previously undocumented threat activity cluster has been attributed to an ongoing malicious campaign targeting education and healthcare sectors in the U.S. since at least December 2025. The campaign is being tracked by Cisco Talos under the moniker UAT-10027. The end goal of the attacks is to deliver a never-befor...",
-    "severity": "HIGH",
-    "vendor": "Cisco",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "cisco"
-    ]
-  },
-  {
-    "id": "news-c90dc23f",
-    "title": "ThreatsDay Bulletin: Kali Linux + Claude, Chrome Crash Traps, WinRAR Flaws, LockBit & 15+ Stories",
-    "source": "The Hacker News",
-    "published": "2026-02-26T14:28:00.000Z",
-    "url": "https://thehackernews.com/2026/02/threatsday-bulletin-kali-linux-claude.html",
-    "summary": "Nothing here looks dramatic at first glance. That’s the point. Many of this week’s threats begin with something ordinary, like an ad, a meeting invite, or a software update. Behind the scenes, the tactics are sharper. Access happens faster. Control is established sooner. Cleanup becomes harder. Here is a quick look ...",
-    "severity": "MEDIUM",
-    "vendor": "Aws",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news",
-      "aws"
     ]
   },
   {
