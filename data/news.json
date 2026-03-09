@@ -1,5 +1,72 @@
 [
   {
+    "id": "news-c6bbf51a",
+    "title": "Ericsson US discloses data breach after service provider hack",
+    "source": "BleepingComputer",
+    "published": "2026-03-09T19:07:50.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/ericsson-us-discloses-data-breach-after-service-provider-hack/",
+    "summary": "Ericsson Inc., the U.S. subsidiary of Swedish networking and telecommunications giant Ericsson, says attackers have stolen data belonging to an undisclosed number of employees and customers after hacking one of its service providers. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "data-breach"
+    ]
+  },
+  {
+    "id": "news-f1d63988",
+    "title": "Malicious npm Package Posing as OpenClaw Installer Deploys RAT, Steals macOS Credentials",
+    "source": "The Hacker News",
+    "published": "2026-03-09T18:31:00.000Z",
+    "url": "https://thehackernews.com/2026/03/malicious-npm-package-posing-as.html",
+    "summary": "Cybersecurity researchers have discovered a malicious npm package that masquerades as an OpenClaw installer to deploy a remote access trojan (RAT) and steal sensitive data from compromised hosts. The package, named \"@openclaw-ai/openclawai,\" was uploaded to the registry by a user named \"openclaw-ai\" on March 3, 2026...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-842cba93",
+    "title": "Microsoft Teams will tag third-party bots trying to join meetings",
+    "source": "BleepingComputer",
+    "published": "2026-03-09T17:12:49.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-will-tag-third-party-bots-in-meeting-lobbies/",
+    "summary": "Microsoft says Teams will soon automatically tag third-party bots in lobbies, allowing organizers to control whether they can join meetings. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-0186114b",
+    "title": "ShinyHunters claims ongoing Salesforce Aura data theft attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-09T17:12:22.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-claims-ongoing-salesforce-aura-data-theft-attacks/",
+    "summary": "Salesforce is warning customers that hackers are targeting websites with misconfigured Experience Cloud platforms that give guest users access to more data than intended. However, the ShinyHunters extortion gang claims to be actively exploiting a new bug to steal data from instances. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "cloud"
+    ]
+  },
+  {
     "id": "news-c4a8b629",
     "title": "FBI warns of phishing attacks impersonating US city, county officials",
     "source": "BleepingComputer",
@@ -551,38 +618,6 @@
     ]
   },
   {
-    "id": "news-116b7ad3",
-    "title": "Ghanain man pleads guilty to role in $100 million fraud ring",
-    "source": "BleepingComputer",
-    "published": "2026-03-06T10:08:00.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/ghanain-man-pleads-guilty-to-role-in-100-million-fraud-ring/",
-    "summary": "A Ghanaian national pleaded guilty to his role in a massive fraud ring that stole over $100 million from victims across the United States through business email compromise attacks and romance scams. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer"
-    ]
-  },
-  {
-    "id": "news-69c1e478",
-    "title": "FBI investigates breach of surveillance and wiretap systems",
-    "source": "BleepingComputer",
-    "published": "2026-03-06T08:44:53.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fbi-investigates-breach-of-surveillance-and-wiretap-systems/",
-    "summary": "The U.S. Federal Bureau of Investigation (FBI) confirmed on Thursday that it's investigating a breach that affected systems used to manage surveillance and wiretap warrants. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer"
-    ]
-  },
-  {
     "id": "news-3a2b7cc8",
     "title": "China-Linked Hackers Use TernDoor, PeerTime, BruteEntry in South American Telecom Attacks",
     "source": "The Hacker News",
@@ -648,23 +683,6 @@
       "intel-feed",
       "medium",
       "sans-isc"
-    ]
-  },
-  {
-    "id": "news-43831e20",
-    "title": "Chinese state hackers target telcos with new malware toolkit",
-    "source": "BleepingComputer",
-    "published": "2026-03-05T23:19:49.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/chinese-state-hackers-target-telcos-with-new-malware-toolkit/",
-    "summary": "A China-linked advanced persistent threat actor tracked as UAT-9244 has been targeting telecommunication service providers in South America since 2024, compromising Windows, Linux, and network-edge devices. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "malware"
     ]
   },
   {
@@ -1831,22 +1849,6 @@
       "high",
       "the-hacker-news",
       "malware"
-    ]
-  },
-  {
-    "id": "news-fb2d2fc6",
-    "title": "Trojanized Gaming Tools Spread Java-Based RAT via Browser and Chat Platforms",
-    "source": "The Hacker News",
-    "published": "2026-02-27T10:06:00.000Z",
-    "url": "https://thehackernews.com/2026/02/trojanized-gaming-tools-spread-java.html",
-    "summary": "Threat actors are luring unsuspecting users into running trojanized gaming utilities that are distributed via browsers and chat platforms to distribute a remote access trojan (RAT). \"A malicious downloader staged a portable Java runtime and executed a malicious Java archive (JAR) file named jd-gui.jar,\" the Microsof...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news"
     ]
   },
   {
