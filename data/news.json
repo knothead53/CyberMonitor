@@ -1,5 +1,89 @@
 [
   {
+    "id": "news-f685c85b",
+    "title": "Google: Cloud attacks exploit flaws more than weak credentials",
+    "source": "BleepingComputer",
+    "published": "2026-03-09T21:45:34.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/google-cloud-attacks-exploit-flaws-more-than-weak-credentials/",
+    "summary": "Hackers are increasingly exploiting newly disclosed vulnerabilities in third-party software to gain initial access to cloud environments, with the window for attacks shrinking from weeks to just days. [...]",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "cloud",
+      "google"
+    ]
+  },
+  {
+    "id": "news-4de6aa25",
+    "title": "Dutch govt warns of Signal, WhatsApp account hijacking attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-09T21:24:49.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/dutch-govt-warns-of-signal-whatsapp-account-hijacking-attacks/",
+    "summary": "Russian state-sponsored hackers have been linked to an ongoing Signal and WhatsApp phishing campaign targeting government officials, military personnel, and journalists to gain access to sensitive messages. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "phishing"
+    ]
+  },
+  {
+    "id": "news-9b3796a3",
+    "title": "White House Cyber Strategy Prioritizes Offense",
+    "source": "Dark Reading",
+    "published": "2026-03-09T21:09:12.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/white-house-cyber-strategy-prioritizes-offense",
+    "summary": "In a seven-page strategy document, the Trump administration signaled a shift to preemption and deterrence to handling cyber threats.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-078e5a44",
+    "title": "'InstallFix' Attacks Spread Fake Claude Code Sites",
+    "source": "Dark Reading",
+    "published": "2026-03-09T20:42:25.000Z",
+    "url": "https://www.darkreading.com/cloud-security/installfix-attacks-fake-claude-code",
+    "summary": "A fresh cyberattack campaign blends malvertising with a ClickFix-style technique that highlights risky behavior with AI coding assistants and command-line interfaces.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-a3477f88",
+    "title": "Are We Ready for Auto Remediation With Agentic AI?",
+    "source": "Dark Reading",
+    "published": "2026-03-09T20:13:01.000Z",
+    "url": "https://www.darkreading.com/application-security/auto-remediation-agentic-ai",
+    "summary": "With the rapid innovations in AI, we are entering an exciting era of automated risk remediation. Learn about security team readiness to leverage agentic AI for threat and exposure management.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "api"
+    ]
+  },
+  {
     "id": "news-c6bbf51a",
     "title": "Ericsson US discloses data breach after service provider hack",
     "source": "BleepingComputer",
@@ -503,22 +587,6 @@
     ]
   },
   {
-    "id": "news-b94e9b86",
-    "title": "Fake Claude Code install guides push infostealers in InstallFix attacks",
-    "source": "BleepingComputer",
-    "published": "2026-03-06T15:00:00.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fake-claude-code-install-guides-push-infostealers-in-installfix-attacks/",
-    "summary": "Threat actors are employing a new variation of the ClickFix social engineering technique called InstallFix to convince users into running malicious commands under the pretext of installing legitimate command line interface (CLI) tools. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer"
-    ]
-  },
-  {
     "id": "news-362a458d",
     "title": "Multi-Stage VOID#GEIST Malware Delivering XWorm, AsyncRAT, and Xeno RAT",
     "source": "The Hacker News",
@@ -533,23 +601,6 @@
       "high",
       "the-hacker-news",
       "malware"
-    ]
-  },
-  {
-    "id": "news-a32c3402",
-    "title": "Microsoft 365 Backup to add file-level restore for faster recovery",
-    "source": "BleepingComputer",
-    "published": "2026-03-06T14:21:09.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-backup-to-add-file-level-restore-for-faster-recovery/",
-    "summary": "Microsoft will soon begin rolling out a significant upgrade to Microsoft 365 Backup to speed up recovery by allowing administrators to restore individual files and folders. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "microsoft"
     ]
   },
   {
@@ -999,23 +1050,6 @@
       "intel-feed",
       "medium",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-f57b3407",
-    "title": "Are We Ready for Auto Remediation With Agentic AI?",
-    "source": "Dark Reading",
-    "published": "2026-03-04T16:56:07.000Z",
-    "url": "https://www.darkreading.com/application-security/auto-remediation-agentic-ai",
-    "summary": "With the rapid innovations in AI, we are entering an exciting era of automated risk remediation. Learn about security team readiness to leverage agentic AI for threat and exposure management.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading",
-      "api"
     ]
   },
   {
@@ -2093,39 +2127,6 @@
     "published": "2026-02-23T22:18:18.000Z",
     "url": "https://www.darkreading.com/cyber-risk/more-dashboards-ai-decisions-provable",
     "summary": "AI systems have to be able to show a record of what happened and how.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-e2570e1c",
-    "title": "Iran's MuddyWater Targets Orgs With Fresh Malware as Tensions Mount",
-    "source": "Dark Reading",
-    "published": "2026-02-23T20:35:12.000Z",
-    "url": "https://www.darkreading.com/threat-intelligence/iran-muddywater-new-malware-tensions-mount",
-    "summary": "The long-active Iranian threat group debuted various attack strains and payloads in attacks against organizations in the Middle East and Africa.",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "dark-reading",
-      "malware"
-    ]
-  },
-  {
-    "id": "news-0833183b",
-    "title": "Enigma Cipher Device Still Holds Secrets for Cyber Pros",
-    "source": "Dark Reading",
-    "published": "2026-02-23T20:11:27.000Z",
-    "url": "https://www.darkreading.com/threat-intelligence/enigma-cipher-device-secrets-cyber-pros",
-    "summary": "The Nazi relic's history is riddled with resilience errors, and those lessons still apply to defending against modern cyber threats.",
     "severity": "MEDIUM",
     "vendor": "Unknown",
     "tags": [

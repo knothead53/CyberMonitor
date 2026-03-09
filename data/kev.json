@@ -1,5 +1,62 @@
 [
   {
+    "id": "CVE-2021-22054",
+    "title": "CVE-2021-22054 - Omnissa Workspace ONE Server-Side Request Forgery",
+    "source": "CISA KEV Catalog",
+    "published": "2026-03-09T00:00:00.000Z",
+    "url": "https://web.archive.org/web/20211222154335/https://www.vmware.com/security/advisories/VMSA-2021-0029.html",
+    "summary": "Omnissa Workspace One UEM formerly known as VMware Workspace One UEM contains a server-side request forgery (SSRF) vulnerability that could allow a malicious actor with network access to UEM to send their requests without authentication and to gain access to sensitive information.",
+    "severity": "MEDIUM",
+    "vendor": "Omnissa",
+    "tags": [
+      "kev",
+      "medium",
+      "cve-2021-22054",
+      "omnissa",
+      "workspace-one-uem",
+      "cwe-918",
+      "cisa-kev-catalog"
+    ]
+  },
+  {
+    "id": "CVE-2025-26399",
+    "title": "CVE-2025-26399 - SolarWinds Web Help Desk Deserialization of Untrusted Data Vulnerability",
+    "source": "CISA KEV Catalog",
+    "published": "2026-03-09T00:00:00.000Z",
+    "url": "https://www.solarwinds.com/trust-center/security-advisories/cve-2025-26399",
+    "summary": "SolarWinds Web Help Desk contain a deserialization of untrusted data vulnerability in AjaxProxy that could allow an attacker to run commands on the host machine.",
+    "severity": "CRITICAL",
+    "vendor": "SolarWinds",
+    "tags": [
+      "kev",
+      "critical",
+      "cve-2025-26399",
+      "solarwinds",
+      "web-help-desk",
+      "cwe-502",
+      "cisa-kev-catalog"
+    ]
+  },
+  {
+    "id": "CVE-2026-1603",
+    "title": "CVE-2026-1603 - Ivanti Endpoint Manager (EPM) Authentication Bypass Vulnerability",
+    "source": "CISA KEV Catalog",
+    "published": "2026-03-09T00:00:00.000Z",
+    "url": "https://hub.ivanti.com/s/article/Security-Advisory-EPM-February-2026-for-EPM-2024?language=en_US",
+    "summary": "Ivanti Endpoint Manager (EPM) contains an authentication bypass using an alternate path or channel vulnerability that could allow a remote unauthenticated attacker to leak specific stored credential data.",
+    "severity": "CRITICAL",
+    "vendor": "Ivanti",
+    "tags": [
+      "kev",
+      "critical",
+      "cve-2026-1603",
+      "ivanti",
+      "endpoint-manager-epm",
+      "cwe-288",
+      "cisa-kev-catalog"
+    ]
+  },
+  {
     "id": "CVE-2017-7921",
     "title": "CVE-2017-7921 - Hikvision Multiple Products Improper Authentication Vulnerability",
     "source": "CISA KEV Catalog",

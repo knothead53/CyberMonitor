@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-09T19:08:33.216Z",
+  "generatedAt": "2026-03-09T21:46:08.005Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-09T19:07:50.000Z",
-      "summary": "101 correlated news signals from 5 sources; vendors: Unknown, Microsoft."
+      "timestamp": "2026-03-09T21:45:34.000Z",
+      "summary": "101 correlated news signals from 5 sources; vendors: Google, Unknown."
     },
     {
       "id": "corr-cloud-global",
@@ -19,7 +19,7 @@
       "lon": 0,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-09T15:03:29.000Z",
+      "timestamp": "2026-03-09T20:42:25.000Z",
       "summary": "31 correlated news signals from 5 sources; vendors: Unknown, Vmware."
     },
     {
@@ -55,6 +55,16 @@
       "summary": "347 KEV and 6 high-severity news signals across 4 sources."
     },
     {
+      "id": "corr-incident-google",
+      "name": "Google Correlated Incident Activity",
+      "lat": 39.8283,
+      "lon": -98.5795,
+      "type": "incident",
+      "severity": "CRITICAL",
+      "timestamp": "2026-03-09T21:45:34.000Z",
+      "summary": "67 KEV and 7 high-severity news signals across 4 sources."
+    },
+    {
       "id": "corr-incident-cisco",
       "name": "Cisco Correlated Incident Activity",
       "lat": 39.8283,
@@ -63,16 +73,6 @@
       "severity": "CRITICAL",
       "timestamp": "2026-03-06T08:22:00.000Z",
       "summary": "70 KEV and 4 high-severity news signals across 3 sources."
-    },
-    {
-      "id": "corr-incident-google",
-      "name": "Google Correlated Incident Activity",
-      "lat": 39.8283,
-      "lon": -98.5795,
-      "type": "incident",
-      "severity": "CRITICAL",
-      "timestamp": "2026-03-09T10:28:00.000Z",
-      "summary": "67 KEV and 6 high-severity news signals across 3 sources."
     },
     {
       "id": "corr-incident-adobe",
@@ -101,8 +101,8 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-09T19:07:50.000Z",
-      "summary": "0 KEV and 47 high-severity news signals across 5 sources."
+      "timestamp": "2026-03-09T21:24:49.000Z",
+      "summary": "0 KEV and 48 high-severity news signals across 5 sources."
     },
     {
       "id": "corr-incident-oracle",
@@ -131,8 +131,8 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-01-29T00:00:00.000Z",
-      "summary": "31 KEV and 0 high-severity news signals across 1 sources."
+      "timestamp": "2026-03-09T00:00:00.000Z",
+      "summary": "32 KEV and 0 high-severity news signals across 1 sources."
     },
     {
       "id": "corr-incident-vmware",
@@ -153,7 +153,7 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-09T16:15:53.000Z",
+      "timestamp": "2026-03-09T20:45:00.000Z",
       "summary": "68 correlated outage events from 1 status feeds."
     },
     {
@@ -163,8 +163,8 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-09T07:21:09.000Z",
-      "summary": "48 correlated outage events from 1 status feeds."
+      "timestamp": "2026-03-09T19:17:50.000Z",
+      "summary": "47 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-github",
@@ -185,6 +185,16 @@
       "severity": "CRITICAL",
       "timestamp": "2026-03-09T17:58:48.000Z",
       "summary": "21 correlated outage events from 1 status feeds."
+    },
+    {
+      "id": "corr-outage-cloudflare",
+      "name": "Cloudflare Service Disruption Signals",
+      "lat": 39.8283,
+      "lon": -98.5795,
+      "type": "outage",
+      "severity": "HIGH",
+      "timestamp": "2026-03-09T21:42:38.000Z",
+      "summary": "1 correlated outage events from 1 status feeds."
     }
   ]
 }
