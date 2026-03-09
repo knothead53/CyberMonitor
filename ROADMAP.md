@@ -1,5 +1,7 @@
 # CyberMonitor Roadmap
 
+## Release Timeline
+
 ## v1 (Initial MVP)
 
 - Static SOC-style dashboard shell in `frontend/`
@@ -47,16 +49,40 @@
 - Dashboard freshness and health indicators in top bar and panel headers
 - Maintained static fallback compatibility for generated/sampled operation modes
 
-## v1.5 (Next)
+## v1.4.1 (Stability & Hardening)
 
-- Add stale-feed thresholds and explicit staleness badges in UI
-- Persist last-success snapshots per feed for safer degraded-mode generation
-- Add structured generator logs/artifact summary for troubleshooting workflow runs
-- Expand public source diversity with category-level weighting/dedup tuning
-- Tighten Pages deployment coupling so feed refresh and publish cadence stay aligned
+- Status: Completed (March 2026)
+- Hardened generator validation path (`validateNormalizedItem`, `filterInvalidItems`, dedupe/reporting flow)
+- Improved partial-failure handling with safe adapter execution and previous-output recovery when needed
+- Consistent per-feed health outcomes (`ok`, `warning`, `error`) with validation context in `feed-health.json`
+- Frontend resilience hardening for missing metadata/health files, malformed feed payloads, stale states, and empty results
+- Clearer freshness semantics in panels (`checked` vs `newest`) and subtle stale-state indicators
+- GitHub workflow hardening: per-ref concurrency, timeout guardrail, no-change idempotence, run summary output
 
-## Longer-Term Direction
+## Development Tracks (Post-v1.4.1)
 
-- Public-facing intelligence wallboard with predictable refresh cadence
-- Optional desktop packaging after pipeline reliability hardens
-- Stronger regional clustering and map analytics grounded in real feed signals
+Roadmap planning now transitions to track-based increments instead of a single linear version queue.
+
+## Intelligence Expansion
+
+- Add more high-signal public sources while keeping schema quality and dedupe quality stable
+- Improve vendor/tag confidence scoring and source weighting
+- Expand category coverage without increasing UI noise
+
+## Map Intelligence
+
+- Improve correlation quality and methodology transparency for derived overlays
+- Add stronger regional confidence signaling to prevent over-interpretation
+- Keep deterministic and auditable map derivation logic
+
+## Platform Reliability
+
+- Continue hardening feed generation reliability, observability, and stale-data handling
+- Improve operational diagnostics for automation and adapter-level degradation
+- Add repeatable quality checks for generated artifacts
+
+## Deployment & Distribution
+
+- Tighten refresh/publish cadence alignment for GitHub Pages deployment
+- Improve release hygiene around generated artifacts and screenshots
+- Evaluate packaging/distribution options after reliability targets are met

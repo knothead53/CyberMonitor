@@ -9,9 +9,18 @@ It runs with plain HTML, CSS, and JavaScript and is intentionally compatible wit
 - local development without a backend
 
 ## Preview
-![CyberMonitor dashboard preview](assets/screenshots/dashboard-v1.4.png)
+![CyberMonitor dashboard preview](assets/screenshots/dashboard-v1.4.1.png)
 
-## v1.4 Highlights
+## v1.4.1 Stability Highlights
+
+- hardened generation pipeline with per-item validation, repair, dedupe, and predictable output handling
+- safer partial-failure behavior: adapters run independently and can restore previously valid output when current output is unusable
+- frontend resilience upgrades for missing metadata/health files, malformed feed items, and stale feed states
+- clearer freshness semantics in panels (`checked` vs `newest`) to separate pipeline freshness from source publish cadence
+- hardened scheduled workflow behavior (idempotent no-change runs, per-ref concurrency, timeout guardrails, run summary output)
+- static-host compatibility preserved with generated-first and sample-data fallback behavior
+
+## v1.4 Foundation
 
 - scheduled feed generation with GitHub Actions cron + manual dispatch
 - generated feed metadata and health reporting (`feed-metadata.json`, `feed-health.json`)
@@ -31,20 +40,21 @@ CyberMonitor now operates in four layers:
 
 No backend server is required for the base product.
 
-## Data Flow (v1.4)
+## Data Flow (v1.4.1)
 
 1. Generate feeds manually (`node scripts/generate-feeds.js`) or via scheduled workflow.
 2. Adapters ingest public sources and normalize records to CyberMonitor schema.
-3. Generator writes feed files:
+3. Generator validates/repairs/dedupes adapter output and preserves previous good output when needed.
+4. Generator writes feed files:
    - `data/kev.json`
    - `data/news.json`
    - `data/outages.json`
-4. Generator writes observability files:
+5. Generator writes observability files:
    - `data/feed-metadata.json`
    - `data/feed-health.json`
-5. Generator writes derived map overlays:
+6. Generator writes derived map overlays:
    - `data/map.correlated.json`
-6. Frontend attempts generated files first, then falls back to sample data where applicable.
+7. Frontend attempts generated files first, then falls back to sample data where applicable.
 
 ## Scheduled Feed Automation
 
@@ -58,11 +68,16 @@ Workflow: `.github/workflows/generate-feeds.yml`
   - optional npm dependency install when `package.json` exists
   - `node scripts/generate-feeds.js`
 - commit behavior:
-  - stages generated artifacts when present
+  - stages generated artifacts with explicit add/remove tracking
   - commits only when changes are detected
+  - no-op runs skip commit/push cleanly
   - bot commit message: `chore: refresh generated intelligence feeds`
+  - writes run summary with changed artifacts and published commit SHA
+- operational safety:
+  - per-ref workflow concurrency guard
+  - job timeout set to 15 minutes
 
-Baseline v1.4 automation does not require custom secrets.
+Baseline v1.4/v1.4.1 automation does not require custom secrets.
 
 ## Run The Dashboard
 
@@ -116,7 +131,8 @@ Each panel includes:
 
 - source mode badge (`LIVE DATA`, `SAMPLE DATA`, `NO DATA`)
 - health chip (`OK`, `WARN`, `ERROR`)
-- freshness/meta line (`updated ...`, item count)
+- freshness/meta line (`checked ...`, `newest ...`, item count)
+- stale states that are surfaced as subtle warning labels instead of hard errors
 
 ## Public Sources Used In v1.4
 
@@ -143,6 +159,15 @@ Outage/status sources:
 - Heroku Status RSS
 
 No API keys are required for base v1.4 ingestion.
+
+## Stability Notes (v1.4.1)
+
+- Adapter-level failures do not automatically terminate generation for healthy feeds.
+- Validation issues are recorded in `feed-health.json` and surfaced in UI observability labels.
+- Generated timestamps and source publish timestamps are shown separately in panel metadata:
+  - `checked`: pipeline freshness / last successful feed check
+  - `newest`: newest event/article timestamp from that source data
+- Browser `Refresh` reloads current generated/sample files; it does not execute Node adapter scripts in-browser.
 
 ## Map Correlation Note
 
@@ -220,3 +245,12 @@ CyberMonitor/
 - [ROADMAP.md](ROADMAP.md)
 - [scripts/README.md](scripts/README.md)
 - [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Future Directions
+
+CyberMonitor is now moving to track-based planning after v1.4.1 hardening:
+
+- intelligence expansion: broader source coverage, better categorization, source-quality scoring
+- map intelligence: stronger correlation methodology and clearer confidence signaling
+- platform reliability: higher automation resilience, feed-quality guardrails, operational observability
+- deployment/distribution: tighter Pages publishing cadence and future packaging options
