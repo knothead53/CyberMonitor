@@ -1,5 +1,40 @@
 [
   {
+    "id": "news-4524de37",
+    "title": "Threat Actors Mass-Scan Salesforce Experience Cloud via Modified AuraInspector Tool",
+    "source": "The Hacker News",
+    "published": "2026-03-10T07:17:00.000Z",
+    "url": "https://thehackernews.com/2026/03/threat-actors-mass-scan-salesforce.html",
+    "summary": "Salesforce has warned of an increase in threat actor activity that's aimed at exploiting misconfigurations in publicly accessible Experience Cloud sites by making use of a customized version of an open-source tool called AuraInspector. The activity, per the company, involves the exploitation of customers' overly per...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "cloud"
+    ]
+  },
+  {
+    "id": "news-33222273",
+    "title": "CISA Flags SolarWinds, Ivanti, and Workspace One Vulnerabilities as Actively Exploited",
+    "source": "The Hacker News",
+    "published": "2026-03-10T06:17:00.000Z",
+    "url": "https://thehackernews.com/2026/03/cisa-flags-solarwinds-ivanti-and.html",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added three security flaws to its Known Exploited Vulnerabilities (KEV) catalog, based on evidence of active exploitation. The vulnerability list is as follows - CVE-2021-22054 (CVSS score: 7.5) - A server-side request forgery (SSRF) vulnerab...",
+    "severity": "CRITICAL",
+    "vendor": "Ivanti",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "vulnerability",
+      "ivanti"
+    ]
+  },
+  {
     "id": "news-f3cc0030",
     "title": "ISC Stormcast For Tuesday, March 10th, 2026 https://isc.sans.edu/podcastdetail/9842, (Tue, Mar 10th)",
     "source": "SANS ISC",
@@ -1839,23 +1874,6 @@
     ]
   },
   {
-    "id": "news-237d1c11",
-    "title": "Malicious Go Crypto Module Steals Passwords, Deploys Rekoobe Backdoor",
-    "source": "The Hacker News",
-    "published": "2026-02-27T15:33:00.000Z",
-    "url": "https://thehackernews.com/2026/02/malicious-go-crypto-module-steals.html",
-    "summary": "Cybersecurity researchers have disclosed details of a malicious Go module that's designed to harvest passwords, create persistent access via SSH, and deliver a Linux backdoor named Rekoobe. The Go module, github[.]com/xinfeisoft/crypto, impersonates the legitimate \"golang.org/x/crypto\" codebase, but injects maliciou...",
-    "severity": "HIGH",
-    "vendor": "Github",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "github"
-    ]
-  },
-  {
     "id": "news-a9b98497",
     "title": "Claude Code Security Shows Promise, Not Perfection",
     "source": "Dark Reading",
@@ -1869,23 +1887,6 @@
       "intel-feed",
       "medium",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-cbea824e",
-    "title": "ScarCruft Uses Zoho WorkDrive and USB Malware to Breach Air-Gapped Networks",
-    "source": "The Hacker News",
-    "published": "2026-02-27T12:43:00.000Z",
-    "url": "https://thehackernews.com/2026/02/scarcruft-uses-zoho-workdrive-and-usb.html",
-    "summary": "The North Korean threat actor known as ScarCruft has been attributed to a fresh set of tools, including a backdoor that uses Zoho WorkDrive for command-and-control (C2) communications to fetch more payloads and an implant that uses removable media to relay commands and breach air-gapped networks. The campaign, coden...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "malware"
     ]
   },
   {
