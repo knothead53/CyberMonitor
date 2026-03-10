@@ -1,5 +1,129 @@
 [
   {
+    "id": "news-8c9d3d7c",
+    "title": "New \"LeakyLooker\" Flaws in Google Looker Studio Could Enable Cross-Tenant SQL Queries",
+    "source": "The Hacker News",
+    "published": "2026-03-10T13:20:00.000Z",
+    "url": "https://thehackernews.com/2026/03/new-leakylooker-flaws-in-google-looker.html",
+    "summary": "Cybersecurity researchers have disclosed nine cross-tenant vulnerabilities in Google Looker Studio that could have permitted attackers to run arbitrary SQL queries on victims' databases and exfiltrate sensitive data within organizations' Google Cloud environments. The shortcomings have been collectively named LeakyL...",
+    "severity": "MEDIUM",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "cloud",
+      "google"
+    ]
+  },
+  {
+    "id": "news-9259e2ff",
+    "title": "How to Stop AI Data Leaks: A Webinar Guide to Auditing Modern Agentic Workflows",
+    "source": "The Hacker News",
+    "published": "2026-03-10T11:45:00.000Z",
+    "url": "https://thehackernews.com/2026/03/how-to-stop-ai-data-leaks-webinar-guide.html",
+    "summary": "Artificial Intelligence (AI) is no longer just a tool we talk to; it is a tool that does things for us. These are called AI Agents. They can send emails, move data, and even manage software on their own. But there is a problem. While these agents make work faster, they also open a new \"back door\" for hackers. The Pr...",
+    "severity": "MEDIUM",
+    "vendor": "Intel",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "intel"
+    ]
+  },
+  {
+    "id": "news-fd759f15",
+    "title": "CISA: Recently patched Ivanti EPM flaw now actively exploited",
+    "source": "BleepingComputer",
+    "published": "2026-03-10T11:36:13.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-recently-patched-ivanti-epm-flaw-now-actively-exploited/",
+    "summary": "CISA flagged a high-severity Ivanti Endpoint Manager (EPM) vulnerability as actively exploited in attacks and ordered U.S. federal agencies to patch systems within three weeks. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Ivanti",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "vulnerability",
+      "patch",
+      "ivanti"
+    ]
+  },
+  {
+    "id": "news-d358cfdc",
+    "title": "The Zero-Day Scramble is Avoidable: A Guide to Attack Surface Reduction",
+    "source": "The Hacker News",
+    "published": "2026-03-10T11:00:00.000Z",
+    "url": "https://thehackernews.com/2026/03/the-zero-day-scramble-is-avoidable.html",
+    "summary": "You can't control when the next critical vulnerability drops. You can control how much of your environment is exposed when it does. The problem is that most teams have more internet-facing exposure than they realise. Intruder's Head of Security digs into why this happens and how teams can manage it deliberately. Tim...",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "zero-day",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "news-2cf97d07",
+    "title": "APT28 Uses BEARDSHELL and COVENANT Malware to Spy on Ukrainian Military",
+    "source": "The Hacker News",
+    "published": "2026-03-10T10:55:00.000Z",
+    "url": "https://thehackernews.com/2026/03/apt28-uses-beardshell-and-covenant.html",
+    "summary": "The Russian state-sponsored hacking group tracked as APT28 has been observed using a pair of implants dubbed BEARDSHELL and COVENANT to facilitate long‑term surveillance of Ukrainian military personnel. The two malware families have been put to use since April 2024, ESET said in a new report shared with The Hacker N...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-180e1b22",
+    "title": "Microsoft to enable Windows hotpatch security updates by default",
+    "source": "BleepingComputer",
+    "published": "2026-03-10T10:35:33.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-enable-hotpatch-security-updates-by-default-in-may/",
+    "summary": "Microsoft will turn on hotpatch security updates by default for all eligible Windows devices managed through Microsoft Intune and the Microsoft Graph API, beginning with the May 2026 Windows security update. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "patch",
+      "api",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-ced675a6",
+    "title": "APT28 hackers deploy customized variant of Covenant open-source tool",
+    "source": "BleepingComputer",
+    "published": "2026-03-10T10:00:00.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/apt28-hackers-deploy-customized-variant-of-covenant-open-source-tool/",
+    "summary": "The Russian state-sponsored APT28 threat group is using a custom variant of the open-source Covenant post-exploitation framework for long-term espionage operations. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer"
+    ]
+  },
+  {
     "id": "news-4524de37",
     "title": "Threat Actors Mass-Scan Salesforce Experience Cloud via Modified AuraInspector Tool",
     "source": "The Hacker News",
@@ -159,7 +283,7 @@
     "source": "BleepingComputer",
     "published": "2026-03-09T19:07:50.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/ericsson-us-discloses-data-breach-after-service-provider-hack/",
-    "summary": "Ericsson Inc., the U.S. subsidiary of Swedish networking and telecommunications giant Ericsson, says attackers have stolen data belonging to an undisclosed number of employees and customers after hacking one of its service providers. [...]",
+    "summary": "Ericsson Inc., the U.S. subsidiary of Swedish networking and telecommunications giant Ericsson, says attackers have stolen data belonging to over 15,000 employees and customers after hacking one of its service providers. [...]",
     "severity": "CRITICAL",
     "vendor": "Unknown",
     "tags": [
@@ -490,23 +614,6 @@
     ]
   },
   {
-    "id": "news-46ca3663",
-    "title": "Microsoft: Hackers abusing AI at every stage of cyberattacks",
-    "source": "BleepingComputer",
-    "published": "2026-03-07T15:15:25.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/microsoft-hackers-abusing-ai-at-every-stage-of-cyberattacks/",
-    "summary": "Microsoft says threat actors are increasingly using artificial intelligence in their operations to accelerate attacks, scale malicious activity, and lower technical barriers across all aspects of a cyberattack. [...]",
-    "severity": "HIGH",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "microsoft"
-    ]
-  },
-  {
     "id": "news-f9652db5",
     "title": "Anthropic Finds 22 Firefox Vulnerabilities Using Claude Opus 4.6 AI Model",
     "source": "The Hacker News",
@@ -536,23 +643,6 @@
       "intel-feed",
       "medium",
       "sans-isc"
-    ]
-  },
-  {
-    "id": "news-aa3bf96f",
-    "title": "Cognizant TriZetto breach exposes health data of 3.4 million patients",
-    "source": "BleepingComputer",
-    "published": "2026-03-06T19:50:21.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/cognizant-trizetto-breach-exposes-health-data-of-34-million-patients/",
-    "summary": "TriZetto Provider Solutions, a healthcare IT company that develops software and services used by health insurers and healthcare providers, has suffered a data breach that exposed the sensitive information of over 3.4 million people. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "data-breach"
     ]
   },
   {
@@ -586,24 +676,6 @@
       "intel-feed",
       "medium",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-d17df1fb",
-    "title": "CISA warns feds to patch iOS flaws exploited in crypto-theft attacks",
-    "source": "BleepingComputer",
-    "published": "2026-03-06T15:57:16.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-apple-flaws-exploited-in-spyware-crypto-theft-attacks/",
-    "summary": "CISA ordered U.S. federal agencies to patch three iOS security flaws targeted in cyberespionage and crypto-theft attacks using the Coruna exploit kit. [...]",
-    "severity": "HIGH",
-    "vendor": "Aws",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "patch",
-      "aws"
     ]
   },
   {
@@ -1738,43 +1810,6 @@
     ]
   },
   {
-    "id": "news-de7f9cff",
-    "title": "Thousands of Public Google Cloud API Keys Exposed with Gemini Access After API Enablement",
-    "source": "The Hacker News",
-    "published": "2026-02-28T09:56:00.000Z",
-    "url": "https://thehackernews.com/2026/02/thousands-of-public-google-cloud-api.html",
-    "summary": "New research has found that Google Cloud API keys, typically designated as project identifiers for billing purposes, could be abused to authenticate to sensitive Gemini endpoints and access private data. The findings come from Truffle Security, which discovered nearly 3,000 Google API keys (identified by the prefix ...",
-    "severity": "MEDIUM",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news",
-      "cloud",
-      "api",
-      "google"
-    ]
-  },
-  {
-    "id": "news-bf804f68",
-    "title": "Pentagon Designates Anthropic Supply Chain Risk Over AI Military Dispute",
-    "source": "The Hacker News",
-    "published": "2026-02-28T04:57:00.000Z",
-    "url": "https://thehackernews.com/2026/02/pentagon-designates-anthropic-supply.html",
-    "summary": "Anthropic on Friday hit back after U.S. Secretary of Defense Pete Hegseth directed the Pentagon to designate the artificial intelligence (AI) upstart as a \"supply chain risk.\" \"This action follows months of negotiations that reached an impasse over two exceptions we requested to the lawful use of our AI model, Claud...",
-    "severity": "MEDIUM",
-    "vendor": "Intel",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news",
-      "supply-chain",
-      "intel"
-    ]
-  },
-  {
     "id": "news-35b1d247",
     "title": "Life Mirrors Art: Ransomware Hits Hospitals on TV & IRL",
     "source": "Dark Reading",
@@ -1821,39 +1856,6 @@
       "intel-feed",
       "medium",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-4ce02a3e",
-    "title": "DoJ Seizes $61 Million in Tether Linked to Pig Butchering Crypto Scams",
-    "source": "The Hacker News",
-    "published": "2026-02-27T18:11:00.000Z",
-    "url": "https://thehackernews.com/2026/02/doj-seizes-61-million-in-tether-linked.html",
-    "summary": "The U.S. Department of Justice (DoJ) this week announced the seizure of $61 million worth of Tether that were allegedly associated with bogus cryptocurrency schemes known as pig butchering. The confiscated funds were traced to cryptocurrency addresses used for the laundering of criminally derived proceeds stolen fro...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-0b4e3150",
-    "title": "900+ Sangoma FreePBX Instances Compromised in Ongoing Web Shell Attacks",
-    "source": "The Hacker News",
-    "published": "2026-02-27T17:59:00.000Z",
-    "url": "https://thehackernews.com/2026/02/900-sangoma-freepbx-instances.html",
-    "summary": "The Shadowserver Foundation has revealed that over 900 Sangoma FreePBX instances still remain infected with web shells as part of attacks that exploited a command injection vulnerability starting in December 2025. Of these, 401 instances are located in the U.S., followed by 51 in Brazil, 43 in Canada, 40 in Germany,...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "vulnerability"
     ]
   },
   {
