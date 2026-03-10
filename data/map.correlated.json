@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-10T19:06:58.992Z",
+  "generatedAt": "2026-03-10T21:39:01.013Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-10T18:23:35.000Z",
-      "summary": "99 correlated news signals from 5 sources; vendors: Microsoft, Intel."
+      "timestamp": "2026-03-10T21:27:59.000Z",
+      "summary": "99 correlated news signals from 5 sources; vendors: Google, Unknown."
     },
     {
       "id": "corr-cloud-global",
@@ -61,8 +61,8 @@
       "lon": -98.5795,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-09T21:45:34.000Z",
-      "summary": "67 KEV and 7 high-severity news signals across 4 sources."
+      "timestamp": "2026-03-10T21:27:59.000Z",
+      "summary": "67 KEV and 8 high-severity news signals across 4 sources."
     },
     {
       "id": "corr-incident-cisco",
@@ -101,8 +101,8 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-10T17:30:35.000Z",
-      "summary": "0 KEV and 49 high-severity news signals across 5 sources."
+      "timestamp": "2026-03-10T20:05:39.000Z",
+      "summary": "0 KEV and 50 high-severity news signals across 5 sources."
     },
     {
       "id": "corr-incident-oracle",
@@ -153,8 +153,8 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-10T18:41:13.000Z",
-      "summary": "67 correlated outage events from 1 status feeds."
+      "timestamp": "2026-03-10T21:38:06.000Z",
+      "summary": "68 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-slack",
@@ -164,7 +164,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-09T19:17:50.000Z",
-      "summary": "47 correlated outage events from 1 status feeds."
+      "summary": "45 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-github",
@@ -193,8 +193,8 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "HIGH",
-      "timestamp": "2026-03-10T18:36:54.000Z",
-      "summary": "2 correlated outage events from 1 status feeds."
+      "timestamp": "2026-03-10T20:30:28.000Z",
+      "summary": "3 correlated outage events from 1 status feeds."
     }
   ]
 }

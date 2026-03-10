@@ -1,5 +1,74 @@
 [
   {
+    "id": "news-24848b4f",
+    "title": "New BeatBanker Android malware poses as Starlink app to hijack devices",
+    "source": "BleepingComputer",
+    "published": "2026-03-10T21:27:59.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/new-beatbanker-android-malware-poses-as-starlink-app-to-hijack-devices/",
+    "summary": "A new Android malware named BeatBanker can hijack devices and tricks users into installing it by posing as a Starlink app on websites masquerading as the official Google Play Store. [...]",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "malware",
+      "google"
+    ]
+  },
+  {
+    "id": "news-fda48556",
+    "title": "'Overly Permissive' Salesforce Cloud Configs in the Crosshairs",
+    "source": "Dark Reading",
+    "published": "2026-03-10T21:05:28.000Z",
+    "url": "https://www.darkreading.com/application-security/overly-permissive-salesforce-cloud-configs-crosshairs",
+    "summary": "Some customers have mishandled guest user configurations otherwise intended to allow third-party access to important — and sensitive — client data.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "cloud"
+    ]
+  },
+  {
+    "id": "news-d98dc2b8",
+    "title": "New 'Zombie ZIP' technique lets malware slip past security tools",
+    "source": "BleepingComputer",
+    "published": "2026-03-10T20:05:39.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/new-zombie-zip-technique-lets-malware-slip-past-security-tools/",
+    "summary": "A new technique dubbed \"Zombie ZIP\" helps conceal payloads in compressed files specially created to avoid detection from security solutions such as antivirus and endpoint detection and response (EDR) products. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-3cb9e305",
+    "title": "Russian Threat Actor Sednit Resurfaces With Sophisticated Toolkit",
+    "source": "Dark Reading",
+    "published": "2026-03-10T18:57:55.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/sednit-resurfaces-with-sophisticated-new-toolkit",
+    "summary": "After several years of using simple implants, the Russia-affiliated actor is back with two new sophisticated malware tools.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "malware"
+    ]
+  },
+  {
     "id": "news-83c599c8",
     "title": "Microsoft releases Windows 10 KB5078885 extended security update",
     "source": "BleepingComputer",
@@ -472,23 +541,6 @@
     ]
   },
   {
-    "id": "news-c6bbf51a",
-    "title": "Ericsson US discloses data breach after service provider hack",
-    "source": "BleepingComputer",
-    "published": "2026-03-09T19:07:50.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/ericsson-us-discloses-data-breach-after-service-provider-hack/",
-    "summary": "Ericsson Inc., the U.S. subsidiary of Swedish networking and telecommunications giant Ericsson, says attackers have stolen data belonging to over 15,000 employees and customers after hacking one of its service providers. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "data-breach"
-    ]
-  },
-  {
     "id": "news-f1d63988",
     "title": "Malicious npm Package Posing as OpenClaw Installer Deploys RAT, Steals macOS Credentials",
     "source": "The Hacker News",
@@ -502,23 +554,6 @@
       "intel-feed",
       "high",
       "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-842cba93",
-    "title": "Microsoft Teams will tag third-party bots trying to join meetings",
-    "source": "BleepingComputer",
-    "published": "2026-03-09T17:12:49.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-will-tag-third-party-bots-in-meeting-lobbies/",
-    "summary": "Microsoft says Teams will soon automatically tag third-party bots in lobbies, allowing organizers to control whether they can join meetings. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "microsoft"
     ]
   },
   {
@@ -2116,39 +2151,6 @@
       "critical",
       "dark-reading",
       "ransomware"
-    ]
-  },
-  {
-    "id": "news-5b0055f9",
-    "title": "As Cybersecurity Firms Chase AI, VC Market Skyrockets",
-    "source": "Dark Reading",
-    "published": "2026-02-24T13:04:04.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-analytics/cybersecurity-firms-chase-ai-vc-market-skyrockets",
-    "summary": "Investments in cybersecurity startups took off in 2025 as venture capital firms focused not just on AI-native tech but on talent as well.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading",
-      "api"
-    ]
-  },
-  {
-    "id": "news-6fda8e14",
-    "title": "Spitting Cash: ATM Jackpotting Attacks Surged in 2025",
-    "source": "Dark Reading",
-    "published": "2026-02-23T22:20:08.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/atm-jackpotting-attacks-surged-2025",
-    "summary": "The attacks cost banks more than $20 million in losses last year, as criminals used many of the same tools and tactics they have wielded for more than a decade.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
     ]
   },
   {
