@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-10T16:12:04.322Z",
+  "generatedAt": "2026-03-10T19:06:58.992Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-10T15:27:58.000Z",
-      "summary": "100 correlated news signals from 5 sources; vendors: Microsoft, Unknown."
+      "timestamp": "2026-03-10T18:23:35.000Z",
+      "summary": "99 correlated news signals from 5 sources; vendors: Microsoft, Intel."
     },
     {
       "id": "corr-cloud-global",
@@ -19,8 +19,8 @@
       "lon": 0,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-10T11:36:13.000Z",
-      "summary": "32 correlated news signals from 5 sources; vendors: Ivanti, Unknown."
+      "timestamp": "2026-03-10T17:30:35.000Z",
+      "summary": "33 correlated news signals from 5 sources; vendors: Unknown, Ivanti."
     },
     {
       "id": "corr-cloud-middle-east-africa",
@@ -51,8 +51,8 @@
       "lon": -98.5795,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-10T15:27:58.000Z",
-      "summary": "347 KEV and 7 high-severity news signals across 4 sources."
+      "timestamp": "2026-03-10T18:23:35.000Z",
+      "summary": "347 KEV and 10 high-severity news signals across 5 sources."
     },
     {
       "id": "corr-incident-google",
@@ -101,8 +101,8 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-10T15:01:57.000Z",
-      "summary": "0 KEV and 48 high-severity news signals across 5 sources."
+      "timestamp": "2026-03-10T17:30:35.000Z",
+      "summary": "0 KEV and 49 high-severity news signals across 5 sources."
     },
     {
       "id": "corr-incident-oracle",
@@ -153,8 +153,8 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-10T16:04:06.000Z",
-      "summary": "66 correlated outage events from 1 status feeds."
+      "timestamp": "2026-03-10T18:41:13.000Z",
+      "summary": "67 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-slack",
@@ -164,7 +164,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-09T19:17:50.000Z",
-      "summary": "48 correlated outage events from 1 status feeds."
+      "summary": "47 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-github",
@@ -192,8 +192,8 @@
       "lat": 39.8283,
       "lon": -98.5795,
       "type": "outage",
-      "severity": "MEDIUM",
-      "timestamp": "2026-03-10T15:04:21.000Z",
+      "severity": "HIGH",
+      "timestamp": "2026-03-10T18:36:54.000Z",
       "summary": "2 correlated outage events from 1 status feeds."
     }
   ]
