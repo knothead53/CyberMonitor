@@ -1,5 +1,75 @@
 [
   {
+    "id": "news-b72d49b1",
+    "title": "Microsoft brings phishing-resistant Windows sign-ins via Entra passkeys",
+    "source": "BleepingComputer",
+    "published": "2026-03-10T15:27:58.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-brings-phishing-resistant-sign-in-to-windows/",
+    "summary": "Microsoft is rolling out passkey support for Microsoft Entra on Windows devices, adding phishing-resistant passwordless authentication via Windows Hello. [...]",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "phishing",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-5e1777d2",
+    "title": "New KadNap botnet hijacks ASUS routers to fuel cybercrime proxy network",
+    "source": "BleepingComputer",
+    "published": "2026-03-10T15:01:57.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/new-kadnap-botnet-hijacks-asus-routers-to-fuel-cybercrime-proxy-network/",
+    "summary": "A newly discovered botnet malware called KadNap is targeting ASUS routers and other edge networking devices to turn them into proxies for malicious traffic. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "malware",
+      "botnet"
+    ]
+  },
+  {
+    "id": "news-68c43f9e",
+    "title": "The New Turing Test: How Threats Use Geometry to Prove 'Humanness'",
+    "source": "BleepingComputer",
+    "published": "2026-03-10T14:02:12.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/the-new-turing-test-how-threats-use-geometry-to-prove-humanness/",
+    "summary": "Malware is evolving to evade sandboxes by pretending to be a real human behind the keyboard. The Picus Red Report 2026 shows 80% of top attacker techniques now focus on evasion and persistence, including geometry-based cursor tests and CPU timing checks. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-8bd8f0a3",
+    "title": "'BlackSanta' EDR Killer Targets HR Workflows",
+    "source": "Dark Reading",
+    "published": "2026-03-10T13:30:00.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/blacksanta-edr-killer-hr-workflows",
+    "summary": "A campaign by Russian-speaking cyberattackers hijacks workflows to deliver security-busting malware, allowing attackers to steal data without detection.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "malware"
+    ]
+  },
+  {
     "id": "news-8c9d3d7c",
     "title": "New \"LeakyLooker\" Flaws in Google Looker Studio Could Enable Cross-Tenant SQL Queries",
     "source": "The Hacker News",
@@ -545,40 +615,6 @@
     ]
   },
   {
-    "id": "news-7016f3c5",
-    "title": "EU court adviser says banks must immediately refund phishing victims",
-    "source": "BleepingComputer",
-    "published": "2026-03-08T15:25:37.000Z",
-    "url": "https://www.bleepingcomputer.com/news/legal/eu-court-adviser-says-banks-must-immediately-refund-phishing-victims/",
-    "summary": "Athanasios Rantos, the Advocate General of the Court of Justice of the EU (CJEU), has issued a formal opinion suggesting that banks must immediately refund account holders affected by unauthorized transactions, even when it's their fault. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "phishing"
-    ]
-  },
-  {
-    "id": "news-af0d6a6a",
-    "title": "Hackers abuse .arpa DNS and ipv6 to evade phishing defenses",
-    "source": "BleepingComputer",
-    "published": "2026-03-08T14:12:22.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-arpa-dns-and-ipv6-to-evade-phishing-defenses/",
-    "summary": "Threat actors are abusing the special-use \".arpa\" domain and IPv6 reverse DNS in phishing campaigns that more easily evade domain reputation checks and email security gateways. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "phishing"
-    ]
-  },
-  {
     "id": "news-40513631",
     "title": "OpenAI Codex Security Scanned 1.2 Million Commits and Found 10,561 High-Severity Issues",
     "source": "The Hacker News",
@@ -593,24 +629,6 @@
       "medium",
       "the-hacker-news",
       "openai"
-    ]
-  },
-  {
-    "id": "news-8e945346",
-    "title": "Termite ransomware breaches linked to ClickFix CastleRAT attacks",
-    "source": "BleepingComputer",
-    "published": "2026-03-07T16:14:32.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/termite-ransomware-breaches-linked-to-clickfix-castlerat-attacks/",
-    "summary": "Ransomware threat actors tracked as Velvet Tempest are using the ClickFix technique and legitimate Windows utilities to deploy the DonutLoader malware and the CastleRAT backdoor. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "ransomware",
-      "malware"
     ]
   },
   {
@@ -2117,22 +2135,6 @@
     "published": "2026-02-23T22:20:08.000Z",
     "url": "https://www.darkreading.com/cyber-risk/atm-jackpotting-attacks-surged-2025",
     "summary": "The attacks cost banks more than $20 million in losses last year, as criminals used many of the same tools and tactics they have wielded for more than a decade.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-602fef6e",
-    "title": "More Than Dashboards: AI Decisions Must Be Provable",
-    "source": "Dark Reading",
-    "published": "2026-02-23T22:18:18.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/more-dashboards-ai-decisions-provable",
-    "summary": "AI systems have to be able to show a record of what happened and how.",
     "severity": "MEDIUM",
     "vendor": "Unknown",
     "tags": [

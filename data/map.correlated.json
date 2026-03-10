@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-10T13:36:47.363Z",
+  "generatedAt": "2026-03-10T16:12:04.322Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-10T13:20:00.000Z",
-      "summary": "100 correlated news signals from 5 sources; vendors: Google, Intel."
+      "timestamp": "2026-03-10T15:27:58.000Z",
+      "summary": "100 correlated news signals from 5 sources; vendors: Microsoft, Unknown."
     },
     {
       "id": "corr-cloud-global",
@@ -51,8 +51,8 @@
       "lon": -98.5795,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-09T22:50:38.000Z",
-      "summary": "347 KEV and 6 high-severity news signals across 4 sources."
+      "timestamp": "2026-03-10T15:27:58.000Z",
+      "summary": "347 KEV and 7 high-severity news signals across 4 sources."
     },
     {
       "id": "corr-incident-google",
@@ -101,7 +101,7 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-10T11:00:00.000Z",
+      "timestamp": "2026-03-10T15:01:57.000Z",
       "summary": "0 KEV and 48 high-severity news signals across 5 sources."
     },
     {
@@ -153,7 +153,7 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-10T12:56:32.000Z",
+      "timestamp": "2026-03-10T16:04:06.000Z",
       "summary": "66 correlated outage events from 1 status feeds."
     },
     {
@@ -164,7 +164,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-09T19:17:50.000Z",
-      "summary": "49 correlated outage events from 1 status feeds."
+      "summary": "48 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-github",
@@ -193,8 +193,8 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "MEDIUM",
-      "timestamp": "2026-03-10T13:28:44.000Z",
-      "summary": "1 correlated outage events from 1 status feeds."
+      "timestamp": "2026-03-10T15:04:21.000Z",
+      "summary": "2 correlated outage events from 1 status feeds."
     }
   ]
 }
