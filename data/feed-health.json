@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-03-11T16:00:47.807Z",
+  "generatedAt": "2026-03-11T19:09:01.036Z",
   "overallStatus": "ok",
   "feeds": {
     "kev": {
       "status": "ok",
-      "message": "Loaded 1539 entries in 476ms.",
-      "lastSuccessAt": "2026-03-09T00:00:00.000Z",
+      "message": "Loaded 1540 entries in 524ms.",
+      "lastSuccessAt": "2026-03-11T00:00:00.000Z",
       "validation": {
-        "totalRead": 1539,
-        "validCount": 1539,
+        "totalRead": 1540,
+        "validCount": 1540,
         "invalidCount": 0,
         "repairedCount": 0,
         "dedupedCount": 0,
@@ -17,21 +17,21 @@
     },
     "news": {
       "status": "ok",
-      "message": "Loaded 135 entries in 709ms.",
-      "lastSuccessAt": "2026-03-11T14:51:00.000Z",
+      "message": "Loaded 135 entries in 376ms.",
+      "lastSuccessAt": "2026-03-11T18:21:15.000Z",
       "validation": {
         "totalRead": 135,
         "validCount": 135,
         "invalidCount": 0,
-        "repairedCount": 93,
+        "repairedCount": 95,
         "dedupedCount": 0,
-        "issueCount": 93
+        "issueCount": 95
       }
     },
     "outages": {
       "status": "ok",
-      "message": "Loaded 160 entries in 519ms.",
-      "lastSuccessAt": "2026-03-11T15:53:15.000Z",
+      "message": "Loaded 160 entries in 562ms.",
+      "lastSuccessAt": "2026-03-11T19:01:28.000Z",
       "validation": {
         "totalRead": 160,
         "validCount": 160,

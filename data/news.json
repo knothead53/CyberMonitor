@@ -1,5 +1,92 @@
 [
   {
+    "id": "news-f182df7a",
+    "title": "CISA orders feds to patch n8n RCE flaw exploited in attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-11T18:21:15.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-n8n-rce-flaw-exploited-in-attacks/",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) ordered government agencies on Wednesday to patch their systems against an actively exploited n8n vulnerability. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "vulnerability",
+      "patch"
+    ]
+  },
+  {
+    "id": "news-45a799b5",
+    "title": "Medtech giant Stryker offline after Iran-linked wiper malware attack",
+    "source": "BleepingComputer",
+    "published": "2026-03-11T17:21:22.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/medtech-giant-stryker-offline-after-iran-linked-wiper-malware-attack/",
+    "summary": "Leading medical technology company Stryker has been hit by a wiper malware attack claimed by Handala, an Iranian-linked and pro-Palestinian hacktivist group. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-17b69fa6",
+    "title": "New PhantomRaven NPM attack wave steals dev data via 88 packages",
+    "source": "BleepingComputer",
+    "published": "2026-03-11T17:09:42.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/new-phantomraven-npm-attack-wave-steals-dev-data-via-88-packages/",
+    "summary": "New attack waves from the 'PhantomRaven' supply-chain campaign are hitting the npm registry, with dozens of malicious packages that exfiltrate sensitive data from JavaScript developers. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "supply-chain"
+    ]
+  },
+  {
+    "id": "news-8636da88",
+    "title": "Researchers Trick Perplexity's Comet AI Browser Into Phishing Scam in Under Four Minutes",
+    "source": "The Hacker News",
+    "published": "2026-03-11T16:38:00.000Z",
+    "url": "https://thehackernews.com/2026/03/researchers-trick-perplexitys-comet-ai.html",
+    "summary": "Agentic web browsers that leverage artificial intelligence (AI) capabilities to autonomously execute actions across multiple websites on behalf of a user could be trained and tricked into falling prey to phishing and scam traps. The attack, at its core, takes advantage of AI browsers' tendency to reason their action...",
+    "severity": "HIGH",
+    "vendor": "Intel",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "phishing",
+      "intel"
+    ]
+  },
+  {
+    "id": "news-e0fa4bd6",
+    "title": "Iran-Backed Hackers Claim Wiper Attack on Medtech Firm Stryker",
+    "source": "Krebs on Security",
+    "published": "2026-03-11T16:20:13.000Z",
+    "url": "https://krebsonsecurity.com/2026/03/iran-backed-hackers-claim-wiper-attack-on-medtech-firm-stryker/",
+    "summary": "A hacktivist group with links to Iran's intelligence agencies is claiming responsibility for a data-wiping attack against Stryker, a global medical technology company based in Michigan. News reports out of Ireland, Stryker's largest hub outside of the United States, said the company sent home more than 5,000 workers...",
+    "severity": "MEDIUM",
+    "vendor": "Intel",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "krebs-on-security",
+      "intel"
+    ]
+  },
+  {
     "id": "news-8d66efb7",
     "title": "Critical n8n Flaws Allow Remote Code Execution and Exposure of Stored Credentials",
     "source": "The Hacker News",
@@ -615,41 +702,6 @@
     ]
   },
   {
-    "id": "news-180e1b22",
-    "title": "Microsoft to enable Windows hotpatch security updates by default",
-    "source": "BleepingComputer",
-    "published": "2026-03-10T10:35:33.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-enable-hotpatch-security-updates-by-default-in-may/",
-    "summary": "Microsoft will turn on hotpatch security updates by default for all eligible Windows devices managed through Microsoft Intune and the Microsoft Graph API, beginning with the May 2026 Windows security update. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "patch",
-      "api",
-      "microsoft"
-    ]
-  },
-  {
-    "id": "news-ced675a6",
-    "title": "APT28 hackers deploy customized variant of Covenant open-source tool",
-    "source": "BleepingComputer",
-    "published": "2026-03-10T10:00:00.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/apt28-hackers-deploy-customized-variant-of-covenant-open-source-tool/",
-    "summary": "The Russian state-sponsored APT28 threat group is using a custom variant of the open-source Covenant post-exploitation framework for long-term espionage operations. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer"
-    ]
-  },
-  {
     "id": "news-4524de37",
     "title": "Threat Actors Mass-Scan Salesforce Experience Cloud via Modified AuraInspector Tool",
     "source": "The Hacker News",
@@ -698,25 +750,6 @@
       "intel-feed",
       "medium",
       "sans-isc"
-    ]
-  },
-  {
-    "id": "news-0762f006",
-    "title": "Microsoft Teams phishing targets employees with A0Backdoor malware",
-    "source": "BleepingComputer",
-    "published": "2026-03-09T22:50:38.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-phishing-targets-employees-with-backdoors/",
-    "summary": "Hackers contacted employees at financial and healthcare organizations over Microsoft Teams to trick them into granting remote access through Quick Assist and deploy a new piece of malware called A0Backdoor. [...]",
-    "severity": "HIGH",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "phishing",
-      "malware",
-      "microsoft"
     ]
   },
   {
@@ -1819,25 +1852,6 @@
     ]
   },
   {
-    "id": "news-11df1c6f",
-    "title": "Microsoft Warns OAuth Redirect Abuse Delivers Malware to Government Targets",
-    "source": "The Hacker News",
-    "published": "2026-03-03T09:20:00.000Z",
-    "url": "https://thehackernews.com/2026/03/microsoft-warns-oauth-redirect-abuse.html",
-    "summary": "Microsoft on Monday warned of phishing campaigns that employ phishing emails and OAuth URL redirection mechanisms to bypass conventional phishing defenses implemented in email and browsers. The activity, the company said, targets government and public-sector organizations with the end goal of redirecting victims to ...",
-    "severity": "HIGH",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "phishing",
-      "malware",
-      "microsoft"
-    ]
-  },
-  {
     "id": "news-567621e8",
     "title": "Critical OpenClaw Vulnerability Exposes AI Agent Risks",
     "source": "Dark Reading",
@@ -2275,24 +2289,6 @@
       "critical",
       "krebs-on-security",
       "botnet"
-    ]
-  },
-  {
-    "id": "news-4a20f1eb",
-    "title": "Patch Tuesday, January 2026 Edition",
-    "source": "Krebs on Security",
-    "published": "2026-01-14T00:47:38.000Z",
-    "url": "https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/",
-    "summary": "Microsoft today issued patches to plug at least 113 security holes in its various Windows operating systems and supported software. Eight of the vulnerabilities earned Microsoft's most-dire \"critical\" rating, and the company warns that attackers are already exploiting one of the bugs fixed today.",
-    "severity": "HIGH",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "krebs-on-security",
-      "patch",
-      "microsoft"
     ]
   }
 ]

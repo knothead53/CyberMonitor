@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-03-11T16:00:47.807Z",
+  "generatedAt": "2026-03-11T19:09:01.036Z",
   "feeds": {
     "kev": {
-      "updatedAt": "2026-03-09T00:00:00.000Z",
-      "itemCount": 1539,
+      "updatedAt": "2026-03-11T00:00:00.000Z",
+      "itemCount": 1540,
       "mode": "generated",
       "sources": [
         "CISA KEV"
@@ -11,7 +11,7 @@
       "status": "ok"
     },
     "news": {
-      "updatedAt": "2026-03-11T14:51:00.000Z",
+      "updatedAt": "2026-03-11T18:21:15.000Z",
       "itemCount": 135,
       "mode": "generated",
       "sources": [
@@ -24,7 +24,7 @@
       "status": "ok"
     },
     "outages": {
-      "updatedAt": "2026-03-11T15:53:15.000Z",
+      "updatedAt": "2026-03-11T19:01:28.000Z",
       "itemCount": 160,
       "mode": "generated",
       "sources": [
