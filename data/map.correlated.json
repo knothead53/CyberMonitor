@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-11T02:48:20.965Z",
+  "generatedAt": "2026-03-11T04:52:05.610Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -153,7 +153,7 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-10T23:30:43.000Z",
+      "timestamp": "2026-03-11T02:50:29.000Z",
       "summary": "68 correlated outage events from 1 status feeds."
     },
     {
