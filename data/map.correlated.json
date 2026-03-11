@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-11T13:36:48.929Z",
+  "generatedAt": "2026-03-11T16:00:47.807Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-11T13:29:29.000Z",
-      "summary": "100 correlated news signals from 5 sources; vendors: Meta, Aws."
+      "timestamp": "2026-03-11T14:51:00.000Z",
+      "summary": "101 correlated news signals from 5 sources; vendors: Aws, Unknown."
     },
     {
       "id": "corr-cloud-global",
@@ -23,16 +23,6 @@
       "summary": "32 correlated news signals from 4 sources; vendors: Unknown, Ivanti."
     },
     {
-      "id": "corr-cloud-middle-east-africa",
-      "name": "Middle East & Africa Threat Activity",
-      "lat": 25.2048,
-      "lon": 55.2708,
-      "type": "cloud_region",
-      "severity": "MEDIUM",
-      "timestamp": "2026-02-25T12:00:00.000Z",
-      "summary": "2 correlated news signals from 1 sources; vendors: Unknown."
-    },
-    {
       "id": "corr-cloud-europe",
       "name": "Europe Threat Activity",
       "lat": 50.1109,
@@ -40,6 +30,16 @@
       "type": "cloud_region",
       "severity": "HIGH",
       "timestamp": "2026-03-05T06:51:00.000Z",
+      "summary": "1 correlated news signals from 1 sources; vendors: Unknown."
+    },
+    {
+      "id": "corr-cloud-middle-east-africa",
+      "name": "Middle East & Africa Threat Activity",
+      "lat": 25.2048,
+      "lon": 55.2708,
+      "type": "cloud_region",
+      "severity": "MEDIUM",
+      "timestamp": "2026-02-25T12:00:00.000Z",
       "summary": "1 correlated news signals from 1 sources; vendors: Unknown."
     }
   ],
@@ -72,7 +72,7 @@
       "type": "incident",
       "severity": "CRITICAL",
       "timestamp": "2026-03-10T21:27:59.000Z",
-      "summary": "67 KEV and 6 high-severity news signals across 4 sources."
+      "summary": "67 KEV and 5 high-severity news signals across 4 sources."
     },
     {
       "id": "corr-incident-adobe",
@@ -153,7 +153,7 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-11T07:22:23.000Z",
+      "timestamp": "2026-03-11T14:24:32.000Z",
       "summary": "68 correlated outage events from 1 status feeds."
     },
     {
@@ -164,7 +164,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-09T19:17:50.000Z",
-      "summary": "48 correlated outage events from 1 status feeds."
+      "summary": "47 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-github",
@@ -173,7 +173,7 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "HIGH",
-      "timestamp": "2026-03-09T17:03:40.000Z",
+      "timestamp": "2026-03-11T15:53:15.000Z",
       "summary": "23 correlated outage events from 1 status feeds."
     },
     {
@@ -185,6 +185,16 @@
       "severity": "CRITICAL",
       "timestamp": "2026-03-09T17:58:48.000Z",
       "summary": "21 correlated outage events from 1 status feeds."
+    },
+    {
+      "id": "corr-outage-cloudflare",
+      "name": "Cloudflare Service Disruption Signals",
+      "lat": 39.8283,
+      "lon": -98.5795,
+      "type": "outage",
+      "severity": "HIGH",
+      "timestamp": "2026-03-11T15:35:33.000Z",
+      "summary": "1 correlated outage events from 1 status feeds."
     }
   ]
 }

@@ -1,5 +1,39 @@
 [
   {
+    "id": "news-8d66efb7",
+    "title": "Critical n8n Flaws Allow Remote Code Execution and Exposure of Stored Credentials",
+    "source": "The Hacker News",
+    "published": "2026-03-11T14:51:00.000Z",
+    "url": "https://thehackernews.com/2026/03/critical-n8n-flaws-allow-remote-code.html",
+    "summary": "Cybersecurity researchers have disclosed details of two now-patched security flaws in the n8n workflow automation platform, including two critical bugs that could result in arbitrary command execution. The vulnerabilities are listed below - CVE-2026-27577 (CVSS score: 9.4) - Expression sandbox escape leading to remo...",
+    "severity": "CRITICAL",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "patch",
+      "aws"
+    ]
+  },
+  {
+    "id": "news-3eeef5f2",
+    "title": "Chinese Nexus Actors Shift Focus to Qatar Amid Iranian Conflict",
+    "source": "Dark Reading",
+    "published": "2026-03-11T14:46:51.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/chinese-nexus-actors-shift-focus-qatar-iranian-conflict",
+    "summary": "Two attacks on Qatari entities signal a shift in focus for China-backed actors and demonstrate how quickly they can pivot in response to geopolitical events.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
     "id": "news-8a658c1f",
     "title": "Meta adds new WhatsApp, Facebook, and Messenger anti-scam tools",
     "source": "BleepingComputer",
@@ -1804,24 +1838,6 @@
     ]
   },
   {
-    "id": "news-129f31f2",
-    "title": "Google Confirms CVE-2026-21385 in Qualcomm Android Component Exploited",
-    "source": "The Hacker News",
-    "published": "2026-03-03T07:08:00.000Z",
-    "url": "https://thehackernews.com/2026/03/google-confirms-cve-2026-21385-in.html",
-    "summary": "Google on Monday disclosed that a high-severity security flaw impacting an open-source Qualcomm component used in Android devices has been exploited in the wild. The vulnerability in question is CVE-2026-21385 (CVSS score: 7.8), a buffer over-read in the Graphics component. \"Memory corruption when adding user-suppli...",
-    "severity": "HIGH",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "vulnerability",
-      "google"
-    ]
-  },
-  {
     "id": "news-567621e8",
     "title": "Critical OpenClaw Vulnerability Exposes AI Agent Risks",
     "source": "Dark Reading",
@@ -2149,22 +2165,6 @@
     "published": "2026-02-25T12:00:00.000Z",
     "url": "https://www.darkreading.com/ics-ot-security/richter-scale-model-measures-cyber-incidents",
     "summary": "ICS/OT experts have devised a scoring system for rating the severity and effects of cybersecurity events in operational technology environments.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-8140efe4",
-    "title": "Operation Red Card 2.0 Leads to 651 Arrests in Africa",
-    "source": "Dark Reading",
-    "published": "2026-02-25T08:00:00.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-operations/operation-red-card-2-0-leads-to-651-arrests-in-africa",
-    "summary": "In the latest operation targeting cybercrime groups, African law enforcement agencies cooperated with Interpol and cybersecurity firms to recover more than $4.3 million.",
     "severity": "MEDIUM",
     "vendor": "Unknown",
     "tags": [
