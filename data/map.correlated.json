@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-11T09:59:17.934Z",
+  "generatedAt": "2026-03-11T13:36:48.929Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-11T09:15:00.000Z",
-      "summary": "100 correlated news signals from 5 sources; vendors: Microsoft, Github."
+      "timestamp": "2026-03-11T13:29:29.000Z",
+      "summary": "100 correlated news signals from 5 sources; vendors: Meta, Aws."
     },
     {
       "id": "corr-cloud-global",
@@ -19,7 +19,7 @@
       "lon": 0,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-11T02:00:02.000Z",
+      "timestamp": "2026-03-11T09:57:26.000Z",
       "summary": "32 correlated news signals from 4 sources; vendors: Unknown, Ivanti."
     },
     {
@@ -55,16 +55,6 @@
       "summary": "347 KEV and 11 high-severity news signals across 5 sources."
     },
     {
-      "id": "corr-incident-google",
-      "name": "Google Correlated Incident Activity",
-      "lat": 39.8283,
-      "lon": -98.5795,
-      "type": "incident",
-      "severity": "CRITICAL",
-      "timestamp": "2026-03-10T21:27:59.000Z",
-      "summary": "67 KEV and 8 high-severity news signals across 4 sources."
-    },
-    {
       "id": "corr-incident-cisco",
       "name": "Cisco Correlated Incident Activity",
       "lat": 39.8283,
@@ -73,6 +63,16 @@
       "severity": "CRITICAL",
       "timestamp": "2026-03-06T08:22:00.000Z",
       "summary": "70 KEV and 4 high-severity news signals across 3 sources."
+    },
+    {
+      "id": "corr-incident-google",
+      "name": "Google Correlated Incident Activity",
+      "lat": 39.8283,
+      "lon": -98.5795,
+      "type": "incident",
+      "severity": "CRITICAL",
+      "timestamp": "2026-03-10T21:27:59.000Z",
+      "summary": "67 KEV and 6 high-severity news signals across 4 sources."
     },
     {
       "id": "corr-incident-adobe",
@@ -101,7 +101,7 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-11T05:12:00.000Z",
+      "timestamp": "2026-03-11T11:30:00.000Z",
       "summary": "0 KEV and 49 high-severity news signals across 5 sources."
     },
     {

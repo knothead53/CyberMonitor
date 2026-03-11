@@ -1,5 +1,92 @@
 [
   {
+    "id": "news-8a658c1f",
+    "title": "Meta adds new WhatsApp, Facebook, and Messenger anti-scam tools",
+    "source": "BleepingComputer",
+    "published": "2026-03-11T13:29:29.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/meta-adds-new-whatsapp-facebook-and-messenger-anti-scam-tools/",
+    "summary": "Meta is introducing new anti-scam protections across its platforms, deploying systems and user-facing warnings to protect users against scammers. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Meta",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "meta"
+    ]
+  },
+  {
+    "id": "news-fbd587f1",
+    "title": "Meta Disables 150K Accounts Linked to Southeast Asia Scam Centers in Global Crackdown",
+    "source": "The Hacker News",
+    "published": "2026-03-11T13:15:00.000Z",
+    "url": "https://thehackernews.com/2026/03/meta-disables-150k-accounts-linked-to.html",
+    "summary": "Meta on Wednesday said it disabled over 150,000 accounts associated with scam centers in Southeast Asia as part of a coordinated effort in partnership with authorities from Thailand, the U.S., the U.K., Canada, Korea, Japan, Singapore, the Philippines, Australia, New Zealand, and Indonesia. The effort also led to 21...",
+    "severity": "MEDIUM",
+    "vendor": "Meta",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "meta"
+    ]
+  },
+  {
+    "id": "news-bc85ce3d",
+    "title": "Dozens of Vendors Patch Security Flaws Across Enterprise Software and Network Devices",
+    "source": "The Hacker News",
+    "published": "2026-03-11T12:26:00.000Z",
+    "url": "https://thehackernews.com/2026/03/dozens-of-vendors-patch-security-flaws.html",
+    "summary": "SAP has released security updates to address two critical security flaws that could be exploited to achieve arbitrary code execution on affected systems. The vulnerabilities in question listed below - CVE-2019-17571 (CVSS score: 9.8) - A code injection vulnerability in SAP Quotation Management Insurance application ...",
+    "severity": "HIGH",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "vulnerability",
+      "patch",
+      "aws"
+    ]
+  },
+  {
+    "id": "news-bff77b27",
+    "title": "What Boards Must Demand in the Age of AI-Automated Exploitation",
+    "source": "The Hacker News",
+    "published": "2026-03-11T11:30:00.000Z",
+    "url": "https://thehackernews.com/2026/03/what-boards-must-demand-in-age-of-ai.html",
+    "summary": "“You knew, and you could have acted. Why didn’t you?” This is the question you do not want to be asked. And increasingly, it’s the question leaders are forced to answer after an incident. For years, many executive teams and boards have treated a large vulnerability backlog as an uncomfortable but tolerable fact of l...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "news-07372b78",
+    "title": "Analyzing \"Zombie Zip\" Files (CVE-2026-0866), (Wed, Mar 11th)",
+    "source": "SANS ISC",
+    "published": "2026-03-11T09:57:26.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32786",
+    "summary": "A new vulnerability (CVE-2026-0866) has been published: Zombie Zip.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "sans-isc",
+      "vulnerability"
+    ]
+  },
+  {
     "id": "news-2f94edea",
     "title": "Microsoft Patches 84 Flaws in March Patch Tuesday, Including Two Public Zero-Days",
     "source": "The Hacker News",
@@ -596,24 +683,6 @@
       "phishing",
       "malware",
       "microsoft"
-    ]
-  },
-  {
-    "id": "news-f685c85b",
-    "title": "Google: Cloud attacks exploit flaws more than weak credentials",
-    "source": "BleepingComputer",
-    "published": "2026-03-09T21:45:34.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/google-cloud-attacks-exploit-flaws-more-than-weak-credentials/",
-    "summary": "Hackers are increasingly exploiting newly disclosed vulnerabilities in third-party software to gain initial access to cloud environments, with the window for attacks shrinking from weeks to just days. [...]",
-    "severity": "HIGH",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "cloud",
-      "google"
     ]
   },
   {
@@ -1481,23 +1550,6 @@
     ]
   },
   {
-    "id": "news-0fff02d2",
-    "title": "Want More XWorm?, (Wed, Mar 4th)",
-    "source": "SANS ISC",
-    "published": "2026-03-04T09:48:39.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32766",
-    "summary": "And another XWorm[1] wave in the wild! This malware family is not new and heavily spread but delivery techniques always evolve and deserve to be described to show you how threat actors can be imaginative! This time, we are facing another piece of multi-technology malware.",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "sans-isc",
-      "malware"
-    ]
-  },
-  {
     "id": "news-2a65d52f",
     "title": "Fake Laravel Packages on Packagist Deploy RAT on Windows, macOS, and Linux",
     "source": "The Hacker News",
@@ -1770,23 +1822,6 @@
     ]
   },
   {
-    "id": "news-b044066b",
-    "title": "SloppyLemming Targets Pakistan and Bangladesh Governments Using Dual Malware Chains",
-    "source": "The Hacker News",
-    "published": "2026-03-03T06:53:00.000Z",
-    "url": "https://thehackernews.com/2026/03/sloppylemming-targets-pakistan-and.html",
-    "summary": "The threat activity cluster known as SloppyLemming has been attributed to a fresh set of attacks targeting government entities and critical infrastructure operators in Pakistan and Bangladesh. The activity, per Arctic Wolf, took place between January 2025 and January 2026. It involves the use of two distinct attack ...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "malware"
-    ]
-  },
-  {
     "id": "news-567621e8",
     "title": "Critical OpenClaw Vulnerability Exposes AI Agent Risks",
     "source": "Dark Reading",
@@ -1835,42 +1870,6 @@
       "intel-feed",
       "medium",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-81fd4b5a",
-    "title": "New Chrome Vulnerability Let Malicious Extensions Escalate Privileges via Gemini Panel",
-    "source": "The Hacker News",
-    "published": "2026-03-02T17:08:00.000Z",
-    "url": "https://thehackernews.com/2026/03/new-chrome-vulnerability-let-malicious.html",
-    "summary": "Cybersecurity researchers have disclosed details of a now-patched security flaw in Google Chrome that could have permitted attackers to escalate privileges and gain access to local files on the system. The vulnerability, tracked as CVE-2026-0628 (CVSS score: 8.8), has been described as a case of insufficient policy ...",
-    "severity": "HIGH",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "vulnerability",
-      "patch",
-      "google"
-    ]
-  },
-  {
-    "id": "news-9bf8921d",
-    "title": "Google Develops Merkle Tree Certificates to Enable Quantum-Resistant HTTPS in Chrome",
-    "source": "The Hacker News",
-    "published": "2026-03-02T16:52:00.000Z",
-    "url": "https://thehackernews.com/2026/03/google-develops-merkle-tree.html",
-    "summary": "Google has announced a new program in its Chrome browser to ensure that HTTPS certificates are secure against the future risk posed by quantum computers. \"To ensure the scalability and efficiency of the ecosystem, Chrome has no immediate plan to add traditional X.509 certificates containing post-quantum cryptography...",
-    "severity": "MEDIUM",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news",
-      "google"
     ]
   },
   {
