@@ -1,5 +1,43 @@
 [
   {
+    "id": "news-2f94edea",
+    "title": "Microsoft Patches 84 Flaws in March Patch Tuesday, Including Two Public Zero-Days",
+    "source": "The Hacker News",
+    "published": "2026-03-11T09:15:00.000Z",
+    "url": "https://thehackernews.com/2026/03/microsoft-patches-84-flaws-in-march.html",
+    "summary": "Microsoft on Tuesday released patches for a set of 84 new security vulnerabilities affecting various software components, including two that have been listed as publicly known. Of these, eight are rated Critical, and 76 are rated Important in severity. Forty-six of the patched vulnerabilities relate to privilege esc...",
+    "severity": "CRITICAL",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "zero-day",
+      "patch",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-0dd362fa",
+    "title": "UNC6426 Exploits nx npm Supply-Chain Attack to Gain AWS Admin Access in 72 Hours",
+    "source": "The Hacker News",
+    "published": "2026-03-11T07:31:00.000Z",
+    "url": "https://thehackernews.com/2026/03/unc6426-exploits-nx-npm-supply-chain.html",
+    "summary": "A threat actor known as UNC6426 leveraged keys stolen following the supply chain compromise of the nx npm package last year to completely breach a victim's cloud environment within a span of 72 hours. The attack started with the theft of a developer's GitHub token, which the threat actor then used to gain unauthoriz...",
+    "severity": "HIGH",
+    "vendor": "Github",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "supply-chain",
+      "cloud",
+      "github"
+    ]
+  },
+  {
     "id": "news-5e7704ef",
     "title": "Five Malicious Rust Crates and AI Bot Exploit CI/CD Pipelines to Steal Developer Secrets",
     "source": "The Hacker News",
@@ -1836,23 +1874,6 @@
     ]
   },
   {
-    "id": "news-a6d4a399",
-    "title": "⚡ Weekly Recap: SD-WAN 0-Day, Critical CVEs, Telegram Probe, Smart TV Proxy SDK and More",
-    "source": "The Hacker News",
-    "published": "2026-03-02T13:26:00.000Z",
-    "url": "https://thehackernews.com/2026/03/weekly-recap-sd-wan-0-day-critical-cves.html",
-    "summary": "This week is not about one big event. It shows where things are moving. Network systems, cloud setups, AI tools, and common apps are all being pushed in different ways. Small gaps in access control, exposed keys, and normal features are being used as entry points. The pattern becomes clear only when you see everythi...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "cloud"
-    ]
-  },
-  {
     "id": "news-2b00c3e3",
     "title": "Quantum-Resistant Data Diode Secures Sensitive Data on Edge Devices, Critical Systems",
     "source": "Dark Reading",
@@ -1866,23 +1887,6 @@
       "intel-feed",
       "high",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-a3419bcb",
-    "title": "How to Protect Your SaaS from Bot Attacks with SafeLine WAF",
-    "source": "The Hacker News",
-    "published": "2026-03-02T11:55:00.000Z",
-    "url": "https://thehackernews.com/2026/03/how-to-protect-your-saas-from-bot.html",
-    "summary": "Most SaaS teams remember the day their user traffic started growing fast. Few notice the day bots started targeting them. On paper, everything looks great: more sign-ups, more sessions, more API calls. But in reality, something feels off: Sign-ups increase, but users aren’t activating. Server costs rise faster than ...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news",
-      "api"
     ]
   },
   {
