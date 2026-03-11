@@ -1,5 +1,55 @@
 [
   {
+    "id": "news-a343c6d3",
+    "title": "Xygeni GitHub Action Compromised Via Tag Poison",
+    "source": "Dark Reading",
+    "published": "2026-03-11T20:22:39.000Z",
+    "url": "https://www.darkreading.com/application-security/xygeni-github-action-compromised-via-tag-poison",
+    "summary": "Attackers operated an active C2 implant for up to a week and compromised AppSec vendor Xygeni's xygeni/xygeni-action in that time.",
+    "severity": "MEDIUM",
+    "vendor": "Github",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "github"
+    ]
+  },
+  {
+    "id": "news-73107821",
+    "title": "WhatsApp introduces parent-managed accounts for pre-teens",
+    "source": "BleepingComputer",
+    "published": "2026-03-11T20:06:39.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/whatsapp-introduces-parent-managed-accounts-for-pre-teens/",
+    "summary": "WhatsApp has begun rolling out parent-managed accounts for pre-teens, allowing parents and guardians to decide who can contact them and which groups they can join. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-e5066ce0",
+    "title": "SQLi flaw in Elementor Ally plugin impacts 250k+ WordPress sites",
+    "source": "BleepingComputer",
+    "published": "2026-03-11T19:38:14.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/sqli-flaw-in-elementor-ally-plugin-impacts-250k-plus-wordpress-sites/",
+    "summary": "An SQL injection vulnerability in Ally, a WordPress plugin from Elementor for web accessibility and usability with more than 400,000 installations, could be exploited to steal sensitive data without authentication. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "vulnerability"
+    ]
+  },
+  {
     "id": "news-f182df7a",
     "title": "CISA orders feds to patch n8n RCE flaw exploited in attacks",
     "source": "BleepingComputer",
@@ -596,23 +646,6 @@
     ]
   },
   {
-    "id": "news-68c43f9e",
-    "title": "The New Turing Test: How Threats Use Geometry to Prove 'Humanness'",
-    "source": "BleepingComputer",
-    "published": "2026-03-10T14:02:12.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/the-new-turing-test-how-threats-use-geometry-to-prove-humanness/",
-    "summary": "Malware is evolving to evade sandboxes by pretending to be a real human behind the keyboard. The Picus Red Report 2026 shows 80% of top attacker techniques now focus on evasion and persistence, including geometry-based cursor tests and CPU timing checks. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "malware"
-    ]
-  },
-  {
     "id": "news-8bd8f0a3",
     "title": "'BlackSanta' EDR Killer Targets HR Workflows",
     "source": "Dark Reading",
@@ -645,25 +678,6 @@
       "the-hacker-news",
       "cloud",
       "google"
-    ]
-  },
-  {
-    "id": "news-fd759f15",
-    "title": "CISA: Recently patched Ivanti EPM flaw now actively exploited",
-    "source": "BleepingComputer",
-    "published": "2026-03-10T11:36:13.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/cisa-recently-patched-ivanti-epm-flaw-now-actively-exploited/",
-    "summary": "CISA flagged a high-severity Ivanti Endpoint Manager (EPM) vulnerability as actively exploited in attacks and ordered U.S. federal agencies to patch systems within three weeks. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Ivanti",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "vulnerability",
-      "patch",
-      "ivanti"
     ]
   },
   {
@@ -2163,22 +2177,6 @@
     "published": "2026-02-25T14:00:00.000Z",
     "url": "https://www.darkreading.com/threat-intelligence/why-call-this-number-toad-emails-beat-gateways",
     "summary": "Attackers are bypassing email gateways through telephone-oriented attack delivery (TOAD), in which the only email payload is a phone number.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-c0084b2e",
-    "title": "'Richter Scale' Model Measures Magnitude of OT Cyber Incidents",
-    "source": "Dark Reading",
-    "published": "2026-02-25T12:00:00.000Z",
-    "url": "https://www.darkreading.com/ics-ot-security/richter-scale-model-measures-cyber-incidents",
-    "summary": "ICS/OT experts have devised a scoring system for rating the severity and effects of cybersecurity events in operational technology environments.",
     "severity": "MEDIUM",
     "vendor": "Unknown",
     "tags": [
