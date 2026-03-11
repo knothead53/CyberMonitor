@@ -1,5 +1,93 @@
 [
   {
+    "id": "news-8ba2b559",
+    "title": "Middle East Conflict Highlights Cloud Resilience Gaps",
+    "source": "Dark Reading",
+    "published": "2026-03-11T05:00:00.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/middle-east-conflict-highlights-cloud-resilience-gaps",
+    "summary": "Data centers — used by both governments and militaries for operations — are now fair game, not just for cyberattacks, but for kinetic attacks as well.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "cloud"
+    ]
+  },
+  {
+    "id": "news-9226b9f5",
+    "title": "ISC Stormcast For Wednesday, March 11th, 2026 https://isc.sans.edu/podcastdetail/9844, (Wed, Mar 11th)",
+    "source": "SANS ISC",
+    "published": "2026-03-11T02:00:02.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32784",
+    "summary": "No summary provided.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-9512a490",
+    "title": "Microsoft Patches 83 CVEs in March Update",
+    "source": "Dark Reading",
+    "published": "2026-03-11T01:08:31.000Z",
+    "url": "https://www.darkreading.com/application-security/microsoft-patches-83-cves-march-update",
+    "summary": "For a change, there's little in this month's Patch Tuesday that should cause panic, according to security experts.",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "patch",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-a06df295",
+    "title": "Microsoft Patch Tuesday, March 2026 Edition",
+    "source": "Krebs on Security",
+    "published": "2026-03-11T00:32:51.000Z",
+    "url": "https://krebsonsecurity.com/2026/03/microsoft-patch-tuesday-march-2026-edition/",
+    "summary": "Microsoft Corp. today pushed security updates to fix at least 77 vulnerabilities in its Windows operating systems and other software. There are no pressing \"zero-day\" flaws this month (compared to February's five zero-day treat), but as usual some patches may deserve more rapid attention from organizations using Win...",
+    "severity": "CRITICAL",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "krebs-on-security",
+      "zero-day",
+      "patch",
+      "api",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-19a65b04",
+    "title": "New ‘BlackSanta’ EDR killer spotted targeting HR departments",
+    "source": "BleepingComputer",
+    "published": "2026-03-10T22:57:54.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/new-blacksanta-edr-killer-spotted-targeting-hr-departments/",
+    "summary": "For more than a year, a Russian-speaking threat actor targeted human resource (HR) departments with malware that delivers a new EDR killer named BlackSanta. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "malware"
+    ]
+  },
+  {
     "id": "news-24848b4f",
     "title": "New BeatBanker Android malware poses as Starlink app to hijack devices",
     "source": "BleepingComputer",
@@ -472,23 +560,6 @@
       "bleepingcomputer",
       "cloud",
       "google"
-    ]
-  },
-  {
-    "id": "news-4de6aa25",
-    "title": "Dutch govt warns of Signal, WhatsApp account hijacking attacks",
-    "source": "BleepingComputer",
-    "published": "2026-03-09T21:24:49.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/dutch-govt-warns-of-signal-whatsapp-account-hijacking-attacks/",
-    "summary": "Russian state-sponsored hackers have been linked to an ongoing Signal and WhatsApp phishing campaign targeting government officials, military personnel, and journalists to gain access to sensitive messages. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "phishing"
     ]
   },
   {
@@ -1424,22 +1495,6 @@
     ]
   },
   {
-    "id": "news-6f7347be",
-    "title": "ISC Stormcast For Wednesday, March 4th, 2026 https://isc.sans.edu/podcastdetail/9834, (Wed, Mar 4th)",
-    "source": "SANS ISC",
-    "published": "2026-03-04T02:00:03.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32764",
-    "summary": "No summary provided.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
-    ]
-  },
-  {
     "id": "news-45f4c22c",
     "title": "Indian APT 'Sloppy Lemming' Targets Defense, Critical Infrastructure",
     "source": "Dark Reading",
@@ -2120,40 +2175,6 @@
     ]
   },
   {
-    "id": "news-812f49fc",
-    "title": "Attackers Now Need Just 29 Minutes to Own a Network",
-    "source": "Dark Reading",
-    "published": "2026-02-24T21:38:15.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/attackers-now-need-just-29-minutes-to-own-a-network",
-    "summary": "Credential misuse, AI tools, and security blind spots help attackers move through breached networks faster than ever, CrowdStrike finds.",
-    "severity": "HIGH",
-    "vendor": "Crowdstrike",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "dark-reading",
-      "crowdstrike"
-    ]
-  },
-  {
-    "id": "news-306ac940",
-    "title": "Lazarus Group Picks a New Poison: Medusa Ransomware",
-    "source": "Dark Reading",
-    "published": "2026-02-24T21:18:04.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/lazarus-group-new-position-medusa-ransomware",
-    "summary": "The North Korean threat group also leveraged Comebacker backdoor, Blindingcan RAT, and info stealer Infohook in its recent attacks.",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "dark-reading",
-      "ransomware"
-    ]
-  },
-  {
     "id": "news-6e7e3d0a",
     "title": "‘Starkiller’ Phishing Service Proxies Real Login Pages, MFA",
     "source": "Krebs on Security",
@@ -2272,24 +2293,6 @@
       "krebs-on-security",
       "patch",
       "microsoft"
-    ]
-  },
-  {
-    "id": "news-99e7c68a",
-    "title": "Who Benefited from the Aisuru and Kimwolf Botnets?",
-    "source": "Krebs on Security",
-    "published": "2026-01-08T23:23:43.000Z",
-    "url": "https://krebsonsecurity.com/2026/01/who-benefited-from-the-aisuru-and-kimwolf-botnets/",
-    "summary": "Our first story of 2026 revealed how a destructive new botnet called Kimwolf rapidly grew to infect more than two million devices by mass-compromising a vast number of unofficial Android TV streaming boxes. Today, we'll dig through digital clues left behind by the hackers, network operators, and cybercrime services ...",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "krebs-on-security",
-      "botnet",
-      "api"
     ]
   }
 ]
