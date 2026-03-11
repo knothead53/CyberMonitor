@@ -1,5 +1,21 @@
 [
   {
+    "id": "news-5e7704ef",
+    "title": "Five Malicious Rust Crates and AI Bot Exploit CI/CD Pipelines to Steal Developer Secrets",
+    "source": "The Hacker News",
+    "published": "2026-03-11T05:12:00.000Z",
+    "url": "https://thehackernews.com/2026/03/five-malicious-rust-crates-and-ai-bot.html",
+    "summary": "Cybersecurity researchers have discovered five malicious Rust crates that masquerade as time-related utilities to transmit .env file data to the threat actors. The Rust packages, published to crates.io, are listed below - chrono_anchor dnp3times time_calibrator time_calibrators time-sync The crates, per Socket, impe...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news"
+    ]
+  },
+  {
     "id": "news-8ba2b559",
     "title": "Middle East Conflict Highlights Cloud Resilience Gaps",
     "source": "Dark Reading",
@@ -247,6 +263,22 @@
     ]
   },
   {
+    "id": "news-42a491fe",
+    "title": "FortiGate Devices Exploited to Breach Networks and Steal Service Account Credentials",
+    "source": "The Hacker News",
+    "published": "2026-03-10T16:21:00.000Z",
+    "url": "https://thehackernews.com/2026/03/fortigate-devices-exploited-to-breach.html",
+    "summary": "Cybersecurity researchers are calling attention to a new campaign where threat actors are abusing FortiGate Next-Generation Firewall (NGFW) appliances as entry points to breach victim networks. The activity involves the exploitation of recently disclosed security vulnerabilities or weak credentials to extract config...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news"
+    ]
+  },
+  {
     "id": "news-c42f781a",
     "title": "How to Stop AI Data Leaks: A Webinar Guide to Auditing Modern Agentic Workflows",
     "source": "The Hacker News",
@@ -261,22 +293,6 @@
       "medium",
       "the-hacker-news",
       "intel"
-    ]
-  },
-  {
-    "id": "news-42a491fe",
-    "title": "FortiGate Devices Exploited to Breach Networks and Steal Service Account Credentials",
-    "source": "The Hacker News",
-    "published": "2026-03-10T16:21:00.000Z",
-    "url": "https://thehackernews.com/2026/03/fortigate-devices-exploited-to-breach.html",
-    "summary": "Cybersecurity researchers are calling attention to a new campaign where threat actors are abusing FortiGate Next-Generation Firewall (NGFW) appliances as entry points to breach victim networks. The activity involves the exploitation of recently disclosed security vulnerabilities or weak credentials to extract config...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news"
     ]
   },
   {
@@ -1867,25 +1883,6 @@
       "medium",
       "the-hacker-news",
       "api"
-    ]
-  },
-  {
-    "id": "news-43879ee5",
-    "title": "APT28 Tied to CVE-2026-21513 MSHTML 0-Day Exploited Before Feb 2026 Patch Tuesday",
-    "source": "The Hacker News",
-    "published": "2026-03-02T10:36:00.000Z",
-    "url": "https://thehackernews.com/2026/03/apt28-tied-to-cve-2026-21513-mshtml-0.html",
-    "summary": "A recently disclosed security flaw patched by Microsoft may have been exploited by the Russia-linked state-sponsored threat actor known as APT28, according to new findings from Akamai. The vulnerability in question is CVE-2026-21513 (CVSS score: 8.8), a high-severity security feature bypass affecting the MSHTML Fram...",
-    "severity": "HIGH",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "vulnerability",
-      "patch",
-      "microsoft"
     ]
   },
   {
