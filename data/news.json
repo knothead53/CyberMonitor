@@ -1,5 +1,54 @@
 [
   {
+    "id": "news-38a98cb3",
+    "title": "ISC Stormcast For Thursday, March 12th, 2026 https://isc.sans.edu/podcastdetail/9846, (Thu, Mar 12th)",
+    "source": "SANS ISC",
+    "published": "2026-03-12T02:00:02.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32790",
+    "summary": "No summary provided.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-7e3561d5",
+    "title": "When your IoT Device Logs in as Admin, It?s too Late! [Guest Diary], (Wed, Mar 11th)",
+    "source": "SANS ISC",
+    "published": "2026-03-12T01:19:35.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32788",
+    "summary": "[This is a Guest Diary by Adam Thorman, an ISC intern as part of the SANS.edu BACS program]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-225fbc32",
+    "title": "INC Ransomware Group Holds Healthcare Hostage in Oceania",
+    "source": "Dark Reading",
+    "published": "2026-03-11T22:00:00.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/inc-ransomware-healthcare-oceania",
+    "summary": "Government agencies, emergency clinics, and others in Australia, New Zealand, and Tonga have had serious run-ins with the prolific ransomware outfit.",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "dark-reading",
+      "ransomware"
+    ]
+  },
+  {
     "id": "news-a343c6d3",
     "title": "Xygeni GitHub Action Compromised Via Tag Poison",
     "source": "Dark Reading",
@@ -1415,22 +1464,6 @@
     ]
   },
   {
-    "id": "news-d9ce9dbe",
-    "title": "ISC Stormcast For Thursday, March 5th, 2026 https://isc.sans.edu/podcastdetail/9836, (Thu, Mar 5th)",
-    "source": "SANS ISC",
-    "published": "2026-03-05T11:50:11.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32770",
-    "summary": "No summary provided.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
-    ]
-  },
-  {
     "id": "news-724121f0",
     "title": "Where Multi-Factor Authentication Stops and Credential Abuse Starts",
     "source": "The Hacker News",
@@ -1495,22 +1528,6 @@
       "intel-feed",
       "high",
       "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-2054a7bc",
-    "title": "Differentiating Between a Targeted Intrusion and an Automated Opportunistic Scanning [Guest Diary], (Wed, Mar 4th)",
-    "source": "SANS ISC",
-    "published": "2026-03-05T02:19:26.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32768",
-    "summary": "[This is a Guest Diary by Joseph Gruen, an ISC intern as part of the SANS.edu BACS program]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
     ]
   },
   {
@@ -2161,22 +2178,6 @@
     "published": "2026-02-25T16:42:00.000Z",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/malicious-nextjs-repos-developers-fake-job-interviews",
     "summary": "Linked to North Korean fake job-recruitment campaigns, the poisoned repositories are aimed at establishing persistent access to infected machines.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-688898e6",
-    "title": "Why 'Call This Number' TOAD Emails Beat Gateways",
-    "source": "Dark Reading",
-    "published": "2026-02-25T14:00:00.000Z",
-    "url": "https://www.darkreading.com/threat-intelligence/why-call-this-number-toad-emails-beat-gateways",
-    "summary": "Attackers are bypassing email gateways through telephone-oriented attack delivery (TOAD), in which the only email payload is a phone number.",
     "severity": "MEDIUM",
     "vendor": "Unknown",
     "tags": [
