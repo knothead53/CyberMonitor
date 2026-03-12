@@ -1,5 +1,91 @@
 [
   {
+    "id": "news-df6e549e",
+    "title": "Canadian retail giant Loblaw notifies customers of data breach",
+    "source": "BleepingComputer",
+    "published": "2026-03-12T21:32:21.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/canadian-retail-giant-loblaw-notifies-customers-of-data-breach/",
+    "summary": "Still, out of an abundance of caution, Loblaw says it has automatically logged out all customers from their accounts. Account holders who need to access the company's digital services will have to log in again. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "data-breach"
+    ]
+  },
+  {
+    "id": "news-ee4d832a",
+    "title": "Iran MOIS Colludes With Criminals to Boost Cyberattacks",
+    "source": "Dark Reading",
+    "published": "2026-03-12T21:11:20.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/iran-mois-criminals-cyberattacks",
+    "summary": "Iranian APTs have long pretended to be cybercriminal groups. Now they're working with actual cybercriminal groups.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-0c3b4153",
+    "title": "England Hockey investigating ransomware data breach",
+    "source": "BleepingComputer",
+    "published": "2026-03-12T20:37:16.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/england-hockey-investigating-ransomware-data-breach/",
+    "summary": "England Hockey, the governing body for field hockey in England, is investigating a potential data breach after the AiLock ransomware gang listed it as a victim on its data leak site. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "ransomware",
+      "data-breach"
+    ]
+  },
+  {
+    "id": "news-2e8d56e2",
+    "title": "Commercial Spyware Opponents Fear US Policy Shifting",
+    "source": "Dark Reading",
+    "published": "2026-03-12T20:35:25.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/commercial-spyware-opponents-fear-us-policy-shifting",
+    "summary": "Rescinded sanctions and reactivated contracts have created confusion about the Trump administration's spyware policy and where it draws the line.",
+    "severity": "MEDIUM",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "aws"
+    ]
+  },
+  {
+    "id": "news-d8d1925d",
+    "title": "AI-generated Slopoly malware used in Interlock ransomware attack",
+    "source": "BleepingComputer",
+    "published": "2026-03-12T20:01:27.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/ai-generated-slopoly-malware-used-in-interlock-ransomware-attack/",
+    "summary": "A new malware strain dubbed Slopoly, likely created using generative AI tools, allowed a threat actor to remain on a compromised server for more than a week and steal data in an Interlock ransomware attack. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "ransomware",
+      "malware"
+    ]
+  },
+  {
     "id": "news-e014c213",
     "title": "Rust-Based VENON Malware Targets 33 Brazilian Banks with Credential-Stealing Overlays",
     "source": "The Hacker News",
@@ -495,23 +581,6 @@
     ]
   },
   {
-    "id": "news-8a658c1f",
-    "title": "Meta adds new WhatsApp, Facebook, and Messenger anti-scam tools",
-    "source": "BleepingComputer",
-    "published": "2026-03-11T13:29:29.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/meta-adds-new-whatsapp-facebook-and-messenger-anti-scam-tools/",
-    "summary": "Meta is introducing new anti-scam protections across its platforms, deploying systems and user-facing warnings to protect users against scammers. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Meta",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "meta"
-    ]
-  },
-  {
     "id": "news-fbd587f1",
     "title": "Meta Disables 150K Accounts Linked to Southeast Asia Scam Centers in Global Crackdown",
     "source": "The Hacker News",
@@ -704,41 +773,6 @@
       "patch",
       "api",
       "microsoft"
-    ]
-  },
-  {
-    "id": "news-19a65b04",
-    "title": "New ‘BlackSanta’ EDR killer spotted targeting HR departments",
-    "source": "BleepingComputer",
-    "published": "2026-03-10T22:57:54.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/new-blacksanta-edr-killer-spotted-targeting-hr-departments/",
-    "summary": "For more than a year, a Russian-speaking threat actor targeted human resource (HR) departments with malware that delivers a new EDR killer named BlackSanta. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "malware"
-    ]
-  },
-  {
-    "id": "news-24848b4f",
-    "title": "New BeatBanker Android malware poses as Starlink app to hijack devices",
-    "source": "BleepingComputer",
-    "published": "2026-03-10T21:27:59.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/new-beatbanker-android-malware-poses-as-starlink-app-to-hijack-devices/",
-    "summary": "A new Android malware named BeatBanker can hijack devices and tricks users into installing it by posing as a Starlink app on websites masquerading as the official Google Play Store. [...]",
-    "severity": "HIGH",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "malware",
-      "google"
     ]
   },
   {
@@ -2149,40 +2183,6 @@
       "dark-reading",
       "supply-chain",
       "aws"
-    ]
-  },
-  {
-    "id": "news-80f8daa7",
-    "title": "RAMP Forum Seizure Fractures Ransomware Ecosystem",
-    "source": "Dark Reading",
-    "published": "2026-02-25T21:14:21.000Z",
-    "url": "https://www.darkreading.com/threat-intelligence/ramp-forum-seizure-fractures-ransomware-ecosystem",
-    "summary": "Researchers suggest defenders monitor how these malicious groups re-form and leverage the useful threat intel to guide their next moves.",
-    "severity": "CRITICAL",
-    "vendor": "Intel",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "dark-reading",
-      "ransomware",
-      "intel"
-    ]
-  },
-  {
-    "id": "news-f4fa40c7",
-    "title": "PCI Council Says Threats to Payments Systems Are Speeding Up",
-    "source": "Dark Reading",
-    "published": "2026-02-25T19:15:33.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/pci-council-threats-payments-systems-speeding-up",
-    "summary": "The PCI Security Standards Council experienced a record year in many regards, but its first annual report shows it needs to work even faster to stay ahead of attackers.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
     ]
   },
   {
