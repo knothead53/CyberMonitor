@@ -1,5 +1,22 @@
 [
   {
+    "id": "news-e421aa45",
+    "title": "Six Android Malware Families Target Pix Payments, Banking Apps, and Crypto Wallets",
+    "source": "The Hacker News",
+    "published": "2026-03-12T07:56:00.000Z",
+    "url": "https://thehackernews.com/2026/03/six-android-malware-families-target-pix.html",
+    "summary": "Cybersecurity researchers have discovered half-a-dozen new Android malware families that come with capabilities to steal data from compromised devices and conduct financial fraud. The Android malware range from traditional banking trojans like PixRevolution, TaxiSpy RAT, BeatBanker, Mirax, and Oblivion RAT to full-f...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware"
+    ]
+  },
+  {
     "id": "news-1ccd77f5",
     "title": "CISA Flags Actively Exploited n8n RCE Bug as 24,700 Instances Remain Exposed",
     "source": "The Hacker News",
@@ -1862,24 +1879,6 @@
       "intel-feed",
       "high",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-ccb39350",
-    "title": "AI Agents: The Next Wave Identity Dark Matter - Powerful, Invisible, and Unmanaged",
-    "source": "The Hacker News",
-    "published": "2026-03-03T11:30:00.000Z",
-    "url": "https://thehackernews.com/2026/03/ai-agents-next-wave-identity-dark.html",
-    "summary": "The Rise of MCPs in the Enterprise The Model Context Protocol (MCP) is quickly becoming a practical way to push LLMs from “chat” into real work. By providing structured access to applications, APIs, and data, MCP enables prompt-driven AI agents that can retrieve information, take action, and automate end-to-end busi...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news",
-      "identity",
-      "api"
     ]
   },
   {
