@@ -1,5 +1,107 @@
 [
   {
+    "id": "news-fa7db7ae",
+    "title": "Google paid $17.1 million for vulnerability reports in 2025",
+    "source": "BleepingComputer",
+    "published": "2026-03-12T15:22:35.000Z",
+    "url": "https://www.bleepingcomputer.com/news/google/google-paid-171-million-for-vulnerability-reports-in-2025/",
+    "summary": "Google paid over $17 million to 747 security researchers who reported security bugs through its Vulnerability Reward Program (VRP) in 2025. [...]",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "vulnerability",
+      "google"
+    ]
+  },
+  {
+    "id": "news-2d1fa1dd",
+    "title": "Telus Digital confirms breach after hacker claims 1 petabyte data theft",
+    "source": "BleepingComputer",
+    "published": "2026-03-12T14:40:14.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/telus-digital-confirms-breach-after-hacker-claims-1-petabyte-data-theft/",
+    "summary": "Canadian business process outsourcing giant Telus Digital has confirmed it suffered a security incident after threat actors claimed to have stolen nearly 1 petabyte of data from the company in a multi-month breach. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-04dfb1b5",
+    "title": "Going the Extra Mile: Travel Rewards Turn into Underground Currency.",
+    "source": "BleepingComputer",
+    "published": "2026-03-12T14:05:15.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/going-the-extra-mile-travel-rewards-turn-into-underground-currency/",
+    "summary": "Stolen airline miles are converted into flights and hotel stays, then resold as discounted travel. Flare shows how cybercriminals and underground markets treat loyalty accounts like tradable currency. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-4db37f55",
+    "title": "Apple patches older iPhones and iPads against Coruna exploits",
+    "source": "BleepingComputer",
+    "published": "2026-03-12T13:43:46.000Z",
+    "url": "https://www.bleepingcomputer.com/news/apple/apple-patches-older-iphones-and-ipads-against-coruna-exploits/",
+    "summary": "​Apple has released security updates to patch older iPhones and iPads against a set of vulnerabilities targeted in cyberespionage and crypto-theft attacks using the Coruna exploit kit. [...]",
+    "severity": "HIGH",
+    "vendor": "Apple",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "patch",
+      "apple"
+    ]
+  },
+  {
+    "id": "news-624d5615",
+    "title": "How to Scale Phishing Detection in Your SOC: 3 Steps for CISOs",
+    "source": "The Hacker News",
+    "published": "2026-03-12T13:30:00.000Z",
+    "url": "https://thehackernews.com/2026/03/how-to-scale-phishing-detection-in-your.html",
+    "summary": "Phishing has quietly turned into one of the hardest enterprise threats to expose early. Instead of crude lures and obvious payloads, modern campaigns rely on trusted infrastructure, legitimate-looking authentication flows, and encrypted traffic that conceals malicious behavior from traditional detection layers. For ...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "phishing"
+    ]
+  },
+  {
+    "id": "news-f0011460",
+    "title": "ThreatsDay Bulletin: OAuth Trap, EDR Killer, Signal Phishing, Zombie ZIP, AI Platform Hack & More",
+    "source": "The Hacker News",
+    "published": "2026-03-12T13:14:00.000Z",
+    "url": "https://thehackernews.com/2026/03/threatsday-bulletin-oauth-trap-edr.html",
+    "summary": "Another Thursday, another pile of weird security stuff that somehow happened in just seven days. Some of it is clever. Some of it is lazy. A few bits fall into that uncomfortable category of “yeah… this is probably going to show up in real incidents sooner than we’d like.” The pattern this week feels familiar in a s...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "phishing"
+    ]
+  },
+  {
     "id": "news-6da1fd22",
     "title": "US charges another ransomware negotiator linked to BlackCat attacks",
     "source": "BleepingComputer",
@@ -623,42 +725,6 @@
     ]
   },
   {
-    "id": "news-6791613f",
-    "title": "Microsoft March 2026 Patch Tuesday fixes 2 zero-days, 79 flaws",
-    "source": "BleepingComputer",
-    "published": "2026-03-10T17:49:51.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-march-2026-patch-tuesday-fixes-2-zero-days-79-flaws/",
-    "summary": "Today is Microsoft's March 2026 Patch Tuesday with security updates for 79 flaws, including 2 publicly disclosed zero-day vulnerabilities. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "zero-day",
-      "patch",
-      "microsoft"
-    ]
-  },
-  {
-    "id": "news-9348e992",
-    "title": "Windows 11 KB5079473 & KB5078883 cumulative updates released",
-    "source": "BleepingComputer",
-    "published": "2026-03-10T17:41:41.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5079473-and-kb5078883-cumulative-updates-released/",
-    "summary": "Microsoft has released Windows 11 KB5079473 and KB5078883 cumulative updates for versions 25H2/24H2 and 23H2 to fix security vulnerabilities, bugs, and add new features. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "microsoft"
-    ]
-  },
-  {
     "id": "news-1fd85557",
     "title": "Microsoft Patch Tuesday March 2026, (Tue, Mar 10th)",
     "source": "SANS ISC",
@@ -674,23 +740,6 @@
       "sans-isc",
       "patch",
       "microsoft"
-    ]
-  },
-  {
-    "id": "news-50ec171f",
-    "title": "HPE warns of critical AOS-CX flaw allowing admin password resets",
-    "source": "BleepingComputer",
-    "published": "2026-03-10T17:30:35.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/hpe-warns-of-critical-aos-cx-flaw-allowing-admin-password-resets/",
-    "summary": "Hewlett Packard Enterprise (HPE) has patched multiple security vulnerabilities in the Aruba Networking AOS-CX operating system, including several authentication and code execution issues. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "patch"
     ]
   },
   {
@@ -742,24 +791,6 @@
       "the-hacker-news",
       "malware",
       "botnet"
-    ]
-  },
-  {
-    "id": "news-b72d49b1",
-    "title": "Microsoft brings phishing-resistant Windows sign-ins via Entra passkeys",
-    "source": "BleepingComputer",
-    "published": "2026-03-10T15:27:58.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-brings-phishing-resistant-sign-in-to-windows/",
-    "summary": "Microsoft is rolling out passkey support for Microsoft Entra on Windows devices, adding phishing-resistant passwordless authentication via Windows Hello. [...]",
-    "severity": "HIGH",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "phishing",
-      "microsoft"
     ]
   },
   {
@@ -1749,24 +1780,6 @@
     ]
   },
   {
-    "id": "news-a16702aa",
-    "title": "CISA Adds Actively Exploited VMware Aria Operations Flaw CVE-2026-22719 to KEV Catalog",
-    "source": "The Hacker News",
-    "published": "2026-03-04T04:35:00.000Z",
-    "url": "https://thehackernews.com/2026/03/cisa-adds-actively-exploited-vmware.html",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a recently disclosed security flaw impacting Broadcom VMware Aria Operations to its Known Exploited Vulnerabilities (KEV) catalog, citing active exploitation in the wild. The high-severity vulnerability, CVE-2026-22719 (CVSS score: 8.1...",
-    "severity": "CRITICAL",
-    "vendor": "Vmware",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "the-hacker-news",
-      "vulnerability",
-      "vmware"
-    ]
-  },
-  {
     "id": "news-45f4c22c",
     "title": "Indian APT 'Sloppy Lemming' Targets Defense, Critical Infrastructure",
     "source": "Dark Reading",
@@ -1830,23 +1843,6 @@
       "intel-feed",
       "medium",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-b232a13d",
-    "title": "Fake Tech Support Spam Deploys Customized Havoc C2 Across Organizations",
-    "source": "The Hacker News",
-    "published": "2026-03-03T17:15:00.000Z",
-    "url": "https://thehackernews.com/2026/03/fake-tech-support-spam-deploys.html",
-    "summary": "Threat hunters have called attention to a new campaign as part of which bad actors masqueraded as fake IT support to deliver the Havoc command-and-control (C2) framework as a precursor to data exfiltration or ransomware attack. The intrusions, identified by Huntress last month across five partner organizations, invo...",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "the-hacker-news",
-      "ransomware"
     ]
   },
   {
