@@ -1,5 +1,22 @@
 [
   {
+    "id": "news-1ccd77f5",
+    "title": "CISA Flags Actively Exploited n8n RCE Bug as 24,700 Instances Remain Exposed",
+    "source": "The Hacker News",
+    "published": "2026-03-12T05:18:00.000Z",
+    "url": "https://thehackernews.com/2026/03/cisa-flags-actively-exploited-n8n-rce.html",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a critical security flaw impacting n8n to its Known Exploited Vulnerabilities (KEV) catalog, based on evidence of active exploitation. The vulnerability, tracked as CVE-2025-68613 (CVSS score: 9.9), concerns a case of expression inje...",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "vulnerability"
+    ]
+  },
+  {
     "id": "news-38a98cb3",
     "title": "ISC Stormcast For Thursday, March 12th, 2026 https://isc.sans.edu/podcastdetail/9846, (Thu, Mar 12th)",
     "source": "SANS ISC",
@@ -1863,23 +1880,6 @@
       "the-hacker-news",
       "identity",
       "api"
-    ]
-  },
-  {
-    "id": "news-4b8c2e61",
-    "title": "Starkiller Phishing Suite Uses AitM Reverse Proxy to Bypass Multi-Factor Authentication",
-    "source": "The Hacker News",
-    "published": "2026-03-03T11:10:00.000Z",
-    "url": "https://thehackernews.com/2026/03/starkiller-phishing-suite-uses-aitm.html",
-    "summary": "Cybersecurity researchers have disclosed details of a new phishing suite called Starkiller that proxies legitimate login pages to bypass multi-factor authentication (MFA) protections. It's advertised as a cybercrime platform by a threat group calling itself Jinkusu, granting customers access to a dashboard that lets...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "phishing"
     ]
   },
   {
