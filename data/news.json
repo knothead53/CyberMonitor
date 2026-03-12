@@ -1,5 +1,92 @@
 [
   {
+    "id": "news-e014c213",
+    "title": "Rust-Based VENON Malware Targets 33 Brazilian Banks with Credential-Stealing Overlays",
+    "source": "The Hacker News",
+    "published": "2026-03-12T17:31:00.000Z",
+    "url": "https://thehackernews.com/2026/03/rust-based-venon-malware-targets-33.html",
+    "summary": "Cybersecurity researchers have disclosed details of a new banking malware targeting Brazilian users that's written in Rust, marking a significant departure from other known Delphi-based malware families associated with the Latin American cybercrime ecosystem. The malware, which is designed to infect Windows systems ...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-f0992c8a",
+    "title": "Hive0163 Uses AI-Assisted Slopoly Malware for Persistent Access in Ransomware Attacks",
+    "source": "The Hacker News",
+    "published": "2026-03-12T17:02:00.000Z",
+    "url": "https://thehackernews.com/2026/03/hive0163-uses-ai-assisted-slopoly.html",
+    "summary": "Cybersecurity researchers have disclosed details of a suspected artificial intelligence (AI)-generated malware codenamed Slopoly put to use by a financially motivated threat actor named Hive0163. \"Although still relatively unspectacular, AI-generated malware such as Slopoly shows how easily threat actors can weaponi...",
+    "severity": "CRITICAL",
+    "vendor": "Intel",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "ransomware",
+      "malware",
+      "intel"
+    ]
+  },
+  {
+    "id": "news-3ac5e657",
+    "title": "Veeam warns of critical flaws exposing backup servers to RCE attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-12T16:59:20.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/veeam-warns-of-critical-flaws-exposing-backup-servers-to-rce-attacks/",
+    "summary": "Data protection company Veeam Software has patched multiple flaws in its Backup & Replication solution, including four critical remote code execution (RCE) vulnerabilities. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "patch",
+      "aws"
+    ]
+  },
+  {
+    "id": "news-f9bfc4e9",
+    "title": "Why Stryker's Outage Is a Disaster Recovery Wake-Up Call",
+    "source": "Dark Reading",
+    "published": "2026-03-12T16:30:14.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/stryker-outage-disaster-recovery-wake-up-call",
+    "summary": "The Iranian cyberattack on Stryker is the kind of stress test that business continuity and disaster recovery programs often do not plan for.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-43f917c2",
+    "title": "US disrupts SocksEscort proxy network powered by Linux malware",
+    "source": "BleepingComputer",
+    "published": "2026-03-12T16:19:56.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/us-disrupts-socksescort-proxy-network-powered-by-linux-malware/",
+    "summary": "Law enforcement agencies in the U.S. and Europe along with private partners have disrupted the SocksEscort cybercrime proxy network that used only edge devices compromised via the AVRecon malware for Linux. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "malware"
+    ]
+  },
+  {
     "id": "news-fa7db7ae",
     "title": "Google paid $17.1 million for vulnerability reports in 2025",
     "source": "BleepingComputer",
@@ -672,23 +759,6 @@
     ]
   },
   {
-    "id": "news-d98dc2b8",
-    "title": "New 'Zombie ZIP' technique lets malware slip past security tools",
-    "source": "BleepingComputer",
-    "published": "2026-03-10T20:05:39.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/new-zombie-zip-technique-lets-malware-slip-past-security-tools/",
-    "summary": "A new technique dubbed \"Zombie ZIP\" helps conceal payloads in compressed files specially created to avoid detection from security solutions such as antivirus and endpoint detection and response (EDR) products. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "malware"
-    ]
-  },
-  {
     "id": "news-3cb9e305",
     "title": "Russian Threat Actor Sednit Resurfaces With Sophisticated Toolkit",
     "source": "Dark Reading",
@@ -703,25 +773,6 @@
       "high",
       "dark-reading",
       "malware"
-    ]
-  },
-  {
-    "id": "news-83c599c8",
-    "title": "Microsoft releases Windows 10 KB5078885 extended security update",
-    "source": "BleepingComputer",
-    "published": "2026-03-10T18:23:35.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5078885-extended-security-update/",
-    "summary": "Microsoft has released the Windows 10 KB5078885 extended security update to fix the March 2026 Patch Tuesday vulnerabilities, including 2 zero-days and an issue that prevent some devices from shutting down. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "zero-day",
-      "patch",
-      "microsoft"
     ]
   },
   {
@@ -1747,39 +1798,6 @@
     ]
   },
   {
-    "id": "news-2a65d52f",
-    "title": "Fake Laravel Packages on Packagist Deploy RAT on Windows, macOS, and Linux",
-    "source": "The Hacker News",
-    "published": "2026-03-04T09:37:00.000Z",
-    "url": "https://thehackernews.com/2026/03/fake-laravel-packages-on-packagist.html",
-    "summary": "Cybersecurity researchers have flagged malicious Packagist PHP packages masquerading as Laravel utilities that act as a conduit for a cross-platform remote access trojan (RAT) that's functional on Windows, macOS, and Linux systems. The names of the packages are listed below - nhattuanbl/lara-helper (37 Downloads) nh...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-d103aa5b",
-    "title": "APT41-Linked Silver Dragon Targets Governments Using Cobalt Strike and Google Drive C2",
-    "source": "The Hacker News",
-    "published": "2026-03-04T08:14:00.000Z",
-    "url": "https://thehackernews.com/2026/03/apt41-linked-silver-dragon-targets.html",
-    "summary": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) group dubbed Silver Dragon that has been linked to cyber attacks targeting entities in Europe and Southeast Asia since at least mid-2024. \"Silver Dragon gains its initial access by exploiting public-facing internet servers and by...",
-    "severity": "HIGH",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "google"
-    ]
-  },
-  {
     "id": "news-45f4c22c",
     "title": "Indian APT 'Sloppy Lemming' Targets Defense, Critical Infrastructure",
     "source": "Dark Reading",
@@ -2158,22 +2176,6 @@
     "published": "2026-02-25T19:15:33.000Z",
     "url": "https://www.darkreading.com/cyber-risk/pci-council-threats-payments-systems-speeding-up",
     "summary": "The PCI Security Standards Council experienced a record year in many regards, but its first annual report shows it needs to work even faster to stay ahead of attackers.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-1d471863",
-    "title": "Malicious Next.js Repos Target Developers Via Fake Job Interviews",
-    "source": "Dark Reading",
-    "published": "2026-02-25T16:42:00.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/malicious-nextjs-repos-developers-fake-job-interviews",
-    "summary": "Linked to North Korean fake job-recruitment campaigns, the poisoned repositories are aimed at establishing persistent access to infected machines.",
     "severity": "MEDIUM",
     "vendor": "Unknown",
     "tags": [

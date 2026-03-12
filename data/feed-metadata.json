@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-12T16:12:31.358Z",
+  "generatedAt": "2026-03-12T19:09:48.247Z",
   "feeds": {
     "kev": {
       "updatedAt": "2026-03-11T00:00:00.000Z",
@@ -11,7 +11,7 @@
       "status": "ok"
     },
     "news": {
-      "updatedAt": "2026-03-12T15:22:35.000Z",
+      "updatedAt": "2026-03-12T17:31:00.000Z",
       "itemCount": 135,
       "mode": "generated",
       "sources": [
@@ -24,7 +24,7 @@
       "status": "ok"
     },
     "outages": {
-      "updatedAt": "2026-03-12T16:09:52.000Z",
+      "updatedAt": "2026-03-12T18:53:33.000Z",
       "itemCount": 160,
       "mode": "generated",
       "sources": [
