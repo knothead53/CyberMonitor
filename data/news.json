@@ -1,5 +1,55 @@
 [
   {
+    "id": "news-6fdc38e0",
+    "title": "Police sinkholes 45,000 IP addresses in cybercrime crackdown",
+    "source": "BleepingComputer",
+    "published": "2026-03-13T13:28:33.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/police-sinkholes-45-000-ip-addresses-in-cybercrime-crackdown/",
+    "summary": "An international law enforcement action codenamed \"Operation Synergia III\" has sinkholed tens of thousands of IP addresses and seized servers linked to cybercrime operations worldwide. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-29545fba",
+    "title": "Fake enterprise VPN downloads used to steal company credentials",
+    "source": "BleepingComputer",
+    "published": "2026-03-13T13:23:28.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/fake-enterprise-vpn-downloads-used-to-steal-company-credentials/",
+    "summary": "A threat actor tracked as Storm-2561 is distributing fake enterprise VPN clients from Ivanti, Cisco, and Fortinet to steal VPN credentials from unsuspecting users. [...]",
+    "severity": "HIGH",
+    "vendor": "Cisco",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "cisco"
+    ]
+  },
+  {
+    "id": "news-d44928c1",
+    "title": "Real-Time Banking Trojan Strikes Brazil's Pix Users",
+    "source": "Dark Reading",
+    "published": "2026-03-13T13:00:00.000Z",
+    "url": "https://www.darkreading.com/application-security/real-time-banking-trojan-strikes-brazils-pix-users",
+    "summary": "The latest banking Trojan campaign to hit Brazil combines classic malware with a real-time human operator, waiting for the perfect moment to strike.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "malware"
+    ]
+  },
+  {
     "id": "news-a9d8c7a0",
     "title": "Google Fixes Two Chrome Zero-Days Exploited in the Wild Affecting Skia and V8",
     "source": "The Hacker News",
@@ -599,41 +649,6 @@
       "intel-feed",
       "medium",
       "bleepingcomputer"
-    ]
-  },
-  {
-    "id": "news-e5066ce0",
-    "title": "SQLi flaw in Elementor Ally plugin impacts 250k+ WordPress sites",
-    "source": "BleepingComputer",
-    "published": "2026-03-11T19:38:14.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/sqli-flaw-in-elementor-ally-plugin-impacts-250k-plus-wordpress-sites/",
-    "summary": "An SQL injection vulnerability in Ally, a WordPress plugin from Elementor for web accessibility and usability with more than 400,000 installations, could be exploited to steal sensitive data without authentication. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "vulnerability"
-    ]
-  },
-  {
-    "id": "news-f182df7a",
-    "title": "CISA orders feds to patch n8n RCE flaw exploited in attacks",
-    "source": "BleepingComputer",
-    "published": "2026-03-11T18:21:15.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-n8n-rce-flaw-exploited-in-attacks/",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) ordered government agencies on Wednesday to patch their systems against an actively exploited n8n vulnerability. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "vulnerability",
-      "patch"
     ]
   },
   {
@@ -2177,22 +2192,6 @@
       "zero-day",
       "vulnerability",
       "cisco"
-    ]
-  },
-  {
-    "id": "news-6576e714",
-    "title": "Chinese Police Use ChatGPT to Smear Japan PM Takaichi",
-    "source": "Dark Reading",
-    "published": "2026-02-26T00:00:00.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-police-chatgpt-smear-japan-pm-takaichi",
-    "summary": "A Chinese keyboard warrior inadvertently leaked information about politically motivated influence operations through a ChatGPT account.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
     ]
   },
   {

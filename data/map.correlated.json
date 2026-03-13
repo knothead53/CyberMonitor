@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-13T09:54:59.693Z",
+  "generatedAt": "2026-03-13T13:33:05.549Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-13T09:17:00.000Z",
-      "summary": "98 correlated news signals from 5 sources; vendors: Google, Aws."
+      "timestamp": "2026-03-13T13:28:33.000Z",
+      "summary": "99 correlated news signals from 5 sources; vendors: Unknown, Cisco."
     },
     {
       "id": "corr-cloud-global",
@@ -20,7 +20,7 @@
       "type": "cloud_region",
       "severity": "CRITICAL",
       "timestamp": "2026-03-13T08:16:55.000Z",
-      "summary": "36 correlated news signals from 4 sources; vendors: Unknown, Vmware."
+      "summary": "35 correlated news signals from 4 sources; vendors: Unknown, Vmware."
     },
     {
       "id": "corr-cloud-europe",
@@ -51,8 +51,8 @@
       "lon": -98.5795,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-06T08:22:00.000Z",
-      "summary": "70 KEV and 4 high-severity news signals across 3 sources."
+      "timestamp": "2026-03-13T13:23:28.000Z",
+      "summary": "70 KEV and 5 high-severity news signals across 4 sources."
     },
     {
       "id": "corr-incident-google",
@@ -91,8 +91,8 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-13T08:16:55.000Z",
-      "summary": "0 KEV and 60 high-severity news signals across 5 sources."
+      "timestamp": "2026-03-13T13:00:00.000Z",
+      "summary": "0 KEV and 59 high-severity news signals across 5 sources."
     },
     {
       "id": "corr-incident-oracle",
@@ -154,7 +154,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-09T19:17:50.000Z",
-      "summary": "45 correlated outage events from 1 status feeds."
+      "summary": "46 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-discord",
@@ -184,7 +184,7 @@
       "type": "outage",
       "severity": "HIGH",
       "timestamp": "2026-03-13T09:06:49.000Z",
-      "summary": "2 correlated outage events from 1 status feeds."
+      "summary": "1 correlated outage events from 1 status feeds."
     }
   ]
 }
