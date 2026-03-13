@@ -1,5 +1,75 @@
 [
   {
+    "id": "news-a9d8c7a0",
+    "title": "Google Fixes Two Chrome Zero-Days Exploited in the Wild Affecting Skia and V8",
+    "source": "The Hacker News",
+    "published": "2026-03-13T09:17:00.000Z",
+    "url": "https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html",
+    "summary": "Google on Thursday released security updates for its Chrome web browser to address two high-severity vulnerabilities that it said have been exploited in the wild. The list of vulnerabilities is as follows - CVE-2026-3909 (CVSS score: 8.8) - An out-of-bounds write vulnerability in the Skia 2D graphics library that al...",
+    "severity": "CRITICAL",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "zero-day",
+      "vulnerability",
+      "google"
+    ]
+  },
+  {
+    "id": "news-c9674302",
+    "title": "Nine CrackArmor Flaws in Linux AppArmor Enable Root Escalation, Bypass Container Isolation",
+    "source": "The Hacker News",
+    "published": "2026-03-13T08:18:00.000Z",
+    "url": "https://thehackernews.com/2026/03/nine-crackarmor-flaws-in-linux-apparmor.html",
+    "summary": "Cybersecurity researchers have disclosed multiple security vulnerabilities within the Linux kernel's AppArmor module that could be exploited by unprivileged users to circumvent kernel protections, escalate to root, and undermine container isolation guarantees. The nine confused deputy vulnerabilities have been colle...",
+    "severity": "HIGH",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "aws"
+    ]
+  },
+  {
+    "id": "news-1991877e",
+    "title": "Starbucks discloses data breach affecting hundreds of employees",
+    "source": "BleepingComputer",
+    "published": "2026-03-13T08:16:55.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/starbucks-discloses-data-breach-affecting-hundreds-of-employees/",
+    "summary": "Starbucks has disclosed a data breach affecting hundreds of employees after threat actors gained access to their Starbucks Partner Central accounts. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "data-breach"
+    ]
+  },
+  {
+    "id": "news-6897f51e",
+    "title": "A React-based phishing page with credential exfiltration via EmailJS, (Fri, Mar 13th)",
+    "source": "SANS ISC",
+    "published": "2026-03-13T07:20:58.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32794",
+    "summary": "On Wednesday, a phishing message made its way into our handler inbox that contained a fairly typical low-quality lure, but turned out to be quite interesting in the end nonetheless. That is because the accompanying credential stealing web page was dynamically constructed using React and used a legitimate e-mail serv...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "sans-isc",
+      "phishing"
+    ]
+  },
+  {
     "id": "news-3f42f653",
     "title": "Google fixes two new Chrome zero-days exploited in attacks",
     "source": "BleepingComputer",
@@ -564,23 +634,6 @@
       "bleepingcomputer",
       "vulnerability",
       "patch"
-    ]
-  },
-  {
-    "id": "news-45a799b5",
-    "title": "Medtech giant Stryker offline after Iran-linked wiper malware attack",
-    "source": "BleepingComputer",
-    "published": "2026-03-11T17:21:22.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/medtech-giant-stryker-offline-after-iran-linked-wiper-malware-attack/",
-    "summary": "Leading medical technology company Stryker has been hit by a wiper malware attack claimed by Handala, an Iranian-linked and pro-Palestinian hacktivist group. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "malware"
     ]
   },
   {
@@ -1320,22 +1373,6 @@
     ]
   },
   {
-    "id": "news-e73579d6",
-    "title": "YARA-X 1.14.0 Release, (Sat, Mar 7th)",
-    "source": "SANS ISC",
-    "published": "2026-03-07T09:56:54.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32774",
-    "summary": "YARA-X&#x26;#39;s 1.14.0 release brings 4 improvements and 2 bugfixes.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
-    ]
-  },
-  {
     "id": "news-596511b0",
     "title": "Cylake Offers AI-Native Security Without Relying on Cloud Services",
     "source": "Dark Reading",
@@ -1755,22 +1792,6 @@
     ]
   },
   {
-    "id": "news-ff261e33",
-    "title": "FBI and Europol Seize LeakBase Forum Used to Trade Stolen Credentials",
-    "source": "The Hacker News",
-    "published": "2026-03-05T06:34:00.000Z",
-    "url": "https://thehackernews.com/2026/03/fbi-and-europol-seize-leakbase-forum.html",
-    "summary": "A joint law enforcement operation has dismantled LeakBase, one of the world's largest online forums for cybercriminals to buy and sell stolen data and cybercrime tools. The LeakBase forum, per the U.S. Department of Justice (DoJ), had over 142,000 members and more than 215,000 messages between members as of December...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news"
-    ]
-  },
-  {
     "id": "news-ba14d2ca",
     "title": "VMware Aria Operations Bug Exploited, Cloud Resources at Risk",
     "source": "Dark Reading",
@@ -1786,22 +1807,6 @@
       "dark-reading",
       "cloud",
       "vmware"
-    ]
-  },
-  {
-    "id": "news-9dcce561",
-    "title": "149 Hacktivist DDoS Attacks Hit 110 Organizations in 16 Countries After Middle East Conflict",
-    "source": "The Hacker News",
-    "published": "2026-03-04T17:21:00.000Z",
-    "url": "https://thehackernews.com/2026/03/149-hacktivist-ddos-attacks-hit-110.html",
-    "summary": "Cybersecurity researchers have warned of a surge in retaliatory hacktivist activity following the U.S.-Israel coordinated military campaign against Iran, codenamed Epic Fury and Roaring Lion. \"The hacktivist threat in the Middle East is highly lopsided, with two groups, Keymous+ and DieNet, driving nearly 70% of all...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news"
     ]
   },
   {
