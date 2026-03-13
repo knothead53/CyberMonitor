@@ -1,5 +1,73 @@
 [
   {
+    "id": "news-52e6753a",
+    "title": "Chinese Hackers Target Southeast Asian Militaries with AppleChris and MemFun Malware",
+    "source": "The Hacker News",
+    "published": "2026-03-13T17:33:00.000Z",
+    "url": "https://thehackernews.com/2026/03/chinese-hackers-target-southeast-asian.html",
+    "summary": "A suspected China-based cyber espionage operation has targeted Southeast Asian military organizations as part of a state-sponsored campaign that dates back to at least 2020. Palo Alto Networks Unit 42 is tracking the threat activity under the moniker CL-STA-1087, where CL refers to cluster, and STA stands for state-...",
+    "severity": "HIGH",
+    "vendor": "Apple",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware",
+      "apple"
+    ]
+  },
+  {
+    "id": "news-fbf816d9",
+    "title": "Poland's nuclear research centre targeted by cyberattack",
+    "source": "BleepingComputer",
+    "published": "2026-03-13T17:11:37.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/polands-nuclear-research-centre-targeted-by-cyberattack/",
+    "summary": "Poland's National Centre for Nuclear Research (NCBJ) says hackers targeted its IT infrastructure, but the attack was detected and blocked before causing any impact. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-868a27da",
+    "title": "Meta to Shut Down Instagram End-to-End Encrypted Chat Support Starting May 2026",
+    "source": "The Hacker News",
+    "published": "2026-03-13T17:09:00.000Z",
+    "url": "https://thehackernews.com/2026/03/meta-to-shut-down-instagram-end-to-end.html",
+    "summary": "Meta has announced plans to discontinue support for end-to-end encryption (E2EE) for chats on Instagram after May 8, 2026. \"If you have chats that are impacted by this change, you will see instructions on how you can download any media or messages you may want to keep,\" the social media giant said in a help document...",
+    "severity": "MEDIUM",
+    "vendor": "Meta",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "meta"
+    ]
+  },
+  {
+    "id": "news-6b30fdf7",
+    "title": "Microsoft investigates classic Outlook sync and connection issues",
+    "source": "BleepingComputer",
+    "published": "2026-03-13T16:53:02.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-investigates-classic-outlook-sync-and-connection-issues/",
+    "summary": "​Microsoft is investigating several issues causing email synchronization and connection problems when using the classic Outlook desktop client. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "microsoft"
+    ]
+  },
+  {
     "id": "news-74e99805",
     "title": "Will AI Save Consumers From Smartphone-Based Phishing Attacks?",
     "source": "Dark Reading",
@@ -103,7 +171,7 @@
   },
   {
     "id": "news-29545fba",
-    "title": "Fake enterprise VPN downloads used to steal company credentials",
+    "title": "Fake enterprise VPN sites used to steal company credentials",
     "source": "BleepingComputer",
     "published": "2026-03-13T13:23:28.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/fake-enterprise-vpn-downloads-used-to-steal-company-credentials/",
@@ -209,23 +277,6 @@
     ]
   },
   {
-    "id": "news-6897f51e",
-    "title": "A React-based phishing page with credential exfiltration via EmailJS, (Fri, Mar 13th)",
-    "source": "SANS ISC",
-    "published": "2026-03-13T07:20:58.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32794",
-    "summary": "On Wednesday, a phishing message made its way into our handler inbox that contained a fairly typical low-quality lure, but turned out to be quite interesting in the end nonetheless. That is because the accompanying credential stealing web page was dynamically constructed using React and used a legitimate e-mail serv...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "sans-isc",
-      "phishing"
-    ]
-  },
-  {
     "id": "news-3f42f653",
     "title": "Google fixes two new Chrome zero-days exploited in attacks",
     "source": "BleepingComputer",
@@ -279,22 +330,6 @@
       "vulnerability",
       "patch",
       "aws"
-    ]
-  },
-  {
-    "id": "news-117a40b0",
-    "title": "ISC Stormcast For Friday, March 13th, 2026 https://isc.sans.edu/podcastdetail/9848, (Fri, Mar 13th)",
-    "source": "SANS ISC",
-    "published": "2026-03-13T02:00:02.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32792",
-    "summary": "No summary provided.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
     ]
   },
   {
@@ -554,24 +589,6 @@
     ]
   },
   {
-    "id": "news-4db37f55",
-    "title": "Apple patches older iPhones and iPads against Coruna exploits",
-    "source": "BleepingComputer",
-    "published": "2026-03-12T13:43:46.000Z",
-    "url": "https://www.bleepingcomputer.com/news/apple/apple-patches-older-iphones-and-ipads-against-coruna-exploits/",
-    "summary": "​Apple has released security updates to patch older iPhones and iPads against a set of vulnerabilities targeted in cyberespionage and crypto-theft attacks using the Coruna exploit kit. [...]",
-    "severity": "HIGH",
-    "vendor": "Apple",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "patch",
-      "apple"
-    ]
-  },
-  {
     "id": "news-624d5615",
     "title": "How to Scale Phishing Detection in Your SOC: 3 Steps for CISOs",
     "source": "The Hacker News",
@@ -603,23 +620,6 @@
       "high",
       "the-hacker-news",
       "phishing"
-    ]
-  },
-  {
-    "id": "news-6da1fd22",
-    "title": "US charges another ransomware negotiator linked to BlackCat attacks",
-    "source": "BleepingComputer",
-    "published": "2026-03-12T11:31:57.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/us-charges-another-ransomware-negotiator-linked-to-blackcat-attacks/",
-    "summary": "The U.S. Department of Justice charged another former DigitalMint employee for his involvement in an insider scheme in which ransomware negotiators secretly partnered with the BlackCat (ALPHV) ransomware operation. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "ransomware"
     ]
   },
   {
@@ -689,38 +689,6 @@
       "critical",
       "the-hacker-news",
       "vulnerability"
-    ]
-  },
-  {
-    "id": "news-38a98cb3",
-    "title": "ISC Stormcast For Thursday, March 12th, 2026 https://isc.sans.edu/podcastdetail/9846, (Thu, Mar 12th)",
-    "source": "SANS ISC",
-    "published": "2026-03-12T02:00:02.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32790",
-    "summary": "No summary provided.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
-    ]
-  },
-  {
-    "id": "news-7e3561d5",
-    "title": "When your IoT Device Logs in as Admin, It?s too Late! [Guest Diary], (Wed, Mar 11th)",
-    "source": "SANS ISC",
-    "published": "2026-03-12T01:19:35.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32788",
-    "summary": "[This is a Guest Diary by Adam Thorman, an ISC intern as part of the SANS.edu BACS program]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
     ]
   },
   {
@@ -880,23 +848,6 @@
     ]
   },
   {
-    "id": "news-07372b78",
-    "title": "Analyzing \"Zombie Zip\" Files (CVE-2026-0866), (Wed, Mar 11th)",
-    "source": "SANS ISC",
-    "published": "2026-03-11T09:57:26.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32786",
-    "summary": "A new vulnerability (CVE-2026-0866) has been published: Zombie Zip.",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "sans-isc",
-      "vulnerability"
-    ]
-  },
-  {
     "id": "news-2f94edea",
     "title": "Microsoft Patches 84 Flaws in March Patch Tuesday, Including Two Public Zero-Days",
     "source": "The Hacker News",
@@ -965,22 +916,6 @@
       "high",
       "dark-reading",
       "cloud"
-    ]
-  },
-  {
-    "id": "news-9226b9f5",
-    "title": "ISC Stormcast For Wednesday, March 11th, 2026 https://isc.sans.edu/podcastdetail/9844, (Wed, Mar 11th)",
-    "source": "SANS ISC",
-    "published": "2026-03-11T02:00:02.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32784",
-    "summary": "No summary provided.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
     ]
   },
   {
@@ -1053,24 +988,6 @@
       "high",
       "dark-reading",
       "malware"
-    ]
-  },
-  {
-    "id": "news-1fd85557",
-    "title": "Microsoft Patch Tuesday March 2026, (Tue, Mar 10th)",
-    "source": "SANS ISC",
-    "published": "2026-03-10T17:33:47.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32782",
-    "summary": "Microsoft today released patches for 93 vulnerabilities, including 9 vulnerabilities in Chromium affecting Microsoft Edge. 8 of the vulnerabilities are rated critical. 2 were disclosed prior to today but have not yet been exploited. This update addresses no already-exploited vulnerabilities.",
-    "severity": "HIGH",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "sans-isc",
-      "patch",
-      "microsoft"
     ]
   },
   {
@@ -1230,22 +1147,6 @@
     ]
   },
   {
-    "id": "news-f3cc0030",
-    "title": "ISC Stormcast For Tuesday, March 10th, 2026 https://isc.sans.edu/podcastdetail/9842, (Tue, Mar 10th)",
-    "source": "SANS ISC",
-    "published": "2026-03-10T02:00:02.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32780",
-    "summary": "No summary provided.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
-    ]
-  },
-  {
     "id": "news-9b3796a3",
     "title": "White House Cyber Strategy Prioritizes Offense",
     "source": "Dark Reading",
@@ -1308,22 +1209,6 @@
       "intel-feed",
       "high",
       "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-85df9293",
-    "title": "Encrypted Client Hello: Ready for Prime Time?, (Mon, Mar 9th)",
-    "source": "SANS ISC",
-    "published": "2026-03-09T15:03:29.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32778",
-    "summary": "Last week, two related RFCs were published:",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
     ]
   },
   {
@@ -1426,22 +1311,6 @@
       "intel-feed",
       "high",
       "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-6103ca91",
-    "title": "ISC Stormcast For Monday, March 9th, 2026 https://isc.sans.edu/podcastdetail/9840, (Mon, Mar 9th)",
-    "source": "SANS ISC",
-    "published": "2026-03-09T02:00:02.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32776",
-    "summary": "No summary provided.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
     ]
   },
   {
@@ -1826,39 +1695,6 @@
       "intel-feed",
       "high",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-57d51cee",
-    "title": "ThreatsDay Bulletin: DDR5 Bot Scalping, Samsung TV Tracking, Reddit Privacy Fine & More",
-    "source": "The Hacker News",
-    "published": "2026-03-05T13:44:00.000Z",
-    "url": "https://thehackernews.com/2026/03/threatsday-bulletin-redis-rce-ddr5-bot.html",
-    "summary": "Some weeks in cybersecurity feel routine. This one doesn&rsquo;t. Several new developments surfaced over the past few days, showing how quickly the threat landscape keeps shifting. Researchers uncovered fresh activity, security teams shared new findings, and a few unexpected moves from major tech companies also drew...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-05c4def2",
-    "title": "Dust Specter Targets Iraqi Officials with New SPLITDROP and GHOSTFORM Malware",
-    "source": "The Hacker News",
-    "published": "2026-03-05T12:01:00.000Z",
-    "url": "https://thehackernews.com/2026/03/dust-specter-targets-iraqi-officials.html",
-    "summary": "A suspected Iran-nexus threat actor has been attributed to a campaign targeting government officials in Iraq by impersonating the country's Ministry of Foreign Affairs to deliver a set of never-before-seen malware. Zscaler ThreatLabz, which observed the activity in January 2026, is tracking the cluster under the nam...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "malware"
     ]
   },
   {

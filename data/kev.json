@@ -1,5 +1,43 @@
 [
   {
+    "id": "CVE-2026-3910",
+    "title": "CVE-2026-3910 - Google Chromium V8 Improper Restriction of Operations Within the Bounds of a Memory Buffer Vulnerability",
+    "source": "CISA KEV Catalog",
+    "published": "2026-03-13T00:00:00.000Z",
+    "url": "https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_12.html",
+    "summary": "Google Chromium V8 contains an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not l...",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "kev",
+      "high",
+      "cve-2026-3910",
+      "google",
+      "chromium-v8",
+      "cwe-119",
+      "cisa-kev-catalog"
+    ]
+  },
+  {
+    "id": "CVE-2026-3909",
+    "title": "CVE-2026-3909 - Google Skia Out-of-Bounds Write Vulnerability",
+    "source": "CISA KEV Catalog",
+    "published": "2026-03-13T00:00:00.000Z",
+    "url": "https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_12.html#:~:text=Google%20is%20aware",
+    "summary": "Google Skia contains an out-of-bounds write vulnerability that could allow a remote attacker to perform out of bounds memory access via a crafted HTML page. This vulnerability affects Google Chrome and ChromeOS, Android, Flutter, and possibly other products.",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "kev",
+      "high",
+      "cve-2026-3909",
+      "google",
+      "skia",
+      "cwe-787",
+      "cisa-kev-catalog"
+    ]
+  },
+  {
     "id": "CVE-2025-68613",
     "title": "CVE-2025-68613 - n8n Improper Control of Dynamically-Managed Code Resources Vulnerability",
     "source": "CISA KEV Catalog",
