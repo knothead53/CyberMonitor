@@ -1,5 +1,55 @@
 [
   {
+    "id": "news-b6842509",
+    "title": "FBI seeks victims of Steam games used to spread malware",
+    "source": "BleepingComputer",
+    "published": "2026-03-13T20:52:31.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-seeks-victims-of-steam-games-used-to-spread-malware/",
+    "summary": "The FBI is asking gamers who installed Steam titles containing malware to provide information as part of an ongoing investigation into eight malicious games uploaded to the gaming platform. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-f03325ad",
+    "title": "Fake PoCs, Misunderstood Risks Cause Cisco SD-WAN Chaos",
+    "source": "Dark Reading",
+    "published": "2026-03-13T19:19:38.000Z",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/fake-pocs-risks-cisco-sd-wan",
+    "summary": "The excitement around Cisco's latest SD-WAN bugs has inspired some light fraud, misunderstandings, and overlooked risks.",
+    "severity": "MEDIUM",
+    "vendor": "Cisco",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "cisco"
+    ]
+  },
+  {
+    "id": "news-562a2c8b",
+    "title": "The Data Gap: Why Nonprofit Cyber Incidents Go Underreported",
+    "source": "Dark Reading",
+    "published": "2026-03-13T17:42:09.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/data-gap-why-nonprofit-cyber-incidents-go-underreported",
+    "summary": "Threat actors target nonprofits due to security gaps and highly coveted information, but a lack of sufficient data makes it difficult to grasp the entire picture.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
     "id": "news-52e6753a",
     "title": "Chinese Hackers Target Southeast Asian Militaries with AppleChris and MemFun Malware",
     "source": "The Hacker News",
@@ -15,6 +65,22 @@
       "the-hacker-news",
       "malware",
       "apple"
+    ]
+  },
+  {
+    "id": "news-55c55d06",
+    "title": "Cyberattackers Don't Care About Good Causes",
+    "source": "Dark Reading",
+    "published": "2026-03-13T17:15:17.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/cyberattackers-dont-care-about-good-causes",
+    "summary": "Sightline Security's founder and advisory board discuss how cybersecurity poses significant problems for nonprofits and suggest ways the industry can help.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
     ]
   },
   {
@@ -277,6 +343,23 @@
     ]
   },
   {
+    "id": "news-6897f51e",
+    "title": "A React-based phishing page with credential exfiltration via EmailJS, (Fri, Mar 13th)",
+    "source": "SANS ISC",
+    "published": "2026-03-13T07:20:58.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32794",
+    "summary": "On Wednesday, a phishing message made its way into our handler inbox that contained a fairly typical low-quality lure, but turned out to be quite interesting in the end nonetheless. That is because the accompanying credential stealing web page was dynamically constructed using React and used a legitimate e-mail serv...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "sans-isc",
+      "phishing"
+    ]
+  },
+  {
     "id": "news-3f42f653",
     "title": "Google fixes two new Chrome zero-days exploited in attacks",
     "source": "BleepingComputer",
@@ -330,6 +413,22 @@
       "vulnerability",
       "patch",
       "aws"
+    ]
+  },
+  {
+    "id": "news-117a40b0",
+    "title": "ISC Stormcast For Friday, March 13th, 2026 https://isc.sans.edu/podcastdetail/9848, (Fri, Mar 13th)",
+    "source": "SANS ISC",
+    "published": "2026-03-13T02:00:02.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32792",
+    "summary": "No summary provided.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
     ]
   },
   {
@@ -562,7 +661,7 @@
     "source": "Dark Reading",
     "published": "2026-03-12T14:33:29.000Z",
     "url": "https://www.darkreading.com/cyber-risk/olympics-world-cup-takeaways-ir-plans",
-    "summary": "In this Reporters' Notebook, we discuss cyberattackers targeting the Milan-Cortina Winter Games, adding them to a long list of global sporting events in the crosshairs. Though the attack surface is grander, there are key defense takeaways for regular enterprises too.",
+    "summary": "In this edition of \"Reporters' Notebook,\" we discuss cyberattackers targeting the Milan-Cortina Winter Games, adding them to a long list of global sporting events in the crosshairs. Though the attack surface is grander, there are key incident-response takeaways for regular enterprises, too.",
     "severity": "HIGH",
     "vendor": "Unknown",
     "tags": [
@@ -570,22 +669,6 @@
       "intel-feed",
       "high",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-04dfb1b5",
-    "title": "Going the Extra Mile: Travel Rewards Turn into Underground Currency.",
-    "source": "BleepingComputer",
-    "published": "2026-03-12T14:05:15.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/going-the-extra-mile-travel-rewards-turn-into-underground-currency/",
-    "summary": "Stolen airline miles are converted into flights and hotel stays, then resold as discounted travel. Flare shows how cybercriminals and underground markets treat loyalty accounts like tradable currency. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer"
     ]
   },
   {
@@ -689,6 +772,38 @@
       "critical",
       "the-hacker-news",
       "vulnerability"
+    ]
+  },
+  {
+    "id": "news-38a98cb3",
+    "title": "ISC Stormcast For Thursday, March 12th, 2026 https://isc.sans.edu/podcastdetail/9846, (Thu, Mar 12th)",
+    "source": "SANS ISC",
+    "published": "2026-03-12T02:00:02.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32790",
+    "summary": "No summary provided.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-7e3561d5",
+    "title": "When your IoT Device Logs in as Admin, It?s too Late! [Guest Diary], (Wed, Mar 11th)",
+    "source": "SANS ISC",
+    "published": "2026-03-12T01:19:35.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32788",
+    "summary": "[This is a Guest Diary by Adam Thorman, an ISC intern as part of the SANS.edu BACS program]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
     ]
   },
   {
@@ -848,6 +963,23 @@
     ]
   },
   {
+    "id": "news-07372b78",
+    "title": "Analyzing \"Zombie Zip\" Files (CVE-2026-0866), (Wed, Mar 11th)",
+    "source": "SANS ISC",
+    "published": "2026-03-11T09:57:26.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32786",
+    "summary": "A new vulnerability (CVE-2026-0866) has been published: Zombie Zip.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "sans-isc",
+      "vulnerability"
+    ]
+  },
+  {
     "id": "news-2f94edea",
     "title": "Microsoft Patches 84 Flaws in March Patch Tuesday, Including Two Public Zero-Days",
     "source": "The Hacker News",
@@ -916,6 +1048,22 @@
       "high",
       "dark-reading",
       "cloud"
+    ]
+  },
+  {
+    "id": "news-9226b9f5",
+    "title": "ISC Stormcast For Wednesday, March 11th, 2026 https://isc.sans.edu/podcastdetail/9844, (Wed, Mar 11th)",
+    "source": "SANS ISC",
+    "published": "2026-03-11T02:00:02.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32784",
+    "summary": "No summary provided.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
     ]
   },
   {
@@ -988,6 +1136,24 @@
       "high",
       "dark-reading",
       "malware"
+    ]
+  },
+  {
+    "id": "news-1fd85557",
+    "title": "Microsoft Patch Tuesday March 2026, (Tue, Mar 10th)",
+    "source": "SANS ISC",
+    "published": "2026-03-10T17:33:47.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32782",
+    "summary": "Microsoft today released patches for 93 vulnerabilities, including 9 vulnerabilities in Chromium affecting Microsoft Edge. 8 of the vulnerabilities are rated critical. 2 were disclosed prior to today but have not yet been exploited. This update addresses no already-exploited vulnerabilities.",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "sans-isc",
+      "patch",
+      "microsoft"
     ]
   },
   {
@@ -1147,6 +1313,22 @@
     ]
   },
   {
+    "id": "news-f3cc0030",
+    "title": "ISC Stormcast For Tuesday, March 10th, 2026 https://isc.sans.edu/podcastdetail/9842, (Tue, Mar 10th)",
+    "source": "SANS ISC",
+    "published": "2026-03-10T02:00:02.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32780",
+    "summary": "No summary provided.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
     "id": "news-9b3796a3",
     "title": "White House Cyber Strategy Prioritizes Offense",
     "source": "Dark Reading",
@@ -1209,6 +1391,22 @@
       "intel-feed",
       "high",
       "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-85df9293",
+    "title": "Encrypted Client Hello: Ready for Prime Time?, (Mon, Mar 9th)",
+    "source": "SANS ISC",
+    "published": "2026-03-09T15:03:29.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32778",
+    "summary": "Last week, two related RFCs were published:",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
     ]
   },
   {
@@ -1311,6 +1509,22 @@
       "intel-feed",
       "high",
       "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-6103ca91",
+    "title": "ISC Stormcast For Monday, March 9th, 2026 https://isc.sans.edu/podcastdetail/9840, (Mon, Mar 9th)",
+    "source": "SANS ISC",
+    "published": "2026-03-09T02:00:02.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32776",
+    "summary": "No summary provided.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
     ]
   },
   {
@@ -1982,55 +2196,6 @@
       "critical",
       "dark-reading",
       "ransomware"
-    ]
-  },
-  {
-    "id": "news-f6a8e5f7",
-    "title": "Cities Hosting Major Events Need More Focus on Wireless, Drone Defense",
-    "source": "Dark Reading",
-    "published": "2026-02-27T20:23:17.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/cities-major-events-wireless-drone-defense",
-    "summary": "Major events like the FIFA World Cup need to look beyond traditional physical and cyber security to active and passive wireless threats, say experts.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-53a9cb40",
-    "title": "Flaw-Finding AI Assistants Face Criticism for Speed, Accuracy",
-    "source": "Dark Reading",
-    "published": "2026-02-27T20:16:24.000Z",
-    "url": "https://www.darkreading.com/application-security/flaw-finding-ai-assistants-face-criticism-speed-accuracy",
-    "summary": "Using AI to find security vulnerabilities holds significant promise, but the initial products fall short of the needs of enterprises and software developers, say experts.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-b0675511",
-    "title": "The Case for Why Better Breach Transparency Matters",
-    "source": "Dark Reading",
-    "published": "2026-02-27T16:18:19.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/why-better-breach-transparency-matters",
-    "summary": "It's become a standard practice for organizations to disclose the bare minimum about a data breach, or worse — not disclose the incident at all.",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "dark-reading",
-      "data-breach"
     ]
   },
   {
