@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-13T13:33:05.549Z",
+  "generatedAt": "2026-03-13T15:56:26.277Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-13T13:28:33.000Z",
-      "summary": "99 correlated news signals from 5 sources; vendors: Unknown, Cisco."
+      "timestamp": "2026-03-13T15:57:47.000Z",
+      "summary": "100 correlated news signals from 5 sources; vendors: Unknown, Microsoft."
     },
     {
       "id": "corr-cloud-global",
@@ -19,18 +19,8 @@
       "lon": 0,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-13T08:16:55.000Z",
-      "summary": "35 correlated news signals from 4 sources; vendors: Unknown, Vmware."
-    },
-    {
-      "id": "corr-cloud-europe",
-      "name": "Europe Threat Activity",
-      "lat": 50.1109,
-      "lon": 8.6821,
-      "type": "cloud_region",
-      "severity": "HIGH",
-      "timestamp": "2026-03-05T06:51:00.000Z",
-      "summary": "1 correlated news signals from 1 sources; vendors: Unknown."
+      "timestamp": "2026-03-13T14:15:25.000Z",
+      "summary": "35 correlated news signals from 4 sources; vendors: Vmware, Unknown."
     }
   ],
   "major_incidents": [
@@ -41,8 +31,8 @@
       "lon": -98.5795,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-11T09:15:00.000Z",
-      "summary": "347 KEV and 5 high-severity news signals across 4 sources."
+      "timestamp": "2026-03-13T13:38:00.000Z",
+      "summary": "347 KEV and 6 high-severity news signals across 4 sources."
     },
     {
       "id": "corr-incident-cisco",
@@ -52,7 +42,7 @@
       "type": "incident",
       "severity": "CRITICAL",
       "timestamp": "2026-03-13T13:23:28.000Z",
-      "summary": "70 KEV and 5 high-severity news signals across 4 sources."
+      "summary": "70 KEV and 4 high-severity news signals across 4 sources."
     },
     {
       "id": "corr-incident-google",
@@ -61,8 +51,8 @@
       "lon": -98.5795,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-13T09:17:00.000Z",
-      "summary": "67 KEV and 5 high-severity news signals across 4 sources."
+      "timestamp": "2026-03-13T13:20:58.000Z",
+      "summary": "67 KEV and 6 high-severity news signals across 4 sources."
     },
     {
       "id": "corr-incident-adobe",
@@ -91,7 +81,7 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-13T13:00:00.000Z",
+      "timestamp": "2026-03-13T15:57:47.000Z",
       "summary": "0 KEV and 59 high-severity news signals across 5 sources."
     },
     {
@@ -143,8 +133,8 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-12T23:29:55.000Z",
-      "summary": "69 correlated outage events from 1 status feeds."
+      "timestamp": "2026-03-13T15:10:34.000Z",
+      "summary": "70 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-slack",
@@ -152,9 +142,19 @@
       "lat": 39.8283,
       "lon": -98.5795,
       "type": "outage",
-      "severity": "CRITICAL",
+      "severity": "HIGH",
       "timestamp": "2026-03-09T19:17:50.000Z",
-      "summary": "46 correlated outage events from 1 status feeds."
+      "summary": "44 correlated outage events from 1 status feeds."
+    },
+    {
+      "id": "corr-outage-github",
+      "name": "GitHub Service Disruption Signals",
+      "lat": 39.8283,
+      "lon": -98.5795,
+      "type": "outage",
+      "severity": "CRITICAL",
+      "timestamp": "2026-03-13T15:47:51.000Z",
+      "summary": "23 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-discord",
@@ -164,16 +164,6 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-12T21:06:00.000Z",
-      "summary": "22 correlated outage events from 1 status feeds."
-    },
-    {
-      "id": "corr-outage-github",
-      "name": "GitHub Service Disruption Signals",
-      "lat": 39.8283,
-      "lon": -98.5795,
-      "type": "outage",
-      "severity": "CRITICAL",
-      "timestamp": "2026-03-12T18:53:33.000Z",
       "summary": "22 correlated outage events from 1 status feeds."
     },
     {

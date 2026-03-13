@@ -1,5 +1,75 @@
 [
   {
+    "id": "news-74e99805",
+    "title": "Will AI Save Consumers From Smartphone-Based Phishing Attacks?",
+    "source": "Dark Reading",
+    "published": "2026-03-13T15:57:47.000Z",
+    "url": "https://www.darkreading.com/mobile-security/will-ai-save-consumers-smartphone-phishing-attacks",
+    "summary": "Sophisticated phishing attacks are bypassing on-device protections with troubling frequency, making it more critical than ever for users to protect themselves from potential threats, new research from Omdia shows.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "phishing"
+    ]
+  },
+  {
+    "id": "news-3319c267",
+    "title": "INTERPOL Dismantles 45,000 Malicious IPs, Arrests 94 in Global Cybercrime",
+    "source": "The Hacker News",
+    "published": "2026-03-13T15:20:00.000Z",
+    "url": "https://thehackernews.com/2026/03/interpol-dismantles-45000-malicious-ips.html",
+    "summary": "INTERPOL on Friday announced the takedown of 45,000 malicious IP addresses and servers used in connection with phishing, malware, and ransomware campaigns, as part of the agency's ongoing efforts to dismantle criminal networks, disrupt emerging threats, and safeguard victims from scams. The effort is part of an inte...",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "ransomware",
+      "phishing",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-d6182f5d",
+    "title": "From VMware to what’s next: Protecting data during hypervisor migration",
+    "source": "BleepingComputer",
+    "published": "2026-03-13T14:15:25.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/from-vmware-to-whats-next-protecting-data-during-hypervisor-migration/",
+    "summary": "Hypervisor migrations can introduce hidden risks that threaten data availability and recovery. Acronis explains why verified backups and cross-platform recovery are essential during VMware transitions. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Vmware",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "vmware"
+    ]
+  },
+  {
+    "id": "news-706a262a",
+    "title": "Storm-2561 Spreads Trojan VPN Clients via SEO Poisoning to Steal Credentials",
+    "source": "The Hacker News",
+    "published": "2026-03-13T13:38:00.000Z",
+    "url": "https://thehackernews.com/2026/03/storm-2561-spreads-trojan-vpn-clients.html",
+    "summary": "Microsoft has disclosed details of a credential theft campaign that employs fake virtual private network (VPN) clients distributed through search engine optimization (SEO) poisoning techniques. \"The campaign redirects users searching for legitimate enterprise software to malicious ZIP files on attacker-controlled we...",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "microsoft"
+    ]
+  },
+  {
     "id": "news-6fdc38e0",
     "title": "Police sinkholes 45,000 IP addresses in cybercrime crackdown",
     "source": "BleepingComputer",
@@ -13,6 +83,22 @@
       "intel-feed",
       "medium",
       "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-af6426c7",
+    "title": "Investigating a New Click-Fix Variant",
+    "source": "The Hacker News",
+    "published": "2026-03-13T13:28:00.000Z",
+    "url": "https://thehackernews.com/2026/03/investigating-new-click-fix-variant.html",
+    "summary": "Disclaimer: This report has been prepared by the Threat Research Center to enhance cybersecurity awareness and support the strengthening of defense capabilities. It is based on independent research and observations of the current threat landscape available at the time of publication. The content is intended for info...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
     ]
   },
   {
@@ -30,6 +116,26 @@
       "high",
       "bleepingcomputer",
       "cisco"
+    ]
+  },
+  {
+    "id": "news-3bfe40af",
+    "title": "Most Google Cloud Attacks Start With Bug Exploitation",
+    "source": "Dark Reading",
+    "published": "2026-03-13T13:20:58.000Z",
+    "url": "https://www.darkreading.com/cloud-security/google-cloud-attacks-bug-exploitation",
+    "summary": "Forget stolen credentials and misconfigurations; AI means vulnerability exploits that beat patching cycles are the top cause of compromises in the cloud.",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "vulnerability",
+      "patch",
+      "cloud",
+      "google"
     ]
   },
   {
@@ -416,6 +522,22 @@
     ]
   },
   {
+    "id": "news-b47222f1",
+    "title": "What Orgs Can Learn From Olympics, World Cup IR Plans",
+    "source": "Dark Reading",
+    "published": "2026-03-12T14:33:29.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/olympics-world-cup-takeaways-ir-plans",
+    "summary": "In this Reporters' Notebook, we discuss cyberattackers targeting the Milan-Cortina Winter Games, adding them to a long list of global sporting events in the crosshairs. Though the attack surface is grander, there are key defense takeaways for regular enterprises too.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
+    ]
+  },
+  {
     "id": "news-04dfb1b5",
     "title": "Going the Extra Mile: Travel Rewards Turn into Underground Currency.",
     "source": "BleepingComputer",
@@ -633,22 +755,6 @@
       "medium",
       "dark-reading",
       "github"
-    ]
-  },
-  {
-    "id": "news-73107821",
-    "title": "WhatsApp introduces parent-managed accounts for pre-teens",
-    "source": "BleepingComputer",
-    "published": "2026-03-11T20:06:39.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/whatsapp-introduces-parent-managed-accounts-for-pre-teens/",
-    "summary": "WhatsApp has begun rolling out parent-managed accounts for pre-teens, allowing parents and guardians to decide who can contact them and which groups they can join. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer"
     ]
   },
   {
@@ -1756,57 +1862,6 @@
     ]
   },
   {
-    "id": "news-724121f0",
-    "title": "Where Multi-Factor Authentication Stops and Credential Abuse Starts",
-    "source": "The Hacker News",
-    "published": "2026-03-05T11:00:00.000Z",
-    "url": "https://thehackernews.com/2026/03/where-multi-factor-authentication-stops.html",
-    "summary": "Organizations typically roll out multi-factor authentication (MFA) and assume stolen passwords are no longer enough to access systems. In Windows environments, that assumption is often wrong. Attackers still compromise networks every day using valid credentials. The issue is not MFA itself, but coverage. Enforced th...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-ff6560db",
-    "title": "APT28-Linked Campaign Deploys BadPaw Loader and MeowMeow Backdoor in Ukraine",
-    "source": "The Hacker News",
-    "published": "2026-03-05T10:10:00.000Z",
-    "url": "https://thehackernews.com/2026/03/apt28-linked-campaign-deploys-badpaw.html",
-    "summary": "Cybersecurity researchers have disclosed details of a new Russian cyber campaign that has targeted Ukrainian entities with two previously undocumented malware families named BadPaw and MeowMeow. \"The attack chain initiates with a phishing email containing a link to a ZIP archive. Once extracted, an initial HTA file ...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "phishing",
-      "malware"
-    ]
-  },
-  {
-    "id": "news-83a23b01",
-    "title": "Europol-Led Operation Takes Down Tycoon 2FA Phishing-as-a-Service Linked to 64,000 Attacks",
-    "source": "The Hacker News",
-    "published": "2026-03-05T06:51:00.000Z",
-    "url": "https://thehackernews.com/2026/03/europol-led-operation-takes-down-tycoon.html",
-    "summary": "Tycoon 2FA, one of the prominent phishing-as-a-service (PhaaS) toolkits that allowed cybercriminals to stage adversary-in-the-middle (AitM) credential harvesting attacks at scale, was dismantled by a coalition of law enforcement agencies and security companies. The subscription-based phishing kit, which first emerge...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "phishing"
-    ]
-  },
-  {
     "id": "news-ba14d2ca",
     "title": "VMware Aria Operations Bug Exploited, Cloud Resources at Risk",
     "source": "Dark Reading",
@@ -2140,58 +2195,6 @@
       "critical",
       "dark-reading",
       "data-breach"
-    ]
-  },
-  {
-    "id": "news-a9b98497",
-    "title": "Claude Code Security Shows Promise, Not Perfection",
-    "source": "Dark Reading",
-    "published": "2026-02-27T14:00:00.000Z",
-    "url": "https://www.darkreading.com/application-security/claude-code-security-shows-promise-not-perfection",
-    "summary": "Claude Code's introduction rippled across the stock market, but researchers and analysts say its impact was overstated, as they peel back the layers.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-4c0ac42b",
-    "title": "Marquis v. SonicWall Lawsuit Ups the Breach Blame Game",
-    "source": "Dark Reading",
-    "published": "2026-02-26T22:02:41.000Z",
-    "url": "https://www.darkreading.com/cloud-security/marquis-sonicwall-lawsuit-breach-blame-game",
-    "summary": "When a company gets breached through a third-party security vendor, who should bear responsibility? For one FinTech company, the answer is the firewall provider.",
-    "severity": "MEDIUM",
-    "vendor": "Aws",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading",
-      "aws"
-    ]
-  },
-  {
-    "id": "news-7b2ffd69",
-    "title": "Cisco SD-WAN Zero-Day Under Exploitation for 3 Years",
-    "source": "Dark Reading",
-    "published": "2026-02-26T21:45:56.000Z",
-    "url": "https://www.darkreading.com/vulnerabilities-threats/cisco-sd-wan-zero-day-exploitation-3-years",
-    "summary": "The maximum-severity vulnerability CVE-2026-20127 was exploited by an unknown but sophisticated threat actor who left very little evidence behind.",
-    "severity": "CRITICAL",
-    "vendor": "Cisco",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "dark-reading",
-      "zero-day",
-      "vulnerability",
-      "cisco"
     ]
   },
   {
