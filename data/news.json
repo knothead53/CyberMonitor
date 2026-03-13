@@ -1,5 +1,61 @@
 [
   {
+    "id": "news-3f42f653",
+    "title": "Google fixes two new Chrome zero-days exploited in attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-13T06:56:58.000Z",
+    "url": "https://www.bleepingcomputer.com/news/google/google-fixes-two-new-chrome-zero-days-exploited-in-attacks/",
+    "summary": "Google has released emergency security updates to patch two high-severity Chrome vulnerabilities exploited in zero-day attacks. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "zero-day",
+      "patch",
+      "google"
+    ]
+  },
+  {
+    "id": "news-bf999264",
+    "title": "Authorities Disrupt SocksEscort Proxy Botnet Exploiting 369,000 IPs Across 163 Countries",
+    "source": "The Hacker News",
+    "published": "2026-03-13T05:26:00.000Z",
+    "url": "https://thehackernews.com/2026/03/authorities-disrupt-socksescort-proxy.html",
+    "summary": "A court-authorized international law enforcement operation has dismantled a criminal proxy service named SocksEscort that enslaved thousands of residential routers worldwide into a botnet for committing large-scale fraud. \"SocksEscort infected home and small business internet routers with malware,\" the U.S. Departme...",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "malware",
+      "botnet"
+    ]
+  },
+  {
+    "id": "news-cc9ddcc5",
+    "title": "Veeam Patches 7 Critical Backup & Replication Flaws Allowing Remote Code Execution",
+    "source": "The Hacker News",
+    "published": "2026-03-13T04:15:00.000Z",
+    "url": "https://thehackernews.com/2026/03/veeam-patches-7-critical-backup.html",
+    "summary": "Veeam has released security updates to address multiple critical vulnerabilities in its Backup & Replication software that, if successfully exploited, could result in remote code execution. The vulnerabilities are as follows - CVE-2026-21666 (CVSS score: 9.9) - A vulnerability that allows an authenticated domain use...",
+    "severity": "CRITICAL",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "vulnerability",
+      "patch",
+      "aws"
+    ]
+  },
+  {
     "id": "news-117a40b0",
     "title": "ISC Stormcast For Friday, March 13th, 2026 https://isc.sans.edu/podcastdetail/9848, (Fri, Mar 13th)",
     "source": "SANS ISC",
@@ -525,23 +581,6 @@
       "high",
       "bleepingcomputer",
       "malware"
-    ]
-  },
-  {
-    "id": "news-17b69fa6",
-    "title": "New PhantomRaven NPM attack wave steals dev data via 88 packages",
-    "source": "BleepingComputer",
-    "published": "2026-03-11T17:09:42.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/new-phantomraven-npm-attack-wave-steals-dev-data-via-88-packages/",
-    "summary": "New attack waves from the 'PhantomRaven' supply-chain campaign are hitting the npm registry, with dozens of malicious packages that exfiltrate sensitive data from JavaScript developers. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "supply-chain"
     ]
   },
   {
@@ -1796,39 +1835,6 @@
       "high",
       "dark-reading",
       "malware"
-    ]
-  },
-  {
-    "id": "news-f8325f1e",
-    "title": "Coruna iOS Exploit Kit Uses 23 Exploits Across Five Chains Targeting iOS 13–17.2.1",
-    "source": "The Hacker News",
-    "published": "2026-03-04T13:28:00.000Z",
-    "url": "https://thehackernews.com/2026/03/coruna-ios-exploit-kit-uses-23-exploits.html",
-    "summary": "Google said it identified a \"new and powerful\" exploit kit dubbed Coruna (aka CryptoWaters) targeting Apple iPhone models running iOS versions between 13.0 and 17.2.1. The exploit kit featured five full iOS exploit chains and a total of 23 exploits, Google Threat Intelligence Group (GTIG) said. It's not effective ag...",
-    "severity": "HIGH",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "google"
-    ]
-  },
-  {
-    "id": "news-9a9a3e89",
-    "title": "New RFP Template for AI Usage Control and AI Governance",
-    "source": "The Hacker News",
-    "published": "2026-03-04T11:30:00.000Z",
-    "url": "https://thehackernews.com/2026/03/new-rfp-template-for-ai-usage-control.html",
-    "summary": "As AI becomes the central engine for enterprise productivity, security leaders are finally getting the green light — and the budget — to secure it. But there’s a quiet crisis unfolding in the boardroom: many organizations know they need \"AI Governance,\" but they have no idea what they are actually looking for. The C...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news"
     ]
   },
   {
