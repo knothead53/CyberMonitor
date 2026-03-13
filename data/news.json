@@ -119,6 +119,23 @@
     ]
   },
   {
+    "id": "news-21991aff",
+    "title": "Delinea's StrongDM Acquisition Highlights the Changing Role of PAM",
+    "source": "Dark Reading",
+    "published": "2026-03-12T17:02:11.000Z",
+    "url": "https://www.darkreading.com/identity-access-management-security/delinea-strongdm-acquisition-highlights-changing-role-pam",
+    "summary": "StrongDM, which injects ephemeral, real-time credentials into developer workflows, will enable Delinea to offer privilege access management across cloud, SaaS, Kubernetes, and database environments.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "cloud"
+    ]
+  },
+  {
     "id": "news-f0992c8a",
     "title": "Hive0163 Uses AI-Assisted Slopoly Malware for Persistent Access in Ransomware Attacks",
     "source": "The Hacker News",
@@ -2165,24 +2182,6 @@
       "intel-feed",
       "medium",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-30fbc985",
-    "title": "Flaws in Claude Code Put Developers' Machines at Risk",
-    "source": "Dark Reading",
-    "published": "2026-02-25T22:02:32.000Z",
-    "url": "https://www.darkreading.com/application-security/flaws-claude-code-developer-machines-risk",
-    "summary": "The vulnerabilities highlight a big drawback to integrating AI into software development workflows and the potential impact on supply chains.",
-    "severity": "MEDIUM",
-    "vendor": "Aws",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading",
-      "supply-chain",
-      "aws"
     ]
   },
   {
