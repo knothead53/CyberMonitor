@@ -1,5 +1,39 @@
 [
   {
+    "id": "news-f28904b2",
+    "title": "AppsFlyer Web SDK hijacked to spread crypto-stealing JavaScript code",
+    "source": "BleepingComputer",
+    "published": "2026-03-14T14:36:42.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/appsflyer-web-sdk-used-to-spread-crypto-stealer-javascript-code/",
+    "summary": "The AppsFlyer Web SDK was temporarily hijacked this week with malicious code used to steal cryptocurrency in a supply-chain attack. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "supply-chain"
+    ]
+  },
+  {
+    "id": "news-bb9c7791",
+    "title": "GlassWorm Supply-Chain Attack Abuses 72 Open VSX Extensions to Target Developers",
+    "source": "The Hacker News",
+    "published": "2026-03-14T12:55:00.000Z",
+    "url": "https://thehackernews.com/2026/03/glassworm-supply-chain-attack-abuses-72.html",
+    "summary": "Cybersecurity researchers have flagged a new iteration of the GlassWorm campaign that they say represents a \"significant escalation\" in how it propagates through the Open VSX registry. \"Instead of requiring every malicious listing to embed the loader directly, the threat actor is now abusing extensionPack and extens...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "supply-chain"
+    ]
+  },
+  {
     "id": "news-81d4ca97",
     "title": "SmartApeSG campaign uses ClickFix page to push Remcos RAT, (Sat, Mar 14th)",
     "source": "SANS ISC",
@@ -668,24 +702,6 @@
       "high",
       "bleepingcomputer",
       "malware"
-    ]
-  },
-  {
-    "id": "news-fa7db7ae",
-    "title": "Google paid $17.1 million for vulnerability reports in 2025",
-    "source": "BleepingComputer",
-    "published": "2026-03-12T15:22:35.000Z",
-    "url": "https://www.bleepingcomputer.com/news/google/google-paid-171-million-for-vulnerability-reports-in-2025/",
-    "summary": "Google paid over $17 million to 747 security researchers who reported security bugs through its Vulnerability Reward Program (VRP) in 2025. [...]",
-    "severity": "HIGH",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "vulnerability",
-      "google"
     ]
   },
   {
@@ -1910,22 +1926,6 @@
       "the-hacker-news",
       "vulnerability",
       "cisco"
-    ]
-  },
-  {
-    "id": "news-48dbe26a",
-    "title": "Preparing for the Quantum Era: Post-Quantum Cryptography Webinar for Security Leaders",
-    "source": "The Hacker News",
-    "published": "2026-03-05T15:22:00.000Z",
-    "url": "https://thehackernews.com/2026/03/preparing-for-quantum-era-post-quantum.html",
-    "summary": "Most organizations assume encrypted data is safe. But many attackers are already preparing for a future where today’s encryption can be broken. Instead of trying to decrypt information now, they are collecting encrypted data and storing it so it can be decrypted later using quantum computers. This tactic—known as “h...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news"
     ]
   },
   {
