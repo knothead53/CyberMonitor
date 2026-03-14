@@ -1,5 +1,38 @@
 [
   {
+    "id": "news-81d4ca97",
+    "title": "SmartApeSG campaign uses ClickFix page to push Remcos RAT, (Sat, Mar 14th)",
+    "source": "SANS ISC",
+    "published": "2026-03-14T01:19:49.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32796",
+    "summary": "Introduction",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-ab770fde",
+    "title": "Microsoft: Windows 11 users can't access C: drive on some Samsung PCs",
+    "source": "BleepingComputer",
+    "published": "2026-03-13T22:11:57.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-users-cant-access-c-drive-on-some-samsung-pcs/",
+    "summary": "Microsoft is investigating a new issue affecting some Samsung laptops running Windows 11 after installing the February 2026 security updates, in which users lose access to their C:\\ drive and are unable to launch applications. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "microsoft"
+    ]
+  },
+  {
     "id": "news-b6842509",
     "title": "FBI seeks victims of Steam games used to spread malware",
     "source": "BleepingComputer",
@@ -432,6 +465,22 @@
     ]
   },
   {
+    "id": "news-8a309bc1",
+    "title": "Why Post-Quantum Cryptography Can't Wait",
+    "source": "Dark Reading",
+    "published": "2026-03-12T21:45:25.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/why-post-quantum-cryptography-cant-wait",
+    "summary": "Organizations have to prepare to ensure they have cryptography in place in the post-quantum world.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
     "id": "news-df6e549e",
     "title": "Canadian retail giant Loblaw notifies customers of data breach",
     "source": "BleepingComputer",
@@ -640,22 +689,6 @@
     ]
   },
   {
-    "id": "news-2d1fa1dd",
-    "title": "Telus Digital confirms breach after hacker claims 1 petabyte data theft",
-    "source": "BleepingComputer",
-    "published": "2026-03-12T14:40:14.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/telus-digital-confirms-breach-after-hacker-claims-1-petabyte-data-theft/",
-    "summary": "Canadian business process outsourcing giant Telus Digital has confirmed it suffered a security incident after threat actors claimed to have stolen nearly 1 petabyte of data from the company in a multi-month breach. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer"
-    ]
-  },
-  {
     "id": "news-b47222f1",
     "title": "What Orgs Can Learn From Olympics, World Cup IR Plans",
     "source": "Dark Reading",
@@ -804,6 +837,22 @@
       "intel-feed",
       "medium",
       "sans-isc"
+    ]
+  },
+  {
+    "id": "news-1008fa85",
+    "title": "A Guy Who Wrote the Code Died in 2005. I Still Have to Secure It",
+    "source": "Dark Reading",
+    "published": "2026-03-11T22:03:46.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/a-guy-who-wrote-code-died-in-2005-i-still-must-secure-it",
+    "summary": "The real frontline of American cybersecurity is a bidding war on eBay for 30-year-old industrial controllers.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
     ]
   },
   {
@@ -1512,22 +1561,6 @@
     ]
   },
   {
-    "id": "news-6103ca91",
-    "title": "ISC Stormcast For Monday, March 9th, 2026 https://isc.sans.edu/podcastdetail/9840, (Mon, Mar 9th)",
-    "source": "SANS ISC",
-    "published": "2026-03-09T02:00:02.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32776",
-    "summary": "No summary provided.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
-    ]
-  },
-  {
     "id": "news-77614f93",
     "title": "How AI Assistants are Moving the Security Goalposts",
     "source": "Krebs on Security",
@@ -2146,24 +2179,6 @@
     ]
   },
   {
-    "id": "news-53005ee4",
-    "title": "Bug in Google's Gemini AI Panel Opens Door to Hijacking",
-    "source": "Dark Reading",
-    "published": "2026-03-02T10:27:15.000Z",
-    "url": "https://www.darkreading.com/endpoint-security/bug-google-gemini-ai-panel-hijacking",
-    "summary": "Attackers could have exploited the vulnerability to escalate privileges, violate user privacy while browsing, and access sensitive resources.",
-    "severity": "HIGH",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "dark-reading",
-      "vulnerability",
-      "google"
-    ]
-  },
-  {
     "id": "news-e9bebcea",
     "title": "Who is the Kimwolf Botmaster “Dort”?",
     "source": "Krebs on Security",
@@ -2179,23 +2194,6 @@
       "krebs-on-security",
       "botnet",
       "vulnerability"
-    ]
-  },
-  {
-    "id": "news-35b1d247",
-    "title": "Life Mirrors Art: Ransomware Hits Hospitals on TV & IRL",
-    "source": "Dark Reading",
-    "published": "2026-02-27T20:48:05.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-hospitals-tv-irl",
-    "summary": "HBO's \"The Pitt\" is showing audiences what a real Mississippi healthcare system is going through this week, thanks to a ransomware attack.",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "dark-reading",
-      "ransomware"
     ]
   },
   {
