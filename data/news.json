@@ -1,5 +1,22 @@
 [
   {
+    "id": "news-b1191d3d",
+    "title": "OpenClaw AI Agent Flaws Could Enable Prompt Injection and Data Exfiltration",
+    "source": "The Hacker News",
+    "published": "2026-03-14T16:17:00.000Z",
+    "url": "https://thehackernews.com/2026/03/openclaw-ai-agent-flaws-could-enable.html",
+    "summary": "China's National Computer Network Emergency Response Technical Team (CNCERT) has issued a warning about the security stemming from the use of OpenClaw (formerly Clawdbot and Moltbot), an open-source and self-hosted autonomous artificial intelligence (AI) agent. In a post shared on WeChat, CNCERT noted that the platf...",
+    "severity": "MEDIUM",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "aws"
+    ]
+  },
+  {
     "id": "news-f28904b2",
     "title": "AppsFlyer Web SDK hijacked to spread crypto-stealing JavaScript code",
     "source": "BleepingComputer",
@@ -1908,24 +1925,6 @@
       "intel-feed",
       "medium",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-01184369",
-    "title": "Cisco Confirms Active Exploitation of Two Catalyst SD-WAN Manager Vulnerabilities",
-    "source": "The Hacker News",
-    "published": "2026-03-05T15:22:00.000Z",
-    "url": "https://thehackernews.com/2026/03/cisco-confirms-active-exploitation-of.html",
-    "summary": "Cisco has disclosed that two more vulnerabilities affecting Catalyst SD-WAN Manager (formerly SD-WAN vManage) have come under active exploitation in the wild. The vulnerabilities in question are listed below - CVE-2026-20122 (CVSS score: 7.1) - An arbitrary file overwrite vulnerability that could allow an authentica...",
-    "severity": "HIGH",
-    "vendor": "Cisco",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "vulnerability",
-      "cisco"
     ]
   },
   {
