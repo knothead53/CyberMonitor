@@ -1,5 +1,21 @@
 [
   {
+    "id": "news-abbed58f",
+    "title": "Betterleaks, a new open-source secrets scanner to replace Gitleaks",
+    "source": "BleepingComputer",
+    "published": "2026-03-15T14:17:23.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/betterleaks-a-new-open-source-secrets-scanner-to-replace-gitleaks/",
+    "summary": "A new open-source tool called Betterleaks can scan directories, files, and git repositories and identify valid secrets using default or customized rules. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
     "id": "news-df223bdb",
     "title": "Microsoft releases Windows 11 OOB hotpatch to fix RRAS RCE flaw",
     "source": "BleepingComputer",
@@ -686,24 +702,6 @@
       "ransomware",
       "malware",
       "intel"
-    ]
-  },
-  {
-    "id": "news-3ac5e657",
-    "title": "Veeam warns of critical flaws exposing backup servers to RCE attacks",
-    "source": "BleepingComputer",
-    "published": "2026-03-12T16:59:20.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/veeam-warns-of-critical-flaws-exposing-backup-servers-to-rce-attacks/",
-    "summary": "Data protection company Veeam Software has patched multiple flaws in its Backup & Replication solution, including four critical remote code execution (RCE) vulnerabilities. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Aws",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "patch",
-      "aws"
     ]
   },
   {

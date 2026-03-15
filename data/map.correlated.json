@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-15T13:15:45.151Z",
+  "generatedAt": "2026-03-15T15:43:17.213Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-14T21:48:14.000Z",
-      "summary": "102 correlated news signals from 5 sources; vendors: Microsoft, Aws."
+      "timestamp": "2026-03-15T14:17:23.000Z",
+      "summary": "102 correlated news signals from 5 sources; vendors: Unknown, Microsoft."
     },
     {
       "id": "corr-cloud-global",
