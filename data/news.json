@@ -1,5 +1,73 @@
 [
   {
+    "id": "news-e2ee37e4",
+    "title": "Microsoft Exchange Online outage blocks access to mailboxes",
+    "source": "BleepingComputer",
+    "published": "2026-03-16T16:05:02.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-online-outage-blocks-access-to-mailboxes/",
+    "summary": "Microsoft is working to address an ongoing Exchange Online outage that is preventing customers from accessing their mailboxes and calendars. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-ac4fc838",
+    "title": "⚡ Weekly Recap: Chrome 0-Days, Router Botnets, AWS Breach, Rogue AI Agents & More",
+    "source": "The Hacker News",
+    "published": "2026-03-16T14:17:00.000Z",
+    "url": "https://thehackernews.com/2026/03/weekly-recap-chrome-0-days-router.html",
+    "summary": "Some weeks in security feel normal. Then you read a few tabs and get that immediate “ah, great, we’re doing this now” feeling. This week has that energy. Fresh messes, old problems getting sharper, and research that stops feeling theoretical real fast. A few bits hit a little too close to real life, too. There’s a g...",
+    "severity": "CRITICAL",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "botnet",
+      "aws"
+    ]
+  },
+  {
+    "id": "news-8ed87a6e",
+    "title": "Attackers Abuse LiveChat to Phish Credit Card, Personal Data",
+    "source": "Dark Reading",
+    "published": "2026-03-16T14:10:47.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/attackers-livechat-phish-credit-card-personal-data",
+    "summary": "A social engineering campaign impersonating PayPal and Amazon uses customer support interactions to acquire sensitive info.",
+    "severity": "MEDIUM",
+    "vendor": "Amazon",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "amazon"
+    ]
+  },
+  {
+    "id": "news-c681ff2f",
+    "title": "Shadow AI is everywhere. Here’s how to find and secure it.",
+    "source": "BleepingComputer",
+    "published": "2026-03-16T14:01:11.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/shadow-ai-is-everywhere-heres-how-to-find-and-secure-it/",
+    "summary": "Shadow AI is quietly spreading across SaaS environments as employees adopt new AI tools without IT oversight. Nudge Security explains how security teams can discover AI apps, monitor usage, and govern risky AI activity. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
     "id": "news-005edcbe",
     "title": "/proxy/ URL scans with IP addresses, (Mon, Mar 16th)",
     "source": "SANS ISC",
@@ -613,25 +681,6 @@
     ]
   },
   {
-    "id": "news-3f42f653",
-    "title": "Google fixes two new Chrome zero-days exploited in attacks",
-    "source": "BleepingComputer",
-    "published": "2026-03-13T06:56:58.000Z",
-    "url": "https://www.bleepingcomputer.com/news/google/google-fixes-two-new-chrome-zero-days-exploited-in-attacks/",
-    "summary": "Google has released emergency security updates to patch two high-severity Chrome vulnerabilities exploited in zero-day attacks. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "zero-day",
-      "patch",
-      "google"
-    ]
-  },
-  {
     "id": "news-bf999264",
     "title": "Authorities Disrupt SocksEscort Proxy Botnet Exploiting 369,000 IPs Across 163 Countries",
     "source": "The Hacker News",
@@ -698,23 +747,6 @@
       "intel-feed",
       "medium",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-df6e549e",
-    "title": "Canadian retail giant Loblaw notifies customers of data breach",
-    "source": "BleepingComputer",
-    "published": "2026-03-12T21:32:21.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/canadian-retail-giant-loblaw-notifies-customers-of-data-breach/",
-    "summary": "Still, out of an abundance of caution, Loblaw says it has automatically logged out all customers from their accounts. Account holders who need to access the company's digital services will have to log in again. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "data-breach"
     ]
   },
   {
@@ -976,7 +1008,7 @@
     "source": "Dark Reading",
     "published": "2026-03-11T22:03:46.000Z",
     "url": "https://www.darkreading.com/cyber-risk/a-guy-who-wrote-code-died-in-2005-i-still-must-secure-it",
-    "summary": "The real frontline of American cybersecurity is a bidding war on eBay for 30-year-old industrial controllers.",
+    "summary": "The real front line of American cybersecurity is a bidding war on eBay for 30-year-old industrial controllers.",
     "severity": "MEDIUM",
     "vendor": "Unknown",
     "tags": [
@@ -1826,22 +1858,6 @@
     ]
   },
   {
-    "id": "news-f1f979bb",
-    "title": "The MSP Guide to Using AI-Powered Risk Management to Scale Cybersecurity",
-    "source": "The Hacker News",
-    "published": "2026-03-06T10:30:00.000Z",
-    "url": "https://thehackernews.com/2026/03/the-msp-guide-to-using-ai-powered-risk.html",
-    "summary": "Scaling cybersecurity services as an MSP or MSSP requires technical expertise and a business model that delivers measurable value at scale. Risk-based cybersecurity is the foundation of that model. When done right, it builds client trust, increases upsell opportunities, and drives recurring revenue. But to deliver t...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news"
-    ]
-  },
-  {
     "id": "news-2143ecee",
     "title": "Nation-State Actor Embraces AI Malware Assembly Line",
     "source": "Dark Reading",
@@ -2156,22 +2172,6 @@
       "news",
       "intel-feed",
       "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-2b00c3e3",
-    "title": "Quantum-Resistant Data Diode Secures Sensitive Data on Edge Devices, Critical Systems",
-    "source": "Dark Reading",
-    "published": "2026-03-02T12:55:27.000Z",
-    "url": "https://www.darkreading.com/ics-ot-security/quantum-resistant-data-diode-secures-sensitive-data-on-edge-devices-critical-systems",
-    "summary": "Forward Edge-AI's new Isidore Quantum is a compact, low-power hardware device designed to defend sensitive operational technology endpoints against future quantum attacks.",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
       "dark-reading"
     ]
   },
