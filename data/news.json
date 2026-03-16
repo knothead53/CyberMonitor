@@ -1,5 +1,56 @@
 [
   {
+    "id": "news-4d6e4be1",
+    "title": "GlassWorm Malware Evolves to Hide in Dependencies",
+    "source": "Dark Reading",
+    "published": "2026-03-16T20:30:04.000Z",
+    "url": "https://www.darkreading.com/application-security/glassworm-malware-evolves-hide-dependencies",
+    "summary": "Researchers have identified dozens of malicious GlassWorm extensions that come with new evasion techniques.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-104c3153",
+    "title": "Inside Olympic Cybersecurity: Lessons From Paris 2024 to Milan Cortina 2026",
+    "source": "Dark Reading",
+    "published": "2026-03-16T20:28:19.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/olympic-cybersecurity-paris-2024-milan-2026",
+    "summary": "Discover how Franz Regul, former CISO for the Paris 2024 Olympics, tackled unique cybersecurity challenges to protect the Olympics from evolving threats.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-8785b403",
+    "title": "GlassWorm Attack Uses Stolen GitHub Tokens to Force-Push Malware Into Python Repos",
+    "source": "The Hacker News",
+    "published": "2026-03-16T19:37:00.000Z",
+    "url": "https://thehackernews.com/2026/03/glassworm-attack-uses-stolen-github.html",
+    "summary": "The GlassWorm malware campaign is being used to fuel an ongoing attack that leverages the stolen GitHub tokens to inject malware into hundreds of Python repositories. \"The attack targets Python projects — including Django apps, ML research code, Streamlit dashboards, and PyPI packages — by appending obfuscated code ...",
+    "severity": "HIGH",
+    "vendor": "Github",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware",
+      "github"
+    ]
+  },
+  {
     "id": "news-6fb16f53",
     "title": "Stryker attack wiped tens of thousands of devices, no malware needed",
     "source": "BleepingComputer",
@@ -1809,23 +1860,6 @@
     ]
   },
   {
-    "id": "news-362a458d",
-    "title": "Multi-Stage VOID#GEIST Malware Delivering XWorm, AsyncRAT, and Xeno RAT",
-    "source": "The Hacker News",
-    "published": "2026-03-06T14:33:00.000Z",
-    "url": "https://thehackernews.com/2026/03/multi-stage-voidgeist-malware.html",
-    "summary": "Cybersecurity researchers have disclosed details of a multi-stage malware campaign that uses batch scripts as a pathway to deliver various encrypted remote access trojan (RATs) payloads that correspond to XWorm, AsyncRAT, and Xeno RAT. The stealthy attack chain has been codenamed VOID#GEIST by Securonix Threat Resea...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "malware"
-    ]
-  },
-  {
     "id": "news-b6605af7",
     "title": "Iran's Cyber-Kinetic War Doctrine Takes Shape",
     "source": "Dark Reading",
@@ -2142,38 +2176,6 @@
       "vulnerability",
       "patch",
       "api"
-    ]
-  },
-  {
-    "id": "news-52147434",
-    "title": "The Tug-of-War Over Firewall Backlogs in the AI-Driven Development Era",
-    "source": "Dark Reading",
-    "published": "2026-03-02T21:32:04.000Z",
-    "url": "https://www.darkreading.com/cloud-security/tug-of-war-firewall-backlogs-ai-driven-development",
-    "summary": "Speed and security are historically clashing priorities, but with AI and automation, it's increasingly important that application developers and security teams get on the same page.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-49fbe189",
-    "title": "30 Alleged Members of 'The Com' Arrested in Project Compass",
-    "source": "Dark Reading",
-    "published": "2026-03-02T20:32:09.000Z",
-    "url": "https://www.darkreading.com/threat-intelligence/30-alleged-members-the-com-arrested-project-compass",
-    "summary": "The global law enforcement crackdown, which began in January 2025, also identified nearly 180 members of the notorious cybercriminal collective.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
     ]
   },
   {
