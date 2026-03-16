@@ -1,5 +1,71 @@
 [
   {
+    "id": "news-005edcbe",
+    "title": "/proxy/ URL scans with IP addresses, (Mon, Mar 16th)",
+    "source": "SANS ISC",
+    "published": "2026-03-16T13:48:54.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32800",
+    "summary": "Attempts to find proxy servers are among the most common scans our honeypots detect. Most of the time, the attacker attempts to use a host header or include the hostname in the URL to trigger the proxy server forwarding the request. In some cases, common URL prefixes like \"/proxy/\" are used. This weekend, I noticed ...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-90cf7c03",
+    "title": "Microsoft pulls Samsung app blocking Windows C: drive from Store",
+    "source": "BleepingComputer",
+    "published": "2026-03-16T13:14:32.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-pulls-samsung-app-blocking-windows-c-drive-from-store/",
+    "summary": "​Microsoft has removed the Samsung Galaxy Connect app from the Microsoft Store because it was causing issues on specific Samsung Galaxy Book 4 and desktop models running Windows 11. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-26be691a",
+    "title": "Why Security Validation Is Becoming Agentic",
+    "source": "The Hacker News",
+    "published": "2026-03-16T11:58:00.000Z",
+    "url": "https://thehackernews.com/2026/03/why-security-validation-is-becoming.html",
+    "summary": "If you run security at any reasonably complex organization, your validation stack probably looks something like this: a BAS tool in one corner. A pentest engagement, or maybe an automated pentesting product, in another. A vulnerability scanner feeding an attack surface management platform somewhere else. Each tool g...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "news-a6a701eb",
+    "title": "ClickFix Campaigns Spread MacSync macOS Infostealer via Fake AI Tool Installers",
+    "source": "The Hacker News",
+    "published": "2026-03-16T11:41:00.000Z",
+    "url": "https://thehackernews.com/2026/03/clickfix-campaigns-spread-macsync-macos.html",
+    "summary": "Three different ClickFix campaigns have been found to act as a delivery vector for the deployment of a macOS information stealer called MacSync. \"Unlike traditional exploit-based attacks, this method relies entirely on user interaction – usually in the form of copying and executing commands – making it particularly ...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news"
+    ]
+  },
+  {
     "id": "news-c86f93dd",
     "title": "DRILLAPP Backdoor Targets Ukraine, Abuses Microsoft Edge Debugging for Stealth Espionage",
     "source": "The Hacker News",
@@ -209,7 +275,7 @@
     "source": "Dark Reading",
     "published": "2026-03-13T19:19:38.000Z",
     "url": "https://www.darkreading.com/vulnerabilities-threats/fake-pocs-risks-cisco-sd-wan",
-    "summary": "The excitement around Cisco's latest SD-WAN bugs has inspired some light fraud, misunderstandings, and overlooked risks.",
+    "summary": "The excitement around Cisco's latest SD-WAN bugs has inspired some light fraud, misunderstandings, and overlooked potential hazards.",
     "severity": "MEDIUM",
     "vendor": "Cisco",
     "tags": [
@@ -445,7 +511,7 @@
     "source": "Dark Reading",
     "published": "2026-03-13T13:20:58.000Z",
     "url": "https://www.darkreading.com/cloud-security/google-cloud-attacks-bug-exploitation",
-    "summary": "Forget stolen credentials and misconfigurations; AI means vulnerability exploits that beat patching cycles are the top cause of compromises in the cloud.",
+    "summary": "Forget stolen credentials and misconfigurations. Thanks to AI, the new top cause of compromises in the cloud is vulnerability exploits that beat patching cycles.",
     "severity": "HIGH",
     "vendor": "Google",
     "tags": [
@@ -665,24 +731,6 @@
       "intel-feed",
       "high",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-0c3b4153",
-    "title": "England Hockey investigating ransomware data breach",
-    "source": "BleepingComputer",
-    "published": "2026-03-12T20:37:16.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/england-hockey-investigating-ransomware-data-breach/",
-    "summary": "England Hockey, the governing body for field hockey in England, is investigating a potential data breach after the AiLock ransomware gang listed it as a victim on its data leak site. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "ransomware",
-      "data-breach"
     ]
   },
   {
@@ -1445,22 +1493,6 @@
     ]
   },
   {
-    "id": "news-f3cc0030",
-    "title": "ISC Stormcast For Tuesday, March 10th, 2026 https://isc.sans.edu/podcastdetail/9842, (Tue, Mar 10th)",
-    "source": "SANS ISC",
-    "published": "2026-03-10T02:00:02.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32780",
-    "summary": "No summary provided.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
-    ]
-  },
-  {
     "id": "news-9b3796a3",
     "title": "White House Cyber Strategy Prioritizes Offense",
     "source": "Dark Reading",
@@ -1807,39 +1839,6 @@
       "intel-feed",
       "medium",
       "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-c915f064",
-    "title": "Iran-Linked MuddyWater Hackers Target U.S. Networks With New Dindoor Backdoor",
-    "source": "The Hacker News",
-    "published": "2026-03-06T10:23:00.000Z",
-    "url": "https://thehackernews.com/2026/03/iran-linked-muddywater-hackers-target.html",
-    "summary": "New research from Broadcom's Symantec and Carbon Black Threat Hunter Team has discovered evidence of an Iranian hacking group embedding itself in several U.S. companies' networks, including banks, airports, non-profit, and the Israeli arm of a software company. The activity has been attributed to a state-sponsored h...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-3a2b7cc8",
-    "title": "China-Linked Hackers Use TernDoor, PeerTime, BruteEntry in South American Telecom Attacks",
-    "source": "The Hacker News",
-    "published": "2026-03-06T08:22:00.000Z",
-    "url": "https://thehackernews.com/2026/03/china-linked-hackers-use-terndoor.html",
-    "summary": "A China-linked advanced persistent threat (APT) actor has been targeting critical telecommunications infrastructure in South America since 2024, targeting Windows and Linux systems and edge devices with three different implants. The activity is being tracked by Cisco Talos under the moniker UAT-9244, describing it a...",
-    "severity": "HIGH",
-    "vendor": "Cisco",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "cisco"
     ]
   },
   {
