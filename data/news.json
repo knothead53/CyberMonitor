@@ -1,5 +1,24 @@
 [
   {
+    "id": "news-2f5ca154",
+    "title": "Android 17 Blocks Non-Accessibility Apps from Accessibility API to Prevent Malware Abuse",
+    "source": "The Hacker News",
+    "published": "2026-03-16T05:43:00.000Z",
+    "url": "https://thehackernews.com/2026/03/android-17-blocks-non-accessibility.html",
+    "summary": "Google is testing a new security feature as part of Android Advanced Protection Mode (AAPM) that prevents certain kinds of apps from using the accessibility services API. The change, incorporated in Android 17 Beta 2, was first reported by Android Authority last week. AAPM was introduced by Google in Android 16, rel...",
+    "severity": "HIGH",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware",
+      "api",
+      "google"
+    ]
+  },
+  {
     "id": "news-0d217dbf",
     "title": "ISC Stormcast For Monday, March 16th, 2026 https://isc.sans.edu/podcastdetail/9850, (Mon, Mar 16th)",
     "source": "SANS ISC",
@@ -1822,23 +1841,6 @@
       "the-hacker-news",
       "malware",
       "microsoft"
-    ]
-  },
-  {
-    "id": "news-51afb3bc",
-    "title": "Hikvision and Rockwell Automation CVSS 9.8 Flaws Added to CISA KEV Catalog",
-    "source": "The Hacker News",
-    "published": "2026-03-06T06:30:00.000Z",
-    "url": "https://thehackernews.com/2026/03/hikvision-and-rockwell-automation-cvss.html",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Hikvision and Rockwell Automation products to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical-severity vulnerabilities are listed below - CVE-2017-79...",
-    "severity": "HIGH",
-    "vendor": "Aws",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "aws"
     ]
   },
   {

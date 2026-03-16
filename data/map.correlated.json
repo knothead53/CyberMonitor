@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-16T03:32:37.548Z",
+  "generatedAt": "2026-03-16T07:46:39.994Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-15T23:13:28.000Z",
-      "summary": "102 correlated news signals from 5 sources; vendors: Openai, Unknown."
+      "timestamp": "2026-03-16T05:43:00.000Z",
+      "summary": "102 correlated news signals from 5 sources; vendors: Google, Openai."
     },
     {
       "id": "corr-cloud-global",
@@ -35,6 +35,16 @@
       "summary": "347 KEV and 6 high-severity news signals across 4 sources."
     },
     {
+      "id": "corr-incident-google",
+      "name": "Google Correlated Incident Activity",
+      "lat": 39.8283,
+      "lon": -98.5795,
+      "type": "incident",
+      "severity": "CRITICAL",
+      "timestamp": "2026-03-16T05:43:00.000Z",
+      "summary": "69 KEV and 5 high-severity news signals across 4 sources."
+    },
+    {
       "id": "corr-incident-cisco",
       "name": "Cisco Correlated Incident Activity",
       "lat": 39.8283,
@@ -43,16 +53,6 @@
       "severity": "CRITICAL",
       "timestamp": "2026-03-13T13:23:28.000Z",
       "summary": "70 KEV and 3 high-severity news signals across 4 sources."
-    },
-    {
-      "id": "corr-incident-google",
-      "name": "Google Correlated Incident Activity",
-      "lat": 39.8283,
-      "lon": -98.5795,
-      "type": "incident",
-      "severity": "CRITICAL",
-      "timestamp": "2026-03-13T13:20:58.000Z",
-      "summary": "69 KEV and 4 high-severity news signals across 4 sources."
     },
     {
       "id": "corr-incident-adobe",
