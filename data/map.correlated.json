@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-16T07:46:39.994Z",
+  "generatedAt": "2026-03-16T10:13:32.431Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-16T05:43:00.000Z",
-      "summary": "102 correlated news signals from 5 sources; vendors: Google, Openai."
+      "timestamp": "2026-03-16T09:07:00.000Z",
+      "summary": "102 correlated news signals from 5 sources; vendors: Microsoft, Google."
     },
     {
       "id": "corr-cloud-global",
@@ -31,7 +31,7 @@
       "lon": -98.5795,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-13T13:38:00.000Z",
+      "timestamp": "2026-03-16T09:07:00.000Z",
       "summary": "347 KEV and 6 high-severity news signals across 4 sources."
     },
     {
@@ -144,7 +144,7 @@
       "type": "outage",
       "severity": "HIGH",
       "timestamp": "2026-03-09T19:17:50.000Z",
-      "summary": "43 correlated outage events from 1 status feeds."
+      "summary": "44 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-github",
@@ -165,16 +165,6 @@
       "severity": "CRITICAL",
       "timestamp": "2026-03-12T21:06:00.000Z",
       "summary": "22 correlated outage events from 1 status feeds."
-    },
-    {
-      "id": "corr-outage-cloudflare",
-      "name": "Cloudflare Service Disruption Signals",
-      "lat": 39.8283,
-      "lon": -98.5795,
-      "type": "outage",
-      "severity": "HIGH",
-      "timestamp": "2026-03-15T23:10:30.000Z",
-      "summary": "1 correlated outage events from 1 status feeds."
     }
   ]
 }

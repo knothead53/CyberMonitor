@@ -1,5 +1,22 @@
 [
   {
+    "id": "news-c86f93dd",
+    "title": "DRILLAPP Backdoor Targets Ukraine, Abuses Microsoft Edge Debugging for Stealth Espionage",
+    "source": "The Hacker News",
+    "published": "2026-03-16T09:07:00.000Z",
+    "url": "https://thehackernews.com/2026/03/drillapp-backdoor-targets-ukraine.html",
+    "summary": "Ukrainian entities have emerged as the target of a new campaign likely orchestrated by threat actors linked to Russia, according to a report from S2 Grupo's LAB52 threat intelligence team. The campaign, observed in February 2026, has been assessed to share overlaps with a prior campaign mounted by Laundry Bear (aka ...",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "microsoft"
+    ]
+  },
+  {
     "id": "news-2f5ca154",
     "title": "Android 17 Blocks Non-Accessibility Apps from Accessibility API to Prevent Malware Abuse",
     "source": "The Hacker News",
@@ -1823,24 +1840,6 @@
       "high",
       "the-hacker-news",
       "cisco"
-    ]
-  },
-  {
-    "id": "news-f6560b13",
-    "title": "Microsoft Reveals ClickFix Campaign Using Windows Terminal to Deploy Lumma Stealer",
-    "source": "The Hacker News",
-    "published": "2026-03-06T06:44:00.000Z",
-    "url": "https://thehackernews.com/2026/03/microsoft-reveals-clickfix-campaign.html",
-    "summary": "Microsoft on Thursday disclosed details of a new widespread ClickFix social engineering campaign that has leveraged the Windows Terminal app as a way to activate a sophisticated attack chain and deploy the Lumma Stealer malware. The activity, observed in February 2026, makes use of the terminal emulator program inst...",
-    "severity": "HIGH",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "malware",
-      "microsoft"
     ]
   },
   {
