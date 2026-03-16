@@ -1,5 +1,38 @@
 [
   {
+    "id": "news-0d217dbf",
+    "title": "ISC Stormcast For Monday, March 16th, 2026 https://isc.sans.edu/podcastdetail/9850, (Mon, Mar 16th)",
+    "source": "SANS ISC",
+    "published": "2026-03-16T02:00:02.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32798",
+    "summary": "No summary provided.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-db53dd67",
+    "title": "OpenAI says ChatGPT ads are not rolling out globally for now",
+    "source": "BleepingComputer",
+    "published": "2026-03-15T23:13:28.000Z",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-chatgpt-ads-are-not-rolling-out-globally-for-now/",
+    "summary": "OpenAI told BleepingComputer that ChatGPT ads on Free and Go plans are not yet rolling out outside the United States, even though some users noticed references to ads in the updated privacy policy. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Openai",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "openai"
+    ]
+  },
+  {
     "id": "news-abbed58f",
     "title": "Betterleaks, a new open-source secrets scanner to replace Gitleaks",
     "source": "BleepingComputer",
@@ -631,24 +664,6 @@
       "medium",
       "dark-reading",
       "aws"
-    ]
-  },
-  {
-    "id": "news-d8d1925d",
-    "title": "AI-generated Slopoly malware used in Interlock ransomware attack",
-    "source": "BleepingComputer",
-    "published": "2026-03-12T20:01:27.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/ai-generated-slopoly-malware-used-in-interlock-ransomware-attack/",
-    "summary": "A new malware strain dubbed Slopoly, likely created using generative AI tools, allowed a threat actor to remain on a compromised server for more than a week and steal data in an Interlock ransomware attack. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "ransomware",
-      "malware"
     ]
   },
   {
@@ -1472,22 +1487,6 @@
       "intel-feed",
       "high",
       "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-85df9293",
-    "title": "Encrypted Client Hello: Ready for Prime Time?, (Mon, Mar 9th)",
-    "source": "SANS ISC",
-    "published": "2026-03-09T15:03:29.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32778",
-    "summary": "Last week, two related RFCs were published:",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
     ]
   },
   {
