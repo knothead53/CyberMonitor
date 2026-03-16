@@ -1,5 +1,23 @@
 [
   {
+    "id": "CVE-2025-47813",
+    "title": "CVE-2025-47813 - Wing FTP Server Information Disclosure Vulnerability",
+    "source": "CISA KEV Catalog",
+    "published": "2026-03-16T00:00:00.000Z",
+    "url": "https://www.wftpserver.com/serverhistory.htm",
+    "summary": "Wing FTP Server contains a generation of error message containing sensitive information vulnerability when using a long value in the UID cookie.",
+    "severity": "MEDIUM",
+    "vendor": "Wing FTP Server",
+    "tags": [
+      "kev",
+      "medium",
+      "cve-2025-47813",
+      "wing-ftp-server",
+      "cwe-209",
+      "cisa-kev-catalog"
+    ]
+  },
+  {
     "id": "CVE-2026-3910",
     "title": "CVE-2026-3910 - Google Chromium V8 Improper Restriction of Operations Within the Bounds of a Memory Buffer Vulnerability",
     "source": "CISA KEV Catalog",

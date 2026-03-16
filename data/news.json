@@ -1,5 +1,56 @@
 [
   {
+    "id": "news-6fb16f53",
+    "title": "Stryker attack wiped tens of thousands of devices, no malware needed",
+    "source": "BleepingComputer",
+    "published": "2026-03-16T19:17:20.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/stryker-attack-wiped-tens-of-thousands-of-devices-no-malware-needed/",
+    "summary": "Last week's cyberattack on medical technology giant Stryker was limited to its internal Microsoft environment and remotely wiped tens of thousands of employee devices. [...]",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "malware",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-6e2863ce",
+    "title": "CISA flags Wing FTP Server flaw as actively exploited in attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-16T18:00:22.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-wing-ftp-server-flaw-as-actively-exploited-in-attacks/",
+    "summary": "CISA warned U.S. government agencies to secure their Wing FTP Server instances against an actively exploited vulnerability that may be chained in remote code execution attacks. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "news-8ca0492a",
+    "title": "UK’s Companies House confirms security flaw exposed business data",
+    "source": "BleepingComputer",
+    "published": "2026-03-16T17:07:25.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/uks-companies-house-confirms-security-flaw-exposed-business-data/",
+    "summary": "Companies House, a British government agency that operates the registry for all U.K. companies, says its WebFiling service is back online after it was closed on Friday to fix a security flaw that exposed companies' information since October 2025. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
     "id": "news-e2ee37e4",
     "title": "Microsoft Exchange Online outage blocks access to mailboxes",
     "source": "BleepingComputer",
@@ -525,22 +576,6 @@
     ]
   },
   {
-    "id": "news-6fdc38e0",
-    "title": "Police sinkholes 45,000 IP addresses in cybercrime crackdown",
-    "source": "BleepingComputer",
-    "published": "2026-03-13T13:28:33.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/police-sinkholes-45-000-ip-addresses-in-cybercrime-crackdown/",
-    "summary": "An international law enforcement action codenamed \"Operation Synergia III\" has sinkholed tens of thousands of IP addresses and seized servers linked to cybercrime operations worldwide. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer"
-    ]
-  },
-  {
     "id": "news-af6426c7",
     "title": "Investigating a New Click-Fix Variant",
     "source": "The Hacker News",
@@ -554,23 +589,6 @@
       "intel-feed",
       "medium",
       "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-29545fba",
-    "title": "Fake enterprise VPN sites used to steal company credentials",
-    "source": "BleepingComputer",
-    "published": "2026-03-13T13:23:28.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fake-enterprise-vpn-downloads-used-to-steal-company-credentials/",
-    "summary": "A threat actor tracked as Storm-2561 is distributing fake enterprise VPN clients from Ivanti, Cisco, and Fortinet to steal VPN credentials from unsuspecting users. [...]",
-    "severity": "HIGH",
-    "vendor": "Cisco",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "cisco"
     ]
   },
   {
@@ -644,23 +662,6 @@
       "high",
       "the-hacker-news",
       "aws"
-    ]
-  },
-  {
-    "id": "news-1991877e",
-    "title": "Starbucks discloses data breach affecting hundreds of employees",
-    "source": "BleepingComputer",
-    "published": "2026-03-13T08:16:55.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/starbucks-discloses-data-breach-affecting-hundreds-of-employees/",
-    "summary": "Starbucks has disclosed a data breach affecting hundreds of employees after threat actors gained access to their Starbucks Partner Central accounts. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "data-breach"
     ]
   },
   {
