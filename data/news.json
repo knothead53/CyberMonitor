@@ -1,5 +1,40 @@
 [
   {
+    "id": "news-2e92aaa5",
+    "title": "GlassWorm malware hits 400+ code repos on GitHub, npm, VSCode, OpenVSX",
+    "source": "BleepingComputer",
+    "published": "2026-03-17T21:42:54.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/glassworm-malware-hits-400-plus-code-repos-on-github-npm-vscode-openvsx/",
+    "summary": "The GlassWorm supply-chain campaign has returned with a new, coordinated attack that targeted hundreds of packages, repositories, and extensions on GitHub, npm, and VSCode/OpenVSX extensions. [...]",
+    "severity": "HIGH",
+    "vendor": "Github",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "malware",
+      "supply-chain",
+      "github"
+    ]
+  },
+  {
+    "id": "news-af8c4c56",
+    "title": "Hackers Target Cybersecurity Firm Outpost24 in 7-Stage Phish",
+    "source": "Dark Reading",
+    "published": "2026-03-17T19:41:24.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/hackers-target-cybersecurity-firm-outpost24-phish",
+    "summary": "The cyberattackers leveraged trusted brands and domains in an attempt to redirect a C-suite executive at Outpost24 to give up his credentials.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
+    ]
+  },
+  {
     "id": "news-9535eda7",
     "title": "Europe sanctions Chinese and Iranian firms for cyberattacks",
     "source": "BleepingComputer",
@@ -572,23 +607,6 @@
       "intel-feed",
       "medium",
       "sans-isc"
-    ]
-  },
-  {
-    "id": "news-db53dd67",
-    "title": "OpenAI says ChatGPT ads are not rolling out globally for now",
-    "source": "BleepingComputer",
-    "published": "2026-03-15T23:13:28.000Z",
-    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-chatgpt-ads-are-not-rolling-out-globally-for-now/",
-    "summary": "OpenAI told BleepingComputer that ChatGPT ads on Free and Go plans are not yet rolling out outside the United States, even though some users noticed references to ads in the updated privacy policy. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Openai",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "openai"
     ]
   },
   {
@@ -2157,23 +2175,6 @@
       "intel-feed",
       "medium",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-59125c86",
-    "title": "AI Agent Overload: How to Solve the Workload Identity Crisis",
-    "source": "Dark Reading",
-    "published": "2026-03-03T12:57:19.000Z",
-    "url": "https://www.darkreading.com/cloud-security/ai-agent-workload-identity-crisis",
-    "summary": "Workloads keep getting more complicated and organizations are struggling to keep up. So what's the play?",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading",
-      "identity"
     ]
   },
   {

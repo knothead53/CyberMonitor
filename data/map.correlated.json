@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-17T19:19:03.864Z",
+  "generatedAt": "2026-03-17T21:52:43.163Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-17T16:39:00.000Z",
-      "summary": "105 correlated news signals from 5 sources; vendors: Aws, Unknown."
+      "timestamp": "2026-03-17T21:42:54.000Z",
+      "summary": "106 correlated news signals from 5 sources; vendors: Github, Unknown."
     },
     {
       "id": "corr-cloud-global",
@@ -20,7 +20,7 @@
       "type": "cloud_region",
       "severity": "CRITICAL",
       "timestamp": "2026-03-17T05:23:00.000Z",
-      "summary": "29 correlated news signals from 4 sources; vendors: Unknown, Meta."
+      "summary": "28 correlated news signals from 4 sources; vendors: Unknown, Meta."
     },
     {
       "id": "corr-cloud-europe",
@@ -91,8 +91,8 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-17T18:41:59.000Z",
-      "summary": "0 KEV and 56 high-severity news signals across 5 sources."
+      "timestamp": "2026-03-17T19:41:24.000Z",
+      "summary": "0 KEV and 57 high-severity news signals across 5 sources."
     },
     {
       "id": "corr-incident-oracle",
@@ -174,7 +174,17 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-12T21:06:00.000Z",
-      "summary": "21 correlated outage events from 1 status feeds."
+      "summary": "20 correlated outage events from 1 status feeds."
+    },
+    {
+      "id": "corr-outage-cloudflare",
+      "name": "Cloudflare Service Disruption Signals",
+      "lat": 39.8283,
+      "lon": -98.5795,
+      "type": "outage",
+      "severity": "HIGH",
+      "timestamp": "2026-03-17T21:11:27.000Z",
+      "summary": "1 correlated outage events from 1 status feeds."
     }
   ]
 }
