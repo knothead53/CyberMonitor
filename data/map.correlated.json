@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-17T13:49:55.977Z",
+  "generatedAt": "2026-03-17T16:16:42.457Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,7 +9,7 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-17T12:09:35.000Z",
+      "timestamp": "2026-03-17T15:36:52.000Z",
       "summary": "106 correlated news signals from 5 sources; vendors: Unknown, Microsoft."
     },
     {
@@ -81,8 +81,8 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-17T12:09:35.000Z",
-      "summary": "0 KEV and 54 high-severity news signals across 5 sources."
+      "timestamp": "2026-03-17T15:36:52.000Z",
+      "summary": "0 KEV and 55 high-severity news signals across 5 sources."
     },
     {
       "id": "corr-incident-oracle",
@@ -164,7 +164,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-12T21:06:00.000Z",
-      "summary": "21 correlated outage events from 1 status feeds."
+      "summary": "22 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-cloudflare",
@@ -174,7 +174,7 @@
       "type": "outage",
       "severity": "HIGH",
       "timestamp": "2026-03-17T03:34:58.000Z",
-      "summary": "2 correlated outage events from 1 status feeds."
+      "summary": "1 correlated outage events from 1 status feeds."
     }
   ]
 }

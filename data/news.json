@@ -1,5 +1,89 @@
 [
   {
+    "id": "news-b879e40e",
+    "title": "Warlock Ransomware Group Augments Post-Exploitation Activities",
+    "source": "Dark Reading",
+    "published": "2026-03-17T15:36:52.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/warlock-ransomware-post-exploitation-activities",
+    "summary": "In a recent attack, the group showcased stealthier cross-network activity, thanks to its use of a new BYOVD technique and other tools.",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "dark-reading",
+      "ransomware"
+    ]
+  },
+  {
+    "id": "news-36e882b5",
+    "title": "LeakNet Ransomware Uses ClickFix via Hacked Sites, Deploys Deno In-Memory Loader",
+    "source": "The Hacker News",
+    "published": "2026-03-17T14:34:00.000Z",
+    "url": "https://thehackernews.com/2026/03/leaknet-ransomware-uses-clickfix-via.html",
+    "summary": "The ransomware operation known as LeakNet has adopted the ClickFix social engineering tactic delivered through compromised websites as an initial access method. The use of ClickFix, where users are tricked into manually running malicious commands to address non-existent errors, is a departure from relying on traditi...",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "ransomware"
+    ]
+  },
+  {
+    "id": "news-04c65b26",
+    "title": "Top 5 Things CISOs Need to Do Today to Secure AI Agents",
+    "source": "BleepingComputer",
+    "published": "2026-03-17T14:02:12.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/top-5-things-cisos-need-to-do-today-to-secure-ai-agents/",
+    "summary": "AI agents are autonomous actors with real access to data and systems, not just copilots. Token Security explains why identity-based access control is critical to prevent misuse and data exposure. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "identity"
+    ]
+  },
+  {
+    "id": "news-4d226a32",
+    "title": "New font-rendering trick hides malicious commands from AI tools",
+    "source": "BleepingComputer",
+    "published": "2026-03-17T13:59:12.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/new-font-rendering-trick-hides-malicious-commands-from-ai-tools/",
+    "summary": "A new font-rendering attack causes AI assistants to miss malicious commands shown on webpages by hiding them in seemingly harmless HTML. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-724e7830",
+    "title": "Microsoft stops force-installing the Microsoft 365 Copilot app",
+    "source": "BleepingComputer",
+    "published": "2026-03-17T13:54:37.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-stops-force-installing-the-microsoft-365-copilot-app/",
+    "summary": "Microsoft has stopped automatically installing the Microsoft 365 Copilot app on Windows devices outside the European Economic Area (EEA) that have the Microsoft 365 desktop client apps. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "microsoft"
+    ]
+  },
+  {
     "id": "news-2f3ee82c",
     "title": "LeakNet ransomware uses ClickFix, Deno runtime in stealthy attacks",
     "source": "BleepingComputer",
@@ -159,7 +243,7 @@
     "source": "Dark Reading",
     "published": "2026-03-17T01:00:00.000Z",
     "url": "https://www.darkreading.com/threat-intelligence/china-nexus-hackers-southeast-asian-military-orgs",
-    "summary": "Researchers uncovered an extensive cyberespionage campaign that used novel backdoors and familiar evasion techniques to maintain persistent access to regional targets.",
+    "summary": "Researchers uncovered an extensive cyber espionage campaign that used novel backdoors and familiar evasion techniques to maintain persistent access to regional targets.",
     "severity": "HIGH",
     "vendor": "Unknown",
     "tags": [
@@ -491,24 +575,6 @@
     ]
   },
   {
-    "id": "news-df223bdb",
-    "title": "Microsoft releases Windows 11 OOB hotpatch to fix RRAS RCE flaw",
-    "source": "BleepingComputer",
-    "published": "2026-03-14T21:48:14.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-11-oob-hotpatch-to-fix-rras-rce-flaw/",
-    "summary": "Microsoft has released an out-of-band (OOB) update to fix a security vulnerabilities affecting Windows 11 Enterprise devices that receive hotpatch updates instead of the regular Patch Tuesday cumulative updates. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "patch",
-      "microsoft"
-    ]
-  },
-  {
     "id": "news-b1191d3d",
     "title": "OpenClaw AI Agent Flaws Could Enable Prompt Injection and Data Exfiltration",
     "source": "The Hacker News",
@@ -523,23 +589,6 @@
       "medium",
       "the-hacker-news",
       "aws"
-    ]
-  },
-  {
-    "id": "news-f28904b2",
-    "title": "AppsFlyer Web SDK hijacked to spread crypto-stealing JavaScript code",
-    "source": "BleepingComputer",
-    "published": "2026-03-14T14:36:42.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/appsflyer-web-sdk-used-to-spread-crypto-stealer-javascript-code/",
-    "summary": "The AppsFlyer Web SDK was temporarily hijacked this week with malicious code used to steal cryptocurrency in a supply-chain attack. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "supply-chain"
     ]
   },
   {
@@ -573,23 +622,6 @@
       "intel-feed",
       "medium",
       "sans-isc"
-    ]
-  },
-  {
-    "id": "news-ab770fde",
-    "title": "Microsoft: Windows 11 users can't access C: drive on some Samsung PCs",
-    "source": "BleepingComputer",
-    "published": "2026-03-13T22:11:57.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-users-cant-access-c-drive-on-some-samsung-pcs/",
-    "summary": "Microsoft is investigating a new issue affecting some Samsung laptops running Windows 11 after installing the February 2026 security updates, in which users lose access to their C:\\ drive and are unable to launch applications. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "microsoft"
     ]
   },
   {
@@ -1797,22 +1829,6 @@
     ]
   },
   {
-    "id": "news-586aec4a",
-    "title": "Web Server Exploits and Mimikatz Used in Attacks Targeting Asian Critical Infrastructure",
-    "source": "The Hacker News",
-    "published": "2026-03-09T07:21:00.000Z",
-    "url": "https://thehackernews.com/2026/03/web-server-exploits-and-mimikatz-used.html",
-    "summary": "High-value organizations located in South, Southeast, and East Asia have been targeted by a Chinese threat actor as part of a years-long campaign. The activity, which has targeted aviation, energy, government, law enforcement, pharmaceutical, technology, and telecommunications sectors, has been attributed by Palo Al...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news"
-    ]
-  },
-  {
     "id": "news-77614f93",
     "title": "How AI Assistants are Moving the Security Goalposts",
     "source": "Krebs on Security",
@@ -2159,22 +2175,6 @@
       "medium",
       "dark-reading",
       "identity"
-    ]
-  },
-  {
-    "id": "news-71d8e684",
-    "title": "As War Continues, Pro-Iranian Actors Launch Barrage of Cyberattacks",
-    "source": "Dark Reading",
-    "published": "2026-03-03T11:30:31.000Z",
-    "url": "https://www.darkreading.com/threat-intelligence/war-pro-iranian-actors-cyberattacks",
-    "summary": "Iran and its supporters have taken to cyberspace to retaliate for US-Israeli military action, with an aim to cause economic and physical disruption.",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "dark-reading"
     ]
   },
   {
