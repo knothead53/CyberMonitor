@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-16T21:53:15.462Z",
+  "generatedAt": "2026-03-17T03:11:09.654Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,7 +9,7 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-16T20:30:04.000Z",
+      "timestamp": "2026-03-17T01:00:00.000Z",
       "summary": "105 correlated news signals from 5 sources; vendors: Unknown, Github."
     },
     {
@@ -19,7 +19,7 @@
       "lon": 0,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-16T20:28:19.000Z",
+      "timestamp": "2026-03-17T02:00:02.000Z",
       "summary": "30 correlated news signals from 4 sources; vendors: Unknown, Meta."
     }
   ],
@@ -32,7 +32,7 @@
       "type": "incident",
       "severity": "CRITICAL",
       "timestamp": "2026-03-16T19:17:20.000Z",
-      "summary": "347 KEV and 7 high-severity news signals across 5 sources."
+      "summary": "347 KEV and 6 high-severity news signals across 4 sources."
     },
     {
       "id": "corr-incident-google",
@@ -81,7 +81,7 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-16T20:30:04.000Z",
+      "timestamp": "2026-03-17T01:00:00.000Z",
       "summary": "0 KEV and 54 high-severity news signals across 5 sources."
     },
     {
@@ -133,8 +133,8 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-13T20:03:53.000Z",
-      "summary": "71 correlated outage events from 1 status feeds."
+      "timestamp": "2026-03-17T03:06:13.000Z",
+      "summary": "72 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-slack",
@@ -164,7 +164,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-12T21:06:00.000Z",
-      "summary": "20 correlated outage events from 1 status feeds."
+      "summary": "21 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-cloudflare",
@@ -173,8 +173,8 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "HIGH",
-      "timestamp": "2026-03-16T21:41:14.000Z",
-      "summary": "4 correlated outage events from 1 status feeds."
+      "timestamp": "2026-03-17T02:48:34.000Z",
+      "summary": "2 correlated outage events from 1 status feeds."
     }
   ]
 }

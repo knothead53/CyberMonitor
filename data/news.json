@@ -1,5 +1,37 @@
 [
   {
+    "id": "news-8f7733d2",
+    "title": "ISC Stormcast For Tuesday, March 17th, 2026 https://isc.sans.edu/podcastdetail/9852, (Tue, Mar 17th)",
+    "source": "SANS ISC",
+    "published": "2026-03-17T02:00:02.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32802",
+    "summary": "No summary provided.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-3560071f",
+    "title": "China-Nexus Hackers Skulk in Southeast Asian Military Orgs for Years",
+    "source": "Dark Reading",
+    "published": "2026-03-17T01:00:00.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/china-nexus-hackers-southeast-asian-military-orgs",
+    "summary": "Researchers uncovered an extensive cyberespionage campaign that used novel backdoors and familiar evasion techniques to maintain persistent access to regional targets.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
+    ]
+  },
+  {
     "id": "news-4d6e4be1",
     "title": "GlassWorm Malware Evolves to Hide in Dependencies",
     "source": "Dark Reading",
@@ -1403,24 +1435,6 @@
     ]
   },
   {
-    "id": "news-1fd85557",
-    "title": "Microsoft Patch Tuesday March 2026, (Tue, Mar 10th)",
-    "source": "SANS ISC",
-    "published": "2026-03-10T17:33:47.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32782",
-    "summary": "Microsoft today released patches for 93 vulnerabilities, including 9 vulnerabilities in Chromium affecting Microsoft Edge. 8 of the vulnerabilities are rated critical. 2 were disclosed prior to today but have not yet been exploited. This update addresses no already-exploited vulnerabilities.",
-    "severity": "HIGH",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "sans-isc",
-      "patch",
-      "microsoft"
-    ]
-  },
-  {
     "id": "news-42a491fe",
     "title": "FortiGate Devices Exploited to Breach Networks and Steal Service Account Credentials",
     "source": "The Hacker News",
@@ -2157,25 +2171,6 @@
       "intel-feed",
       "high",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-567621e8",
-    "title": "Critical OpenClaw Vulnerability Exposes AI Agent Risks",
-    "source": "Dark Reading",
-    "published": "2026-03-02T22:34:36.000Z",
-    "url": "https://www.darkreading.com/application-security/critical-openclaw-vulnerability-ai-agent-risks",
-    "summary": "The now-patched flaw is the latest in a growing string of security issues associated with the viral AI tool, which has seen rapid adoption among developers.",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "dark-reading",
-      "vulnerability",
-      "patch",
-      "api"
     ]
   },
   {
