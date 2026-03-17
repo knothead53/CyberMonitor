@@ -1,5 +1,38 @@
 [
   {
+    "id": "news-9535eda7",
+    "title": "Europe sanctions Chinese and Iranian firms for cyberattacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-17T18:41:59.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/europe-sanctions-chinese-and-iranian-firms-for-cyberattacks/",
+    "summary": "The European Union Council has announced sanctions against three entities and two individuals for their involvement in cyberattacks targeting critical infrastructure in the region. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer"
+    ]
+  },
+  {
+    "id": "news-b76c2efe",
+    "title": "AI Flaws in Amazon Bedrock, LangSmith, and SGLang Enable Data Exfiltration and RCE",
+    "source": "The Hacker News",
+    "published": "2026-03-17T16:39:00.000Z",
+    "url": "https://thehackernews.com/2026/03/ai-flaws-in-amazon-bedrock-langsmith.html",
+    "summary": "Cybersecurity researchers have disclosed details of a new method for exfiltrating sensitive data from artificial intelligence (AI) code execution environments using domain name system (DNS) queries. In a report published Monday, BeyondTrust revealed that Amazon Bedrock AgentCore Code Interpreter's sandbox mode permi...",
+    "severity": "MEDIUM",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "aws"
+    ]
+  },
+  {
     "id": "news-b879e40e",
     "title": "Warlock Ransomware Group Augments Post-Exploitation Activities",
     "source": "Dark Reading",
@@ -72,7 +105,7 @@
     "source": "BleepingComputer",
     "published": "2026-03-17T13:54:37.000Z",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-stops-force-installing-the-microsoft-365-copilot-app/",
-    "summary": "Microsoft has stopped automatically installing the Microsoft 365 Copilot app on Windows devices outside the European Economic Area (EEA) that have the Microsoft 365 desktop client apps. [...]",
+    "summary": "Microsoft has stopped automatically installing the Microsoft 365 Copilot app on Windows devices that have the Microsoft 365 desktop client apps. [...]",
     "severity": "MEDIUM",
     "vendor": "Microsoft",
     "tags": [
@@ -556,22 +589,6 @@
       "medium",
       "bleepingcomputer",
       "openai"
-    ]
-  },
-  {
-    "id": "news-abbed58f",
-    "title": "Betterleaks, a new open-source secrets scanner to replace Gitleaks",
-    "source": "BleepingComputer",
-    "published": "2026-03-15T14:17:23.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/betterleaks-a-new-open-source-secrets-scanner-to-replace-gitleaks/",
-    "summary": "A new open-source tool called Betterleaks can scan directories, files, and git repositories and identify valid secrets using default or customized rules. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer"
     ]
   },
   {
@@ -1808,24 +1825,6 @@
       "medium",
       "the-hacker-news",
       "supply-chain"
-    ]
-  },
-  {
-    "id": "news-f0bd5392",
-    "title": "Chrome Extension Turns Malicious After Ownership Transfer, Enabling Code Injection and Data Theft",
-    "source": "The Hacker News",
-    "published": "2026-03-09T10:28:00.000Z",
-    "url": "https://thehackernews.com/2026/03/chrome-extension-turns-malicious-after.html",
-    "summary": "Two Google Chrome extensions have turned malicious after what appears to be a case of ownership transfer, offering attackers a way to push malware to downstream customers, inject arbitrary code, and harvest sensitive data. The extensions in question, both originally associated with a developer named \"akshayanuonline...",
-    "severity": "HIGH",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "malware",
-      "google"
     ]
   },
   {
