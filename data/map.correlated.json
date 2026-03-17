@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-17T10:07:16.235Z",
+  "generatedAt": "2026-03-17T13:49:55.977Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-17T01:00:00.000Z",
-      "summary": "104 correlated news signals from 5 sources; vendors: Unknown, Github."
+      "timestamp": "2026-03-17T12:09:35.000Z",
+      "summary": "106 correlated news signals from 5 sources; vendors: Unknown, Microsoft."
     },
     {
       "id": "corr-cloud-global",
@@ -20,7 +20,7 @@
       "type": "cloud_region",
       "severity": "CRITICAL",
       "timestamp": "2026-03-17T05:23:00.000Z",
-      "summary": "31 correlated news signals from 4 sources; vendors: Unknown, Meta."
+      "summary": "29 correlated news signals from 4 sources; vendors: Unknown, Meta."
     }
   ],
   "major_incidents": [
@@ -81,8 +81,8 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-17T05:23:00.000Z",
-      "summary": "0 KEV and 55 high-severity news signals across 5 sources."
+      "timestamp": "2026-03-17T12:09:35.000Z",
+      "summary": "0 KEV and 54 high-severity news signals across 5 sources."
     },
     {
       "id": "corr-incident-oracle",

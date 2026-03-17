@@ -1,5 +1,126 @@
 [
   {
+    "id": "news-2f3ee82c",
+    "title": "LeakNet ransomware uses ClickFix, Deno runtime in stealthy attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-17T12:09:35.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/leaknet-ransomware-uses-clickfix-and-deno-runtime-for-stealthy-attacks/",
+    "summary": "The LeakNet ransomware gang is now using the ClickFix technique for initial access into corporate environments and deploys a malware loader based on the open-source Deno runtime for JavaScript and TypeScript. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "ransomware",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-798ed625",
+    "title": "Microsoft shares fix for Windows C: drive access issues on Samsung PCs",
+    "source": "BleepingComputer",
+    "published": "2026-03-17T12:03:38.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-fix-for-windows-c-drive-access-issues-on-samsung-pcs/",
+    "summary": "Microsoft has shared guidance to fix C:\\ drive access issues and app failures on some Samsung laptops running Windows 11, versions 25H2 and 24H2. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-1d4a375d",
+    "title": "IPv4 Mapped IPv6 Addresses, (Tue, Mar 17th)",
+    "source": "SANS ISC",
+    "published": "2026-03-17T11:36:48.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32804",
+    "summary": "Yesterday, in my diary about the scans for \"/proxy/\" URLs, I noted how attackers are using IPv4-mapped IPv6 addresses to possibly obfuscate their attack. These addresses are defined in RFC 4038. These addresses are one of the many transition mechanisms used to retain some backward compatibility as IPv6 is deployed. ...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-7e25c6ee",
+    "title": "AI is Everywhere, But CISOs are Still Securing It with Yesterday's Skills and Tools, Study Finds",
+    "source": "The Hacker News",
+    "published": "2026-03-17T11:30:00.000Z",
+    "url": "https://thehackernews.com/2026/03/ai-is-everywhere-but-cisos-are-still.html",
+    "summary": "A majority of security leaders are struggling to defend AI systems with tools and skills that are not fit for the challenge, according to the AI and Adversarial Testing Benchmark Report 2026 from Pentera. The report, based on a survey of 300 US CISOs and senior security leaders, examines how organizations are securi...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-4ad38d86",
+    "title": "New Windows 11 hotpatch fixes Bluetooth device visibility issue",
+    "source": "BleepingComputer",
+    "published": "2026-03-17T11:07:05.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/new-windows-11-hotpatch-fixes-bluetooth-device-visibility-issue/",
+    "summary": "Microsoft has released an emergency update to fix a Bluetooth device visibility issue on hotpatch-enabled Windows 11 Enterprise devices. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "patch",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-250585c7",
+    "title": "Microsoft: Enabling Teams Meeting add-in breaks Outlook Classic",
+    "source": "BleepingComputer",
+    "published": "2026-03-17T10:37:19.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-enabling-teams-meeting-add-in-breaks-outlook-classic/",
+    "summary": "Microsoft is working to address a known issue that renders the classic Outlook email client unusable for users who have enabled the Microsoft Teams Meeting Add-in. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-b738be6d",
+    "title": "Konni Deploys EndRAT Through Phishing, Uses KakaoTalk to Propagate Malware",
+    "source": "The Hacker News",
+    "published": "2026-03-17T09:53:00.000Z",
+    "url": "https://thehackernews.com/2026/03/konni-deploys-endrat-through-spear.html",
+    "summary": "North Korean threat actors have been observed sending phishing to compromise targets and obtain access to a victim's KakaoTalk desktop application to distribute malicious payloads to certain contacts. The activity has been attributed by South Korean threat intelligence firm Genians to a hacking group referred to as ...",
+    "severity": "HIGH",
+    "vendor": "Intel",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "phishing",
+      "malware",
+      "intel"
+    ]
+  },
+  {
     "id": "news-e5d4e801",
     "title": "CISA Flags Actively Exploited Wing FTP Vulnerability Leaking Server Paths",
     "source": "The Hacker News",
@@ -71,7 +192,7 @@
     "source": "Dark Reading",
     "published": "2026-03-16T20:28:19.000Z",
     "url": "https://www.darkreading.com/threat-intelligence/olympic-cybersecurity-paris-2024-milan-2026",
-    "summary": "Discover how Franz Regul, former CISO for the Paris 2024 Olympics, tackled unique cybersecurity challenges to protect the Olympics from evolving threats.",
+    "summary": "Discover how Franz Regul, former CISO for the Paris 2024 Olympics, tackled unique cybersecurity challenges to protect the Games from evolving threats.",
     "severity": "MEDIUM",
     "vendor": "Unknown",
     "tags": [
@@ -472,23 +593,6 @@
     ]
   },
   {
-    "id": "news-b6842509",
-    "title": "FBI seeks victims of Steam games used to spread malware",
-    "source": "BleepingComputer",
-    "published": "2026-03-13T20:52:31.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fbi-seeks-victims-of-steam-games-used-to-spread-malware/",
-    "summary": "The FBI is asking gamers who installed Steam titles containing malware to provide information as part of an ongoing investigation into eight malicious games uploaded to the gaming platform. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "malware"
-    ]
-  },
-  {
     "id": "news-f03325ad",
     "title": "Fake PoCs, Misunderstood Risks Cause Cisco SD-WAN Chaos",
     "source": "Dark Reading",
@@ -556,22 +660,6 @@
     ]
   },
   {
-    "id": "news-fbf816d9",
-    "title": "Poland's nuclear research centre targeted by cyberattack",
-    "source": "BleepingComputer",
-    "published": "2026-03-13T17:11:37.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/polands-nuclear-research-centre-targeted-by-cyberattack/",
-    "summary": "Poland's National Centre for Nuclear Research (NCBJ) says hackers targeted its IT infrastructure, but the attack was detected and blocked before causing any impact. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer"
-    ]
-  },
-  {
     "id": "news-868a27da",
     "title": "Meta to Shut Down Instagram End-to-End Encrypted Chat Support Starting May 2026",
     "source": "The Hacker News",
@@ -586,23 +674,6 @@
       "medium",
       "the-hacker-news",
       "meta"
-    ]
-  },
-  {
-    "id": "news-6b30fdf7",
-    "title": "Microsoft investigates classic Outlook sync and connection issues",
-    "source": "BleepingComputer",
-    "published": "2026-03-13T16:53:02.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-investigates-classic-outlook-sync-and-connection-issues/",
-    "summary": "​Microsoft is investigating several issues causing email synchronization and connection problems when using the classic Outlook desktop client. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "microsoft"
     ]
   },
   {
@@ -639,23 +710,6 @@
       "ransomware",
       "phishing",
       "malware"
-    ]
-  },
-  {
-    "id": "news-d6182f5d",
-    "title": "From VMware to what’s next: Protecting data during hypervisor migration",
-    "source": "BleepingComputer",
-    "published": "2026-03-13T14:15:25.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/from-vmware-to-whats-next-protecting-data-during-hypervisor-migration/",
-    "summary": "Hypervisor migrations can introduce hidden risks that threaten data availability and recovery. Acronis explains why verified backups and cross-platform recovery are essential during VMware transitions. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Vmware",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "vmware"
     ]
   },
   {
@@ -1364,22 +1418,6 @@
     ]
   },
   {
-    "id": "news-9226b9f5",
-    "title": "ISC Stormcast For Wednesday, March 11th, 2026 https://isc.sans.edu/podcastdetail/9844, (Wed, Mar 11th)",
-    "source": "SANS ISC",
-    "published": "2026-03-11T02:00:02.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32784",
-    "summary": "No summary provided.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
-    ]
-  },
-  {
     "id": "news-9512a490",
     "title": "Microsoft Patches 83 CVEs in March Update",
     "source": "Dark Reading",
@@ -1788,39 +1826,6 @@
       "intel-feed",
       "medium",
       "krebs-on-security"
-    ]
-  },
-  {
-    "id": "news-40513631",
-    "title": "OpenAI Codex Security Scanned 1.2 Million Commits and Found 10,561 High-Severity Issues",
-    "source": "The Hacker News",
-    "published": "2026-03-07T16:28:00.000Z",
-    "url": "https://thehackernews.com/2026/03/openai-codex-security-scanned-12.html",
-    "summary": "OpenAI on Friday began rolling out Codex Security, an artificial intelligence (AI)-powered security agent that's designed to find, validate, and propose fixes for vulnerabilities. The feature is available in a research preview to ChatGPT Pro, Enterprise, Business, and Edu customers via the Codex web with free usage ...",
-    "severity": "MEDIUM",
-    "vendor": "Openai",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news",
-      "openai"
-    ]
-  },
-  {
-    "id": "news-f9652db5",
-    "title": "Anthropic Finds 22 Firefox Vulnerabilities Using Claude Opus 4.6 AI Model",
-    "source": "The Hacker News",
-    "published": "2026-03-07T11:21:00.000Z",
-    "url": "https://thehackernews.com/2026/03/anthropic-finds-22-firefox.html",
-    "summary": "Anthropic on Friday said it discovered 22 new security vulnerabilities in the Firefox web browser as part of a security partnership with Mozilla. Of these, 14 have been classified as high, seven have been classified as moderate, and one has been rated low in severity. The issues were addressed in Firefox 148, releas...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news"
     ]
   },
   {
