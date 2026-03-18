@@ -1,5 +1,57 @@
 [
   {
+    "id": "news-a92bee5f",
+    "title": "DarkSword: iPhone Exploit Kit Serves Spies & Thieves Alike",
+    "source": "Dark Reading",
+    "published": "2026-03-18T21:15:38.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/darksword-iphone-exploit-spies-thieves",
+    "summary": "A sophisticated iOS exploit chain leverages multiple zero-day vulnerabilities and is targeting users in Saudi Arabia, Turkey, Malaysia, and Ukraine.",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "dark-reading",
+      "zero-day"
+    ]
+  },
+  {
+    "id": "news-c388bfb1",
+    "title": "C2 Implant 'SnappyClient' Targets Crypto Wallets",
+    "source": "Dark Reading",
+    "published": "2026-03-18T20:26:56.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/new-c2-implant-snappyclient-targets-crypto-wallets",
+    "summary": "In addition to enabling remote access, the malware supports a wide range of capabilities including data theft and spying.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-d94adb4e",
+    "title": "CISA orders feds to patch Zimbra XSS flaw exploited in attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-18T19:57:13.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-zimbra-xss-flaw-exploited-in-attacks/",
+    "summary": "CISA has ordered U.S. government agencies to secure their servers against an actively exploited vulnerability in the Zimbra Collaboration Suite (ZCS). [...]",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "vulnerability",
+      "patch"
+    ]
+  },
+  {
     "id": "news-d53e892e",
     "title": "ConnectWise patches new flaw allowing ScreenConnect hijacking",
     "source": "BleepingComputer",
@@ -192,11 +244,11 @@
   },
   {
     "id": "news-e0975055",
-    "title": "Meta, TikTok Steal Personal & Financial Info When Users Click Ads",
+    "title": "Researchers: Meta, TikTok Steal Personal & Financial Info When Users Click Ads",
     "source": "Dark Reading",
     "published": "2026-03-18T13:00:00.000Z",
     "url": "https://www.darkreading.com/cyber-risk/meta-tiktok-steal-sensitive-pii",
-    "summary": "Tracking pixels let social media companies spy on their users even after they click over to advertiser sites, gleaning credit card info, geolocations, and more.",
+    "summary": "Tracking pixels let social media companies spy on their users even after they click over to advertiser sites, gleaning credit card info, geolocations, and more, according to an analysis.",
     "severity": "MEDIUM",
     "vendor": "Meta",
     "tags": [
@@ -376,6 +428,22 @@
       "malware",
       "supply-chain",
       "github"
+    ]
+  },
+  {
+    "id": "news-cbe099ae",
+    "title": "Clear Communication: The Missing Link in Cybersecurity Success",
+    "source": "Dark Reading",
+    "published": "2026-03-17T21:42:46.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/clear-communication-missing-link-cybersecurity-success",
+    "summary": "When technical expertise meets clear communication, cybersecurity teams thrive. Learn how to foster trust and collaboration across diverse working groups.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading"
     ]
   },
   {
@@ -594,24 +662,6 @@
       "intel-feed",
       "medium",
       "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-4ad38d86",
-    "title": "New Windows 11 hotpatch fixes Bluetooth device visibility issue",
-    "source": "BleepingComputer",
-    "published": "2026-03-17T11:07:05.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/new-windows-11-hotpatch-fixes-bluetooth-device-visibility-issue/",
-    "summary": "Microsoft has released an emergency update to fix a Bluetooth device visibility issue on hotpatch-enabled Windows 11 Enterprise devices. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "patch",
-      "microsoft"
     ]
   },
   {
@@ -2131,57 +2181,6 @@
       "intel-feed",
       "high",
       "dark-reading"
-    ]
-  },
-  {
-    "id": "news-ba14d2ca",
-    "title": "VMware Aria Operations Bug Exploited, Cloud Resources at Risk",
-    "source": "Dark Reading",
-    "published": "2026-03-04T21:04:56.000Z",
-    "url": "https://www.darkreading.com/cloud-security/vmware-aria-operations-bug-exploited-cloud-risk",
-    "summary": "Exploitation of the command injection flaw in VMware Aria Operations could grant an attacker broad acess to victims' cloud environments.",
-    "severity": "HIGH",
-    "vendor": "Vmware",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "dark-reading",
-      "cloud",
-      "vmware"
-    ]
-  },
-  {
-    "id": "news-260a50da",
-    "title": "Stranger Things Meets Cybersecurity: Lessons from the Hive Mind",
-    "source": "Dark Reading",
-    "published": "2026-03-04T17:09:27.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-operations/stranger-things-meets-cybersecurity-lessons-hive-mind",
-    "summary": "Events and concepts from the Stranger Things television series illustrate how enterprises can defend their networks and stay \"right side up.\"",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-1087df20",
-    "title": "Dark Reading Confidential: This Threat Hunter Helped Cops Bust Up An African Cybercrime Syndicate",
-    "source": "Dark Reading",
-    "published": "2026-03-04T15:00:00.000Z",
-    "url": "https://www.darkreading.com/threat-intelligence/threat-hunter-helped-cops-crack-african-cybercrime-syndicate",
-    "summary": "Dark Reading Confidential Episode 15: Interpol relied on Will Thomas and team to help break up a sprawling cybercrime ring, leading to the arrest of 574 suspects, the recovery of more than $3 million, and the decryption of six malware variants. Here's his story.",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "dark-reading",
-      "malware"
     ]
   },
   {
