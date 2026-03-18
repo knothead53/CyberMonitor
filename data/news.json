@@ -1,5 +1,39 @@
 [
   {
+    "id": "news-d86305dc",
+    "title": "Apple pushes first Background Security Improvements update to fix WebKit flaw",
+    "source": "BleepingComputer",
+    "published": "2026-03-18T01:06:31.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/apple-pushes-first-background-security-improvements-update-to-fix-webkit-flaw/",
+    "summary": "Apple has released its first Background Security Improvements update to fix a WebKit flaw tracked as CVE-2026-20643 on iPhones, iPads, and Macs without requiring a full operating system upgrade. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Apple",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "apple"
+    ]
+  },
+  {
+    "id": "news-5ec1f55d",
+    "title": "More Attackers Are Logging In, Not Breaking In",
+    "source": "Dark Reading",
+    "published": "2026-03-17T22:04:46.000Z",
+    "url": "https://www.darkreading.com/identity-access-management-security/more-attackers-logging-in-not-breaking-in",
+    "summary": "Credential theft soared in the second half of 2025, thanks in part to the industrialization of infostealer malware and AI-enabled social engineering.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "malware"
+    ]
+  },
+  {
     "id": "news-2e92aaa5",
     "title": "GlassWorm malware hits 400+ code repos on GitHub, npm, VSCode, OpenVSX",
     "source": "BleepingComputer",
@@ -19,19 +53,37 @@
     ]
   },
   {
+    "id": "news-04578987",
+    "title": "Less Lucrative Ransomware Market Makes Attackers Alter Methods",
+    "source": "Dark Reading",
+    "published": "2026-03-17T21:41:12.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/less-lucrative-ransomware-market-makes-attackers-alter-methods",
+    "summary": "Ransomware actors are ditching Cobalt Strike in favor of native Windows tools, as payment rates hit record lows and data theft surges.",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "dark-reading",
+      "ransomware"
+    ]
+  },
+  {
     "id": "news-af8c4c56",
     "title": "Hackers Target Cybersecurity Firm Outpost24 in 7-Stage Phish",
     "source": "Dark Reading",
     "published": "2026-03-17T19:41:24.000Z",
     "url": "https://www.darkreading.com/threat-intelligence/hackers-target-cybersecurity-firm-outpost24-phish",
-    "summary": "The cyberattackers leveraged trusted brands and domains in an attempt to redirect a C-suite executive at Outpost24 to give up his credentials.",
+    "summary": "In an unsuccessful phishing attack, threat actors leveraged trusted brands and domains to try to redirect a C-suite executive at Outpost24 to give up his credentials.",
     "severity": "HIGH",
     "vendor": "Unknown",
     "tags": [
       "news",
       "intel-feed",
       "high",
-      "dark-reading"
+      "dark-reading",
+      "phishing"
     ]
   },
   {
@@ -505,23 +557,6 @@
       "intel-feed",
       "medium",
       "sans-isc"
-    ]
-  },
-  {
-    "id": "news-90cf7c03",
-    "title": "Microsoft pulls Samsung app blocking Windows C: drive from Store",
-    "source": "BleepingComputer",
-    "published": "2026-03-16T13:14:32.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-pulls-samsung-app-blocking-windows-c-drive-from-store/",
-    "summary": "​Microsoft has removed the Samsung Galaxy Connect app from the Microsoft Store because it was causing issues on specific Samsung Galaxy Book 4 and desktop models running Windows 11. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "microsoft"
     ]
   },
   {
@@ -2135,39 +2170,6 @@
     "published": "2026-03-03T20:53:39.000Z",
     "url": "https://www.darkreading.com/ics-ot-security/tire-pressure-sensors-silent-tracking",
     "summary": "Like many other features and systems in modern cars, tire pressure sensors leak sensitive data that can be abused by threat actors.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-96d08c26",
-    "title": "Qualcomm Zero-Day Exploited in Targeted Android Attacks",
-    "source": "Dark Reading",
-    "published": "2026-03-03T20:28:05.000Z",
-    "url": "https://www.darkreading.com/threat-intelligence/qualcomm-zero-day-exploited-targeted-android-attacks",
-    "summary": "The exploitation activity against CVE-2026-21385, a high-severity memory corruption flaw, could be tied to commercial spyware or nation-state threat groups.",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "dark-reading",
-      "zero-day"
-    ]
-  },
-  {
-    "id": "news-f3844488",
-    "title": "Speakeasies to Shadow AI: Banning AI Browsers Will Fail",
-    "source": "Dark Reading",
-    "published": "2026-03-03T17:40:21.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/speakeasies-shadow-ai-banning-ai-browsers-fail",
-    "summary": "Lessons from history highlight why AI-enabled browsers require controlled enablement.",
     "severity": "MEDIUM",
     "vendor": "Unknown",
     "tags": [
