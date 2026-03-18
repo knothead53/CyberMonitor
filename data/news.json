@@ -1,5 +1,139 @@
 [
   {
+    "id": "news-7227319a",
+    "title": "Scans for \"adminer\", (Wed, Mar 18th)",
+    "source": "SANS ISC",
+    "published": "2026-03-18T13:18:24.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32808",
+    "summary": "A very popular target of attackers scanning our honeypots is \"phpmyadmin\". phpMyAdmin is a script first released in the late 90s, before many security concepts had&#x26;#xc2;&#x26;#xa0;been discovered. It&#x26;#39;s rich history of vulnerabilities made it a favorite target. Its alternative, \"adminer\", began appearin...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-e0975055",
+    "title": "Meta, TikTok Steal Users' Sensitive PII When They Click on Ads",
+    "source": "Dark Reading",
+    "published": "2026-03-18T13:00:00.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/meta-tiktok-steal-sensitive-pii",
+    "summary": "Tracking pixels let social media companies spy on their own customers when they click over to advertiser sites, gleaning credit card info, currency type, and more.",
+    "severity": "MEDIUM",
+    "vendor": "Meta",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "meta"
+    ]
+  },
+  {
+    "id": "news-9f9d3217",
+    "title": "SideWinder Espionage Campaign Expands Across Southeast Asia",
+    "source": "Dark Reading",
+    "published": "2026-03-18T13:00:00.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/sidewinder-espionage-campaign-expands-across-southeast-asia",
+    "summary": "The suspected India-linked threat group targets governments, telecom, and critical infrastructure using spear-phishing, old vulnerabilities, and rapidly rotating infrastructure to maintain persistent access.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "phishing",
+      "api"
+    ]
+  },
+  {
+    "id": "news-0e74de80",
+    "title": "Critical Unpatched Telnetd Flaw (CVE-2026-32746) Enables Unauthenticated Root RCE",
+    "source": "The Hacker News",
+    "published": "2026-03-18T12:30:00.000Z",
+    "url": "https://thehackernews.com/2026/03/critical-telnetd-flaw-cve-2026-32746.html",
+    "summary": "Cybersecurity researchers have disclosed a critical security flaw impacting the GNU InetUtils telnet daemon (telnetd) that could be exploited by an unauthenticated remote attacker to execute arbitrary code with elevated privileges. The vulnerability, tracked as CVE-2026-32746, carries a CVSS score of 9.8 out of 10.0...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "vulnerability",
+      "patch"
+    ]
+  },
+  {
+    "id": "news-9116d653",
+    "title": "Claude Code Security and Magecart: Getting the Threat Model Right",
+    "source": "The Hacker News",
+    "published": "2026-03-18T11:58:00.000Z",
+    "url": "https://thehackernews.com/2026/03/claude-code-security-and-magecart.html",
+    "summary": "When a Magecart payload hides inside the EXIF data of a dynamically loaded third-party favicon, no repository scanner will catch it – because the malicious code never actually touches your repo. As teams adopt Claude Code Security for static analysis, this is the exact technical boundary where AI code scanning stops...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-cc857560",
+    "title": "9 Critical IP KVM Flaws Enable Unauthenticated Root Access Across Four Vendors",
+    "source": "The Hacker News",
+    "published": "2026-03-18T11:42:00.000Z",
+    "url": "https://thehackernews.com/2026/03/9-critical-ip-kvm-flaws-enable.html",
+    "summary": "Cybersecurity researchers have warned about the risks posed by low-cost IP KVM (Keyboard, Video, Mouse over Internet Protocol) devices, which can grant attackers extensive control over compromised hosts. The nine vulnerabilities, discovered by Eclypsium, span four different products from GL-iNet Comet RM-1, Angeet/Y...",
+    "severity": "HIGH",
+    "vendor": "Aws",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "aws"
+    ]
+  },
+  {
+    "id": "news-7130b57e",
+    "title": "ISC Stormcast For Wednesday, March 18th, 2026 https://isc.sans.edu/podcastdetail/9854, (Wed, Mar 18th)",
+    "source": "SANS ISC",
+    "published": "2026-03-18T11:05:02.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32806",
+    "summary": "No summary provided.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-506e8e22",
+    "title": "Product Walkthrough: How Mesh CSMA Reveals and Breaks Attack Paths to Crown Jewels",
+    "source": "The Hacker News",
+    "published": "2026-03-18T10:30:00.000Z",
+    "url": "https://thehackernews.com/2026/03/product-walkthrough-how-mesh-csma.html",
+    "summary": "Security teams today are not short on tools or data. They are overwhelmed by both. Yet within the terabytes of alerts, exposures, and misconfigurations – security teams still struggle to understand context: Q: Which exposures, misconfigurations, and vulnerabilities chain together to create viable attack paths to cro...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
+    ]
+  },
+  {
     "id": "news-3855125c",
     "title": "Ubuntu CVE-2026-3888 Bug Lets Attackers Gain Root via systemd Cleanup Timing Exploit",
     "source": "The Hacker News",
@@ -32,24 +166,6 @@
       "vulnerability",
       "api",
       "apple"
-    ]
-  },
-  {
-    "id": "news-b2008bc3",
-    "title": "Critical Unpatched Telnetd Flaw (CVE-2026-32746) Enables Unauthenticated Root RCE via Port 23",
-    "source": "The Hacker News",
-    "published": "2026-03-18T05:06:00.000Z",
-    "url": "https://thehackernews.com/2026/03/critical-telnetd-flaw-cve-2026-32746.html",
-    "summary": "Cybersecurity researchers have disclosed a critical security flaw impacting the GNU InetUtils telnet daemon (telnetd) that could be exploited by an unauthenticated remote attacker to execute arbitrary code with elevated privileges. The vulnerability, tracked as CVE-2026-32746, carries a CVSS score of 9.8 out of 10.0...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "vulnerability",
-      "patch"
     ]
   },
   {
@@ -1297,22 +1413,6 @@
     ]
   },
   {
-    "id": "news-7e3561d5",
-    "title": "When your IoT Device Logs in as Admin, It?s too Late! [Guest Diary], (Wed, Mar 11th)",
-    "source": "SANS ISC",
-    "published": "2026-03-12T01:19:35.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32788",
-    "summary": "[This is a Guest Diary by Adam Thorman, an ISC intern as part of the SANS.edu BACS program]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
-    ]
-  },
-  {
     "id": "news-1008fa85",
     "title": "A Guy Who Wrote the Code Died in 2005. I Still Have to Secure It",
     "source": "Dark Reading",
@@ -1481,23 +1581,6 @@
       "intel-feed",
       "high",
       "the-hacker-news",
-      "vulnerability"
-    ]
-  },
-  {
-    "id": "news-07372b78",
-    "title": "Analyzing \"Zombie Zip\" Files (CVE-2026-0866), (Wed, Mar 11th)",
-    "source": "SANS ISC",
-    "published": "2026-03-11T09:57:26.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32786",
-    "summary": "A new vulnerability (CVE-2026-0866) has been published: Zombie Zip.",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "sans-isc",
       "vulnerability"
     ]
   },
@@ -1766,41 +1849,6 @@
     ]
   },
   {
-    "id": "news-4524de37",
-    "title": "Threat Actors Mass-Scan Salesforce Experience Cloud via Modified AuraInspector Tool",
-    "source": "The Hacker News",
-    "published": "2026-03-10T07:17:00.000Z",
-    "url": "https://thehackernews.com/2026/03/threat-actors-mass-scan-salesforce.html",
-    "summary": "Salesforce has warned of an increase in threat actor activity that's aimed at exploiting misconfigurations in publicly accessible Experience Cloud sites by making use of a customized version of an open-source tool called AuraInspector. The activity, per the company, involves the exploitation of customers' overly per...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "cloud"
-    ]
-  },
-  {
-    "id": "news-33222273",
-    "title": "CISA Flags SolarWinds, Ivanti, and Workspace One Vulnerabilities as Actively Exploited",
-    "source": "The Hacker News",
-    "published": "2026-03-10T06:17:00.000Z",
-    "url": "https://thehackernews.com/2026/03/cisa-flags-solarwinds-ivanti-and.html",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added three security flaws to its Known Exploited Vulnerabilities (KEV) catalog, based on evidence of active exploitation. The vulnerability list is as follows - CVE-2021-22054 (CVSS score: 7.5) - A server-side request forgery (SSRF) vulnerab...",
-    "severity": "CRITICAL",
-    "vendor": "Ivanti",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "the-hacker-news",
-      "vulnerability",
-      "ivanti"
-    ]
-  },
-  {
     "id": "news-9b3796a3",
     "title": "White House Cyber Strategy Prioritizes Offense",
     "source": "Dark Reading",
@@ -1847,22 +1895,6 @@
       "medium",
       "dark-reading",
       "api"
-    ]
-  },
-  {
-    "id": "news-f1d63988",
-    "title": "Malicious npm Package Posing as OpenClaw Installer Deploys RAT, Steals macOS Credentials",
-    "source": "The Hacker News",
-    "published": "2026-03-09T18:31:00.000Z",
-    "url": "https://thehackernews.com/2026/03/malicious-npm-package-posing-as.html",
-    "summary": "Cybersecurity researchers have discovered a malicious npm package that masquerades as an OpenClaw installer to deploy a remote access trojan (RAT) and steal sensitive data from compromised hosts. The package, named \"@openclaw-ai/openclawai,\" was uploaded to the registry by a user named \"openclaw-ai\" on March 3, 2026...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news"
     ]
   },
   {
@@ -2146,39 +2178,6 @@
       "high",
       "dark-reading",
       "phishing"
-    ]
-  },
-  {
-    "id": "news-45f4c22c",
-    "title": "Indian APT 'Sloppy Lemming' Targets Defense, Critical Infrastructure",
-    "source": "Dark Reading",
-    "published": "2026-03-03T22:24:22.000Z",
-    "url": "https://www.darkreading.com/threat-intelligence/india-apt-sloppy-lemming-defense-critical-infrastructure",
-    "summary": "India-nexus cyber threat actors are growing more active and sophisticated, using custom tools coded in Rust and cloud-based command and control.",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "dark-reading",
-      "cloud"
-    ]
-  },
-  {
-    "id": "news-252e18c2",
-    "title": "Vehicle Tire Pressure Sensors Enable Silent Tracking",
-    "source": "Dark Reading",
-    "published": "2026-03-03T20:53:39.000Z",
-    "url": "https://www.darkreading.com/ics-ot-security/tire-pressure-sensors-silent-tracking",
-    "summary": "Like many other features and systems in modern cars, tire pressure sensors leak sensitive data that can be abused by threat actors.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading"
     ]
   },
   {
