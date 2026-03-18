@@ -1,5 +1,21 @@
 [
   {
+    "id": "news-3855125c",
+    "title": "Ubuntu CVE-2026-3888 Bug Lets Attackers Gain Root via systemd Cleanup Timing Exploit",
+    "source": "The Hacker News",
+    "published": "2026-03-18T08:08:00.000Z",
+    "url": "https://thehackernews.com/2026/03/ubuntu-cve-2026-3888-bug-lets-attackers.html",
+    "summary": "A high-severity security flaw affecting default installations of Ubuntu Desktop versions 24.04 and later could be exploited to escalate privileges to the root level. Tracked as CVE-2026-3888 (CVSS score: 7.8), the issue could allow an attacker to seize control of a susceptible system. \"This flaw (CVE-2026-3888) allo...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news"
+    ]
+  },
+  {
     "id": "news-95fbf98c",
     "title": "Apple Fixes WebKit Vulnerability Enabling Same-Origin Policy Bypass on iOS and macOS",
     "source": "The Hacker News",
@@ -1847,23 +1863,6 @@
       "intel-feed",
       "high",
       "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-231a2e75",
-    "title": "UNC4899 Breached Crypto Firm After Developer AirDropped Trojanized File to Work Device",
-    "source": "The Hacker News",
-    "published": "2026-03-09T14:50:00.000Z",
-    "url": "https://thehackernews.com/2026/03/unc4899-used-airdrop-file-transfer-and.html",
-    "summary": "The North Korean threat actor known as UNC4899 is suspected to be behind a sophisticated cloud compromise campaign targeting a cryptocurrency organization in 2025 to steal millions of dollars in cryptocurrency. The activity has been attributed with moderate confidence to the state-sponsored adversary, which is also ...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news",
-      "cloud"
     ]
   },
   {

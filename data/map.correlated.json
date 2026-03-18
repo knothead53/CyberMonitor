@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-18T07:16:41.503Z",
+  "generatedAt": "2026-03-18T10:09:40.264Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-18T01:06:31.000Z",
-      "summary": "105 correlated news signals from 5 sources; vendors: Apple, Unknown."
+      "timestamp": "2026-03-18T08:08:00.000Z",
+      "summary": "105 correlated news signals from 5 sources; vendors: Unknown, Apple."
     },
     {
       "id": "corr-cloud-global",
@@ -91,8 +91,8 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-18T05:06:00.000Z",
-      "summary": "0 KEV and 58 high-severity news signals across 5 sources."
+      "timestamp": "2026-03-18T08:08:00.000Z",
+      "summary": "0 KEV and 59 high-severity news signals across 5 sources."
     },
     {
       "id": "corr-incident-oracle",
@@ -154,7 +154,7 @@
       "type": "outage",
       "severity": "HIGH",
       "timestamp": "2026-03-09T19:17:50.000Z",
-      "summary": "42 correlated outage events from 1 status feeds."
+      "summary": "41 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-github",
@@ -183,8 +183,8 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "HIGH",
-      "timestamp": "2026-03-18T03:51:50.000Z",
-      "summary": "2 correlated outage events from 1 status feeds."
+      "timestamp": "2026-03-18T09:53:53.000Z",
+      "summary": "3 correlated outage events from 1 status feeds."
     }
   ]
 }
