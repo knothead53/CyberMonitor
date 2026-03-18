@@ -1,5 +1,59 @@
 [
   {
+    "id": "news-d53e892e",
+    "title": "ConnectWise patches new flaw allowing ScreenConnect hijacking",
+    "source": "BleepingComputer",
+    "published": "2026-03-18T18:10:35.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/connectwise-patches-new-flaw-allowing-screenconnect-hijacking/",
+    "summary": "ConnectWise is warning ScreenConnect customers of a cryptographic signature verification vulnerability that could lead to unauthorized access and privilege escalation. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "vulnerability",
+      "patch"
+    ]
+  },
+  {
+    "id": "news-3b6c00b2",
+    "title": "OFAC Sanctions DPRK IT Worker Network Funding WMD Programs Through Fake Remote Jobs",
+    "source": "The Hacker News",
+    "published": "2026-03-18T17:26:00.000Z",
+    "url": "https://thehackernews.com/2026/03/ofac-sanctions-dprk-it-worker-network.html",
+    "summary": "The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) has sanctioned six individuals and two entities for their involvement in the Democratic People's Republic of Korea (DPRK) information technology (IT) worker scheme with an aim to defraud U.S. businesses and generate illicit revenue for the...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-71f84694",
+    "title": "Ransomware gang exploits Cisco flaw in zero-day attacks since January",
+    "source": "BleepingComputer",
+    "published": "2026-03-18T16:53:42.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/interlock-ransomware-exploited-secure-fmc-flaw-in-zero-day-attacks-since-january/",
+    "summary": "The Interlock ransomware gang has been exploiting a maximum severity remote code execution (RCE) vulnerability in Cisco's Secure Firewall Management Center (FMC) software in zero-day attacks since late January. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Cisco",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "ransomware",
+      "zero-day",
+      "vulnerability",
+      "cisco"
+    ]
+  },
+  {
     "id": "news-1663b666",
     "title": "Interlock Ransomware Exploits Cisco FMC Zero-Day CVE-2026-20131 for Root Access",
     "source": "The Hacker News",
@@ -561,23 +615,6 @@
     ]
   },
   {
-    "id": "news-250585c7",
-    "title": "Microsoft: Enabling Teams Meeting add-in breaks Outlook Classic",
-    "source": "BleepingComputer",
-    "published": "2026-03-17T10:37:19.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-enabling-teams-meeting-add-in-breaks-outlook-classic/",
-    "summary": "Microsoft is working to address a known issue that renders the classic Outlook email client unusable for users who have enabled the Microsoft Teams Meeting Add-in. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "microsoft"
-    ]
-  },
-  {
     "id": "news-b738be6d",
     "title": "Konni Deploys EndRAT Through Phishing, Uses KakaoTalk to Propagate Malware",
     "source": "The Hacker News",
@@ -694,24 +731,6 @@
       "the-hacker-news",
       "malware",
       "github"
-    ]
-  },
-  {
-    "id": "news-6fb16f53",
-    "title": "Stryker attack wiped tens of thousands of devices, no malware needed",
-    "source": "BleepingComputer",
-    "published": "2026-03-16T19:17:20.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/stryker-attack-wiped-tens-of-thousands-of-devices-no-malware-needed/",
-    "summary": "Last week's cyberattack on medical technology giant Stryker was limited to its internal Microsoft environment and remotely wiped tens of thousands of employee devices. [...]",
-    "severity": "HIGH",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "malware",
-      "microsoft"
     ]
   },
   {
@@ -1848,24 +1867,6 @@
       "the-hacker-news",
       "cloud",
       "google"
-    ]
-  },
-  {
-    "id": "news-d358cfdc",
-    "title": "The Zero-Day Scramble is Avoidable: A Guide to Attack Surface Reduction",
-    "source": "The Hacker News",
-    "published": "2026-03-10T11:00:00.000Z",
-    "url": "https://thehackernews.com/2026/03/the-zero-day-scramble-is-avoidable.html",
-    "summary": "You can't control when the next critical vulnerability drops. You can control how much of your environment is exposed when it does. The problem is that most teams have more internet-facing exposure than they realise. Intruder's Head of Security digs into why this happens and how teams can manage it deliberately. Tim...",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "the-hacker-news",
-      "zero-day",
-      "vulnerability"
     ]
   },
   {

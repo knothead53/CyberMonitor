@@ -1,5 +1,24 @@
 [
   {
+    "id": "CVE-2025-66376",
+    "title": "CVE-2025-66376 - Synacor Zimbra Collaboration Suite (ZCS) Cross-Site Scripting Vulnerability",
+    "source": "CISA KEV Catalog",
+    "published": "2026-03-18T00:00:00.000Z",
+    "url": "https://wiki.zimbra.com/wiki/Zimbra_Security_Advisories",
+    "summary": "Synacor Zimbra Collaboration Suite (ZCS) contains a cross-site scripting vulnerability in the Classic UI where attackers could abuse Cascading Style Sheets (CSS) @import directives in email HTML.",
+    "severity": "HIGH",
+    "vendor": "Synacor",
+    "tags": [
+      "kev",
+      "high",
+      "cve-2025-66376",
+      "synacor",
+      "zimbra-collaboration-suite-zcs",
+      "cwe-79",
+      "cisa-kev-catalog"
+    ]
+  },
+  {
     "id": "CVE-2025-47813",
     "title": "CVE-2025-47813 - Wing FTP Server Information Disclosure Vulnerability",
     "source": "CISA KEV Catalog",
