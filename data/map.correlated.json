@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-18T13:51:43.724Z",
+  "generatedAt": "2026-03-18T16:17:09.796Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-18T13:00:00.000Z",
-      "summary": "104 correlated news signals from 5 sources; vendors: Meta, Unknown."
+      "timestamp": "2026-03-18T16:00:00.000Z",
+      "summary": "105 correlated news signals from 5 sources; vendors: Cisco, Unknown."
     },
     {
       "id": "corr-cloud-global",
@@ -20,7 +20,7 @@
       "type": "cloud_region",
       "severity": "CRITICAL",
       "timestamp": "2026-03-18T13:18:24.000Z",
-      "summary": "30 correlated news signals from 4 sources; vendors: Unknown, Apple."
+      "summary": "29 correlated news signals from 3 sources; vendors: Unknown, Apple."
     },
     {
       "id": "corr-cloud-europe",
@@ -51,8 +51,18 @@
       "lon": -98.5795,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-16T05:43:00.000Z",
-      "summary": "69 KEV and 3 high-severity news signals across 3 sources."
+      "timestamp": "2026-03-18T15:05:58.000Z",
+      "summary": "69 KEV and 4 high-severity news signals across 3 sources."
+    },
+    {
+      "id": "corr-incident-cisco",
+      "name": "Cisco Correlated Incident Activity",
+      "lat": 39.8283,
+      "lon": -98.5795,
+      "type": "incident",
+      "severity": "CRITICAL",
+      "timestamp": "2026-03-18T16:00:00.000Z",
+      "summary": "70 KEV and 2 high-severity news signals across 3 sources."
     },
     {
       "id": "corr-incident-adobe",
@@ -63,16 +73,6 @@
       "severity": "CRITICAL",
       "timestamp": "2025-10-24T00:00:00.000Z",
       "summary": "72 KEV and 0 high-severity news signals across 1 sources."
-    },
-    {
-      "id": "corr-incident-cisco",
-      "name": "Cisco Correlated Incident Activity",
-      "lat": 39.8283,
-      "lon": -98.5795,
-      "type": "incident",
-      "severity": "CRITICAL",
-      "timestamp": "2026-03-05T20:11:15.000Z",
-      "summary": "70 KEV and 1 high-severity news signals across 2 sources."
     },
     {
       "id": "corr-incident-apple",
@@ -91,7 +91,7 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-18T13:00:00.000Z",
+      "timestamp": "2026-03-18T15:32:39.000Z",
       "summary": "0 KEV and 56 high-severity news signals across 5 sources."
     },
     {
@@ -143,8 +143,8 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-17T18:50:07.000Z",
-      "summary": "73 correlated outage events from 1 status feeds."
+      "timestamp": "2026-03-18T15:46:44.000Z",
+      "summary": "74 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-slack",
@@ -164,7 +164,7 @@
       "type": "outage",
       "severity": "CRITICAL",
       "timestamp": "2026-03-16T15:28:22.000Z",
-      "summary": "23 correlated outage events from 1 status feeds."
+      "summary": "22 correlated outage events from 1 status feeds."
     },
     {
       "id": "corr-outage-discord",
