@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-18T03:18:43.898Z",
+  "generatedAt": "2026-03-18T07:16:41.503Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -10,7 +10,7 @@
       "type": "cloud_region",
       "severity": "CRITICAL",
       "timestamp": "2026-03-18T01:06:31.000Z",
-      "summary": "107 correlated news signals from 5 sources; vendors: Apple, Unknown."
+      "summary": "105 correlated news signals from 5 sources; vendors: Apple, Unknown."
     },
     {
       "id": "corr-cloud-global",
@@ -19,8 +19,8 @@
       "lon": 0,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-17T21:41:12.000Z",
-      "summary": "27 correlated news signals from 4 sources; vendors: Unknown, Meta."
+      "timestamp": "2026-03-18T06:31:00.000Z",
+      "summary": "29 correlated news signals from 4 sources; vendors: Apple, Unknown."
     },
     {
       "id": "corr-cloud-europe",
@@ -81,8 +81,8 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-13T17:33:00.000Z",
-      "summary": "65 KEV and 2 high-severity news signals across 2 sources."
+      "timestamp": "2026-03-18T06:31:00.000Z",
+      "summary": "65 KEV and 3 high-severity news signals across 2 sources."
     },
     {
       "id": "corr-incident-unknown",
@@ -91,7 +91,7 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-17T22:04:46.000Z",
+      "timestamp": "2026-03-18T05:06:00.000Z",
       "summary": "0 KEV and 58 high-severity news signals across 5 sources."
     },
     {
@@ -183,7 +183,7 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "HIGH",
-      "timestamp": "2026-03-18T02:24:18.000Z",
+      "timestamp": "2026-03-18T03:51:50.000Z",
       "summary": "2 correlated outage events from 1 status feeds."
     }
   ]

@@ -1,5 +1,42 @@
 [
   {
+    "id": "news-95fbf98c",
+    "title": "Apple Fixes WebKit Vulnerability Enabling Same-Origin Policy Bypass on iOS and macOS",
+    "source": "The Hacker News",
+    "published": "2026-03-18T06:31:00.000Z",
+    "url": "https://thehackernews.com/2026/03/apple-fixes-webkit-vulnerability.html",
+    "summary": "Apple on Tuesday released its first round of Background Security Improvements to address a security flaw in WebKit that affects iOS, iPadOS, and macOS. The vulnerability, tracked as CVE-2026-20643 (CVSS score: N/A), has been described as a cross-origin issue in WebKit's Navigation API that could be exploited to bypa...",
+    "severity": "HIGH",
+    "vendor": "Apple",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "vulnerability",
+      "api",
+      "apple"
+    ]
+  },
+  {
+    "id": "news-b2008bc3",
+    "title": "Critical Unpatched Telnetd Flaw (CVE-2026-32746) Enables Unauthenticated Root RCE via Port 23",
+    "source": "The Hacker News",
+    "published": "2026-03-18T05:06:00.000Z",
+    "url": "https://thehackernews.com/2026/03/critical-telnetd-flaw-cve-2026-32746.html",
+    "summary": "Cybersecurity researchers have disclosed a critical security flaw impacting the GNU InetUtils telnet daemon (telnetd) that could be exploited by an unauthenticated remote attacker to execute arbitrary code with elevated privileges. The vulnerability, tracked as CVE-2026-32746, carries a CVSS score of 9.8 out of 10.0...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "vulnerability",
+      "patch"
+    ]
+  },
+  {
     "id": "news-d86305dc",
     "title": "Apple pushes first Background Security Improvements update to fix WebKit flaw",
     "source": "BleepingComputer",
@@ -1830,23 +1867,6 @@
     ]
   },
   {
-    "id": "news-afd2ed7d",
-    "title": "⚡ Weekly Recap: Qualcomm 0-Day, iOS Exploit Chains, AirSnitch Attack & Vibe-Coded Malware",
-    "source": "The Hacker News",
-    "published": "2026-03-09T13:46:00.000Z",
-    "url": "https://thehackernews.com/2026/03/weekly-recap-qualcomm-0-day-ios-exploit.html",
-    "summary": "Another week in cybersecurity. Another week of \"you've got to be kidding me.\" Attackers were busy. Defenders were busy. And somewhere in the middle, a whole lot of people had a very bad Monday morning. That's kind of just how it goes now. The good news? There were some actual wins this week. Real ones. The kind wher...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news",
-      "malware"
-    ]
-  },
-  {
     "id": "news-34ebf8eb",
     "title": "Chinese Cyber Threat Lurks In Critical Asian Sectors for Years",
     "source": "Dark Reading",
@@ -1861,23 +1881,6 @@
       "high",
       "dark-reading",
       "malware"
-    ]
-  },
-  {
-    "id": "news-b0421e86",
-    "title": "Can the Security Platform Finally Deliver for the Mid-Market?",
-    "source": "The Hacker News",
-    "published": "2026-03-09T11:45:00.000Z",
-    "url": "https://thehackernews.com/2026/03/can-security-platform-finally-deliver.html",
-    "summary": "Mid-market organizations are constantly striving to achieve security levels on a par with their enterprise peers. With heightened awareness of supply chain attacks, your customers and business partners are defining the security level you must meet. What if you could be the enabler for your organization to remain com...",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news",
-      "supply-chain"
     ]
   },
   {
