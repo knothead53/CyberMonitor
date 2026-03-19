@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-19T13:41:19.318Z",
+  "generatedAt": "2026-03-19T16:06:43.114Z",
   "methodology": "Derived visualization from feed signals using deterministic vendor/source-to-region approximations. This is not authoritative geolocation intelligence.",
   "cloud_regions": [
     {
@@ -9,8 +9,8 @@
       "lon": -98.5795,
       "type": "cloud_region",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-19T13:00:22.000Z",
-      "summary": "105 correlated news signals from 5 sources; vendors: Unknown, Microsoft."
+      "timestamp": "2026-03-19T14:55:50.000Z",
+      "summary": "106 correlated news signals from 5 sources; vendors: Intel, Unknown."
     },
     {
       "id": "corr-cloud-global",
@@ -21,16 +21,6 @@
       "severity": "CRITICAL",
       "timestamp": "2026-03-19T02:00:03.000Z",
       "summary": "29 correlated news signals from 4 sources; vendors: Unknown, Apple."
-    },
-    {
-      "id": "corr-cloud-europe",
-      "name": "Europe Threat Activity",
-      "lat": 50.1109,
-      "lon": 8.6821,
-      "type": "cloud_region",
-      "severity": "HIGH",
-      "timestamp": "2026-03-17T18:41:59.000Z",
-      "summary": "1 correlated news signals from 1 sources; vendors: Unknown."
     }
   ],
   "major_incidents": [
@@ -91,8 +81,8 @@
       "lon": 0,
       "type": "incident",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-19T12:43:00.000Z",
-      "summary": "0 KEV and 57 high-severity news signals across 5 sources."
+      "timestamp": "2026-03-19T14:25:00.000Z",
+      "summary": "0 KEV and 56 high-severity news signals across 5 sources."
     },
     {
       "id": "corr-incident-oracle",
@@ -173,7 +163,7 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "CRITICAL",
-      "timestamp": "2026-03-19T02:52:44.000Z",
+      "timestamp": "2026-03-19T14:32:55.000Z",
       "summary": "21 correlated outage events from 1 status feeds."
     },
     {
@@ -183,7 +173,7 @@
       "lon": -98.5795,
       "type": "outage",
       "severity": "HIGH",
-      "timestamp": "2026-03-19T11:36:38.000Z",
+      "timestamp": "2026-03-19T15:57:33.000Z",
       "summary": "2 correlated outage events from 1 status feeds."
     }
   ]

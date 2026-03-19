@@ -1,5 +1,55 @@
 [
   {
+    "id": "news-06c66ea8",
+    "title": "Russian hackers exploit Zimbra flaw in Ukrainian govt attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-19T14:55:50.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/russian-apt28-military-hackers-exploit-zimbra-flaw-in-ukrainian-govt-attacks/",
+    "summary": "Hackers part of APT28, a state-backed threat group linked to Russia's military intelligence service (GRU), are exploiting a Zimbra Collaboration Suite (ZCS) vulnerability in attacks targeting Ukrainian government entities. [...]",
+    "severity": "HIGH",
+    "vendor": "Intel",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "vulnerability",
+      "intel"
+    ]
+  },
+  {
+    "id": "news-54aa81f0",
+    "title": "ThreatsDay Bulletin: FortiGate RaaS, Citrix Exploits, MCP Abuse, LiveChat Phish & More",
+    "source": "The Hacker News",
+    "published": "2026-03-19T14:25:00.000Z",
+    "url": "https://thehackernews.com/2026/03/threatsday-bulletin-fortigate-raas.html",
+    "summary": "ThreatsDay Bulletin is back on The Hacker News, and this week feels off in a familiar way. Nothing loud, nothing breaking everything at once. Just a lot of small things that shouldn&rsquo;t work anymore but still do. Some of it looks simple, almost sloppy, until you see how well it lands. Other bits feel a little to...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news"
+    ]
+  },
+  {
+    "id": "news-7f590281",
+    "title": "7 Ways to Prevent Privilege Escalation via Password Resets",
+    "source": "BleepingComputer",
+    "published": "2026-03-19T14:00:10.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/7-ways-to-prevent-privilege-escalation-via-password-resets/",
+    "summary": "Password resets are often weaker than login security, making them a prime target for privilege escalation. Specops Software explains how attackers abuse reset workflows and how to secure them. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer"
+    ]
+  },
+  {
     "id": "news-5158f97f",
     "title": "Max severity Ubiquiti UniFi flaw may allow account takeover",
     "source": "BleepingComputer",
@@ -620,25 +670,6 @@
     ]
   },
   {
-    "id": "news-2e92aaa5",
-    "title": "GlassWorm malware hits 400+ code repos on GitHub, npm, VSCode, OpenVSX",
-    "source": "BleepingComputer",
-    "published": "2026-03-17T21:42:54.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/glassworm-malware-hits-400-plus-code-repos-on-github-npm-vscode-openvsx/",
-    "summary": "The GlassWorm supply-chain campaign has returned with a new, coordinated attack that targeted hundreds of packages, repositories, and extensions on GitHub, npm, and VSCode/OpenVSX extensions. [...]",
-    "severity": "HIGH",
-    "vendor": "Github",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "malware",
-      "supply-chain",
-      "github"
-    ]
-  },
-  {
     "id": "news-cbe099ae",
     "title": "Clear Communication: The Missing Link in Cybersecurity Success",
     "source": "Dark Reading",
@@ -686,22 +717,6 @@
       "high",
       "dark-reading",
       "phishing"
-    ]
-  },
-  {
-    "id": "news-9535eda7",
-    "title": "Europe sanctions Chinese and Iranian firms for cyberattacks",
-    "source": "BleepingComputer",
-    "published": "2026-03-17T18:41:59.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/europe-sanctions-chinese-and-iranian-firms-for-cyberattacks/",
-    "summary": "The European Union Council has announced sanctions against three entities and two individuals for their involvement in cyberattacks targeting critical infrastructure in the region. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer"
     ]
   },
   {
@@ -861,7 +876,7 @@
     "source": "Dark Reading",
     "published": "2026-03-16T20:30:04.000Z",
     "url": "https://www.darkreading.com/application-security/glassworm-malware-evolves-hide-dependencies",
-    "summary": "Researchers have identified dozens of malicious GlassWorm extensions that come with new evasion techniques.",
+    "summary": "Dozens of updated, malicious GlassWorm extensions have infested Open VSX, threatening software development supply chains.",
     "severity": "HIGH",
     "vendor": "Unknown",
     "tags": [
@@ -869,7 +884,8 @@
       "intel-feed",
       "high",
       "dark-reading",
-      "malware"
+      "malware",
+      "supply-chain"
     ]
   },
   {
@@ -1817,22 +1833,6 @@
       "supply-chain",
       "cloud",
       "github"
-    ]
-  },
-  {
-    "id": "news-5e7704ef",
-    "title": "Five Malicious Rust Crates and AI Bot Exploit CI/CD Pipelines to Steal Developer Secrets",
-    "source": "The Hacker News",
-    "published": "2026-03-11T05:12:00.000Z",
-    "url": "https://thehackernews.com/2026/03/five-malicious-rust-crates-and-ai-bot.html",
-    "summary": "Cybersecurity researchers have discovered five malicious Rust crates that masquerade as time-related utilities to transmit .env file data to the threat actors. The Rust packages, published to crates.io, are listed below - chrono_anchor dnp3times time_calibrator time_calibrators time-sync The crates, per Socket, impe...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news"
     ]
   },
   {
