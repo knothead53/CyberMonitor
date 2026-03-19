@@ -1,16 +1,24 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CyberMonitor MVP</title>
+  <title>CyberMonitor Correlation Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     crossorigin=""
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -18,225 +26,203 @@
   <div class="dashboard-shell">
     <header class="topbar panel">
       <div class="brand-wrap">
-        <p class="brand-kicker">OPEN SOURCE CYBER OPS</p>
+        <p class="brand-kicker">STATIC CYBER INTELLIGENCE SURFACE</p>
         <h1>CyberMonitor</h1>
       </div>
       <div class="global-search" role="search">
-        <label class="global-search-label" for="global-search-input">Search all intelligence feeds</label>
+        <label class="global-search-label" for="global-search-input">Search normalized events and correlated incidents</label>
         <div class="global-search-row">
           <input
             id="global-search-input"
             type="search"
-            placeholder="Search title, summary, source, vendor, severity"
+            placeholder="Search CVEs, vendors, actors, campaigns, products, headlines"
             autocomplete="off"
           />
           <button id="global-search-clear-btn" type="button">Clear</button>
         </div>
       </div>
       <div class="topbar-meta">
-        <span class="env-badge">MVP</span>
-        <span id="data-mode-badge" class="data-mode-indicator">Data: checking...</span>
-        <span id="feed-health-badge" class="health-mode-indicator mode-pending">Health: checking...</span>
-        <span id="feed-refresh-summary" class="feed-refresh-summary">Feeds refreshed: checking...</span>
-        <span id="last-updated">Last updated: waiting for feed</span>
+        <span id="data-mode-badge" class="status-slot"></span>
+        <span id="feed-health-badge" class="status-slot"></span>
+        <span id="feed-refresh-summary" class="feed-refresh-summary">Refresh: checking...</span>
+        <span id="last-updated" class="feed-refresh-summary">Generated: checking...</span>
+        <button id="sources-btn" type="button">Source Intelligence</button>
         <button id="refresh-btn" type="button">Refresh</button>
-        <button id="reset-preferences-btn" type="button">Reset Preferences</button>
       </div>
     </header>
 
     <aside class="left-rail panel">
-      <h2 class="panel-title">Layers</h2>
-      <p class="panel-subtitle">Toggle live intelligence streams.</p>
-      <form id="layer-form" class="layer-list">
-        <label>
-          <input type="checkbox" name="layer" value="kev" checked />
-          CISA KEV
-        </label>
-        <label>
-          <input type="checkbox" name="layer" value="news" checked />
-          Security News
-        </label>
-        <label>
-          <input type="checkbox" name="layer" value="outages" checked />
-          Infrastructure Outages
-        </label>
-      </form>
+      <section class="rail-block">
+        <h2 class="panel-title">Layers</h2>
+        <p class="panel-subtitle">Control the intelligence surfaces shown on the map.</p>
+        <div class="layer-list">
+          <label class="layer-toggle">
+            <input type="checkbox" data-layer="incidents" checked />
+            <span>Incidents</span>
+          </label>
+          <label class="layer-toggle">
+            <input type="checkbox" data-layer="correlated_clusters" checked />
+            <span>Correlated Clusters</span>
+          </label>
+          <label class="layer-toggle">
+            <input type="checkbox" data-layer="outages" checked />
+            <span>Outages</span>
+          </label>
+          <label class="layer-toggle">
+            <input type="checkbox" data-layer="kev_linked_activity" checked />
+            <span>KEV-Linked Activity</span>
+          </label>
+          <label class="layer-toggle">
+            <input type="checkbox" data-layer="density" />
+            <span>Density</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="rail-block">
+        <h2 class="panel-title">Signal Telemetry</h2>
+        <div class="telemetry-stack">
+          <article class="telemetry-card">
+            <p class="card-label">Visible Signals</p>
+            <p class="card-value" id="signals-visible-value">0</p>
+          </article>
+          <article class="telemetry-card">
+            <p class="card-label">Visible Clusters</p>
+            <p class="card-value" id="clusters-visible-value">0</p>
+          </article>
+          <article class="telemetry-card">
+            <p class="card-label">High Severity</p>
+            <p class="card-value warning" id="high-severity-value">0</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="rail-block">
+        <h2 class="panel-title">Severity Legend</h2>
+        <div class="legend-list">
+          <span class="ui-badge severity-critical">Critical</span>
+          <span class="ui-badge severity-high">High</span>
+          <span class="ui-badge severity-medium">Medium</span>
+          <span class="ui-badge severity-low">Low</span>
+        </div>
+      </section>
     </aside>
 
     <main class="center-stage">
       <section class="map-panel panel">
         <div class="map-panel-head">
-          <h2 class="panel-title">Global Cyber Activity Board</h2>
-          <span class="status-pill">SIMULATED SIGNALS</span>
+          <div>
+            <p class="panel-kicker">Correlation Surface</p>
+            <h2 class="panel-title map-title">Global Cyber Activity Board</h2>
+            <p class="panel-subtitle">Normalized public signals, deterministic incident clustering, and fallback-safe static delivery.</p>
+          </div>
+          <span class="status-pill tone-ok">STATIC-FIRST</span>
         </div>
         <div class="map-surface" aria-label="Global cyber activity map">
-          <div id="global-map" class="map-canvas" role="application" aria-label="Interactive world map"></div>
-          <span class="map-caption">MAP (v1.2)</span>
+          <div class="map-backdrop"></div>
+          <div id="global-map" class="map-canvas" role="application" aria-label="Interactive cyber intelligence map"></div>
+          <div class="map-overlay-frame"></div>
         </div>
-        <div class="map-timeline" aria-label="Map timeline controls">
-          <span class="timeline-kicker">Timeline</span>
-          <button id="timeline-prev-btn" type="button">Previous</button>
-          <span id="timeline-label" class="timeline-label">Last 24h</span>
-          <button id="timeline-next-btn" type="button">Next</button>
-        </div>
-        <div class="status-cards">
-          <article>
-            <p class="card-label">Signal Throughput</p>
-            <p class="card-value" id="metric-throughput-value">--</p>
-            <div class="sparkline" id="metric-throughput-sparkline" aria-label="Signal throughput trend"></div>
-          </article>
-          <article>
-            <p class="card-label">High Severity Flags</p>
-            <p class="card-value warning" id="metric-high-severity-value">--</p>
-            <div class="sparkline sparkline-alert" id="metric-high-severity-sparkline" aria-label="High severity trend"></div>
-          </article>
-          <article>
-            <p class="card-label">Known Campaigns</p>
-            <p class="card-value" id="metric-campaigns-value">--</p>
-            <div class="sparkline sparkline-campaigns" id="metric-campaigns-sparkline" aria-label="Campaign trend"></div>
-          </article>
+        <div class="map-footer">
+          <div class="timeline-controls">
+            <button id="timeline-prev-btn" type="button">Previous</button>
+            <span id="timeline-label" class="timeline-label">Last 72H</span>
+            <button id="timeline-next-btn" type="button">Next</button>
+          </div>
+          <p class="map-footnote">Map coordinates are approximate unless a source publishes specific geography.</p>
         </div>
       </section>
     </main>
 
     <aside class="right-rail">
-      <section class="panel feed-panel" data-panel="kev">
+      <section class="panel feed-panel">
         <div class="feed-head">
-          <h2 class="panel-title">CISA KEV (Exploited Vulns)</h2>
+          <div>
+            <p class="panel-kicker">Clustered View</p>
+            <h2 class="panel-title">Correlated Incidents</h2>
+          </div>
           <div class="feed-head-meta">
-            <span class="feed-source-indicator mode-pending" id="kev-feed-mode">Checking...</span>
-            <span class="panel-health-indicator mode-pending" id="kev-health-mode">HEALTH</span>
-            <span class="panel-count" id="kev-count">0</span>
+            <span id="clusters-status" class="status-slot"></span>
+            <span id="clusters-count" class="panel-count">0</span>
           </div>
         </div>
-        <p class="feed-freshness-meta" id="kev-freshness-meta">Updated: checking...</p>
-        <div class="panel-filters" id="kev-filters">
-          <label class="filter-control" for="kev-filter-severity">
-            <span>Severity</span>
-            <select id="kev-filter-severity" data-feed="kev" data-filter="severity">
-              <option value="all">All</option>
-              <option value="critical">Critical</option>
-              <option value="high">High</option>
-              <option value="medium">Medium</option>
-              <option value="low">Low</option>
-            </select>
-          </label>
-          <label class="filter-control" for="kev-filter-time">
-            <span>Time</span>
-            <select id="kev-filter-time" data-feed="kev" data-filter="time">
-              <option value="all">All</option>
-              <option value="1h">1h</option>
-              <option value="6h">6h</option>
-              <option value="24h">24h</option>
-              <option value="7d">7d</option>
-            </select>
-          </label>
-          <label class="filter-control" for="kev-filter-source">
-            <span>Source</span>
-            <select id="kev-filter-source" data-feed="kev" data-filter="source">
-              <option value="all">All</option>
-            </select>
-          </label>
+        <div id="clusters-list" class="feed-list">
+          <div class="panel-state">Loading correlated incidents...</div>
         </div>
-        <ul id="kev-list" class="feed-list">
-          <li class="state-item">Loading feed...</li>
-        </ul>
       </section>
 
-      <section class="panel feed-panel" data-panel="news">
+      <section class="panel feed-panel">
         <div class="feed-head">
-          <h2 class="panel-title">Security News</h2>
+          <div>
+            <p class="panel-kicker">Priority Feed</p>
+            <h2 class="panel-title">Priority Vulnerabilities</h2>
+          </div>
           <div class="feed-head-meta">
-            <span class="feed-source-indicator mode-pending" id="news-feed-mode">Checking...</span>
-            <span class="panel-health-indicator mode-pending" id="news-health-mode">HEALTH</span>
-            <span class="panel-count" id="news-count">0</span>
+            <span id="priority-status" class="status-slot"></span>
+            <span id="priority-count" class="panel-count">0</span>
           </div>
         </div>
-        <p class="feed-freshness-meta" id="news-freshness-meta">Updated: checking...</p>
-        <div class="panel-filters" id="news-filters">
-          <label class="filter-control" for="news-filter-severity">
-            <span>Severity</span>
-            <select id="news-filter-severity" data-feed="news" data-filter="severity">
-              <option value="all">All</option>
-              <option value="critical">Critical</option>
-              <option value="high">High</option>
-              <option value="medium">Medium</option>
-              <option value="low">Low</option>
-            </select>
-          </label>
-          <label class="filter-control" for="news-filter-time">
-            <span>Time</span>
-            <select id="news-filter-time" data-feed="news" data-filter="time">
-              <option value="all">All</option>
-              <option value="1h">1h</option>
-              <option value="6h">6h</option>
-              <option value="24h">24h</option>
-              <option value="7d">7d</option>
-            </select>
-          </label>
-          <label class="filter-control" for="news-filter-source">
-            <span>Source</span>
-            <select id="news-filter-source" data-feed="news" data-filter="source">
-              <option value="all">All</option>
-            </select>
-          </label>
+        <div id="priority-list" class="feed-list">
+          <div class="panel-state">Loading priority vulnerabilities...</div>
         </div>
-        <ul id="news-list" class="feed-list">
-          <li class="state-item">Loading feed...</li>
-        </ul>
       </section>
 
-      <section class="panel feed-panel" data-panel="outages">
+      <section class="panel feed-panel">
         <div class="feed-head">
-          <h2 class="panel-title">Outages</h2>
+          <div>
+            <p class="panel-kicker">Intel Feed</p>
+            <h2 class="panel-title">Intel & Advisories</h2>
+          </div>
           <div class="feed-head-meta">
-            <span class="feed-source-indicator mode-pending" id="outages-feed-mode">Checking...</span>
-            <span class="panel-health-indicator mode-pending" id="outages-health-mode">HEALTH</span>
-            <span class="panel-count" id="outages-count">0</span>
+            <span id="intel-status" class="status-slot"></span>
+            <span id="intel-count" class="panel-count">0</span>
           </div>
         </div>
-        <p class="feed-freshness-meta" id="outages-freshness-meta">Updated: checking...</p>
-        <div class="panel-filters" id="outages-filters">
-          <label class="filter-control" for="outages-filter-severity">
-            <span>Severity</span>
-            <select id="outages-filter-severity" data-feed="outages" data-filter="severity">
-              <option value="all">All</option>
-              <option value="critical">Critical</option>
-              <option value="high">High</option>
-              <option value="medium">Medium</option>
-              <option value="low">Low</option>
-            </select>
-          </label>
-          <label class="filter-control" for="outages-filter-time">
-            <span>Time</span>
-            <select id="outages-filter-time" data-feed="outages" data-filter="time">
-              <option value="all">All</option>
-              <option value="1h">1h</option>
-              <option value="6h">6h</option>
-              <option value="24h">24h</option>
-              <option value="7d">7d</option>
-            </select>
-          </label>
-          <label class="filter-control" for="outages-filter-source">
-            <span>Source</span>
-            <select id="outages-filter-source" data-feed="outages" data-filter="source">
-              <option value="all">All</option>
-            </select>
-          </label>
+        <div id="intel-list" class="feed-list">
+          <div class="panel-state">Loading intelligence feed...</div>
         </div>
-        <ul id="outages-list" class="feed-list">
-          <li class="state-item">Loading feed...</li>
-        </ul>
+      </section>
+
+      <section class="panel feed-panel">
+        <div class="feed-head">
+          <div>
+            <p class="panel-kicker">Operational Feed</p>
+            <h2 class="panel-title">Service Disruptions</h2>
+          </div>
+          <div class="feed-head-meta">
+            <span id="outages-status" class="status-slot"></span>
+            <span id="outages-count" class="panel-count">0</span>
+          </div>
+        </div>
+        <div id="outages-list" class="feed-list">
+          <div class="panel-state">Loading outage intelligence...</div>
+        </div>
       </section>
     </aside>
   </div>
+
+  <dialog id="source-drawer" class="source-drawer">
+    <div class="source-drawer-card panel">
+      <div class="feed-head">
+        <div>
+          <p class="panel-kicker">Observability</p>
+          <h2 class="panel-title">Source Intelligence</h2>
+        </div>
+        <button id="source-drawer-close" type="button">Close</button>
+      </div>
+      <div id="source-drawer-body" class="source-drawer-body">
+        <div class="panel-state">Loading source observability...</div>
+      </div>
+    </div>
+  </dialog>
 
   <script src="../data/fallback.sample.js"></script>
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     crossorigin=""
-    defer
   ></script>
-  <script src="app.js" defer></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>

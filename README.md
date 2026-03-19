@@ -1,197 +1,314 @@
 # CyberMonitor
 
-CyberMonitor is a free, no-login cybersecurity intelligence dashboard designed for static hosting.
+CyberMonitor is a static-friendly cyber-intelligence correlation dashboard built with plain HTML, CSS, and JavaScript.
 
-It runs with plain HTML, CSS, and JavaScript and is intentionally compatible with:
+It is designed to work well on GitHub Pages or any other static host:
 
-- GitHub Pages
-- any static host
-- local development without a backend
+- feed collection happens in build scripts
+- normalized and correlated JSON is committed as artifacts
+- the frontend reads prepared data bundles
+- sample fallback data keeps the UI usable when live feeds fail
 
-## Preview
-![CyberMonitor dashboard preview](assets/screenshots/dashboard-v1.4.1.png)
+## What Changed
 
-## v1.4.1 Stability Highlights
+CyberMonitor now moves beyond a simple demo map into a more serious correlation workflow:
 
-- hardened generation pipeline with per-item validation, repair, dedupe, and predictable output handling
-- safer partial-failure behavior: adapters run independently and can restore previously valid output when current output is unusable
-- frontend resilience upgrades for missing metadata/health files, malformed feed items, and stale feed states
-- clearer freshness semantics in panels (`checked` vs `newest`) to separate pipeline freshness from source publish cadence
-- hardened scheduled workflow behavior (idempotent no-change runs, per-ref concurrency, timeout guardrails, run summary output)
-- static-host compatibility preserved with generated-first and sample-data fallback behavior
+- richer public-source ingestion across vulnerability, advisory, news, and status feeds
+- a shared normalized event schema across all source types
+- conservative multi-source incident clustering
+- structured outputs in `data/raw`, `data/normalized`, and `data/correlated`
+- a cleaner, darker, more polished 2D intelligence map
+- a source-intelligence drawer for feed health and fallback visibility
 
-## v1.4 Foundation
+## Architecture
 
-- scheduled feed generation with GitHub Actions cron + manual dispatch
-- generated feed metadata and health reporting (`feed-metadata.json`, `feed-health.json`)
-- expanded public source coverage for news and outage/status feeds
-- generated map-correlation overlays (`map.correlated.json`) derived from ingested feeds
-- frontend freshness and health indicators in the top bar and panel headers
-- sample-data fallback remains intact for static compatibility
+### Static-first model
 
-## Core Architecture
+CyberMonitor intentionally does not require a backend server for the default experience.
 
-CyberMonitor now operates in four layers:
+The data pipeline runs ahead of time:
 
-- UI layer: `frontend/` static dashboard shell and browser rendering
-- normalized data layer: `data/` generated feed artifacts + sample fallbacks
-- generation layer: `scripts/` adapters and unified generator
-- automation/observability layer: `.github/workflows/` scheduled generation + metadata/health outputs
+1. fetch live public feeds
+2. store per-source raw snapshots
+3. normalize records into a common event schema
+4. correlate related events into incident clusters
+5. export frontend-ready dashboard bundles and compatibility files
+6. publish the static site with generated JSON
 
-No backend server is required for the base product.
+### Repository layers
 
-## Data Flow (v1.4.1)
+- `frontend/`
+  Static dashboard UI, modular browser code, Leaflet map, and presentation logic.
+- `scripts/`
+  Build pipeline, source registry, normalization helpers, and correlation logic.
+- `data/raw/`
+  Per-source raw snapshots from the latest successful fetch.
+- `data/normalized/`
+  Unified normalized event output.
+- `data/correlated/`
+  Correlated incident clusters, map bundle, and dashboard bundle.
+- `data/*.sample.json` and `data/fallback.sample.js`
+  Sample fallback content for static/offline operation.
+- `.github/workflows/`
+  Feed generation and GitHub Pages deployment automation.
 
-1. Generate feeds manually (`node scripts/generate-feeds.js`) or via scheduled workflow.
-2. Adapters ingest public sources and normalize records to CyberMonitor schema.
-3. Generator validates/repairs/dedupes adapter output and preserves previous good output when needed.
-4. Generator writes feed files:
-   - `data/kev.json`
-   - `data/news.json`
-   - `data/outages.json`
-5. Generator writes observability files:
-   - `data/feed-metadata.json`
-   - `data/feed-health.json`
-6. Generator writes derived map overlays:
-   - `data/map.correlated.json`
-7. Frontend attempts generated files first, then falls back to sample data where applicable.
+## Data Pipeline
 
-## Scheduled Feed Automation
+Entry points:
 
-Workflow: `.github/workflows/generate-feeds.yml`
+- `node scripts/build-data.js`
+- `node scripts/generate-feeds.js`
 
-- triggers:
-  - manual: `workflow_dispatch`
-  - scheduled: `15 */3 * * *` (every 3 hours)
-- runtime:
-  - Node 20 setup
-  - optional npm dependency install when `package.json` exists
-  - `node scripts/generate-feeds.js`
-- commit behavior:
-  - stages generated artifacts with explicit add/remove tracking
-  - commits only when changes are detected
-  - no-op runs skip commit/push cleanly
-  - bot commit message: `chore: refresh generated intelligence feeds`
-  - writes run summary with changed artifacts and published commit SHA
-- operational safety:
-  - per-ref workflow concurrency guard
-  - job timeout set to 15 minutes
+`generate-feeds.js` is now a compatibility wrapper over `build-data.js`.
 
-Baseline v1.4/v1.4.1 automation does not require custom secrets.
+### Pipeline stages
 
-## Run The Dashboard
+1. `scripts/lib/source-config.js`
+   Declares supported live sources, optional stubs, output paths, and panel groupings.
+2. `scripts/lib/adapters.js`
+   Fetches source payloads and converts them into normalized CyberMonitor events.
+3. `scripts/lib/normalize.js`
+   Applies shared schema shaping, severity logic, vendor detection, CVE extraction, geo approximation, and stable IDs.
+4. `scripts/lib/correlate.js`
+   Builds conservative incident clusters using deterministic similarity rules.
+5. `scripts/lib/exporters.js`
+   Writes:
+   - `data/raw/*.json`
+   - `data/normalized/events.json`
+   - `data/normalized/summary.json`
+   - `data/correlated/incidents.json`
+   - `data/correlated/map.json`
+   - `data/correlated/dashboard.json`
+   - compatibility files such as `data/kev.json`, `data/news.json`, `data/outages.json`, `data/feed-health.json`, and `data/map.correlated.json`
 
-### Option 1: quick local open (sample-first)
+## Normalized Event Schema
 
-1. Open the repo.
-2. Open `frontend/index.html` directly.
-
-### Option 2: local static server (recommended)
-
-Serve the repo root with any static file server, then open `frontend/index.html` through HTTP.
-
-## Generate Feeds Manually
-
-Node.js 18+ is recommended.
-
-```bash
-node scripts/generate-feeds.js
-```
-
-Optional subset generation:
-
-```bash
-node scripts/generate-feeds.js --only kev
-node scripts/generate-feeds.js --only news,outages
-```
-
-## Frontend Fallback Behavior
-
-Panel feed load order:
-
-- KEV: `data/kev.json` -> `data/kev.sample.json`
-- News: `data/news.json` -> `data/news.sample.json`
-- Outages: `data/outages.json` -> `data/outages.sample.json`
-
-Map overlay load order:
-
-- `data/map.correlated.json` -> `data/map.overlays.sample.json`
-
-If generated files are unavailable, the dashboard remains usable with sample data.
-
-## UI Observability Signals
-
-Top bar now includes:
-
-- data mode indicator (live/sample/mixed/partial)
-- feed health indicator
-- feed refresh recency summary
-
-Each panel includes:
-
-- source mode badge (`LIVE DATA`, `SAMPLE DATA`, `NO DATA`)
-- health chip (`OK`, `WARN`, `ERROR`)
-- freshness/meta line (`checked ...`, `newest ...`, item count)
-- stale states that are surfaced as subtle warning labels instead of hard errors
-
-## Public Sources Used In v1.4
-
-KEV source:
-
-- CISA Known Exploited Vulnerabilities feed
-
-News sources:
-
-- BleepingComputer RSS
-- Dark Reading RSS
-- Krebs on Security RSS
-- The Hacker News RSS
-- SANS ISC RSS
-
-Outage/status sources:
-
-- GitHub Status RSS
-- OpenAI Status RSS
-- Discord Status RSS
-- Cloudflare Status RSS
-- Slack Status RSS
-- Atlassian Status RSS
-- Heroku Status RSS
-
-No API keys are required for base v1.4 ingestion.
-
-## Stability Notes (v1.4.1)
-
-- Adapter-level failures do not automatically terminate generation for healthy feeds.
-- Validation issues are recorded in `feed-health.json` and surfaced in UI observability labels.
-- Generated timestamps and source publish timestamps are shown separately in panel metadata:
-  - `checked`: pipeline freshness / last successful feed check
-  - `newest`: newest event/article timestamp from that source data
-- Browser `Refresh` reloads current generated/sample files; it does not execute Node adapter scripts in-browser.
-
-## Map Correlation Note
-
-`data/map.correlated.json` is a derived visualization layer built from feed signals using deterministic approximation logic. It is not authoritative geolocation intelligence.
-
-## Normalized Feed Schema
-
-All panel feeds normalize to this shape:
+The shared normalized schema supports:
 
 ```json
 {
   "id": "string",
-  "title": "string",
   "source": "string",
-  "published": "ISO-8601 string",
-  "url": "string",
+  "source_key": "string",
+  "source_type": "string",
+  "title": "string",
   "summary": "string",
+  "url": "string",
+  "published_at": "ISO-8601 string",
+  "discovered_at": "ISO-8601 string",
   "severity": "LOW | MEDIUM | HIGH | CRITICAL",
+  "confidence": 0.0,
+  "category": "string",
+  "tags": ["string"],
   "vendor": "string",
-  "tags": ["string"]
+  "product": "string",
+  "cve_ids": ["CVE-YYYY-NNNN"],
+  "campaign": "string",
+  "actor": "string",
+  "victim_region": "string",
+  "latitude": 0,
+  "longitude": 0,
+  "geo_precision": "reported | region | vendor-hq | global",
+  "incident_key": "string",
+  "correlation_key": "string",
+  "related_sources": ["string"],
+  "related_event_ids": ["string"],
+  "raw_hash": "string"
 }
 ```
 
-Adapters may include extra fields when useful while preserving frontend compatibility.
+## Correlation Model
+
+CyberMonitor uses deterministic, conservative merge rules.
+
+Signals are grouped only when enough evidence exists across:
+
+- CVE overlap
+- vendor/product alignment
+- title similarity
+- summary similarity
+- actor/campaign alignment
+- category/domain compatibility
+- time-window proximity
+
+The merger intentionally prefers under-merging to over-merging.
+
+Each correlated cluster includes:
+
+- `cluster_id`
+- primary headline
+- merged summary
+- severity rollup
+- source count
+- event count
+- first seen / last seen
+- related sources
+- related CVEs
+- related vendors/products
+- merge confidence
+
+## Supported Sources
+
+### Live sources enabled by default
+
+Priority vulnerability / advisory sources:
+
+- CISA KEV
+- NVD recent CVEs
+- Microsoft Security Update Guide
+- Fortinet PSIRT
+- Palo Alto Security Advisories
+
+Intel / advisory sources:
+
+- CISA Alerts & Advisories
+- BleepingComputer
+- Dark Reading
+- Krebs on Security
+- The Hacker News
+- SANS ISC
+
+Operational status sources:
+
+- Cloudflare Status
+- GitHub Status
+- OpenAI Status
+- Discord Status
+- Slack Status
+- Atlassian Status
+- Heroku Status
+
+### Explicit stubs
+
+These are kept visible in feed health so the project is honest about what is not yet automated:
+
+- Cisco PSIRT openVuln
+  Disabled by default because it requires API credentials.
+- Broadcom / VMware advisories
+  Stubbed because public machine-readable access is inconsistent and brittle.
+
+## Feed Health And Fallback
+
+`data/feed-health.json` tracks per source:
+
+- status
+- mode (`live`, `fallback`, `stub`)
+- last success
+- last failure
+- item count
+- freshness age
+- failure count
+- error message
+
+If a live fetch fails, the builder tries to retain the last known normalized data for that source when available.
+
+If generated dashboard bundles are unavailable in the browser, the frontend falls back to:
+
+1. `data/correlated/dashboard.sample.json`
+2. `data/fallback.sample.js`
+
+## Frontend Notes
+
+The current UI keeps the dark cyber-ops aesthetic while cleaning up structure:
+
+- left rail: map layers and telemetry
+- center: premium dark 2D map with clustering and density mode
+- right rail:
+  - Correlated Incidents
+  - Priority Vulnerabilities
+  - Intel & Advisories
+  - Service Disruptions
+- source-intelligence drawer with per-source health
+
+The map uses Leaflet and external tile/CDN libraries. If those browser dependencies fail, the rest of the dashboard still renders.
+
+## Local Run
+
+### 1. Generate data
+
+Live + sample artifacts:
+
+```bash
+node scripts/build-data.js
+```
+
+Sample-only artifacts:
+
+```bash
+node scripts/build-data.js --sample-only
+```
+
+Subset generation:
+
+```bash
+node scripts/build-data.js --only cisa_kev,nvd_recent
+node scripts/build-data.js --only priority
+node scripts/build-data.js --only intel,outages
+```
+
+### 2. Serve the repo root
+
+Example with Python:
+
+```bash
+python -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000/frontend/
+```
+
+## Exact Local Verification Steps
+
+Use these in order:
+
+1. `node scripts/build-data.js --sample-only`
+2. `node scripts/build-data.js`
+3. `python -m http.server 8000`
+4. Open `http://localhost:8000/frontend/`
+5. Verify:
+   - the top bar shows data mode and health
+   - the map renders markers and layer toggles work
+   - timeline buttons reduce the visible signal count
+   - the Source Intelligence drawer opens and lists sources
+   - the right-rail panels update when search text changes
+
+## GitHub Actions
+
+### Feed generation
+
+Workflow: `.github/workflows/generate-feeds.yml`
+
+- runs on schedule every 3 hours
+- supports manual dispatch
+- runs `node scripts/build-data.js`
+- commits changed generated artifacts under `data/`
+- writes a run summary including overall pipeline health and source count
+
+### GitHub Pages deployment
+
+Workflow: `.github/workflows/deploy-pages.yml`
+
+- supports manual dispatch
+- auto-deploys on pushes to `main` that change `frontend/`, `data/`, or `assets/`
+- publishes the static site bundle with no backend requirements
+
+## Screenshots
+
+The screenshots folder is preserved as requested:
+
+- `assets/screenshots/`
+
+The current screenshots should be refreshed after the new correlation dashboard is visually validated in-browser.
+
+## Known Limitations
+
+- Some vendor sources remain intentionally stubbed until a reliable public machine-readable path exists.
+- Geographic placement is approximate for many cyber signals and should not be treated as authoritative attribution.
+- The project currently depends on browser-accessible CDN assets for Leaflet plugins and map tiles.
+- This repo does not yet provide STIX/TAXII or socket-based live streaming.
 
 ## Project Structure
 
@@ -201,56 +318,38 @@ CyberMonitor/
 |  |- workflows/
 |     |- deploy-pages.yml
 |     |- generate-feeds.yml
-|- frontend/
-|  |- index.html
-|  |- styles.css
-|  |- app.js
+|- assets/
+|  |- screenshots/
 |- data/
+|  |- raw/
+|  |- normalized/
+|  |- correlated/
 |  |- kev.sample.json
 |  |- news.sample.json
 |  |- outages.sample.json
 |  |- map.overlays.sample.json
-|  |- metrics.sample.json
 |  |- fallback.sample.js
-|  |- kev.json              # optional generated output
-|  |- news.json             # optional generated output
-|  |- outages.json          # optional generated output
-|  |- feed-metadata.json    # generated metadata
-|  |- feed-health.json      # generated health report
-|  |- map.correlated.json   # generated map correlation overlay
+|  |- kev.json
+|  |- news.json
+|  |- outages.json
+|  |- clusters.json
+|  |- feed-metadata.json
+|  |- feed-health.json
+|  |- map.correlated.json
+|- frontend/
+|  |- index.html
+|  |- styles.css
+|  |- app.js
+|  |- modules/
 |- scripts/
-|  |- README.md
+|  |- build-data.js
 |  |- generate-feeds.js
 |  |- refresh-sample-timestamps.js
-|  |- adapters/
-|     |- kev_adapter.js
-|     |- news_adapter.js
-|     |- outages_adapter.js
-|     |- sources.js
-|     |- lib/
-|        |- normalize.js
-|        |- rss.js
-|- assets/
-|  |- screenshots/
-|     |- dashboard-v1.1.png
-|     |- dashboard-v1.2.png
-|     |- dashboard-v1.3.png
+|  |- lib/
 |- ROADMAP.md
-|- CONTRIBUTING.md
-|- README.md
 ```
 
-## Documentation
+## Related Docs
 
 - [ROADMAP.md](ROADMAP.md)
 - [scripts/README.md](scripts/README.md)
-- [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## Future Directions
-
-CyberMonitor is now moving to track-based planning after v1.4.1 hardening:
-
-- intelligence expansion: broader source coverage, better categorization, source-quality scoring
-- map intelligence: stronger correlation methodology and clearer confidence signaling
-- platform reliability: higher automation resilience, feed-quality guardrails, operational observability
-- deployment/distribution: tighter Pages publishing cadence and future packaging options

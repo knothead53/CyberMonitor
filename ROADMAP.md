@@ -1,88 +1,66 @@
 # CyberMonitor Roadmap
 
-## Release Timeline
+## Current State
 
-## v1 (Initial MVP)
+CyberMonitor now has:
 
-- Static SOC-style dashboard shell in `frontend/`
-- Sample feeds in `data/` for KEV, news, and outages
-- Dynamic panel rendering with loading and error states
-- Layer toggles and manual refresh behavior
-- Last-updated indicator in top bar
+- static-first data generation with `raw -> normalized -> correlated -> dashboard`
+- broader public-source ingestion
+- conservative deterministic correlation
+- a cleaned-up dark correlation dashboard UI
+- source health and fallback visibility
 
-## v1.1
+## Next Enhancements
 
-- Status: Completed (March 2026)
-- Leaflet world map integration in center wallboard module
-- Panel-level filtering (severity, source, time window)
-- Metrics widgets with sparkline trends
-- Improved screenshots and repository polish
+### Entity Extraction
 
-## v1.2
+- Improve vendor/product extraction from advisory and NVD text
+- Add stronger actor and campaign recognition without introducing opaque ML dependencies
+- Add better keyword normalization for product families and cloud services
 
-- Status: Completed (March 2026)
-- Local preference persistence for layer/filter/search/timeline controls
-- Timeline stepping controls for map overlay windows (`1h`, `6h`, `24h`, `7d`)
-- Browser-side global search across KEV/news/outage panels
-- Optional adapter scaffolding plus generated-feed fallback loading
+### Threat Overlays
 
-## v1.3
+- Threat actor overlays
+- campaign-specific map layers
+- vendor-family and product-family overlays
+- KEV-to-advisory relationship overlays
 
-- Status: Completed (March 2026)
-- Real CISA KEV ingestion and normalization to `data/kev.json`
-- Real security news ingestion from public RSS sources to `data/news.json`
-- Real outage/status ingestion from public status RSS sources to `data/outages.json`
-- Shared adapter normalization utilities in `scripts/adapters/lib/`
-- Unified generation runner in `scripts/generate-feeds.js`
-- Frontend feed-source indicators for live/sample/mixed visibility
-- Continued static-host compatibility with sample fallback behavior
+### Filtering And UX
 
-## v1.4
+- regional filters
+- source-type filters
+- severity sliders
+- saved analyst views
+- better focus mode for a selected incident cluster
 
-- Status: Completed (March 2026)
-- Scheduled feed generation workflow in GitHub Actions (`generate-feeds.yml`)
-- Automated generated-artifact commits when data changes are detected
-- Feed metadata output (`data/feed-metadata.json`) with per-feed freshness details
-- Feed health output (`data/feed-health.json`) with per-feed status reporting
-- Expanded public source coverage for news and outage/status ingestion
-- Derived map-correlation output (`data/map.correlated.json`) from generated feeds
-- Dashboard freshness and health indicators in top bar and panel headers
-- Maintained static fallback compatibility for generated/sampled operation modes
+### Data Sources
 
-## v1.4.1 (Stability & Hardening)
+- STIX/TAXII ingestion paths where static export is practical
+- optional Cisco openVuln support when credentials are provided
+- improved Broadcom / VMware advisory support if a stable public feed is available
+- optional GitHub security advisory ingestion
+- optional exploit-metadata enrichment where a reliable public path exists
 
-- Status: Completed (March 2026)
-- Hardened generator validation path (`validateNormalizedItem`, `filterInvalidItems`, dedupe/reporting flow)
-- Improved partial-failure handling with safe adapter execution and previous-output recovery when needed
-- Consistent per-feed health outcomes (`ok`, `warning`, `error`) with validation context in `feed-health.json`
-- Frontend resilience hardening for missing metadata/health files, malformed feed payloads, stale states, and empty results
-- Clearer freshness semantics in panels (`checked` vs `newest`) and subtle stale-state indicators
-- GitHub workflow hardening: per-ref concurrency, timeout guardrail, no-change idempotence, run summary output
+### Correlation Quality
 
-## Development Tracks (Post-v1.4.1)
+- stronger entity normalization across aliases
+- more transparent cluster explainability output
+- better tie-breaking for primary headlines
+- additional guardrails against transitive over-merging
 
-Roadmap planning now transitions to track-based increments instead of a single linear version queue.
+### Automation
 
-## Intelligence Expansion
+- build artifact validation checks in CI
+- screenshot refresh workflow or checklist
+- deploy-preview workflow for UI review
+- optional manual workflow inputs for source subsets and sample-only runs
 
-- Add more high-signal public sources while keeping schema quality and dedupe quality stable
-- Improve vendor/tag confidence scoring and source weighting
-- Expand category coverage without increasing UI noise
+### Future Real-Time Mode
 
-## Map Intelligence
+- socket-based live mode only as an additive path later
+- keep the static-generated path as the default reliable mode
 
-- Improve correlation quality and methodology transparency for derived overlays
-- Add stronger regional confidence signaling to prevent over-interpretation
-- Keep deterministic and auditable map derivation logic
+## Notes
 
-## Platform Reliability
-
-- Continue hardening feed generation reliability, observability, and stale-data handling
-- Improve operational diagnostics for automation and adapter-level degradation
-- Add repeatable quality checks for generated artifacts
-
-## Deployment & Distribution
-
-- Tighten refresh/publish cadence alignment for GitHub Pages deployment
-- Improve release hygiene around generated artifacts and screenshots
-- Evaluate packaging/distribution options after reliability targets are met
+- The screenshots folder is intentionally preserved and should be refreshed after visual QA.
+- The project should continue prioritizing reliability and clarity over fragile "live magic".

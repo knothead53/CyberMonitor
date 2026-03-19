@@ -15,7 +15,7 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     defaults:
       run:
         shell: bash
@@ -42,23 +42,31 @@ jobs:
           fi
 
       - name: Generate feeds
-        run: node scripts/generate-feeds.js
+        run: node scripts/build-data.js
+
+      - name: Read feed health summary
+        id: health
+        run: |
+          node <<'EOF'
+          const fs = require('fs');
+          const path = 'data/feed-health.json';
+          if (!fs.existsSync(path)) {
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, 'overall_status=unknown\n');
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, 'source_count=0\n');
+            process.exit(0);
+          }
+          const payload = JSON.parse(fs.readFileSync(path, 'utf8'));
+          const sourceCount = Object.keys(payload.sources || {}).length;
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `overall_status=${payload.overallStatus || 'unknown'}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `source_count=${sourceCount}\n`);
+          EOF
 
       - name: Detect generated artifact changes
         id: changes
         run: |
           set -euo pipefail
 
-          GENERATED_FILES=(
-            "data/kev.json"
-            "data/news.json"
-            "data/outages.json"
-            "data/feed-metadata.json"
-            "data/feed-health.json"
-            "data/map.correlated.json"
-          )
-
-          git add -A "${GENERATED_FILES[@]}"
+          git add -A data
 
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -101,12 +109,16 @@ jobs:
           CHANGED_FILES: ${{ steps.changes.outputs.changed_files }}
           CHANGED_LIST: ${{ steps.changes.outputs.changed_list }}
           PUBLISHED_SHA: ${{ steps.publish.outputs.commit_sha }}
+          OVERALL_STATUS: ${{ steps.health.outputs.overall_status }}
+          SOURCE_COUNT: ${{ steps.health.outputs.source_count }}
         run: |
           {
             echo "## Feed generation result"
             echo ""
             echo "- Trigger: \`${{ github.event_name }}\`"
             echo "- Ref: \`${{ github.ref_name }}\`"
+            echo "- Pipeline health: \`${OVERALL_STATUS:-unknown}\`"
+            echo "- Source count tracked: \`${SOURCE_COUNT:-0}\`"
             echo "- Changes detected: \`${CHANGED:-false}\`"
             echo "- Changed artifact count: \`${CHANGED_FILES:-0}\`"
 

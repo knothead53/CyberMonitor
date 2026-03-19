@@ -1,6 +1,14 @@
 name: Deploy CyberMonitor to GitHub Pages
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "frontend/**"
+      - "data/**"
+      - "assets/**"
+      - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
 permissions:

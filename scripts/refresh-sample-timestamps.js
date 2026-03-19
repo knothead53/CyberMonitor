@@ -6,6 +6,7 @@
  */
 const fs = require("fs");
 const path = require("path");
+const { spawnSync } = require("child_process");
 
 const dataFiles = [
   "kev.sample.json",
@@ -31,4 +32,14 @@ for (const fileName of dataFiles) {
 
   fs.writeFileSync(filePath, `${JSON.stringify(updated, null, 2)}\n`, "utf8");
   console.log(`Updated ${fileName}`);
+}
+
+// Rebuild the derived sample dashboard bundle so fallback JSON stays in sync.
+const result = spawnSync(process.execPath, [path.join(__dirname, "build-data.js"), "--sample-only"], {
+  stdio: "inherit",
+  cwd: path.join(__dirname, "..")
+});
+
+if (result.status !== 0) {
+  process.exit(result.status || 1);
 }
