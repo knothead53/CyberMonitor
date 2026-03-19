@@ -1,5 +1,41 @@
 [
   {
+    "id": "news-c5b8f61e",
+    "title": "EU Sanctions Companies in China, Iran for Cyberattacks",
+    "source": "Dark Reading",
+    "published": "2026-03-19T07:01:00.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/eu-sanctions-companies-china-iran-cyberattacks",
+    "summary": "Already sanctioned in the US and the UK, these rulings prohibit companies and a couple of principals from entering or doing business in the European Union.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading"
+    ]
+  },
+  {
+    "id": "news-446ce86b",
+    "title": "CISA Warns of Zimbra, SharePoint Flaw Exploits; Cisco Zero-Day Hit in Ransomware Attacks",
+    "source": "The Hacker News",
+    "published": "2026-03-19T06:05:00.000Z",
+    "url": "https://thehackernews.com/2026/03/cisa-warns-of-zimbra-sharepoint-flaw.html",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged government agencies to apply patches for two security flaws impacting Synacor Zimbra Collaboration Suite (ZCS) and Microsoft Office SharePoint, stating they have been actively exploited in the wild. The vulnerabilities in question are as foll...",
+    "severity": "CRITICAL",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "ransomware",
+      "zero-day",
+      "patch",
+      "microsoft"
+    ]
+  },
+  {
     "id": "news-0531e5bc",
     "title": "ISC Stormcast For Thursday, March 19th, 2026 https://isc.sans.edu/podcastdetail/9856, (Thu, Mar 19th)",
     "source": "SANS ISC",
@@ -275,6 +311,23 @@
     ]
   },
   {
+    "id": "news-e0975055",
+    "title": "Researchers: Meta, TikTok Steal Personal & Financial Info When Users Click Ads",
+    "source": "Dark Reading",
+    "published": "2026-03-18T13:00:00.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/meta-tiktok-steal-sensitive-pii",
+    "summary": "Tracking pixels let social media companies spy on their users even after they click over to advertiser sites, gleaning credit card info, geolocations, and more, according to an analysis.",
+    "severity": "MEDIUM",
+    "vendor": "Meta",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "dark-reading",
+      "meta"
+    ]
+  },
+  {
     "id": "news-9f9d3217",
     "title": "SideWinder Espionage Campaign Expands Across Southeast Asia",
     "source": "Dark Reading",
@@ -290,23 +343,6 @@
       "dark-reading",
       "phishing",
       "api"
-    ]
-  },
-  {
-    "id": "news-e0975055",
-    "title": "Researchers: Meta, TikTok Steal Personal & Financial Info When Users Click Ads",
-    "source": "Dark Reading",
-    "published": "2026-03-18T13:00:00.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/meta-tiktok-steal-sensitive-pii",
-    "summary": "Tracking pixels let social media companies spy on their users even after they click over to advertiser sites, gleaning credit card info, geolocations, and more, according to an analysis.",
-    "severity": "MEDIUM",
-    "vendor": "Meta",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "dark-reading",
-      "meta"
     ]
   },
   {
@@ -1903,24 +1939,6 @@
     ]
   },
   {
-    "id": "news-8c9d3d7c",
-    "title": "New \"LeakyLooker\" Flaws in Google Looker Studio Could Enable Cross-Tenant SQL Queries",
-    "source": "The Hacker News",
-    "published": "2026-03-10T13:20:00.000Z",
-    "url": "https://thehackernews.com/2026/03/new-leakylooker-flaws-in-google-looker.html",
-    "summary": "Cybersecurity researchers have disclosed nine cross-tenant vulnerabilities in Google Looker Studio that could have permitted attackers to run arbitrary SQL queries on victims' databases and exfiltrate sensitive data within organizations' Google Cloud environments. The shortcomings have been collectively named LeakyL...",
-    "severity": "MEDIUM",
-    "vendor": "Google",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news",
-      "cloud",
-      "google"
-    ]
-  },
-  {
     "id": "news-9b3796a3",
     "title": "White House Cyber Strategy Prioritizes Offense",
     "source": "Dark Reading",
@@ -2165,22 +2183,6 @@
       "news",
       "intel-feed",
       "medium",
-      "dark-reading"
-    ]
-  },
-  {
-    "id": "news-63bc32c9",
-    "title": "LatAm Now Faces 2x More Cyberattacks Than US",
-    "source": "Dark Reading",
-    "published": "2026-03-05T14:00:00.000Z",
-    "url": "https://www.darkreading.com/threat-intelligence/latam-2x-more-cyberattacks-us",
-    "summary": "Much of Central and South America struggles with cybersecurity maturity, and hackers are taking advantage.",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
       "dark-reading"
     ]
   },
