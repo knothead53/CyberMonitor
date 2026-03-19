@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-19T09:59:48.152Z",
+  "generatedAt": "2026-03-19T13:41:19.318Z",
   "overallStatus": "ok",
   "feeds": {
     "kev": {
       "status": "ok",
-      "message": "Loaded 1545 entries in 351ms.",
+      "message": "Loaded 1545 entries in 385ms.",
       "lastSuccessAt": "2026-03-18T00:00:00.000Z",
       "validation": {
         "totalRead": 1545,
@@ -17,8 +17,8 @@
     },
     "news": {
       "status": "ok",
-      "message": "Loaded 135 entries in 586ms.",
-      "lastSuccessAt": "2026-03-19T09:14:00.000Z",
+      "message": "Loaded 135 entries in 1015ms.",
+      "lastSuccessAt": "2026-03-19T13:00:22.000Z",
       "validation": {
         "totalRead": 135,
         "validCount": 135,
@@ -30,8 +30,8 @@
     },
     "outages": {
       "status": "ok",
-      "message": "Loaded 160 entries in 678ms.",
-      "lastSuccessAt": "2026-03-19T09:29:04.000Z",
+      "message": "Loaded 160 entries in 755ms.",
+      "lastSuccessAt": "2026-03-19T11:36:38.000Z",
       "validation": {
         "totalRead": 160,
         "validCount": 160,

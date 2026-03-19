@@ -1,5 +1,109 @@
 [
   {
+    "id": "news-5158f97f",
+    "title": "Max severity Ubiquiti UniFi flaw may allow account takeover",
+    "source": "BleepingComputer",
+    "published": "2026-03-19T13:00:22.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/ubiquiti-warns-of-unifi-flaw-that-may-enable-account-takeover/",
+    "summary": "Ubiquiti has patched two vulnerabilities in the UniFi Network Application, including a maximum-severity flaw that may allow attackers to take over user accounts. [...]",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "bleepingcomputer",
+      "patch"
+    ]
+  },
+  {
+    "id": "news-a45b7d2c",
+    "title": "New Perseus Android Banking Malware Monitors Notes Apps to Extract Sensitive Data",
+    "source": "The Hacker News",
+    "published": "2026-03-19T12:43:00.000Z",
+    "url": "https://thehackernews.com/2026/03/new-perseus-android-banking-malware.html",
+    "summary": "Cybersecurity researchers have disclosed a new Android malware family called Perseus that's being actively distributed in the wild with an aim to conduct device takeover (DTO) and financial fraud. Perseus is built upon the foundations of Cerberus and Phoenix, at the same time evolving into a \"more flexible and capab...",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "the-hacker-news",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-1994e458",
+    "title": "CISA urges US orgs to secure Microsoft Intune systems after Stryker breach",
+    "source": "BleepingComputer",
+    "published": "2026-03-19T11:02:27.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-businesses-to-secure-microsoft-intune-systems-after-stryker-breach/",
+    "summary": "CISA warned U.S. organizations to follow Microsoft guidance to strengthen the Intune endpoint management tool after a cyberattack exploited it to wipe medical technology giant Stryker's systems. [...]",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "news-15f932bd",
+    "title": "How Ceros Gives Security Teams Visibility and Control in Claude Code",
+    "source": "The Hacker News",
+    "published": "2026-03-19T10:58:00.000Z",
+    "url": "https://thehackernews.com/2026/03/how-ceros-gives-security-teams.html",
+    "summary": "Security teams have spent years building identity and access controls for human users and service accounts. But a new category of actor has quietly entered most enterprise environments, and it operates entirely outside those controls. Claude Code, Anthropic's AI coding agent, is now running across engineering organi...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "the-hacker-news",
+      "identity"
+    ]
+  },
+  {
+    "id": "news-aebf844c",
+    "title": "New ‘Perseus’ Android malware checks user notes for secrets",
+    "source": "BleepingComputer",
+    "published": "2026-03-19T10:13:23.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/new-perseus-android-malware-checks-user-notes-for-secrets/",
+    "summary": "A new Android malware called Perseus is checking user-curated notes to steal sensitive information, like passwords, recovery phrases, or financial data. [...]",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "malware"
+    ]
+  },
+  {
+    "id": "news-2c044f9f",
+    "title": "Critical Microsoft SharePoint flaw now exploited in attacks",
+    "source": "BleepingComputer",
+    "published": "2026-03-19T10:06:38.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/critical-microsoft-sharepoint-flaw-now-exploited-in-attacks/",
+    "summary": "A critical Microsoft SharePoint vulnerability patched in January is now being exploited in attacks, the Cybersecurity and Infrastructure Security Agency (CISA) warned. [...]",
+    "severity": "HIGH",
+    "vendor": "Microsoft",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "bleepingcomputer",
+      "vulnerability",
+      "patch",
+      "microsoft"
+    ]
+  },
+  {
     "id": "news-5e91c04b",
     "title": "DarkSword iOS Exploit Kit Uses 6 Flaws, 3 Zero-Days for Full Device Takeover",
     "source": "The Hacker News",
@@ -23,7 +127,7 @@
     "source": "Dark Reading",
     "published": "2026-03-19T07:01:00.000Z",
     "url": "https://www.darkreading.com/threat-intelligence/eu-sanctions-companies-china-iran-cyberattacks",
-    "summary": "Already sanctioned in the US and the UK, these rulings prohibit companies and a couple of principals from entering or doing business in the European Union.",
+    "summary": "These rulings prohibit the entities from entering or doing business in the European Union.",
     "severity": "HIGH",
     "vendor": "Unknown",
     "tags": [
@@ -649,74 +753,6 @@
       "critical",
       "the-hacker-news",
       "ransomware"
-    ]
-  },
-  {
-    "id": "news-04c65b26",
-    "title": "Top 5 Things CISOs Need to Do Today to Secure AI Agents",
-    "source": "BleepingComputer",
-    "published": "2026-03-17T14:02:12.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/top-5-things-cisos-need-to-do-today-to-secure-ai-agents/",
-    "summary": "AI agents are autonomous actors with real access to data and systems, not just copilots. Token Security explains why identity-based access control is critical to prevent misuse and data exposure. [...]",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "bleepingcomputer",
-      "identity"
-    ]
-  },
-  {
-    "id": "news-4d226a32",
-    "title": "New font-rendering trick hides malicious commands from AI tools",
-    "source": "BleepingComputer",
-    "published": "2026-03-17T13:59:12.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/new-font-rendering-trick-hides-malicious-commands-from-ai-tools/",
-    "summary": "A new font-rendering attack causes AI assistants to miss malicious commands shown on webpages by hiding them in seemingly harmless HTML. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer"
-    ]
-  },
-  {
-    "id": "news-724e7830",
-    "title": "Microsoft stops force-installing the Microsoft 365 Copilot app",
-    "source": "BleepingComputer",
-    "published": "2026-03-17T13:54:37.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-stops-force-installing-the-microsoft-365-copilot-app/",
-    "summary": "Microsoft has stopped automatically installing the Microsoft 365 Copilot app on Windows devices that have the Microsoft 365 desktop client apps. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "microsoft"
-    ]
-  },
-  {
-    "id": "news-2f3ee82c",
-    "title": "LeakNet ransomware uses ClickFix, Deno runtime in stealthy attacks",
-    "source": "BleepingComputer",
-    "published": "2026-03-17T12:09:35.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/leaknet-ransomware-uses-clickfix-and-deno-runtime-for-stealthy-attacks/",
-    "summary": "The LeakNet ransomware gang is now using the ClickFix technique for initial access into corporate environments and deploys a malware loader based on the open-source Deno runtime for JavaScript and TypeScript. [...]",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "bleepingcomputer",
-      "ransomware",
-      "malware"
     ]
   },
   {
@@ -1886,39 +1922,6 @@
       "high",
       "dark-reading",
       "malware"
-    ]
-  },
-  {
-    "id": "news-42a491fe",
-    "title": "FortiGate Devices Exploited to Breach Networks and Steal Service Account Credentials",
-    "source": "The Hacker News",
-    "published": "2026-03-10T16:21:00.000Z",
-    "url": "https://thehackernews.com/2026/03/fortigate-devices-exploited-to-breach.html",
-    "summary": "Cybersecurity researchers are calling attention to a new campaign where threat actors are abusing FortiGate Next-Generation Firewall (NGFW) appliances as entry points to breach victim networks. The activity involves the exploitation of recently disclosed security vulnerabilities or weak credentials to extract config...",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "the-hacker-news"
-    ]
-  },
-  {
-    "id": "news-c42f781a",
-    "title": "How to Stop AI Data Leaks: A Webinar Guide to Auditing Modern Agentic Workflows",
-    "source": "The Hacker News",
-    "published": "2026-03-10T16:21:00.000Z",
-    "url": "https://thehackernews.com/2026/03/how-to-stop-ai-data-leaks-webinar-guide.html",
-    "summary": "Artificial Intelligence (AI) is no longer just a tool we talk to; it is a tool that does things for us. These are called AI Agents. They can send emails, move data, and even manage software on their own. But there is a problem. While these agents make work faster, they also open a new \"back door\" for hackers. The Pr...",
-    "severity": "MEDIUM",
-    "vendor": "Intel",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "the-hacker-news",
-      "intel"
     ]
   },
   {
