@@ -1,5 +1,23 @@
 [
   {
+    "id": "news-5e91c04b",
+    "title": "DarkSword iOS Exploit Kit Uses 6 Flaws, 3 Zero-Days for Full Device Takeover",
+    "source": "The Hacker News",
+    "published": "2026-03-19T09:14:00.000Z",
+    "url": "https://thehackernews.com/2026/03/darksword-ios-exploit-kit-uses-6-flaws.html",
+    "summary": "A new exploit kit for Apple iOS devices designed to steal sensitive data from is being wielded by multiple threat actors since at least November 2025, according to reports from Google Threat Intelligence Group (GTIG), iVerify, and Lookout. According to GTIG, multiple commercial surveillance vendors and suspected sta...",
+    "severity": "CRITICAL",
+    "vendor": "Google",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "the-hacker-news",
+      "zero-day",
+      "google"
+    ]
+  },
+  {
     "id": "news-c5b8f61e",
     "title": "EU Sanctions Companies in China, Iran for Cyberattacks",
     "source": "Dark Reading",
@@ -264,7 +282,7 @@
   },
   {
     "id": "news-d7a7d467",
-    "title": "New “Darksword” iOS exploit used in infostealer attack on iPhones",
+    "title": "New DarkSword iOS exploit used in infostealer attack on iPhones",
     "source": "BleepingComputer",
     "published": "2026-03-18T14:02:08.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/new-darksword-ios-exploit-used-in-infostealer-attack-on-iphones/",
@@ -1901,24 +1919,6 @@
       "medium",
       "the-hacker-news",
       "intel"
-    ]
-  },
-  {
-    "id": "news-799d6257",
-    "title": "KadNap Malware Infects 14,000+ Edge Devices to Power Stealth Proxy Botnet",
-    "source": "The Hacker News",
-    "published": "2026-03-10T16:00:00.000Z",
-    "url": "https://thehackernews.com/2026/03/kadnap-malware-infects-14000-edge.html",
-    "summary": "Cybersecurity researchers have discovered a new malware called KadNap that's primarily targeting Asus routers to enlist them into a botnet for proxying malicious traffic. The malware, first detected in the wild in August 2025, has expanded to over 14,000 infected devices, with more than 60% of victims located in the...",
-    "severity": "CRITICAL",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "critical",
-      "the-hacker-news",
-      "malware",
-      "botnet"
     ]
   },
   {
