@@ -1,5 +1,72 @@
 [
   {
+    "id": "news-0531e5bc",
+    "title": "ISC Stormcast For Thursday, March 19th, 2026 https://isc.sans.edu/podcastdetail/9856, (Thu, Mar 19th)",
+    "source": "SANS ISC",
+    "published": "2026-03-19T02:00:03.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32812",
+    "summary": "No summary provided.",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-21924cd9",
+    "title": "Interesting Message Stored in Cowrie Logs, (Wed, Mar 18th)",
+    "source": "SANS ISC",
+    "published": "2026-03-19T00:38:49.000Z",
+    "url": "https://isc.sans.edu/diary/rss/32810",
+    "summary": "This activity was found and reported by BACS student Adam ThormanÂ as part of one of his assignments which I posted his final paper [1] last week. This activity appeared to only have occurred on the 19 Feb 2026 where at least 2 sensors detected on the same day by DShield sensor in the cowrie logs an echo command tha...",
+    "severity": "MEDIUM",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "medium",
+      "sans-isc"
+    ]
+  },
+  {
+    "id": "news-4fe0c007",
+    "title": "Aura confirms data breach exposing 900,000 marketing contacts",
+    "source": "BleepingComputer",
+    "published": "2026-03-18T22:56:50.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/aura-confirms-data-breach-exposing-900-000-marketing-contacts/",
+    "summary": "Identity protection company Aura has confirmed that an unauthorized party gained access to nearly 900,000 customer records containing names and email addresses. [...]",
+    "severity": "CRITICAL",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "critical",
+      "bleepingcomputer",
+      "data-breach",
+      "identity"
+    ]
+  },
+  {
+    "id": "news-44b8f718",
+    "title": "C2 Implant 'SnappyClient' Targets Crypto Wallets",
+    "source": "Dark Reading",
+    "published": "2026-03-18T21:49:02.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/new-c2-implant-snappyclient-targets-crypto-wallets",
+    "summary": "In addition to enabling remote access, the malware supports a wide range of capabilities, including data theft and spying.",
+    "severity": "HIGH",
+    "vendor": "Unknown",
+    "tags": [
+      "news",
+      "intel-feed",
+      "high",
+      "dark-reading",
+      "malware"
+    ]
+  },
+  {
     "id": "news-a92bee5f",
     "title": "DarkSword: iPhone Exploit Kit Serves Spies & Thieves Alike",
     "source": "Dark Reading",
@@ -14,23 +81,6 @@
       "critical",
       "dark-reading",
       "zero-day"
-    ]
-  },
-  {
-    "id": "news-c388bfb1",
-    "title": "C2 Implant 'SnappyClient' Targets Crypto Wallets",
-    "source": "Dark Reading",
-    "published": "2026-03-18T20:26:56.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/new-c2-implant-snappyclient-targets-crypto-wallets",
-    "summary": "In addition to enabling remote access, the malware supports a wide range of capabilities including data theft and spying.",
-    "severity": "HIGH",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "high",
-      "dark-reading",
-      "malware"
     ]
   },
   {
@@ -613,23 +663,6 @@
       "bleepingcomputer",
       "ransomware",
       "malware"
-    ]
-  },
-  {
-    "id": "news-798ed625",
-    "title": "Microsoft shares fix for Windows C: drive access issues on Samsung PCs",
-    "source": "BleepingComputer",
-    "published": "2026-03-17T12:03:38.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-fix-for-windows-c-drive-access-issues-on-samsung-pcs/",
-    "summary": "Microsoft has shared guidance to fix C:\\ drive access issues and app failures on some Samsung laptops running Windows 11, versions 25H2 and 24H2. [...]",
-    "severity": "MEDIUM",
-    "vendor": "Microsoft",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "bleepingcomputer",
-      "microsoft"
     ]
   },
   {
@@ -1250,22 +1283,6 @@
     ]
   },
   {
-    "id": "news-117a40b0",
-    "title": "ISC Stormcast For Friday, March 13th, 2026 https://isc.sans.edu/podcastdetail/9848, (Fri, Mar 13th)",
-    "source": "SANS ISC",
-    "published": "2026-03-13T02:00:02.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32792",
-    "summary": "No summary provided.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
-    ]
-  },
-  {
     "id": "news-8a309bc1",
     "title": "Why Post-Quantum Cryptography Can't Wait",
     "source": "Dark Reading",
@@ -1500,22 +1517,6 @@
       "critical",
       "the-hacker-news",
       "vulnerability"
-    ]
-  },
-  {
-    "id": "news-38a98cb3",
-    "title": "ISC Stormcast For Thursday, March 12th, 2026 https://isc.sans.edu/podcastdetail/9846, (Thu, Mar 12th)",
-    "source": "SANS ISC",
-    "published": "2026-03-12T02:00:02.000Z",
-    "url": "https://isc.sans.edu/diary/rss/32790",
-    "summary": "No summary provided.",
-    "severity": "MEDIUM",
-    "vendor": "Unknown",
-    "tags": [
-      "news",
-      "intel-feed",
-      "medium",
-      "sans-isc"
     ]
   },
   {
